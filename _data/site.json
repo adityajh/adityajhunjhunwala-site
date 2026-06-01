@@ -31,10 +31,29 @@
   ],
   "subscribeUrl": "https://qrto.to/66f8cc1e",
   "nav": [
-    { "label": "Letters", "url": "/letters/" },
-    { "label": "Writing", "url": "/writing/" },
-    { "label": "Work", "url": "/work/" },
-    { "label": "About", "url": "/about/" },
-    { "label": "Subscribe", "url": "/subscribe/" }
+    {
+      "label": "Letters",
+      "url": "/letters/"
+    },
+    {
+      "label": "Writing",
+      "url": "/writing/"
+    },
+    {
+      "label": "Work",
+      "url": "/work/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Connect",
+      "url": "/connect/"
+    },
+    {
+      "label": "Subscribe",
+      "url": "/subscribe/"
+    }
   ]
 }
