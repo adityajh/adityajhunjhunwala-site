@@ -110,6 +110,128 @@ I speak on entrepreneurial mindset, education reform, self-awareness, and buildi
 
 </div>
 
+
+---
+
+## In the room
+
+A few of the rooms the work has reached, schools and colleges across India, founder forums, leadership teams, and community gatherings.
+
+<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:1.25rem; margin:2rem 0;">
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-01.jpg" alt="Speaking to 10th graders about setting goals" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to 10th graders about setting goals</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-02.jpg" alt="Career workshop for students and parents (TAP)" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Career workshop for students and parents (TAP)</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-03.jpg" alt="Getting ready for EXPLORATHON" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Getting ready for EXPLORATHON</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-04.jpg" alt="Speaking to youth in Pune about breaking mental barriers" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to youth in Pune about breaking mental barriers</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-05.jpg" alt="Speaking to BBA students in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to BBA students in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-06.jpg" alt="Leadership workshop for an NGO in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Leadership workshop for an NGO in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-07.jpg" alt="Leadership workshop for a foundation in Udaipur" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Leadership workshop for a foundation in Udaipur</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-08.jpg" alt="Leadership workshop for a foundation in Udaipur" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Leadership workshop for a foundation in Udaipur</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-09.jpg" alt="Speaking to entrepreneurs at YI in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to entrepreneurs at YI in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-10.jpg" alt="Facilitating a World Cafe at the Grooming the Next Generation event in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Facilitating a World Cafe at the Grooming the Next Generation event in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-11.jpg" alt="Speaking to students at Symbiosis in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to students at Symbiosis in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-12.jpg" alt="Receiving an Education Innovation award in Bangalore" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Receiving an Education Innovation award in Bangalore</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-13.jpg" alt="Speaking to Grade 12 students in Goa" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to Grade 12 students in Goa</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-14.jpg" alt="With the new entrants of IIM-A in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">With the new entrants of IIM-A in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-15.jpg" alt="Conducting a workshop for students at DLRC Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Conducting a workshop for students at DLRC Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-16.jpg" alt="Conducting a workshop for students at DLRC Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Conducting a workshop for students at DLRC Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-17.jpg" alt="With the group at RADA, Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">With the group at RADA, Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-18.jpg" alt="Entrepreneurial Mindset workshop for school principals" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Entrepreneurial Mindset workshop for school principals</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-19.jpg" alt="Entrepreneurial Mindset workshop for school principals" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Entrepreneurial Mindset workshop for school principals</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-20.jpg" alt="Speaking to business leaders at MCCIA, Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to business leaders at MCCIA, Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-21.jpg" alt="Speaking at the Body of Work challenge in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking at the Body of Work challenge in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-22.jpg" alt="Speaking to BBA students in Bhubaneshwar" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to BBA students in Bhubaneshwar</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-23.jpg" alt="School leadership workshop in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">School leadership workshop in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-24.jpg" alt="Speaking to BBA students in Pune" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to BBA students in Pune</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-25.jpg" alt="Facilitating a leadership workshop in Mumbai for 300+ Bohra community leaders" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Facilitating a leadership workshop in Mumbai for 300+ Bohra community leaders</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-26.jpg" alt="Speaking to students in Surat" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Speaking to students in Surat</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-27.jpg" alt="Business workshop for the Bohra community in Surat" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Business workshop for the Bohra community in Surat</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <img src="/images/speaking/speaking-28.jpg" alt="Workshop for school students in Goa" loading="lazy" style="width:100%; display:block; aspect-ratio:4/3; object-fit:cover; border-radius:4px; border:1px solid var(--border);">
+    <figcaption style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.4;">Workshop for school students in Goa</figcaption>
+  </figure>
+</div>
+
 ---
 
 ## Workshops and keynotes
