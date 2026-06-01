@@ -1,5 +1,12 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "_site",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    {
+      "source": "/feel",
+      "destination": "https://ig.91-108-110-72.nip.io/feel/",
+      "permanent": false
+    }
+  ]
 }
