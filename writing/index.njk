@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: "Writing"
+description: "200+ essays by Aditya Jhunjhunwala on self-awareness, founders, education, relationships, and the work of building a life."
+---
+<div class="page-wrap page-wrap--wide">
+  <div class="archive-header">
+    <div style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">{{ collections.articles | length }} Essays</div>
+    <h1 style="font-family:var(--font-serif); font-size:clamp(1.75rem,4vw,2.5rem);">Writing</h1>
+    <p style="color:var(--text-muted); max-width:520px; margin-top:0.75rem; font-size:0.9375rem;">
+      Essays on self-awareness, founders, education, relationships, and the work of building a life. Written over 20 years.
+    </p>
+  </div>
+  <div class="article-grid">
+    {%- for article in collections.articles %}
+    <div class="article-card">
+      <div class="article-card__title"><a href="{{ article.url }}">{{ article.data.title }}</a></div>
+    </div>
+    {%- endfor %}
+  </div>
+</div>

@@ -1,0 +1,45 @@
+---
+layout: base.njk
+---
+{%- set plainExcerpt = content | plainText | truncate(160) %}
+{%- set description = plainExcerpt %}
+{%- set jsonLd %}
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | dump | safe }},
+  "author": {
+    "@type": "Person",
+    "name": "Aditya Jhunjhunwala",
+    "url": "{{ site.url }}"
+  },
+  "datePublished": "{{ date | htmlDateString }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": {{ plainExcerpt | dump | safe }}
+}
+{%- endset %}
+
+<div class="page-wrap" data-pagefind-body>
+  <article>
+    <header class="post-header">
+      <div class="post-header__meta">Essay</div>
+      <h1 class="post-header__title">{{ title }}</h1>
+      {%- if date %}
+      <time class="post-header__date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      {%- endif %}
+    </header>
+
+    <div class="prose">
+      {{ content | scrubDashes | safe }}
+    </div>
+
+    <aside class="post-subscribe" style="margin-top:3rem;">
+      <p>If this landed, there is a weekly letter. Every Sunday, something honest about work, life, and the inside game.</p>
+      <a href="{{ site.subscribeUrl }}" class="btn btn-primary" target="_blank" rel="noopener">Get the weekly letter</a>
+    </aside>
+
+    <p style="margin-top:2rem; text-align:center;">
+      <a href="/writing/" style="font-size:0.875rem; color:var(--text-muted);">All writing &rarr;</a>
+    </p>
+  </article>
+</div>

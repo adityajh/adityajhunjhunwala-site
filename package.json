@@ -1,0 +1,14 @@
+{
+  "name": "adityajhunjhunwala-site",
+  "version": "1.0.0",
+  "description": "adityajhunjhunwala.com — The Playful CEO",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "postbuild": "npx pagefind --site _site --output-path _site/pagefind"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "pagefind": "^1.1.0"
+  }
+}

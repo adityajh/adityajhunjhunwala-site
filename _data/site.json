@@ -1,0 +1,33 @@
+{
+  "title": "Aditya Jhunjhunwala",
+  "tagline": "The real work is you.",
+  "description": "Founder of Let's Enterprise. Author. TEDx Speaker. 155 letters and 200+ essays on self-awareness, founders, education, and the work of building a life.",
+  "url": "https://www.adityajhunjhunwala.com",
+  "author": {
+    "name": "Aditya Jhunjhunwala",
+    "email": "aditya@letsenterprise.in",
+    "image": "/images/adi-headshot.jpg"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/playfulceo/",
+    "instagram": "https://www.instagram.com/playful_ceo/",
+    "twitter": "https://twitter.com/playful_ceo",
+    "facebook": "https://www.facebook.com/aditya.jhunjhunwala.127",
+    "youtube": "https://www.youtube.com/@playful_ceo"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/playfulceo/",
+    "https://www.instagram.com/playful_ceo/",
+    "https://www.facebook.com/aditya.jhunjhunwala.127",
+    "https://www.youtube.com/@playful_ceo",
+    "https://www.letsenterprise.in"
+  ],
+  "subscribeUrl": "https://qrto.to/66f8cc1e",
+  "nav": [
+    { "label": "Letters", "url": "/letters/" },
+    { "label": "Writing", "url": "/writing/" },
+    { "label": "Work", "url": "/work/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Subscribe", "url": "/subscribe/" }
+  ]
+}

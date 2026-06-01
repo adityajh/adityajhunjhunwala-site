@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F8F6F0">
+
+  {%- set pageTitle = title + " | " + site.title if title else site.title %}
+  {%- set pageDesc = description | default(site.description) %}
+  {%- set pageUrl = site.url + page.url %}
+  {%- set pageImage = image | default(site.author.image) %}
+
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDesc }}">
+  <meta name="author" content="{{ site.author.name }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDesc }}">
+  <meta property="og:url" content="{{ pageUrl }}">
+  <meta property="og:type" content="{{ 'article' if layout == 'letter.njk' or layout == 'article.njk' else 'website' }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if pageImage %}<meta property="og:image" content="{{ site.url }}{{ pageImage }}">{% endif %}
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@playful_ceo">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDesc }}">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ pageUrl }}">
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD: Person (site-wide) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aditya Jhunjhunwala",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}{{ site.author.image }}",
+    "jobTitle": "Founder, Let's Enterprise | Author | TEDx Speaker",
+    "description": "{{ site.description }}",
+    "sameAs": {{ site.sameAs | dump | safe }}
+  }
+  </script>
+
+  {%- if jsonLd %}
+  <!-- JSON-LD: Page-specific -->
+  <script type="application/ld+json">
+  {{ jsonLd | safe }}
+  </script>
+  {%- endif %}
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__logo">Aditya Jhunjhunwala</a>
+      <button class="site-nav__toggle" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('is-open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav__links">
+        {% for item in site.nav %}
+          <li><a href="{{ item.url }}"{% if item.label == "Subscribe" %} class="nav-subscribe"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <div class="site-footer__name">Aditya Jhunjhunwala</div>
+        <div class="site-footer__tagline">The real work is you.</div>
+        <div class="site-footer__links">
+          <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram</a>
+          <a href="{{ site.social.youtube }}" target="_blank" rel="noopener">YouTube</a>
+          <a href="{{ site.social.facebook }}" target="_blank" rel="noopener">Facebook</a>
+          <a href="/subscribe/">Newsletter</a>
+        </div>
+        <div class="site-footer__copy">{{ currentYear }} Aditya Jhunjhunwala. All writing is original work.</div>
+      </div>
+      <div>
+        <div style="font-size:0.8rem; color:rgba(248,246,240,0.4); line-height:1.8;">
+          <a href="/letters/" style="color:rgba(248,246,240,0.45);">Letters</a><br>
+          <a href="/writing/" style="color:rgba(248,246,240,0.45);">Writing</a><br>
+          <a href="/work/" style="color:rgba(248,246,240,0.45);">Work</a><br>
+          <a href="/about/" style="color:rgba(248,246,240,0.45);">About</a><br>
+          <a href="/books/" style="color:rgba(248,246,240,0.45);">Books</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

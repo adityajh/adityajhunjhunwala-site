@@ -1,0 +1,65 @@
+---
+layout: base.njk
+---
+
+<div class="page-wrap" data-pagefind-body>
+  <article>
+    <header class="post-header">
+      <div class="post-header__meta">
+        {%- if letter_number %}Letter No {{ letter_number }}{%- endif %}
+      </div>
+      <h1 class="post-header__title">{{ title }}</h1>
+      {%- if date %}
+      <time class="post-header__date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      {%- endif %}
+    </header>
+
+    <div class="prose">
+      {{ content | scrubDashes | obsidianImages(slug) | safe }}
+    </div>
+
+    <aside class="post-subscribe" aria-label="Subscribe to the newsletter">
+      <p>A letter like this arrives every Sunday. Food, play, love, and the real work of building a life.</p>
+      <a href="https://qrto.to/66f8cc1e" class="btn btn-primary" target="_blank" rel="noopener">Get the weekly letter</a>
+    </aside>
+
+    {%- set allLetters = collections.letters %}
+    {%- set currentIndex = 0 %}
+    {%- for l in allLetters %}
+      {%- if l.url == page.url %}{% set currentIndex = loop.index0 %}{% endif %}
+    {%- endfor %}
+    {%- set prevLetter = allLetters[currentIndex - 1] if currentIndex > 0 else null %}
+    {%- set nextLetter = allLetters[currentIndex + 1] if currentIndex < (allLetters.length - 1) else null %}
+
+    <nav class="letter-nav" aria-label="Letter navigation">
+      <div>
+        {%- if prevLetter %}
+          <span class="letter-nav__label">Previous</span>
+          <a href="{{ prevLetter.url }}">{{ prevLetter.data.title or ("Letter " + prevLetter.data.letter_number) }}</a>
+        {%- endif %}
+      </div>
+      <div style="text-align:right">
+        {%- if nextLetter %}
+          <span class="letter-nav__label">Next</span>
+          <a href="{{ nextLetter.url }}">{{ nextLetter.data.title or ("Letter " + nextLetter.data.letter_number) }}</a>
+        {%- endif %}
+      </div>
+    </nav>
+
+    <p style="text-align:center; margin-top:1.5rem;">
+      <a href="/letters/" style="font-size:0.875rem; color:var(--text-muted);">All letters &rarr;</a>
+    </p>
+  </article>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  "author": { "@type": "Person", "name": "Aditya Jhunjhunwala", "url": "https://www.adityajhunjhunwala.com" },
+  "datePublished": "{{ date | htmlDateString }}",
+  "url": "https://www.adityajhunjhunwala.com{{ page.url }}",
+  "isPartOf": { "@type": "Blog", "name": "Eat. Play. Love. — Letters from Aditya Jhunjhunwala", "url": "https://www.adityajhunjhunwala.com/letters/" }
+}
+</script>
