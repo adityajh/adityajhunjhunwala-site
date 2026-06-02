@@ -40,7 +40,7 @@ This is just one such situation.
 
 Another situation where we often encounter this question is when we talk to ourselves. _(you do talk to yourself right? Or is it just me?)_
 
-Suddenly time stops, and you catch yourself wondering "What do you really want". Looking at your reflection in the window, catching yourself amidst the traffic sitting in the car waiting for the signal, staring at yourself while making your hair in the mirror — this question pops up.
+Suddenly time stops, and you catch yourself wondering "What do you really want". Looking at your reflection in the window, catching yourself amidst the traffic sitting in the car waiting for the signal, staring at yourself while making your hair in the mirror, this question pops up.
 And do you have an answer?
 
 Let me rephrase the question, what is the context of this answer? Is it your career, relationship, or life in general?

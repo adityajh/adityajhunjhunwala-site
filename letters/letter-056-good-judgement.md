@@ -39,7 +39,7 @@ A friend’s good judgement can help one get out of a messy place in one’s lif
 
 Good judgment is valuable.
 
-——
+, , 
 
 Judgement is not the same as “judging”.
 
@@ -57,7 +57,7 @@ Judgement is what tells a parent to give space to the kid, although every part o
 
 Judgment is valuable.
 
-———-
+, , , -
 
 Develop a good judgement in things that are important to you in your life.
 
@@ -74,7 +74,7 @@ Here are a few suggestions on how to go about the same:
 9. Be willing to be proven wrong.
 10. Don’t be defensive about your ideas. Be assertive but not defensive. Find a better way to communicate with others.
 
-———
+, , , 
 
 Great chefs are not fearful of giving their recipes to others. They know that the recipes are not enough. You need good judgment to really create those delicious dishes!
 

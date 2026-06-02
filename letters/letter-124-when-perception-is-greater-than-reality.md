@@ -11,9 +11,9 @@ tags:
 
 Dear Aditya,
 
-Have you ever had a great idea and couldn't wait to share it with your boss or your team or even family—only to receive a bunch of grunts and sometimes even outright rejection? If yes, then read on.
+Have you ever had a great idea and couldn't wait to share it with your boss or your team or even family, only to receive a bunch of grunts and sometimes even outright rejection? If yes, then read on.
 
-I recently came across a chapter in Jack Trout's Trout on Strategy book that really got me thinking about how we navigate not just the professional world but our personal relationships too. The chapter focuses on one idea: Strategy is about perception—and how tricky managing those perceptions can be.
+I recently came across a chapter in Jack Trout's Trout on Strategy book that really got me thinking about how we navigate not just the professional world but our personal relationships too. The chapter focuses on one idea: Strategy is about perception, and how tricky managing those perceptions can be.
 
 What struck me most was how often we forget that no matter how brilliant our idea or action might seem, it's the way it's perceived by others that really counts. Perception is often more important than reality.
 

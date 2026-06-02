@@ -45,7 +45,7 @@ But this example may make you think that one always has to take the 'high road'.
 
 Let me share another story that gives a different perspective that I found during the course of my research on courage, I found a story about two military leaders in battle. 
 
-Both were faced with a decision to advance or retreat against the enemy. One leader knew he and his men would not win, but he didn’t want to return home, dead or alive, labeled as a coward. So, he advanced, and he died. The other leader didn’t have stellar eyesight and didn’t feel good about taking his men into battle with impaired vision. He decided to stay back — knowing he would be taunted as a coward upon his return home.
+Both were faced with a decision to advance or retreat against the enemy. One leader knew he and his men would not win, but he didn’t want to return home, dead or alive, labeled as a coward. So, he advanced, and he died. The other leader didn’t have stellar eyesight and didn’t feel good about taking his men into battle with impaired vision. He decided to stay back, knowing he would be taunted as a coward upon his return home.
 
 Without thinking too hard, it’s fairly easy to conclude from this short story that the first leader’s decision was characterised by action, or movement,  while the second leader’s choice was marked by inaction, or non-intervention.  
 

@@ -11,7 +11,7 @@ tags:
 
 Dear Aditya,
 
-We've all been there. The clock ticking, the final countdown, the pressure mounting as we approach a deadline. "You won't get another chance", "Not possible at all", "Before time runs out", "Last few left", "Last day today". These phrases ring in our ears, pushing us into a frenzy. Our primal brain kicks in and we end up taking rash decisions. It's fascinating—and somewhat troubling—how we've wired our brains into a scarcity mindset.
+We've all been there. The clock ticking, the final countdown, the pressure mounting as we approach a deadline. "You won't get another chance", "Not possible at all", "Before time runs out", "Last few left", "Last day today". These phrases ring in our ears, pushing us into a frenzy. Our primal brain kicks in and we end up taking rash decisions. It's fascinating, and somewhat troubling, how we've wired our brains into a scarcity mindset.
 
 Let me tell you a story. One rainy evening, I was driving around, looking for a parking spot. The first open spot I found felt like a victory, so I parked and walked the remaining distance to my destination. As I approached my destination, I saw an empty spot right next to the gate. "Ah! Should've checked." I thought. It's interesting how we often settle for the first thing we find, driven by a mindset of scarcity, rather than exploring for better options.
 

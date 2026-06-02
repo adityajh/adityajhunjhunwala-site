@@ -17,7 +17,7 @@ Hmmm, I sense some hesitation. Ambitious doesn’t mean just about money. It cou
 
 Ahhh, now I think you are saying “yesssss, then I’m ambitious!”
 
-————-
+, , , , -
 
 Then, let me ask you the next question - “are you just ambitious, or are you very ambitious?”
 
@@ -29,7 +29,7 @@ It’s understandable. I am pushing you a bit. I want you to think.
 
 Take a few moments right and think what are you very ambitious about.
 
-———-
+, , , -
 
 In order to live a life of peace and joy, you must be very ambitious.
 
@@ -43,7 +43,7 @@ True joy comes only in losing oneself in something bigger than oneself.
 
 And only the very ambitious can do that!
 
-———
+, , , 
 
 Now, here is my final bit.
 
@@ -61,7 +61,7 @@ And here is a corollary to this, in order to be willing to make a sacrifice, you
 
 It may be possible that you don’t need to sacrifice anything. You may be able to have it all. But the very ambitious are clear about if and when it comes to be, what they will sacrifice and what they will do deeper into.
 
-———-
+, , , -
 
 Woah. That was a heavy-ish one🙂
 

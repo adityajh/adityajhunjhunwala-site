@@ -93,9 +93,9 @@ _A tired bird landed on a branch. The bird rested, enjoying the view from the br
 
 _But the bird was not worried for it knew two important truths._
 
-**_The first truth_** _– even without the branch it was able to fly, and thus remain safe through the power of its own two wings._
+**_The first truth_** _,  even without the branch it was able to fly, and thus remain safe through the power of its own two wings._
 
-**_The second truth –_** _it also knew that there are many other branches upon which it can temporarily rest._
+**_The second truth , _** _it also knew that there are many other branches upon which it can temporarily rest._
 
 This is faith.
 

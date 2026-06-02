@@ -29,7 +29,7 @@ Think about it. When there is light, you cannot fill it with darkness. You may t
 
 Whether in your life there is light right now or not, just remember that light is more powerful than darkness. And also that darkness is nothing but emptiness. It is a vessel for light to shine. Hence stop  fearing darkness.
 
-————-
+, , , , -
 
 And, light is all around us. One dot of light is enough to fill up the entire universe. Such a tiny sun as compared to the solar system, and it lights up everything. There is enough light for all of us.
 
@@ -39,7 +39,7 @@ The only thing that casts a shadow and stops light from reaching us is our own f
 
 Fear casts a shadow.
 
-———-
+, , , -
 
 And hence…may we be peaceful enough to hold fear in our hearts and yet act from love.
 
@@ -49,19 +49,19 @@ Hence it is not about not having fear but more about being about to withstand fe
 
 Having peace within us empowers us to do act inspite of fear.
 
-———-
+, , , -
 
 Next… may we be faithful enough to stay in  peace.
 
 Because that’s where peace comes from… faith. Faith in a higher intelligence. Faith in the process of life. Faith in existence. Just faith.
 
-———-
+, , , -
 
 And finally, faith comes from understanding. Understanding that our knowledge is limited. There is much that we do not know. There are a million things happening right now inside your body that are keeping you alive. Most of them are beyond our knowledge and control. Science is not ‘all-knowing’. Science is a great journey of discovery. Faith is not unscientific. Faith is not blind belief. Faith is not devoid of action. Faith is in fact very scientific. Faith inspires powerful action.
 
 Hence, may we find the understanding to know the faith.
 
-———-
+, , , -
 
 And finally… may we be blessed enough to find the right understanding.
 
@@ -81,7 +81,7 @@ I know Diwali is gone, but the spirit of light must stay with us until next year
 
 Hence, Happy Diwali once again!
 
-———
+, , , 
 
 Hence, dear friend, may the work you do be purified by the light, and may you find the energy to keep spreading your light and love far and wide.
 

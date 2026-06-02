@@ -11,7 +11,7 @@ tags:
 
 Dear Aditya,
 
-Sometimes, stuckness creeps in when you least expect it—like a quiet thief that manages to hijack your entire state of mind before you even notice.
+Sometimes, stuckness creeps in when you least expect it, like a quiet thief that manages to hijack your entire state of mind before you even notice.
 
 Here's what happened. I had planned a workshop for our students, stressing the importance of punctuality. I'd spoken to them about it passionately, given them reminders, and they'd even promised me they'd sleep on time and show up early. But when the day arrived, chaos unfolded. Some came late. Others missed it entirely due to illness. The picture-perfect plan I had in my mind crumbled.
 

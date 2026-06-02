@@ -55,7 +55,7 @@ Whether you are a student, an entrepreneur, a professional or a homemaker, learn
 
 ## Relax
 
-Take a few deep breaths from your abdomen to reset your nervous system. Remind yourself that video messages are a helpful way to communicate with colleagues — they’re not meant to be perfect or perfectly produced.
+Take a few deep breaths from your abdomen to reset your nervous system. Remind yourself that video messages are a helpful way to communicate with colleagues, they’re not meant to be perfect or perfectly produced.
 
 ## Be present
 
@@ -80,11 +80,11 @@ Whether you are on camera or off you MUST learn to love your imperfections just 
 ## Practice, practise, practise... and more practise!
 
 The more practice and experience you have the more predictable your experience will be and the more comfortable you will feel. Period. So practice, practice, practice until being on camera feels more natural and predictable. Don't be afraid to do 5, 10... 15 retakes before you are satisfied.
-– Practice your lines out loud, even if you will have a teleprompter. Better yet, record yourself on your phone or computer and play it back.
-– Take photos of yourself with different facial expressions.
-– Practice reading your lines while staring at a large black dot you tape to your wall (don’t use a mirror).
-– Close your eyes and visualize your experience going well and feeling fun and relaxed.
-– Practice filming yourself several times and watch it back. You can learn what you might want to change and also get used to seeing and hearing yourself on film.
+,  Practice your lines out loud, even if you will have a teleprompter. Better yet, record yourself on your phone or computer and play it back.
+,  Take photos of yourself with different facial expressions.
+,  Practice reading your lines while staring at a large black dot you tape to your wall (don’t use a mirror).
+,  Close your eyes and visualize your experience going well and feeling fun and relaxed.
+,  Practice filming yourself several times and watch it back. You can learn what you might want to change and also get used to seeing and hearing yourself on film.
 
 ## Know your 'why'
 
@@ -92,7 +92,7 @@ Focus on the greater why behind your video and who will be listening to your mes
 
 ## Feel like a star!
 
-Do you have a favourite outfit or hairstyle you like to wear? Then wear it! Whatever makes you feel confident, comfortable and like a million bucks – even if it only cost 5 – you should wear that! How you feel even before you walk into our studio will greatly determine how you feel when you start recording.
+Do you have a favourite outfit or hairstyle you like to wear? Then wear it! Whatever makes you feel confident, comfortable and like a million bucks, even if it only cost 5, you should wear that! How you feel even before you walk into our studio will greatly determine how you feel when you start recording.
 
 ## Script out
 

@@ -34,7 +34,7 @@ Building a boat.
 Navigating the seas.
 Hell, even kissing!
 
-————
+, , , , 
 
 So, if you are looking to grow in a particular field or set of skills, find someone who is already a master and find ways to work closely with them. Find ways to become their apprentice. If you are starting a new career, who you work with matters much more than where your work or how much you earn. The person you work with shapes and moulds your character and capabilities far more than anything else.
 
@@ -74,7 +74,7 @@ Work with someone who will believe in shared growth. Then you will grow to be ge
 
 Who you work with, will shape you more than you realise now.
 
-————
+, , , , 
 
 Now, why should that someone want to work with you? If they are good, they don’t need you, and they have many options. If they are good, making you an apprentice is a drain on their energy and time. You have to understand this clearly and know what would make them want to have you work with them.
 
@@ -108,7 +108,7 @@ Because you stretch yourself but also know where to set boundaries. If you keep 
 
 I hope that this inspires some thoughts and energy in you to find such people and be such a person. Learning with people is a beautiful opportunity that life offers us. We should grab it and savour it. And before we know it, who is the teacher and who is the student will become a a beautiful dance.
 
-———
+, , , 
 
 Two stories…
 
@@ -116,7 +116,7 @@ After gaining 2 GCSEs at school and an NVQ in home economics, celebrity chef Ja
 
 When director J. J. Abrams won a young filmmaker award in the early 80s aged only 16, he was picked up by Speilberg to help clean up some of his old movies and transfer them to tape. Suffice to say, Spielberg was impressed by Abrams work and a long and prosperous relationship ensued. With the ongoing support from Spielberg as his mentor, Abrams went on to direct such blockbusters as Mission: Impossible III, Cloverfield, and Star Trek. He is now one of the highest-grossing directors in the world, and is considered by many to be the new Steven Spielberg.
 
-——-
+, , -
 
 For an ambitious person (like you), there is no option but to learn fast. You can’t allow yourself to be limited by your own experiences. You must acquire the experiences of another, and build on them with your own.
 

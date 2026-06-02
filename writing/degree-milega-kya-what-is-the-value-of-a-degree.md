@@ -7,7 +7,7 @@ tags:
   - published
 ---
 
-Once upon a time, in the kingdom of Academia, the scholar Athenaeus had a dream to create a formal qualification for specialized knowledge. He devised the concept of a "degree" – a structured course of study divided into levels. He devised a system of examinations and assessments in order to ensure its credibility. Students and scholars embraced the idea, and the degree became a symbol of expertise. It opened doors to careers and opportunities. Athenaeus's vision lives on, as the degree continues to evolve and empower individuals in various fields. His legacy transformed education and inspired countless students to pursue excellence in their educational journeys.
+Once upon a time, in the kingdom of Academia, the scholar Athenaeus had a dream to create a formal qualification for specialized knowledge. He devised the concept of a "degree", a structured course of study divided into levels. He devised a system of examinations and assessments in order to ensure its credibility. Students and scholars embraced the idea, and the degree became a symbol of expertise. It opened doors to careers and opportunities. Athenaeus's vision lives on, as the degree continues to evolve and empower individuals in various fields. His legacy transformed education and inspired countless students to pursue excellence in their educational journeys.
 
 Students spend at least 3 and up to 6 years of their life after completing their schooling, pursuing the holy grail of a 'good degree'. Parents are willing to let their children chase their passion, follow their dreams, and explore the subjects of their choice, as long as they get a degree.
 

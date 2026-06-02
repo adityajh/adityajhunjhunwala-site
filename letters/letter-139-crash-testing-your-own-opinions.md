@@ -19,11 +19,11 @@ Take the famous Dunning-Kruger effect. People with the least expertise on a topi
 
 Or think about Galileo. He spent his life proving that the Earth revolves around the Sun while the world around him was convinced otherwise. People felt the Sun moved across the sky, so that had to be true, right? Turns out, feelings aren't always the best metric for truth.
 
-Here is where real learning happens—not in the collection of opinions, but in the willingness to discard them when they no longer hold up.
+Here is where real learning happens, not in the collection of opinions, but in the willingness to discard them when they no longer hold up.
 
 So here's a challenge: Think of one opinion you strongly hold. Now, take the opposite stance. Argue against yourself. Find holes in your logic. It's uncomfortable, but it's necessary. Because if you never question your opinions, are they really yours?
 
-And if this feels too heavy, here's a lighter exercise: Try making a dish you've always assumed you wouldn't like. Maybe you hate the idea of bitter gourd, but have you ever tried it stuffed and slow-cooked with spices? Maybe it's not the vegetable—it's just how you've been eating it.
+And if this feels too heavy, here's a lighter exercise: Try making a dish you've always assumed you wouldn't like. Maybe you hate the idea of bitter gourd, but have you ever tried it stuffed and slow-cooked with spices? Maybe it's not the vegetable, it's just how you've been eating it.
 
 In fratitude,
 adi

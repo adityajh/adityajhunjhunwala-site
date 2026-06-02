@@ -17,7 +17,7 @@ It was a practice we did to make kids behave themselves in anticipation of a gif
 
 We want to be our best self, and not necessarily because of our strife towards self improvement. It’s also because we want to tick off  on being good this year, tick off doing things the right way, tick off doing things every day, tick off everything that was on the list.
 
-————
+, , , , 
 
 Lists. They serve a very simple purpose- to help organise our thoughts.
 
@@ -33,7 +33,7 @@ And honestly, there’s no control how your day is going to look like regardless
 
 _There’s no scarcity of productivity apps. What there is a scarcity of is how clearly you know what you want to accomplish today._
 
-————
+, , , , 
 
 Whether you are starting off with creating to-do lists or someone who has multiple of these on your phone/laptop, lists scattered everywhere; here’s an easy tool I’ve introduced to our team at Enterprise India Fellowship to help us prioritise and not feel bogged down by lists:
 
@@ -47,7 +47,7 @@ Because this will push you to prioritise what you really need to focus your ener
 
 You’ll sleep in peace, trust me. And so will your productivity apps.
 
-————
+, , , , 
 
 Once you’ve pushed and prioritised what needs to get done this week, now is the time to make smaller to-do lists everyday. These daily to-do lists will be the breakdown of tasks for your 3-2-1, and any other smaller things that you could not capture in the 3-2-1 (which inevitably will happen).
 

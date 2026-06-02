@@ -63,7 +63,7 @@ So, just extend this trend, and ask yourself, what if you didn’t have to work 
 
 What would you work for if you didn’t have to work for money? What would be your motivation?
 
-———
+, , , 
 
 Finally, if you had all the free time available, what would you do? How would you keep yourself busy?
 
@@ -75,7 +75,7 @@ How much television can you watch? How much can you eat and drink? How much plea
 
 What would you do after that?
 
-———
+, , , 
 
 I feel these are really important questions for us to at least think about. We may not have clear answers yet. But even though the questions may point to a reality that we think is far away, some version of this reality may not be too far away. These questions I believe hold the answer to our sense of meaning, peace and value as human beings.
 

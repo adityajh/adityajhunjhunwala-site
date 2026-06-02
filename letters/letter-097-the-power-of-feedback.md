@@ -29,7 +29,7 @@ Growth requires feedback.
 
 Feedback allows us to adjust / change / modify what we are doing in order to get a better output.
 
-———
+, , , 
 
 The word feedback was first used in the context of mechanical and fluid systems where energy and material flows through a system or pipe, in order to ensure safety, quality and quantity.
 
@@ -49,7 +49,7 @@ Human learning is clearly mostly feedback-oriented. You try something, you see w
 
 In the human world, feedback is not just about preventing damage. Feedback is what we need in navigate our way into growth and development.
 
-————
+, , , , 
 
 I love getting feedback, it helps me understand better, discover some blind spots and improvise to do better.
 I have been writing letters for as long as 5 years now and it’s time for me to get some feedback, see what can I further change.

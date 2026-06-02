@@ -13,7 +13,7 @@ Dear \_\_\_\_\_\_\_ ,
 
 I believe everyone is an entrepreneur within.
 
-I'm always struck by the thought that each one of us carries within us the entrepreneurial potential , regardless of our job titles or current endeavours. We at Let's Enterprise don't believe that being entrepreneurial is about owning a business or being the boss. Rather it is a mindset — a way of thinking, being and doing. It is a way of approaching challenges and opportunities with curiosity, innovation, and my favourite quality in people - hunger.
+I'm always struck by the thought that each one of us carries within us the entrepreneurial potential , regardless of our job titles or current endeavours. We at Let's Enterprise don't believe that being entrepreneurial is about owning a business or being the boss. Rather it is a mindset, a way of thinking, being and doing. It is a way of approaching challenges and opportunities with curiosity, innovation, and my favourite quality in people - hunger.
 
 But in the hustle and bustle of our daily routines, it's easy to overlook the  entrepreneurial spirit that resides within each of us. We tend to associate entrepreneurship with groundbreaking startups or business ventures. But the truth is that it permeates every aspect of our lives.
 
@@ -27,7 +27,7 @@ It's in the nurse who, amidst the chaos of a hospital, delivers not just medical
 
 It's in the tireless IT professional who, with a keen eye for efficiency, streamlines processes and finds innovative solutions to everyday tech challenges. They're not just code warriors; they're tech visionaries, driving progress in a digital landscape.
 
-These individuals, and countless others like them, embody the essence of entrepreneurship just like you and me. They approach their roles with dedication, creativity, and an unwavering commitment to excellence. It's not about a title or a pay check—it's about a deep-seated belief in the power of their ability to make someone else's life better, solve someone's problem, or bring something new to life.
+These individuals, and countless others like them, embody the essence of entrepreneurship just like you and me. They approach their roles with dedication, creativity, and an unwavering commitment to excellence. It's not about a title or a pay check, it's about a deep-seated belief in the power of their ability to make someone else's life better, solve someone's problem, or bring something new to life.
 
 \-------
 
@@ -76,7 +76,7 @@ And lastly, here are some questions to ponder on:
 
 3\. What's one thing you've always wanted to try or learn? What's stopping you from starting today?
 
-Remember, again, being entrepreneurial isn't confined to boardrooms—it's woven into the fabric of our lives. It's about approaching every task, every role, with a mindset of innovation and a hunger for improvement.
+Remember, again, being entrepreneurial isn't confined to boardrooms, it's woven into the fabric of our lives. It's about approaching every task, every role, with a mindset of innovation and a hunger for improvement.
 
 In fratitude,
 Aditya Jhunjhunwala

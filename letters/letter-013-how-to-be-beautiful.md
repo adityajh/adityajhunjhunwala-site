@@ -77,9 +77,9 @@ In the early part of the 1990s, the definition of beauty as it applied to women 
 
 Moss was disruptive to the beauty system, but she was still well within the industry’s comfort zone of defining beauty as a white, European conceit. 
 
-Even the early black models who broke barriers were relatively safe: women such as Beverly Johnson, the first African-American model to appear on the cover of American _Vogue,_ the Somali-born Iman, Naomi Campbell, and Tyra Banks. They had keen features and flowing hair— or wigs or weaves to give the illusion that they did. Iman had a luxuriously long neck that made legendary fashion editor Diana Vreeland gasp. Campbell was—and is—all va-va-voom legs and hips, and Banks rose to fame as the girl next door in a polka dot bikini on the [cover of](https://www.si.com/swim-daily/2019/04/29/tyra-banks-sports-illustrated-swimsuit-2019-cover) _[Sports Illustrated](https://www.si.com/swim-daily/2019/04/29/tyra-banks-sports-illustrated-swimsuit-2019-cover)._
+Even the early black models who broke barriers were relatively safe: women such as Beverly Johnson, the first African-American model to appear on the cover of American _Vogue,_ the Somali-born Iman, Naomi Campbell, and Tyra Banks. They had keen features and flowing hair,  or wigs or weaves to give the illusion that they did. Iman had a luxuriously long neck that made legendary fashion editor Diana Vreeland gasp. Campbell was, and is, all va-va-voom legs and hips, and Banks rose to fame as the girl next door in a polka dot bikini on the [cover of](https://www.si.com/swim-daily/2019/04/29/tyra-banks-sports-illustrated-swimsuit-2019-cover) _[Sports Illustrated](https://www.si.com/swim-daily/2019/04/29/tyra-banks-sports-illustrated-swimsuit-2019-cover)._
 
-———
+, , , 
 
 Enter Alek Wek - a Sudanese born British model. We stunned and defied the perception of beauty in the fashion industry.
 

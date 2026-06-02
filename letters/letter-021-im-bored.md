@@ -102,7 +102,7 @@ What matters is my own self-awareness of my own need for novelty - and how many 
 
 Here is an excerpt from an article in the NY Times that you may find interesting.
 
-Dr. Cloninger, a professor of psychiatry and genetics at Washington University in St. Louis, tracked people using a personality test he developed two decades ago. He and colleagues looked for the crucial combination of traits in people who flourished over the years — the ones who reported the best health, most friends, fewest emotional problems and greatest satisfaction with life.
+Dr. Cloninger, a professor of psychiatry and genetics at Washington University in St. Louis, tracked people using a personality test he developed two decades ago. He and colleagues looked for the crucial combination of traits in people who flourished over the years, the ones who reported the best health, most friends, fewest emotional problems and greatest satisfaction with life.
 
 What was the secret to their happy temperament and character? The answer was a trio of traits. They scored high in three different traits:
 

@@ -23,7 +23,7 @@ This ancient saying refers to Xiang Yu, a fierce warrior from Chu State, who gre
 
 Upon reaching the other side, he ordered his men to burn all the boats and bridges they had used to cross over. There would be no going back. They were stuck. They would either fight to victory, or fight to death.
 
-After nine brutal battles, the Chu army finally defeated the mighty Qin troops – an army several times its size. His soldiers fought like no other, as they knew there was nothing to fall back on. They left us an unforgettable legacy: when you 破釜沉舟 (Pò fǔ chén zhōu), you’ll boldly go ‘til the end without ever looking back.
+After nine brutal battles, the Chu army finally defeated the mighty Qin troops, an army several times its size. His soldiers fought like no other, as they knew there was nothing to fall back on. They left us an unforgettable legacy: when you 破釜沉舟 (Pò fǔ chén zhōu), you’ll boldly go ‘til the end without ever looking back.
 
 This ancient story has become a powerful metaphor for sheer determination to fight all the way to the end, by getting rid of all means of retreat.
 

@@ -11,7 +11,7 @@ tags:
 
 Dear Aditya,
 
-Somewhere between childhood and adulthood, we start believing that we need to feel ready before doing something big. That if we prepare enough, plan enough, think it through enough, we'll get this magical sense of readiness—and then, only then, we should start.
+Somewhere between childhood and adulthood, we start believing that we need to feel ready before doing something big. That if we prepare enough, plan enough, think it through enough, we'll get this magical sense of readiness, and then, only then, we should start.
 
 That's a lie.
 
@@ -23,14 +23,14 @@ I pushed a little. Then a little more. I asked a friend who's been in this game 
 
 Did I feel like I had everything under control? Nope. Did it matter? Also nope.
 
-There's this moment in Zindagi Na Milegi Dobara—when Hrithik's character, who's always been about control and calculated decisions, is thrown into the deep end (literally) and has to just let go. He's terrified at first, but the moment he stops resisting? He feels alive.
+There's this moment in Zindagi Na Milegi Dobara, when Hrithik's character, who's always been about control and calculated decisions, is thrown into the deep end (literally) and has to just let go. He's terrified at first, but the moment he stops resisting? He feels alive.
 
-Life rarely gives you a permission slip to start. Most of the best things—falling in love, skydiving for the first time, learning how to parallel park—happen before you feel prepared.
+Life rarely gives you a permission slip to start. Most of the best things, falling in love, skydiving for the first time, learning how to parallel park, happen before you feel prepared.
 
 So, if you're waiting to feel ready, here's what I've learned instead:
-Start before you're ready— The perfect moment is an illusion. You'll never feel 100% prepared, and that's okay.
-Ask for help— You don't have to do it alone. Find someone who's been there before and let them guide you.
-Take the smallest possible step— You don't have to sprint—just put one foot in front of the other.
+Start before you're ready,  The perfect moment is an illusion. You'll never feel 100% prepared, and that's okay.
+Ask for help,  You don't have to do it alone. Find someone who's been there before and let them guide you.
+Take the smallest possible step,  You don't have to sprint, just put one foot in front of the other.
 
 The truth is, you'll probably never feel ready. The trick is to start anyway.
 

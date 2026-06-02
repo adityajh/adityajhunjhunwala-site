@@ -13,7 +13,7 @@ Dear Aditya,
 
 I read something the other day that stopped me mid-sip of my coffee. A new study suggests that humans don't understand dogs as well as they think they do. We assume we can read their emotions, but in reality, we're just projecting our own feelings onto them. The way a dog looks at us? We call it love. But maybe it's just hunger. Or expectation. Or boredom.
 
-And that got me thinking—this doesn't just apply to dogs. It applies to almost everything. People, situations, relationships, even ourselves. We go through life believing we have a deep understanding of things, when in reality, we're just telling ourselves stories that make sense to us.
+And that got me thinking, this doesn't just apply to dogs. It applies to almost everything. People, situations, relationships, even ourselves. We go through life believing we have a deep understanding of things, when in reality, we're just telling ourselves stories that make sense to us.
 
 Take The Great Gatsby. Gatsby spends his whole life chasing Daisy, convinced that she's the embodiment of his dreams. But is she really? Or is he just in love with an idea, a carefully curated fantasy that exists only in his mind?
 
@@ -23,7 +23,7 @@ So here's a question for you: What's one assumption you've been holding onto tha
 
 And because no letter is complete without a good meal to ponder over, here's one of my favourite recipes that challenges assumptions:
 
-Pulled Jackfruit Burger — The Illusion of Meat. Jackfruit looks one way but tastes entirely different when cooked right. It mimics pulled pork so well that you might just question your reality.
+Pulled Jackfruit Burger, The Illusion of Meat. Jackfruit looks one way but tastes entirely different when cooked right. It mimics pulled pork so well that you might just question your reality.
 
 Ingredients:
 2 cups raw jackfruit (canned in brine or fresh, shredded)

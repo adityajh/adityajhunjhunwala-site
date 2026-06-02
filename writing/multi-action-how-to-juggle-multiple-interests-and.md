@@ -7,7 +7,7 @@ tags:
   - published
 ---
 
-10 kilos. 5 meters. 92 years. 1.3 billion. A number is used to measure one factor, and one factor only. However, there is a type of number that measures more than one thing — the humble ‘percentage'! Think about it. I scored 42% in my exams (just kidding!) - implies two things - I scored 21 marks, if the test was out of a total of 50 marks. I have completed 70% of my work - this contains some information about how much work I have to do, and also how much I have done.
+10 kilos. 5 meters. 92 years. 1.3 billion. A number is used to measure one factor, and one factor only. However, there is a type of number that measures more than one thing, the humble ‘percentage'! Think about it. I scored 42% in my exams (just kidding!) - implies two things - I scored 21 marks, if the test was out of a total of 50 marks. I have completed 70% of my work - this contains some information about how much work I have to do, and also how much I have done.
 
 How brilliant is that! One number, but it contains two pieces of information. Now that’s like killing two birds with one stone. 
 

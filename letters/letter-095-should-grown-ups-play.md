@@ -117,7 +117,7 @@ Which of these types can you relate to?
 
 \------
 
-So, yes, you should play—a lot! But how?
+So, yes, you should play, a lot! But how?
 
 To start, let's remind ourselves of what play is. In general, play is an activity you engage in for its own sake, driven by intrinsic motivation and the desire for enjoyment. It's not something you do because you have to or solely to achieve a particular outcome. Play is all about wanting to experience the journey as much as, if not more than, reaching the destination.
 

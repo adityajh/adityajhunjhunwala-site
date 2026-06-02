@@ -9,7 +9,7 @@ tags:
   - published
 ---
 
-# Letter 153 — Painting in layers
+# Letter 153, Painting in layers
 
 Dear friend,
 

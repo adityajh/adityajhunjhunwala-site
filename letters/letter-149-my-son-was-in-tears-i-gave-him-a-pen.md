@@ -97,7 +97,7 @@ Are there any other possibilities?
 
 The answer, almost always, is yes.
 
-— Adi
+,  Adi
 
 ---
 
@@ -105,7 +105,7 @@ The answer, almost always, is yes.
 
 ---
 
-**PS — This week's recipe: Adrak Chai (ginger tea, the kind that makes you think)**
+**PS, This week's recipe: Adrak Chai (ginger tea, the kind that makes you think)**
 
 *Because some conversations need something warm in your hands first.*
 

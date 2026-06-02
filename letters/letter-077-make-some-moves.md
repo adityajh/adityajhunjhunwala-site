@@ -50,9 +50,9 @@ These are called leap seconds. We add leap seconds from time to time to ensure o
 
 By adding an extra second to the time count, we effectively stop our clocks for that second to give Earth the opportunity to catch up.
 
-Adding a leap second creates a minute with 61 seconds—and a day with 86,401 seconds instead of the usual 86,400.
+Adding a leap second creates a minute with 61 seconds, and a day with 86,401 seconds instead of the usual 86,400.
 
-Not only do days become longer, but the rate at which day lengths increase also grows over time—but only by about two-thousandths of a second per century, according to Dr. Bruce Warrington, from Australia’s National Measurement Institute (NMI).
+Not only do days become longer, but the rate at which day lengths increase also grows over time, but only by about two-thousandths of a second per century, according to Dr. Bruce Warrington, from Australia’s National Measurement Institute (NMI).
 
 At the moment, days are 0.002 seconds longer than the sum of 86,400 seconds measured by atomic clocks; in 100 years, each day is predicted to be 0.004 seconds longer on average.
 

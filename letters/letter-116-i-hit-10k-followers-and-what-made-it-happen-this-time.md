@@ -13,9 +13,9 @@ Dear Aditya,
 
 I hope this newsletter finds you in good spirits!
 
-As someone who has been on Instagram for quite some time, I've witnessed the evolution of influencers—their ups, downs, and everything in between. My own journey on the platform has been a blend of consistent posts and moments of lazing out. I've had the privilege of owning a good iPhone for years, a reliable microphone, my background as a public speaker, and a beautiful office space that doubles as the perfect studio. The environment and tools have always been there.
+As someone who has been on Instagram for quite some time, I've witnessed the evolution of influencers, their ups, downs, and everything in between. My own journey on the platform has been a blend of consistent posts and moments of lazing out. I've had the privilege of owning a good iPhone for years, a reliable microphone, my background as a public speaker, and a beautiful office space that doubles as the perfect studio. The environment and tools have always been there.
 
-It's not that I suddenly realized I had all these resources and decided to use them. There was always something missing—a sense of consistency. At times, I thought I needed an agency's help or a young, fresh perspective to work with. Other times, I felt I needed better editing tools. And, on a few occasions, I felt like I had lost the game entirely.
+It's not that I suddenly realized I had all these resources and decided to use them. There was always something missing, a sense of consistency. At times, I thought I needed an agency's help or a young, fresh perspective to work with. Other times, I felt I needed better editing tools. And, on a few occasions, I felt like I had lost the game entirely.
 
 A couple of months back, my friend and colleague Yusuf nudged me to take on a 30-day Instagram challenge. The goal was simple: post something every day without fail. I know my audience appreciate my content, often referring to it as "mini MBA" lessons. So, I accepted the challenge. I gathered all my tools, set up a small workspace in my room, and decided to shoot from home. I would plan the content, shoot, edit it myself, post it on Instagram and then leave for office only after completing my daily content creation. I also created a system for it.
 

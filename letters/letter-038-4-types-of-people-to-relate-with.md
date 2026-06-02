@@ -22,7 +22,7 @@ Who should I team?
 
 These are very important questions. Clarity about who and where I invest my time and emotions determines who I become. 
 
-—————
+, , , , , 
 
 I believe that there are two things that we need to be aware of -
 
@@ -35,7 +35,7 @@ With some others, you will end up comparing yourself and feeling not good enoug
 
 Mentally run through your list of friends and see if you can group them into sources and sinks. It may seem like a mildly cruel exercise. The drainers are not necessarily bad people. For some reason, at that point of time, in that situation, for you, maybe they drain your energy and leave you feeling lesser. Definitely don’t go tell them… ‘Hey you know what… you are a drainer.’ Won’t be fun. But, also no need to go spending time and hanging out with them just before doing something crucial, like an exam or an important meeting!
 
-————-
+, , , , -
 
 4 types of people
 

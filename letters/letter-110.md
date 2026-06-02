@@ -101,7 +101,7 @@ These lesser-known stories highlight the diverse ways in which individuals have 
 
 It’s crazy stuff.
 
-———
+, , , 
 
 I want to the humans of the world break free from the feeling of insecurity. Insecurity causes us to close up, build barriers, disconnect from people, and become more protective. This is limits or potential to be happy and successful in our endeavour. Insecurity makes the world more polarised. It makes us less playful.
 
@@ -127,7 +127,7 @@ What freedom do you yearn for?
 
 Do write to me.
 
-———
+, , , 
 
 And by the way, this a Diwali I made pickle again.  And by this weekend, I be sharing the video and recipe on my Instagram profile.  pickles give vegetables freedom from rotting! It snowing then to be stored and enjoyed for a long time!
 

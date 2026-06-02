@@ -23,11 +23,11 @@ I believe that the heaviest load to carry, is living with under-utilised persona
 
 I was capable of 100, but I only did 60, or 70, or even 90. That’s the heaviest burden a human can carry. That burden will destroy your peace of mind. That burden is a slow burn that will ultimately make you feel a constant sense of fearfulness, weakness, desperation, and worse - a constant overthinking.
 
-Have you ever noticed that when you truly believe ‘i did the very best i could do —- I went ALL OUT’, on a project or a venture, you feel a sense of ease like none other, even if the outcome isn’t exactly what you had aimed for?
+Have you ever noticed that when you truly believe ‘i did the very best i could do , - I went ALL OUT’, on a project or a venture, you feel a sense of ease like none other, even if the outcome isn’t exactly what you had aimed for?
 
 You can fill everyone else, but you can’t full yourself. Somewhere inside our hearts we all know that we are capable of much more. That gap between what we are and what we we know we can be, is a very heavy burden.
 
-———
+, , , 
 
 I received a newsletter in my inbox that asked the question - why do you do what you do? And this question triggered this thought process of the heaviest burden.
 
@@ -71,7 +71,7 @@ I think I loved a large parts of my youth way before potential.
 
 I think I am  even now living way before my potential.
 
-———-
+, , , -
 
 But here’s the thing. Just because we feel the burden, it doesn’t mean that we are able to do something about it.
 
@@ -81,7 +81,7 @@ But this is a trap. Putting the burden down and taking a bit of relief makes the
 
 The answer does not lie in getting relief by putting the burden down.
 
-———-
+, , , -
 
 The answer always lies in gaining clarity.
 
@@ -111,7 +111,7 @@ The answer to relieving the burden lies in gaining clarity.
 
 Clarity converts the burden into fuel. Suddenly the weight is transformed into lightness. It becomes a source of energy. From being bogged down, you will feel as though you are flying.
 
-———
+, , , 
 
 Clarity is simple but not easy.
 
@@ -139,7 +139,7 @@ These questions are not easy to ask ourselves.
 
 And hence, under-utilised potentialI’
 
-———
+, , , 
 
 My dear friend, I do what I do because I want to live, and help people live to their FULLEST potential.
 
@@ -155,7 +155,7 @@ And here’s one last but really important bit… I believe it’s not about ‘
 
 Because our potential itself is ever growing :-)
 
-———-
+, , , -
 
 So here I am. Moving towards my potential.
 
@@ -173,7 +173,7 @@ I’m ready for some big leaps of faith, and all the hard work that comes with i
 
 No more burden. Let there be flight.
 
-———-
+, , , -
 
 I’m inviting you right my friend to take sometime explore what might’ve your true potential. Which aspects your life are you living up to? Where do you think your potential lies? What has held you back in the past? What will help you unlock it? How will you feel when you are living to your full potential? Who will inspire you? What else do you need?
 

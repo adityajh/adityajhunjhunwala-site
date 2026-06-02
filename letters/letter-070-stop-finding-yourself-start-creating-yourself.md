@@ -21,7 +21,7 @@ The journey of finding yourself is also something similar. If you think of who y
 
 All you need to find about yourself, you already know🙂
 
-—————————————————-
+, , , , , , , , , , , , , , , , , -
 
 By all means, go wherever you want to. Go and revisit yourself. But don’t plan to travel or go away only in the hope that you will find yourself. That’s what I was referring to in the start of the letter.
 

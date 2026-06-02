@@ -13,13 +13,13 @@ Dear Aditya,
 
 I hope this letter finds you in a playful mood :-)
 
-It's been quite a while—over four months, in fact—since I last connected with you. I've missed sharing insights, stories, and a bit of fun. But before we move ahead, I want to share something with you. I am a deeply emotional and sensitive person, which means I feel emotions on 2X. Research shows that emotions drive 80% of our choices, while practicality and logic only account for 20%.
+It's been quite a while, over four months, in fact, since I last connected with you. I've missed sharing insights, stories, and a bit of fun. But before we move ahead, I want to share something with you. I am a deeply emotional and sensitive person, which means I feel emotions on 2X. Research shows that emotions drive 80% of our choices, while practicality and logic only account for 20%.
 
 Let me share with you a story from Hindu mythology that beautifully illustrates a strong emotion:
 
 Surpanakha, a character from the Ramayana, is often depicted as a demoness with a terrifying appearance and malevolent intentions. However, there's a more nuanced story to her character, as explored in the book Liberation of Sita by Volga.
 
-Surpanakha was initially driven by intense emotions of jealousy and vengeance when her nose was stripped off after the encounter with Rama and Lakshmana, leaving her disfigured and humiliated. The experience filled her with deep disgust and rage—not just towards them, but towards herself and her life.
+Surpanakha was initially driven by intense emotions of jealousy and vengeance when her nose was stripped off after the encounter with Rama and Lakshmana, leaving her disfigured and humiliated. The experience filled her with deep disgust and rage, not just towards them, but towards herself and her life.
 
 However, Surpanakha's journey didn't end there. After wandering through the forests in despair, she met a wise sage who helped her see beyond her anger and resentment. In time, Surpanakha encountered a kind and gentle soul named Vidyutjihva, who saw her for who she truly was. Together, they decided to build a life away from the chaos and judgment of society. They found a secluded forest and transformed it into a sanctuary of lush greenery and vibrant life.
 
@@ -33,7 +33,7 @@ Growing up, monsoons were a double-edged sword for me. On one hand, I loved the 
 
 We all have different triggers for disgust. What about you? What are the things that make you wrinkle your nose or turn away in aversion? Is it a particular food, an unusual smell, or a specific texture or sight? Can you recall a time when you managed to overcome a feeling of aversion? How did it change your perspective?
 
-Now, let's have some fun! Here's a recipe for a dish that might look unappetizing but is surprisingly delicious: Natto—fermented soybeans!
+Now, let's have some fun! Here's a recipe for a dish that might look unappetizing but is surprisingly delicious: Natto, fermented soybeans!
 
 Natto Recipe:
 Ingredients:

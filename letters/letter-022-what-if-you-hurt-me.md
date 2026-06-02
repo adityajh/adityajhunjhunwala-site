@@ -44,7 +44,7 @@ It is very scary.
 
 But, both experience and research say that when it comes to long-term happiness, the risk is worth the payoff.
 
-The first step toward friendship — _deep friendship_ — is vulnerability. True friendship requires a terrific amount of emotional exposure. With it, comes risk and possible rejection. But it also comes with the likelihood that someone else knows exactly what you’re feeling. 
+The first step toward friendship ,  _deep friendship_ ,  is vulnerability. True friendship requires a terrific amount of emotional exposure. With it, comes risk and possible rejection. But it also comes with the likelihood that someone else knows exactly what you’re feeling. 
 
 **The only way to be deeply known, _is to allow yourself to be deeply seen._**
 
@@ -54,7 +54,7 @@ We are always lying, hiding, or omitting something. We feel like imposters in ou
 
 Why are we doing this? Why are we accepting this behaviour in ourselves and each other?
 
-Because the opposite reality — in which we are authentically ourselves — is equally terrifying. It requires diving into the edges of our discomfort and jumping into the pools of uncertainty.
+Because the opposite reality, in which we are authentically ourselves, is equally terrifying. It requires diving into the edges of our discomfort and jumping into the pools of uncertainty.
 
 **_We must be, wait for it… VULNERABLE._**
 
@@ -112,7 +112,7 @@ Being helpless, tired, dependant, having given up, lost, and feeling desperate i
 Active _vulnerability_
 I understand what are the risks, I know I might get hurt, but I also know what is up-side that can emerge. And, I believe it's worth it. It can teach me so much, open new doors, open my heart and make me a better person. I know what I need to do to survive if it does go my way. I will break, I will cry, I will fall, but I know I will stand up again in time. I will emerge stronger. This is active vulnerability.
 
-The willingness to be vulnerable shouldn't driven by the desire for exposure or attention. It should be driven  by the possibility of what good may come out of it — be it a meaningful role, the possibility to affect change, and, of course, deep friendship and love.
+The willingness to be vulnerable shouldn't driven by the desire for exposure or attention. It should be driven  by the possibility of what good may come out of it, be it a meaningful role, the possibility to affect change, and, of course, deep friendship and love.
 
 Don't fall prey to passive vulnerability.
 
@@ -130,7 +130,7 @@ These are some of the ways we hide from having to be vulnerable:
 
 Here are a few suggestions to help you get out there more actively and ask for what you need, say what you need to say, and do what you need to do:
 
-* Look at Mel Robbins’ “5 Second Rule.” If you count down “5–4–3–2–1” and then do the thing you need to do — dial the phone, say the thing, post the photo, whatever — you can change your whole life. It sounds silly but it works.
+* Look at Mel Robbins’ “5 Second Rule.” If you count down “5 to 4, 3 to 2, 1” and then do the thing you need to do, dial the phone, say the thing, post the photo, whatever, you can change your whole life. It sounds silly but it works.
 * Focus on your intent. What is the intent behind what you are trying to say or do? If you know the intent, then you won’t (a) be harmed if other people judge you, and (b) you’ll meet your intent without the approval of others.
 * Do it if it feels right in your soul. If you are looking for attention, you might not get it. So don’t share your story or do something crazy for that. If you are doing it as an act to inspire or serve, to let yourself be out or open, to set an example, then there is no way you could possibly be disappointed. What you say and do will only bring peace to you.
 * Do something NOW. Not later. Do it while you’re feeling the need.

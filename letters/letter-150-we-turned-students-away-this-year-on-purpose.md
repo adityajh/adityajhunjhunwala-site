@@ -97,7 +97,7 @@ So look at your own last three years.
 
 What's been quietly forming inside the work that you haven't named yet?
 
-— Adi
+,  Adi
 Building India's 1st Working BBA
 __[@playful_ceo](https://www.instagram.com/playful_ceo/)__
 

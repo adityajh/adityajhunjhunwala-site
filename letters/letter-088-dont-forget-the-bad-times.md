@@ -29,7 +29,7 @@ Like I said, I’m no expert, but I’ve had my fair share of ups and downs, and
 
 There’s no one without ups and downs. What is important is to keep getting more and more skilled being the captain of your own ship. What’s important is to enjoy the journey, and take the ship to its destination.
 
-———-
+, , , -
 
 Whether we accept it or not, all of us or on a journey, and there is a final destination - death. Oops. Taboo topic.
 
@@ -39,7 +39,7 @@ Life and death go hand in hand.
 
 Up and down must happen for the journey to proceed.
 
-———-
+, , , -
 
 And that’s what this letter is about. Let me sum it up in one sentence for you:
 
@@ -47,7 +47,7 @@ There are ups and there are downs.
 
 Remember the ups when you are down, and even more importantly, render the downs when you are up.
 
-———-
+, , , -
 
 Question is this - what do we do when we are up, and what do we do when we are down?
 
@@ -77,7 +77,7 @@ Remembering that there are downs too, even when we are up, helps us..
 
 That’s a few more than the ‘stay hungry, stay foolish’ Steve Jobs said in his famous speech!
 
-———
+, , , 
 
 The thing is, the moment this start getting better, we forget the down times. We are so relieved, that we just want to forget about it all and back in the sunlight. And in a way, we should. But not entirely.
 

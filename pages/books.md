@@ -21,7 +21,7 @@ This book is about building yourself through real work, not credentials. It is f
 ---
 
 ## Winning Habits
-### Co-author — Narendra Goidani with Aditya Jhunjhunwala
+### Co-author, Narendra Goidani with Aditya Jhunjhunwala
 
 A practical guide to the habits that build lasting success. Co-authored with Narendra Goidani.
 

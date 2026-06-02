@@ -13,9 +13,9 @@ Dear Aditya,
 
 A few weeks ago, I found myself staring at my laptop, my to-do list open in one tab, my calendar in another, and a growing sense of exhaustion creeping in. No matter how many hours I worked, there was always more to do.
 
-So I did what any responsible adult would do—I shut my laptop and brewed myself a fresh cup of black coffee.
+So I did what any responsible adult would do, I shut my laptop and brewed myself a fresh cup of black coffee.
 
-As I waited for it to steep, I thought about something I once read about Portugal and England. Portugal exports wine because its sunny weather makes it perfect for growing grapes. England exports wool because its damp climate is great for raising sheep. They don't try to do everything—they focus on what they do best and trade the rest.
+As I waited for it to steep, I thought about something I once read about Portugal and England. Portugal exports wine because its sunny weather makes it perfect for growing grapes. England exports wool because its damp climate is great for raising sheep. They don't try to do everything, they focus on what they do best and trade the rest.
 
 That's David Ricardo's Theory of Comparative Advantage, and while it's mostly used in economics, it's an absolute game-changer for how we think about work.
 
@@ -29,7 +29,7 @@ At first I struggled. Then I asked a friend who knows me well. We came up with a
 
 Here is my list of what I discovered ONLY I CAN DO:
 Raise and Manage Funds
-Be in the right circles—meet influential people
+Be in the right circles, meet influential people
 Last minute program firefighting (this one I have been doing, but can do better)
 
 I have started looking at my work differently. I have delegated more. I have started letting go of things that don't need me. And guess what? The world hasn't collapsed. In fact, things got better.

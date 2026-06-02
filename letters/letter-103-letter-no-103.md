@@ -15,7 +15,7 @@ In the whirlwind of today's ever-changing world, we find ourselves grappling wit
 
 The answer, my friends, lies in a set of remarkable skills collectively known as the entrepreneurial mindset.
 
-You see, the entrepreneurial mindset isn't just a buzzword for startup enthusiasts; it's a powerful toolkit of skills that empowers individuals to conquer obstacles, seize opportunities, and innovate their way to solutions. And here's the kicker – it's not exclusive to entrepreneurs. In our rapidly changing landscape, whether you're a teacher, a doctor, or a civil servant, embracing this mindset is the key to staying relevant, advancing your career, and finding true satisfaction and success.
+You see, the entrepreneurial mindset isn't just a buzzword for startup enthusiasts; it's a powerful toolkit of skills that empowers individuals to conquer obstacles, seize opportunities, and innovate their way to solutions. And here's the kicker, it's not exclusive to entrepreneurs. In our rapidly changing landscape, whether you're a teacher, a doctor, or a civil servant, embracing this mindset is the key to staying relevant, advancing your career, and finding true satisfaction and success.
 
 With global leaders advocating for 21st Century Skills, Multidisciplinary thinking, and Entrepreneurial Mindset in curriculum, it's become our responsibility to cultivate these qualities in ourselves. Here are some of these essential aspects of entrepreneurial mindset:
 
@@ -33,7 +33,7 @@ Thankfully, the entrepreneurial mindset isn't something you're born with; it's s
 
 But here's the catch: these skills aren't acquired through books, videos, or workshops. They're cultivated through introspection, the courage to face our fears, and the readiness for those challenging conversations. Mindsets are nurtured by spending time with individuals who embody the mindset we aspire to. That's precisely why, as a collective, our journey towards fostering an entrepreneurial mindset will have a profound impact.
 
-Embracing an entrepreneurial mindset is akin to the art of farming – it's about creating something extraordinary from the humblest of beginnings. It's a journey filled with uncertainties and unforeseen challenges, much like tending to seeds and nurturing them into a flourishing crop. Yet, we must also be discerning, recognizing what we need to let go of to reach new heights. Knowing when to adapt and when to stand steadfast – these are the decisions we all must make.
+Embracing an entrepreneurial mindset is akin to the art of farming, it's about creating something extraordinary from the humblest of beginnings. It's a journey filled with uncertainties and unforeseen challenges, much like tending to seeds and nurturing them into a flourishing crop. Yet, we must also be discerning, recognizing what we need to let go of to reach new heights. Knowing when to adapt and when to stand steadfast, these are the decisions we all must make.
 
 In all our creative endeavors, whether it's composing music, coding software, crafting stories, shaping curricula, or refining strategies, we should approach them with the heart of a farmer. Witnessing our creations come to life is profoundly satisfying. Watching ideas bloom and thrive is pure joy. Being entrepreneurial is an inherent part of our human nature, and it's a journey that beckons everyone, not just leaders.
 

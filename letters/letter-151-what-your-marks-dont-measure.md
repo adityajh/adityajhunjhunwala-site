@@ -99,7 +99,7 @@ And no number is - not your weight, not your bank balance, not your age, not the
 
 In gratitude, 
 
-— Adi
+,  Adi
 
 Building India's 1st Working BBA
 

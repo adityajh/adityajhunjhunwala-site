@@ -42,7 +42,7 @@ I am multi-skilled.
 
 Multiskilling is about embracing versatility. It's about acquiring and honing a diverse range of skills that not only makes you adaptable in today's job market but also opens doors you might never have imagined.
 
-Consider for a moment that some of the world's most renowned polymaths—think Leonardo da Vinci or Benjamin Franklin or Rabindranath Tagore or Jagdish Chandra Bose—were celebrated for their ability to excel in multiple fields. While we may not all aspire to their level of genius, their lives remind us that being multifaceted has its rewards.
+Consider for a moment that some of the world's most renowned polymaths, think Leonardo da Vinci or Benjamin Franklin or Rabindranath Tagore or Jagdish Chandra Bose, were celebrated for their ability to excel in multiple fields. While we may not all aspire to their level of genius, their lives remind us that being multifaceted has its rewards.
 
 \------
 

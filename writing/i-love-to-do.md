@@ -30,7 +30,7 @@ As a teenager, he took odd jobs, from washing cars to delivering newspapers, usi
 
 **Ingvar Kemprad, IKEA**
 At 5 years as he was growing up on a farm in rural Sweden he would ride to his neighbors' houses selling matches.
-He would buy matches in bulk from Stockholm then sell them individually at a markup — but still at a reasonable price.
+He would buy matches in bulk from Stockholm then sell them individually at a markup, but still at a reasonable price.
 
 **Warren Buffet**
 The young Oracle of Omaha would buy packs of gum from his grandfather's grocery store and then spend the evenings going door to door in his neighborhood selling packs to his neighbors. 

@@ -29,7 +29,7 @@ In art and design tension is created by bringing together strongly opposing elem
 
 So there you go, you’ve probably never thought of tension in so many contexts before.
 
-—————
+, , , , , 
 
 Tension is opposites.
 
@@ -49,7 +49,7 @@ But what is like to share with you today is that…
 
 Tension is OPPORTUNITY.
 
-——————
+, , , , , , 
 
 In our life whenever we are pulled apart by opposing ideas or desires or goals, we will feel tension.
 
@@ -69,7 +69,7 @@ I want to be gentle and understanding, but I also want to be strong and decisive
 
 There is tension.
 
-——————
+, , , , , , 
 
 I don’t want to do any sugar coating of the difficulty, pain or even ugliness that comes with tension. But I genuinely believe that tensions can create opportunities for individuals and entire organisations. Tension is necessary for change and innovation because without tension and challenge - and their resulting frictions - new ideas wouldn’t exist.
 
@@ -97,7 +97,7 @@ Take some time to do this exercise. It is very powerful. Stay with your feelings
 
 WITHOUT FAIL.
 
-——————
+, , , , , , 
 
 Try these flavour combinations and experience the tension they create!
 
@@ -115,7 +115,7 @@ If you want to experience how composers use tension in music to move and manipul
 
 <https://youtu.be/r30D3SW4OVw>
 
-——————
+, , , , , , 
 
 And speaking about tension and worry, here is a thought to keep you perfectly tuned like a rock star’s guitar!
 

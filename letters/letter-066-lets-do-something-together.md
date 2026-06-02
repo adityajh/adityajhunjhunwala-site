@@ -29,7 +29,7 @@ I love making things. I love learning new things. I love creating. It’s fun. I
 
 But, I have also been feeling a bit sheepish and guilty about spending so much money (and time) on these things.
 
-———
+, , , 
 
 Last night my friend Dhruv came home. We were meeting after several months. I am not a ‘chatter’. After 15 minutes I usually have nothing much to say, or ‘tea’ to spill. But I love doing stuff together with people I like.
 
@@ -43,7 +43,7 @@ Time flew by. We didn’t speak too much but it was a lot of fun.
 
 I felt my investment was worth it.
 
-———-
+, , , -
 
 It’s important to have a way to channelise energy into some important relationships in your life, including in your relationship with yourself. My little workshop is also my space where I am able  to spend some quality time alone working on some projects I enjoy.
 
@@ -65,13 +65,13 @@ It will give you many fold  returns:
 
 it will be worth it.
 
-———
+, , , 
 
 At the age of 22, my guitar teacher Menino Siveira told me-
 
 “Aditya I know you are ambitious. You want to do many things in life. That is why you should learn the guitar. On days when you feel lost and drained, it will be a source of peace and joy”
 
-———
+, , , 
 
 Develop a hobby.
 Find little crafts and projects to work on alone or together.

@@ -23,6 +23,6 @@ Thats right, because I was afraid.
 
 Every time I say ‘yes’ to something, I need to be able to say ‘no’ to some other things.  need to close some doors. I need to burn some bridges behind. I need to destroy the escape hatch. Too often we want to ‘keep our options open’.
 
-Until you and I become confident enough to say ’NO’ to some things, we will never be able to say a whole-hearted ‘yes’ to some other things — that actually have the capability to transform us, the power to take us deeper and higher, and the magic of filling us with a sense of joy and discovery.
+Until you and I become confident enough to say ’NO’ to some things, we will never be able to say a whole-hearted ‘yes’ to some other things, that actually have the capability to transform us, the power to take us deeper and higher, and the magic of filling us with a sense of joy and discovery.
 
 I’ve taken some powerful leaps in the last few years, said a bold ‘no’ to a few things, and made a strong commitment to a few ideas that have already started having their brilliant impact on me! And I’m absolutely thrilled about my decisions 😃

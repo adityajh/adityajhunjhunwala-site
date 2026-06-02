@@ -31,13 +31,13 @@ But I keep thinking about the others.
 
 I was one of them.
 
-I loved science. Not the syllabus—I actually loved science. I was reading Stephen Hawking, exploring quantum physics… not for marks, just because I was curious. And the system didn't know what to do with that.
+I loved science. Not the syllabus, I actually loved science. I was reading Stephen Hawking, exploring quantum physics… not for marks, just because I was curious. And the system didn't know what to do with that.
 
-I see the same thing today. There's a student I work with—Siddharth. He planned and executed an entire FIFA tournament. Raised sponsorship by pitching to founders. Sold, organized, delivered. Real work. Real skill. Real ownership. The system doesn't see him. Because he doesn't fit the metric.
+I see the same thing today. There's a student I work with, Siddharth. He planned and executed an entire FIFA tournament. Raised sponsorship by pitching to founders. Sold, organized, delivered. Real work. Real skill. Real ownership. The system doesn't see him. Because he doesn't fit the metric.
 
 There's a line by Peter Thiel that stayed with me: "Competition is for losers."
 
-What he meant was—when everyone is competing on the same axis, no one is building anything new.
+What he meant was, when everyone is competing on the same axis, no one is building anything new.
 
 That's exactly what our exam system does. It turns every student into a competitor… in a game someone else designed.
 

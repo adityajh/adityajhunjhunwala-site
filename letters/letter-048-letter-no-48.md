@@ -30,7 +30,7 @@ Hold them in your mind for a few more moments.
 
 Imagine that you wrote this list on a piece of paper and put it in a glass jar. Imagine that you dug that jar in your garden.
 
-————-
+, , , , -
 
 STEP 2
 

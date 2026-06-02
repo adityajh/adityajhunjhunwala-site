@@ -25,7 +25,7 @@ Here’s something I painted sitting by the window of our hotel room.
 
 ![](/images/letter-065-life-is/snapshot.jpg)
 
-—————
+, , , , , 
 
 While we were walking around the Amber palace, many vendors were approaching tourists like us attempting to sell us some traditional handicrafts and paintings.
 
@@ -47,7 +47,7 @@ I would love to run a project with a group of after ventures and work with them 
 
 They are true artisans, our street business people. With a little change of attitude and some modern knowledge, the game can change!
 
-————
+, , , , 
 
 But the truth is, even the most educated among us make  the same mistake. We don’t bother learning how to sell. We don’t bother understand the psychology of business. We end up demeaning and belittling our product and our selves.
 
@@ -55,7 +55,7 @@ Paco Underhill Is the OG Guru of retail selling. I read his first book “Why we
 
 <https://youtu.be/RghUwYUHDUA>
 
-———
+, , , 
 
 And lastly, if you are a foodie like me, and would like a copy of my father’s and my list of street food places in Jaipur, just write back to me, and I’ll share it with you by the weekend!
 

@@ -39,7 +39,7 @@ In their Harvard Business Review article titled 'The Power of Small Wins', Teres
 
 **_Of all the things that can boost emotions, motivation, and perceptions during a workday, the single most important is making progress in meaningful work._**
 
-And the more frequently people experience that sense of progress, the more likely they are to be creatively productive in the long run. Whether they are trying to solve a major scientific mystery or simply produce a high-quality product or service, everyday progress—even a small win—can make all the difference in how they feel and perform.
+And the more frequently people experience that sense of progress, the more likely they are to be creatively productive in the long run. Whether they are trying to solve a major scientific mystery or simply produce a high-quality product or service, everyday progress, even a small win, can make all the difference in how they feel and perform.
 
 Recognising small wins in oneself and other sets a positive loop in momentum. This becomes the powerful source of energy that one needs in order to put in the back breaking effort and overcome upcoming obstacles that is needed to create solid progress in any human endeavour.
 

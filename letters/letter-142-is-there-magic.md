@@ -27,15 +27,15 @@ Einstein himself called quantum entanglement "spooky action at a distance" and r
 
 Meditation and talk therapy were dismissed as spiritual or unscientific. Today Cognitive-behavioral therapy, mindfulness, and meditation are evidence-backed treatments for anxiety, depression, PTSD, and chronic pain.
 
-Neuroplasticity is now a core concept in neuroscience—brains adapt, rewire, and grow new connections throughout life.
+Neuroplasticity is now a core concept in neuroscience, brains adapt, rewire, and grow new connections throughout life.
 
 True science is not about believing in hard facts and answers. True science is a search for knowledge. It is an investigation. It is a constant process of seeking.
 
-"Science is the belief in the ignorance of experts." — Richard Feynman
+"Science is the belief in the ignorance of experts.", Richard Feynman
 
-"Science is a way of thinking much more than it is a body of knowledge." — Carl Sagan
+"Science is a way of thinking much more than it is a body of knowledge.", Carl Sagan
 
-"Magic's just science that we don't understand yet." — Arthur C. Clarke
+"Magic's just science that we don't understand yet.", Arthur C. Clarke
 
 The opposite of scientific is not unscientific. The opposite of scientific is 'magical'.
 

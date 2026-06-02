@@ -77,7 +77,7 @@ The strong man lifted the hammer and hit the rock hard. Soon, the rock split ope
 
 Then all tradesmen were overjoyed and filled up all their water pouches. The leader and the guide were relieved and continued to lead the journey.
 
-———
+, , , 
 
 Everything we do reaches a point where inspite of the good work we do, we feel that we haven’t got proportionate results or that there is much more that can be done.
 

@@ -23,11 +23,11 @@ If you are here too then you must also know the concept of 'a heart at peace'. W
 
 It reminds me of the old saying: Hate the sin, not the sinner.
 
-But like many cool things—this is simple, but simple is not easy.
+But like many cool things, this is simple, but simple is not easy.
 
-Yes, having a heart at war is really expensive—in terms of the cost it levies on every aspect of our lives, including our health.
+Yes, having a heart at war is really expensive, in terms of the cost it levies on every aspect of our lives, including our health.
 
-Recently, I had a falling out with a close friend over something small, but it quickly snowballed. I could feel myself slipping into that mindset of seeing them as the problem, and my heart hardened in response. But as I sat with it, I thought about this idea that I had a choice—to either continue seeing my friend through the lens of conflict or to let go of the judgment, soften my heart, and try to understand what was really going on.
+Recently, I had a falling out with a close friend over something small, but it quickly snowballed. I could feel myself slipping into that mindset of seeing them as the problem, and my heart hardened in response. But as I sat with it, I thought about this idea that I had a choice, to either continue seeing my friend through the lens of conflict or to let go of the judgment, soften my heart, and try to understand what was really going on.
 
 By letting my heart be at peace, and through active relaxation of my heart and body, I found clarity and was able to approach the conversation from a place of compassion rather than conflict.
 
