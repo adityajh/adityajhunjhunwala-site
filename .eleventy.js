@@ -104,6 +104,12 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
+  // Technology projects
+  eleventyConfig.addCollection("technology", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("technology/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  });
+
   // All tags across letters
   eleventyConfig.addCollection("letterTags", (collectionApi) => {
     const tagSet = new Set();
