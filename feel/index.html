@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FEEL · Session Recall Map · Aditya Jhunjhunwala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f8f6f0; --paper2:#efe7d4; --ink:#1a1a2e; --navy:#1a1a2e; --ink2:#16213e; --muted:#6f6a5c;
+    --goldH:#d4a843; --goldB:#fed95d; --goldL:#f0d78c; --gold:#fed95d; --gold2:#d4a843; --gold-deep:#9c7a12;
+    --teal:#0f9b8e; --teall:#5eead4; --line:#e3d8c2; --card:#fffdf8;
+    --shadow:4px 5px 0 rgba(26,26,46,.10);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;color:var(--ink);
+    font-family:"Inter",system-ui,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;
+    background-color:var(--paper);
+    background-image:radial-gradient(circle, rgba(26,26,46,.06) 1.1px, transparent 1.2px);
+    background-size:22px 22px;}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:26px 22px 40px;position:relative;}
+  .disp{font-family:"Bricolage Grotesque","Inter",sans-serif;font-weight:800;letter-spacing:-.01em;}
+  .doodle{position:absolute;pointer-events:none;z-index:0;opacity:.92;}
+
+  /* HERO */
+  .hero{position:relative;text-align:center;padding:8px 0 14px;z-index:1;}
+  .eyebrow{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--navy);background:var(--gold);padding:6px 14px;border-radius:999px;transform:rotate(-2deg);
+    box-shadow:var(--shadow);border:2px solid var(--ink);}
+  .feelrow{display:flex;justify-content:center;gap:14px;margin:18px 0 6px;flex-wrap:wrap;}
+  .tile{width:96px;height:96px;border-radius:20px;display:flex;align-items:center;justify-content:center;
+    font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:58px;color:#fff;
+    border:3px solid var(--ink);box-shadow:6px 7px 0 rgba(26,26,46,.16);position:relative;}
+  .tile.f{background:var(--goldH);color:var(--navy);transform:rotate(-5deg);}
+  .tile.e1{background:var(--navy);transform:rotate(3deg);}
+  .tile.e2{background:var(--teal);transform:rotate(-3deg);}
+  .tile.l{background:var(--goldB);color:var(--navy);transform:rotate(5deg);}
+  .tile .em{position:absolute;font-size:26px;top:-16px;right:-12px;transform:rotate(12deg);}
+  .tag{margin:16px auto 0;max-width:660px;font-size:18px;line-height:1.55;color:var(--ink);font-weight:600;}
+  .tag b{background:linear-gradient(transparent 60%, var(--gold) 60%);padding:0 2px;}
+  .mantra{margin:10px auto 0;max-width:620px;font-size:13.5px;color:var(--muted);line-height:1.5;}
+
+  /* GRID */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px;position:relative;z-index:1;}
+  .card{background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:20px 20px 16px;
+    position:relative;box-shadow:var(--shadow);transition:transform .15s ease;}
+  .card:hover{transform:rotate(0) translateY(-2px);}
+  .card.f{transform:rotate(-1.1deg);} .card.e1{transform:rotate(1deg);}
+  .card.e2{transform:rotate(-.7deg);} .card.l{transform:rotate(1.2deg);}
+  .tape{position:absolute;top:-12px;left:50%;width:108px;height:26px;transform:translateX(-50%) rotate(-3deg);
+    background:rgba(254,217,93,.72);border:1.5px dashed rgba(26,26,46,.35);border-radius:4px;}
+  .chead{display:flex;align-items:center;gap:12px;margin-bottom:8px;}
+  .chip{flex:none;width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:28px;color:#fff;border:2.5px solid var(--ink);
+    box-shadow:3px 3px 0 rgba(26,26,46,.16);}
+  .card.f .chip{background:var(--goldH);color:var(--navy);} .card.e1 .chip{background:var(--navy);}
+  .card.e2 .chip{background:var(--teal);} .card.l .chip{background:var(--goldB);color:var(--navy);}
+  .ctitle{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:23px;line-height:1.05;}
+  .ctopic{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:2px;}
+  .accent-f{color:var(--gold-deep);} .accent-e1{color:var(--ink);} .accent-e2{color:#0c7a6f;} .accent-l{color:var(--gold-deep);}
+  ul{list-style:none;margin:10px 0 0;padding:0;}
+  li{display:flex;gap:9px;font-size:14px;line-height:1.45;margin-bottom:8px;align-items:flex-start;}
+  li .ic{flex:none;font-size:19px;line-height:1.3;width:24px;text-align:center;}
+  li b{font-weight:700;} li span{color:var(--muted);}
+  .punch{background:var(--paper2);border-radius:12px;padding:8px 10px;font-weight:700;font-size:13.5px;
+    border:2px solid var(--ink);box-shadow:2px 2px 0 rgba(26,26,46,.12);margin-top:2px;}
+
+  /* AMMO */
+  .ammo{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:30px;position:relative;z-index:1;}
+  .note{background:var(--card);border:2.5px solid var(--ink);border-radius:18px;padding:15px 16px;box-shadow:var(--shadow);}
+  .note.n1{transform:rotate(-1deg);} .note.n2{transform:rotate(.8deg);} .note.n3{transform:rotate(-.6deg);}
+  .note h4{margin:0 0 8px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:16px;display:flex;align-items:center;gap:7px;}
+  .note p{margin:0;font-size:13px;line-height:1.5;color:var(--ink);}
+  .note p b{font-weight:700;} .note .x{color:var(--teal);font-weight:800;}
+
+  /* WALL / COLLAGE */
+  .wall{margin-top:32px;background:var(--navy);border:3px solid var(--ink);border-radius:24px;
+    padding:22px 18px 26px;box-shadow:var(--shadow);position:relative;z-index:1;}
+  .wall h3{margin:0;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;
+    font-size:24px;color:var(--gold);}
+  .wall .sub3{text-align:center;color:#cfc7b4;font-size:13px;margin:6px 0 4px;}
+  .polys{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:18px;}
+  .poly{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:8px 8px 7px;width:146px;
+    box-shadow:4px 6px 0 rgba(0,0,0,.32);position:relative;}
+  .poly:nth-child(1){transform:rotate(-3deg);} .poly:nth-child(2){transform:rotate(2deg);}
+  .poly:nth-child(3){transform:rotate(-2deg);} .poly:nth-child(4){transform:rotate(2.5deg);}
+  .poly:nth-child(5){transform:rotate(-2.5deg);} .poly:nth-child(6){transform:rotate(1.6deg);}
+  .poly:nth-child(7){transform:rotate(-1.4deg);}
+  .poly .wt{position:absolute;top:-9px;left:50%;width:54px;height:18px;transform:translateX(-50%) rotate(-4deg);
+    background:rgba(254,217,93,.8);border:1px dashed rgba(26,26,46,.3);}
+  .ph{height:120px;border-radius:4px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .port{width:100%;height:100%;}
+  .poly b{display:block;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;
+    font-size:14px;margin-top:7px;color:var(--ink);}
+  .poly span{display:block;text-align:center;font-size:10.5px;color:var(--muted);line-height:1.32;margin-top:2px;}
+
+  /* SUBSCRIBE */
+  .sub{margin-top:32px;background:var(--navy);border-radius:22px;padding:22px;text-align:center;
+    border:3px solid var(--ink);box-shadow:6px 7px 0 rgba(212,168,67,.5);position:relative;z-index:1;}
+  .sub .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;color:#fff;line-height:1.2;}
+  .sub .small{color:#d9d2c2;font-size:14px;margin-top:6px;}
+  .sub a{display:inline-block;margin-top:14px;background:var(--gold);color:var(--navy);font-weight:800;font-size:16px;
+    text-decoration:none;padding:13px 26px;border-radius:999px;border:3px solid var(--gold2);box-shadow:3px 4px 0 rgba(0,0,0,.25);}
+  .sub a:hover{transform:translateY(-1px);}
+  .foot{margin-top:18px;text-align:center;font-size:11.5px;color:var(--muted);position:relative;z-index:1;}
+  .foot b{color:var(--gold-deep);}
+
+  /* MOBILE */
+  @media (max-width:780px){
+    .wrap{padding:20px 15px 34px;}
+    .grid{grid-template-columns:1fr;gap:24px;}
+    .ammo{grid-template-columns:1fr;gap:16px;}
+    .card,.card.f,.card.e1,.card.e2,.card.l,.note.n1,.note.n2,.note.n3{transform:none;}
+    .tile{width:74px;height:74px;font-size:44px;border-radius:16px;}
+    .feelrow{gap:10px;} .tag{font-size:17px;}
+    .poly{width:44%;min-width:140px;}
+    .doodle{display:none;}
+    .statgrid{grid-template-columns:1fr !important;}
+  }
+  .statwrap{margin-top:30px;background:var(--navy);border:3px solid var(--ink);border-radius:24px;padding:22px 18px 24px;box-shadow:var(--shadow);position:relative;z-index:1;}
+  .statwrap h3{margin:0;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:24px;color:var(--goldB);}
+  .statwrap .s3{text-align:center;color:#cfc7b4;font-size:13px;margin:6px 0 16px;}
+  .statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .statcard{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:14px 15px;box-shadow:3px 4px 0 rgba(0,0,0,.28);}
+  .statcard .num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:34px;line-height:1;color:var(--ink);}
+  .statcard .lab{font-size:13px;line-height:1.4;color:var(--ink);margin:7px 0 8px;font-weight:600;}
+  .statcard .meta{display:flex;justify-content:space-between;align-items:center;gap:8px;}
+  .statcard .src{font-size:10.5px;color:var(--muted);}
+  .stattag{font-size:9.5px;font-weight:800;letter-spacing:.04em;padding:2px 8px;border-radius:999px;white-space:nowrap;}
+  .t-eng{background:var(--teal);color:#fff;} .t-emo{background:var(--navy);color:#fff;}
+  .t-lit{background:var(--goldB);color:var(--navy);} .t-fail{background:var(--goldH);color:var(--navy);}
+
+  .themebtn{position:fixed;top:14px;right:14px;z-index:60;width:44px;height:44px;border-radius:50%;
+    border:2px solid var(--ink);background:var(--card);color:var(--ink);font-size:19px;line-height:1;cursor:pointer;
+    box-shadow:2px 3px 0 rgba(0,0,0,.2);transition:transform .12s ease;}
+  .themebtn:hover{transform:translateY(-1px);}
+  [data-theme="dark"]{ --paper:#100f17; --paper2:#262633; --ink:#f3ecdc; --muted:#b0aa99; --line:#3a3a47; --card:#20202e; }
+  [data-theme="dark"] body{background-image:radial-gradient(circle, rgba(243,236,220,.05) 1.1px, transparent 1.2px);}
+  [data-theme="dark"] .accent-f,[data-theme="dark"] .accent-l{color:var(--goldB);}
+  [data-theme="dark"] .accent-e2{color:#5eead4;}
+  [data-theme="dark"] .foot b{color:var(--goldB);}
+
+  .research{margin-top:34px;position:relative;z-index:1;}
+  .research .eyebrow2{display:inline-block;font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);border:1.5px solid var(--line);padding:5px 12px;border-radius:999px;}
+  .research h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:26px;margin:12px 0 4px;color:var(--ink);}
+  .research .lead{font-size:14px;color:var(--muted);max-width:660px;margin:0 0 20px;line-height:1.55;}
+  .rgroup{margin-bottom:18px;}
+  .rgrouphd{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:15px;color:var(--ink);margin:0 0 10px;}
+  .rgrouphd .rdot{width:13px;height:13px;border-radius:4px;background:var(--acc);border:1.5px solid var(--ink);}
+  .rgrouphd small{font-weight:600;font-size:12px;color:var(--muted);font-family:"Inter",sans-serif;letter-spacing:.02em;}
+  .rgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .rcard{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:13px 15px;}
+  .rcard h4{margin:0 0 5px;font-size:14.5px;font-weight:700;color:var(--ink);line-height:1.3;}
+  .rcard p{margin:0 0 8px;font-size:13px;color:var(--muted);line-height:1.5;}
+  .rcard .cite{font-size:11.5px;color:var(--ink);font-weight:600;margin-bottom:7px;}
+  .rcard .cite em{font-style:normal;color:var(--muted);font-weight:400;}
+  .rcard a{font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:3px;}
+  .rcard a:hover{color:var(--acc);}
+  .g-eng{--acc:#0f9b8e;} .g-fail{--acc:#d4a843;} .g-emo{--acc:#5eead4;} .g-lit{--acc:#fed95d;}
+  @media(max-width:780px){.rgrid{grid-template-columns:1fr;}}
+</style>
+<script>(function(){try{var t=localStorage.getItem('feelTheme');if(!t)t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<button id="themebtn" class="themebtn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+<div class="wrap">
+
+  <svg class="doodle" style="top:60px;left:8px;width:60px" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 4 L36 22 L55 22 L40 34 L46 54 L30 41 L14 54 L20 34 L5 22 L24 22 Z" fill="#fed95d" stroke="#1a1a2e" stroke-width="2.5" stroke-linejoin="round"/></svg>
+  <svg class="doodle" style="top:30px;right:14px;width:74px" viewBox="0 0 80 40" aria-hidden="true"><path d="M4 28 Q16 6 28 22 T52 22 T76 14" fill="none" stroke="#0f9b8e" stroke-width="3.5" stroke-linecap="round"/></svg>
+  <svg class="doodle" style="bottom:150px;left:16px;width:44px" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 L23 16 L37 20 L23 24 L20 38 L17 24 L3 20 L17 16 Z" fill="#0f9b8e"/></svg>
+
+  <div class="hero">
+    <span class="eyebrow">90-min session · recall map</span>
+    <div class="feelrow">
+      <div class="tile f">F<span class="em">🎤</span></div>
+      <div class="tile e1">E<span class="em">🏹</span></div>
+      <div class="tile e2">E<span class="em">🌊</span></div>
+      <div class="tile l">L<span class="em">🪼</span></div>
+    </div>
+    <p class="tag">Don't just think it through. <b>FEEL it through, then choose.</b></p>
+    <p class="mantra">The smartest person in the room isn't the one who thinks the hardest. It's the one who learns to feel, and chooses anyway. Tap one letter at the start of each block. Close by asking the room which letter they needed most.</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card f">
+      <div class="tape"></div>
+      <div class="chead"><div class="chip">F</div><div><div class="ctitle accent-f">Failure is an event.</div><div class="ctopic">An event, not your identity</div></div></div>
+      <ul>
+        <li><span class="ic">🎤</span><div><b>The college talk that bombed.</b> <span>"I failed, but I am not a failure." Nothing rots in sunlight.</span></div></li>
+        <li><span class="ic">🛹</span><div><b>Falling, falling, falling.</b> <span>After every fall, one question: now what, and what will you change?</span></div></li>
+        <li><span class="ic">🧰</span><div><b>Most failures are parts.</b> <span>A graveyard is really a workbench. Pull the good bolts out.</span></div></li>
+        <li><span class="ic">💡</span><div><b>Edison 10,000 · Dyson 5,127 · Picasso 50,000.</b> <span>The ugly stage of a painting.</span></div></li>
+      </ul>
+      <div class="punch">🎮 Respawn, not Game Over · 🚫 73 noes to a 9-figure co. · 🏀 Tatum: 298 days</div>
+    </div>
+
+    <div class="card e1">
+      <div class="tape"></div>
+      <div class="chead"><div class="chip">E</div><div><div class="ctitle accent-e1">Emotions are data.</div><div class="ctopic">Emotions + intelligence in decisions</div></div></div>
+      <ul>
+        <li><span class="ic">🏹</span><div><b>Arjuna freezes on the battlefield.</b> <span>A clear head beside the full heart.</span></div></li>
+        <li><span class="ic">🔥</span><div><b>Akash vs Ashish.</b> <span>Fear engine or love engine. Same goal, different fuel.</span></div></li>
+        <li><span class="ic">🥔</span><div><b>The boiled potato.</b> <span>Judgment is earned, not read. "Retreat is also courage."</span></div></li>
+        <li><span class="ic">🖊️</span><div><b>Son in tears, the pen.</b> <span>"Are there any other possibilities?"</span></div></li>
+        <li><span class="ic">⚖️</span><div><b>Sacrifice vs compromise.</b> <span>Know your hierarchy before the decision arrives.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="card e2">
+      <div class="tape"></div>
+      <div class="chead"><div class="chip">E</div><div><div class="ctitle accent-e2">Engine over mood.</div><div class="ctopic">Emotional resilience</div></div></div>
+      <ul>
+        <li><span class="ic">🛟</span><div><b>The submarine.</b> <span>Health is engines running, not whether you're up or down.</span></div></li>
+        <li><span class="ic">🚇</span><div><b>The tunnel periods.</b> <span>A tunnel is a conduit, not a home. Don't move in.</span></div></li>
+        <li><span class="ic">🔱</span><div><b>Samudra Manthan, Neelkanth.</b> <span>Poison before nectar. Hold it in your throat.</span></div></li>
+        <li><span class="ic">🐦</span><div><b>The tired bird, and Hanuman.</b> <span>You have wings. You just forgot.</span></div></li>
+        <li><span class="ic">🧥</span><div><b>Consistency over motivation.</b> <span>No bad weather, only the wrong raincoat.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="card l">
+      <div class="tape"></div>
+      <div class="chead"><div class="chip">L</div><div><div class="ctitle accent-l">Little stays little.</div><div class="ctopic">Keep small things small</div></div></div>
+      <ul>
+        <li><span class="ic">🪼</span><div><b>The jellyfish, "the party was over."</b> <span>The real party is inside the body.</span></div></li>
+        <li><span class="ic">📱</span><div><b>50 pings an hour.</b> <span>The dulled receiver. Social media is a 10,000-seat stadium.</span></div></li>
+        <li><span class="ic">🌾</span><div><b>The Sarpanch and the doubled wages.</b> <span>More is not better. The receiver decides.</span></div></li>
+        <li><span class="ic">🤫</span><div><b>The golden silence.</b> <span>The brain grows in the gap. Try 60 seconds of real quiet.</span></div></li>
+      </ul>
+      <div class="punch">🌱 Touch grass · 🎯 side quest, not main quest · 🤸 balance is a verb</div>
+    </div>
+
+  </div>
+
+  <div class="ammo">
+    <div class="note n1">
+      <h4>🗞️ Happening now</h4>
+      <p><b>Tatum</b> ruptured his Achilles, came back in 298 days, talked only about gratitude. <b>Fellow's Jake Miller</b>, 73 noes before a nine-figure company. <b>Husain's Gram Yatra</b>, $13.8M, painted by a man who started on film hoardings.</p>
+    </div>
+    <div class="note n2">
+      <h4>🕉️ Mythology</h4>
+      <p><b>Samudra Manthan.</b> The poison comes before the nectar. Shiva holds it and becomes Neelkanth. <b>Arjuna and Krishna.</b> The greatest warrior froze. He needed a clear head, not less feeling.</p>
+    </div>
+    <div class="note n3">
+      <h4>🎮 Their language</h4>
+      <p><b>Respawn, not Game Over.</b> Failure is a checkpoint. <b>Side quest <span class="x">vs</span> main quest.</b> <b>"Touch grass,"</b> their own cure for the doom-spiral.</p>
+    </div>
+  </div>
+
+  <div class="statwrap">
+    <h3>Why this matters · the numbers</h3>
+    <p class="s3">The skills in this room are exactly the ones the world is asking for.</p>
+    <div class="statgrid">
+      <div class="statcard"><div class="num">67%</div><div class="lab">Resilience is the #2 most in-demand skill on earth, behind only analytical thinking.</div><div class="meta"><span class="src">WEF Future of Jobs 2025</span><span class="stattag t-eng">ENGINE</span></div></div>
+      <div class="statcard"><div class="num">39%</div><div class="lab">of your core skills will change by 2030. The ground keeps moving, so adaptability is the edge.</div><div class="meta"><span class="src">WEF Future of Jobs 2025</span><span class="stattag t-eng">ENGINE</span></div></div>
+      <div class="statcard"><div class="num">~50%</div><div class="lab">of Indian graduates are not job-ready at graduation, and the gap is soft skills, not technical ones.</div><div class="meta"><span class="src">Mercer-Mettl &amp; Wheebox 2025</span><span class="stattag t-emo">EMOTIONS</span></div></div>
+      <div class="statcard"><div class="num">1 in 5</div><div class="lab">young Indians cannot name a single career aspiration. Direction is rarer than talent.</div><div class="meta"><span class="src">ASER 2023</span><span class="stattag t-emo">EMOTIONS</span></div></div>
+      <div class="statcard"><div class="num">42%</div><div class="lab">of your waking hours over three years go to screens. That is about 7,400 hours.</div><div class="meta"><span class="src">IIM Rohtak 2023</span><span class="stattag t-lit">LITTLE</span></div></div>
+      <div class="statcard"><div class="num">0</div><div class="lab">skills that AI is rated "very high" at replacing. 69% are hard to automate. The human stuff holds.</div><div class="meta"><span class="src">WEF Future of Jobs 2025</span><span class="stattag t-fail">FAILURE</span></div></div>
+    </div>
+  </div>
+
+  <div class="wall">
+    <h3>The people who walked the talk</h3>
+    <p class="sub3">Every one of them failed, froze, or got told no first.</p>
+    <div class="polys">
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#f3e7d4">
+          <svg class="port" viewBox="0 0 100 110" aria-label="M.F. Husain">
+            <path d="M30 52 Q30 92 50 96 Q70 92 70 52 Z" fill="#f2efe9" stroke="#d9d4c8" stroke-width="1.5"/>
+            <path d="M28 95 Q50 80 72 95 L72 110 L28 110 Z" fill="#7d8a64"/>
+            <ellipse cx="50" cy="46" rx="20" ry="22" fill="#b07b46"/>
+            <path d="M30 40 Q34 22 50 22 Q66 22 70 40 Q60 32 50 33 Q40 32 30 40 Z" fill="#f2efe9"/>
+            <g stroke="#2b2b3a" stroke-width="2" fill="none"><circle cx="42" cy="46" r="6"/><circle cx="58" cy="46" r="6"/><line x1="48" y1="46" x2="52" y2="46"/></g>
+            <circle cx="42" cy="46" r="1.6" fill="#2b2b3a"/><circle cx="58" cy="46" r="1.6" fill="#2b2b3a"/>
+            <line x1="74" y1="20" x2="42" y2="76" stroke="#caa15a" stroke-width="3" stroke-linecap="round"/>
+            <path d="M74 20 l6 -8" stroke="#0f9b8e" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <b>M.F. Husain</b><span>Painted thousands. They bid on the body of work.</span>
+      </figure>
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#eaeaf0">
+          <svg class="port" viewBox="0 0 100 110" aria-label="Pablo Picasso">
+            <path d="M26 92 Q50 78 74 92 L74 110 L26 110 Z" fill="#f2efe9"/>
+            <g stroke="#22325a" stroke-width="3"><line x1="27" y1="98" x2="73" y2="98"/><line x1="26" y1="104" x2="74" y2="104"/><line x1="26" y1="110" x2="74" y2="110"/></g>
+            <ellipse cx="50" cy="48" rx="20" ry="21" fill="#e3b189"/>
+            <circle cx="30" cy="50" r="4" fill="#e3b189"/><circle cx="70" cy="50" r="4" fill="#e3b189"/>
+            <circle cx="42" cy="48" r="3.4" fill="#2b2b3a"/><circle cx="58" cy="48" r="3.4" fill="#2b2b3a"/>
+            <path d="M36 40 Q42 37 47 40 M53 40 Q58 37 64 40" stroke="#2b2b3a" stroke-width="1.6" fill="none"/>
+            <path d="M40 20 Q44 13 50 18 Q56 13 60 20" stroke="#22325a" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <b>Pablo Picasso</b><span>50,000 works. The famous ten sit on the rest.</span>
+      </figure>
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#fdf3d6">
+          <svg class="port" viewBox="0 0 100 110" aria-label="Thomas Edison">
+            <circle cx="50" cy="16" r="9" fill="#fed95d"/><rect x="46" y="23" width="8" height="4" rx="1" fill="#a07d12"/>
+            <g stroke="#f4c430" stroke-width="1.6" stroke-linecap="round"><line x1="50" y1="2" x2="50" y2="6"/><line x1="36" y1="8" x2="39" y2="11"/><line x1="64" y1="8" x2="61" y2="11"/></g>
+            <path d="M26 92 Q50 80 74 92 L74 110 L26 110 Z" fill="#3a3a4d"/>
+            <path d="M44 86 L50 96 L56 86 Z" fill="#f2efe9"/>
+            <ellipse cx="50" cy="52" rx="19" ry="21" fill="#e3b189"/>
+            <path d="M31 50 Q30 36 42 34 Q34 42 33 52 Z" fill="#cfcabd"/><path d="M69 50 Q70 36 58 34 Q66 42 67 52 Z" fill="#cfcabd"/>
+            <path d="M38 36 Q50 30 62 36 Q50 33 38 36 Z" fill="#cfcabd"/>
+            <circle cx="43" cy="52" r="1.6" fill="#2b2b3a"/><circle cx="57" cy="52" r="1.6" fill="#2b2b3a"/>
+            <path d="M40 62 Q50 68 60 62 Q50 64 40 62 Z" fill="#cfcabd"/>
+          </svg>
+        </div>
+        <b>Thomas Edison</b><span>"10,000 ways that won't work."</span>
+      </figure>
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#f6e3d3">
+          <svg class="port" viewBox="0 0 100 110" aria-label="Jayson Tatum">
+            <path d="M26 92 Q50 80 74 92 L74 110 L26 110 Z" fill="#0e7a3b"/>
+            <text x="50" y="107" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="800" font-family="Inter">0</text>
+            <ellipse cx="50" cy="50" rx="19" ry="21" fill="#7a4a2b"/>
+            <path d="M31 46 Q33 30 50 30 Q67 30 69 46 Q60 38 50 38 Q40 38 31 46 Z" fill="#241a12"/>
+            <rect x="30" y="40" width="40" height="6" rx="3" fill="#d4a843"/>
+            <circle cx="43" cy="52" r="1.6" fill="#1a1a14"/><circle cx="57" cy="52" r="1.6" fill="#1a1a14"/>
+            <path d="M44 60 Q50 64 56 60" stroke="#1a1a14" stroke-width="1.6" fill="none"/>
+            <circle cx="77" cy="82" r="9" fill="#e07a2c" stroke="#9c4a12" stroke-width="1.2"/>
+            <path d="M77 73 V91 M68 82 H86 M70 76 Q77 82 70 88 M84 76 Q77 82 84 88" stroke="#9c4a12" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+        <b>Jayson Tatum</b><span>298 days out. Came back grateful.</span>
+      </figure>
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#e6e9f7">
+          <svg class="port" viewBox="0 0 100 110" aria-label="Krishna">
+            <path d="M26 94 Q50 82 74 94 L74 110 L26 110 Z" fill="#f4c430"/>
+            <ellipse cx="50" cy="52" rx="19" ry="21" fill="#6c7fd6"/>
+            <path d="M32 40 Q50 26 68 40 Q60 34 50 34 Q40 34 32 40 Z" fill="#f4c430"/>
+            <path d="M50 30 Q52 14 60 8" stroke="#1d9e75" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="61" cy="7" r="4" fill="#1d9e75"/><circle cx="61" cy="7" r="2" fill="#22325a"/>
+            <path d="M40 50 Q43 48 46 50 M54 50 Q57 48 60 50" stroke="#1a1a2e" stroke-width="1.6" fill="none"/>
+            <path d="M45 58 Q50 61 55 58" stroke="#1a1a2e" stroke-width="1.4" fill="none"/>
+            <line x1="36" y1="66" x2="68" y2="58" stroke="#caa15a" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#7a5a2a"><circle cx="50" cy="63" r="1"/><circle cx="56" cy="61.5" r="1"/><circle cx="62" cy="60" r="1"/></g>
+          </svg>
+        </div>
+        <b>Krishna</b><span>A clear head beside the full heart.</span>
+      </figure>
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#fbe6d6">
+          <svg class="port" viewBox="0 0 100 110" aria-label="Hanuman">
+            <circle cx="48" cy="48" r="30" fill="none" stroke="#f0d78c" stroke-width="3" opacity=".7"/>
+            <path d="M24 96 Q48 82 72 96 L72 110 L24 110 Z" fill="#d96f2a"/>
+            <line x1="80" y1="92" x2="70" y2="58" stroke="#b8862a" stroke-width="3.2" stroke-linecap="round"/>
+            <circle cx="69" cy="53" r="8" fill="#d4a843" stroke="#9c7a12" stroke-width="1.4"/>
+            <circle cx="30" cy="50" r="5" fill="#e8843e"/><circle cx="66" cy="50" r="5" fill="#e8843e"/>
+            <circle cx="30" cy="50" r="2.4" fill="#d96f2a"/><circle cx="66" cy="50" r="2.4" fill="#d96f2a"/>
+            <ellipse cx="48" cy="50" rx="18" ry="20" fill="#e8843e"/>
+            <ellipse cx="48" cy="58" rx="10" ry="7.5" fill="#f2b07e"/>
+            <path d="M32 36 L36 24 L42 33 L48 20 L54 33 L60 24 L64 36 Z" fill="#d4a843" stroke="#9c7a12" stroke-width="1"/>
+            <circle cx="48" cy="20" r="2.5" fill="#fed95d" stroke="#9c7a12" stroke-width=".8"/>
+            <path d="M45 40 L48 52 L51 40" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M39 47 Q42 45 45 47" stroke="#3a1a10" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <path d="M51 47 Q54 45 57 47" stroke="#3a1a10" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <circle cx="45.5" cy="57" r="1" fill="#7a3a1a"/><circle cx="50.5" cy="57" r="1" fill="#7a3a1a"/>
+            <path d="M44 62 Q48 64.5 52 62" stroke="#7a3a1a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <b>Hanuman</b><span>You have the wings. You forgot.</span>
+      </figure>
+
+      <figure class="poly"><div class="wt"></div>
+        <div class="ph" style="background:#eef0f2">
+          <svg class="port" viewBox="0 0 100 110" aria-label="Shiva, Neelkanth">
+            <g stroke="#9c8a6a" stroke-width="2.5" fill="none"><line x1="84" y1="6" x2="84" y2="82"/><path d="M78 14 Q78 4 84 4 Q90 4 90 14"/><line x1="78" y1="6" x2="78" y2="14"/><line x1="90" y1="6" x2="90" y2="14"/></g>
+            <path d="M26 96 Q50 84 74 96 L74 110 L26 110 Z" fill="#cdb79a"/>
+            <ellipse cx="48" cy="50" rx="19" ry="21" fill="#e8c6a0"/>
+            <path d="M30 42 Q30 22 48 22 Q66 22 66 42 Q56 30 48 30 Q40 30 30 42 Z" fill="#2b2b3a"/>
+            <ellipse cx="48" cy="19" rx="7" ry="6" fill="#2b2b3a"/>
+            <path d="M39 14 a5 5 0 1 0 5 8 a4 4 0 1 1 -5 -8 Z" fill="#f4c430"/>
+            <path d="M48 38 l3 4 l-3 1 l-3 -1 Z" fill="#d4a843"/>
+            <path d="M40 48 Q43 50 46 48 M50 48 Q53 50 56 48" stroke="#1a1a2e" stroke-width="1.6" fill="none"/>
+            <rect x="38" y="68" width="20" height="6" rx="3" fill="#3a6ea5"/>
+            <path d="M43 58 Q48 61 53 58" stroke="#1a1a2e" stroke-width="1.4" fill="none"/>
+          </svg>
+        </div>
+        <b>Shiva · Neelkanth</b><span>Held the poison. Kept churning.</span>
+      </figure>
+
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="big">Liked this? I write one every week. ✨</div>
+    <div class="small">Stories, reframes, and one good recipe. Eat. Play. Love.</div>
+    <a href="https://qrto.to/66f8cc1e" target="_blank" rel="noopener">Subscribe free →</a>
+  </div>
+
+  <section class="research">
+    <span class="eyebrow2">Backed by research</span>
+    <h2>The science behind FEEL</h2>
+    <p class="lead">Every reframe in this room has peer-reviewed legs. Here is the evidence, grouped by the letter it powers. Each card links to the original publication.</p>
+
+    <div class="rgroup g-fail">
+      <div class="rgrouphd"><span class="rdot"></span>F · Failure is an event <small>growth, not verdict</small></div>
+      <div class="rgrid">
+        <div class="rcard"><h4>A growth mindset predicts who recovers</h4><p>Believing ability can be developed, not fixed, drives resilience and achievement. The one-word tool: add "yet."</p><div class="cite">Carol Dweck <em>· Stanford · Mindset</em></div><a href="https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve" target="_blank" rel="noopener">Watch the talk ↗</a></div>
+        <div class="rcard"><h4>Most people grow after adversity</h4><p>Resilience after trauma is the norm, and flexible coping, facing a hard thing then stepping back, beats relentless gritting.</p><div class="cite">George Bonanno <em>· Columbia · American Psychologist, 2004</em></div><a href="https://www.tc.columbia.edu/faculty/gab38/faculty-profile/files/americanPsychologist.pdf" target="_blank" rel="noopener">Read the paper (PDF) ↗</a></div>
+      </div>
+    </div>
+
+    <div class="rgroup g-emo">
+      <div class="rgrouphd"><span class="rdot"></span>E · Emotions are data <small>decide well under feeling</small></div>
+      <div class="rgrid">
+        <div class="rcard"><h4>Self-distancing makes you wiser</h4><p>We give better advice to others than to ourselves. Talk to yourself by name, or ask "what would I tell a friend?", and both decisions and emotion regulation improve.</p><div class="cite">Kross &amp; Grossmann <em>· Psychological Science, 2014</em></div><a href="https://pubmed.ncbi.nlm.nih.gov/24916084/" target="_blank" rel="noopener">Read the study ↗</a></div>
+        <div class="rcard"><h4>Reframe anxiety as excitement</h4><p>Anxiety and excitement are the same arousal. Saying "I am excited" out loud beats "calm down" and improves performance.</p><div class="cite">Alison Wood Brooks <em>· Harvard · J. Exp. Psychology, 2014</em></div><a href="https://www.apa.org/pubs/journals/releases/xge-a0035325.pdf" target="_blank" rel="noopener">Read the paper (PDF) ↗</a></div>
+        <div class="rcard"><h4>Name it to tame it</h4><p>Putting a feeling into words measurably lowers its intensity in the brain. Labelling is regulating.</p><div class="cite">Lieberman et al. <em>· UCLA · Psychological Science, 2007</em></div><a href="https://sanlab.psych.ucla.edu/wp-content/uploads/sites/31/2015/05/Lieberman_AL-2007.pdf" target="_blank" rel="noopener">Read the paper (PDF) ↗</a></div>
+        <div class="rcard"><h4>WOOP turns a wish into action</h4><p>Pair your Wish and Outcome with the Obstacle and an if-then Plan. Mental contrasting beats positive thinking alone.</p><div class="cite">Gabriele Oettingen <em>· NYU · Rethinking Positive Thinking</em></div><a href="https://woopmylife.org/" target="_blank" rel="noopener">Try the tool ↗</a></div>
+      </div>
+    </div>
+
+    <div class="rgroup g-eng">
+      <div class="rgrouphd"><span class="rdot"></span>E · Engine over mood <small>resilience</small></div>
+      <div class="rgrid">
+        <div class="rcard"><h4>Ten trainable resilience factors</h4><p>From POWs, special forces and trauma survivors: optimism, facing fear, social support, role models, purpose, physical and mental fitness, and more. All learnable.</p><div class="cite">Southwick &amp; Charney <em>· Yale · Resilience, 2018</em></div><a href="https://news.yale.edu/2018/05/03/resilience-science-mastering-lifes-greatest-challenges" target="_blank" rel="noopener">Read the overview ↗</a></div>
+        <div class="rcard"><h4>Stress can be enhancing</h4><p>Your belief about stress changes its biology. People who see stress as enhancing perform better and stay healthier. The reframe is the intervention.</p><div class="cite">Crum, Salovey &amp; Achor <em>· Stanford · JPSP, 2013</em></div><a href="https://sparqtools.org/rethinkingstress-research/" target="_blank" rel="noopener">Read the summary ↗</a></div>
+      </div>
+    </div>
+
+    <div class="rgroup g-lit">
+      <div class="rgrouphd"><span class="rdot"></span>L · Little stays little <small>keep small things small</small></div>
+      <div class="rgrid">
+        <div class="rcard"><h4>The dichotomy of control</h4><p>Sort every worry into what you control and what you do not. Spend energy only on the first. Two thousand years old, still undefeated.</p><div class="cite">Epictetus <em>· Enchiridion, c. 125 CE</em></div><a href="http://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener">Read the text ↗</a></div>
+        <div class="rcard"><h4>Temporal distancing shrinks the sting</h4><p>Ask "will this matter in five years?" Zooming out in time reliably cools an upsetting moment.</p><div class="cite">Ethan Kross <em>· Michigan · Chatter, 2021</em></div><a href="https://www.ethankross.com/" target="_blank" rel="noopener">Explore the work ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <p class="foot">Aditya Jhunjhunwala · <b>The real work is you.</b> · Stories from 20 years of letters, with a few from the world this week.</p>
+
+</div>
+<script>
+(function(){var b=document.getElementById('themebtn');function cur(){return document.documentElement.getAttribute('data-theme')||'light';}function paint(){b.textContent=cur()==='dark'?'☀️':'🌙';}function set(t){document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('feelTheme',t);}catch(e){}paint();}b.addEventListener('click',function(){set(cur()==='dark'?'light':'dark');});paint();})();
+</script>
+</body>
+</html>
