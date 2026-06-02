@@ -4,12 +4,12 @@ title: "LE WhatsApp Engine"
 slug: "tech-le-whatsapp-engine"
 type: "workflow"
 category: "Let's Enterprise"
-status: "live"
+status: "internal"
 summary: "A production WhatsApp lead-engagement engine wiring Zoho CRM, Twilio and Supabase, with message classification, SLA tracking, and a visual logic builder."
 stack: ["TypeScript"]
 repo: "https://github.com/adityajh/le-whatsapp-engine"
 repo_public: true
-url: "https://le-whatsapp-engine.vercel.app"
+url: ""
 pushed: "2026-05-11"
 order: 2
 permalink: false

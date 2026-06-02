@@ -4,12 +4,12 @@ title: "LE Assessment System"
 slug: "tech-assessment-system"
 type: "app"
 category: "Let's Enterprise"
-status: "live"
+status: "internal"
 summary: "Admin portal and student dashboard for the Let's Enterprise Year 1 programme."
 stack: ["TypeScript"]
 repo: "https://github.com/adityajh/assessment-system"
 repo_public: true
-url: "https://assessment-system.vercel.app"
+url: ""
 pushed: "2026-03-31"
 order: 3
 permalink: false
