@@ -160,6 +160,7 @@
   .rcard a:hover{color:var(--acc);}
   .g-eng{--acc:#0f9b8e;} .g-fail{--acc:#d4a843;} .g-emo{--acc:#5eead4;} .g-lit{--acc:#fed95d;}
   @media(max-width:780px){.rgrid{grid-template-columns:1fr;}}
+  .kick{display:block;margin-top:3px;font-style:italic;font-weight:600;color:var(--ink);}
 </style>
 <script>(function(){try{var t=localStorage.getItem('feelTheme');if(!t)t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
@@ -172,7 +173,7 @@
   <svg class="doodle" style="bottom:150px;left:16px;width:44px" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 L23 16 L37 20 L23 24 L20 38 L17 24 L3 20 L17 16 Z" fill="#0f9b8e"/></svg>
 
   <div class="hero">
-    <span class="eyebrow">90-min session · recall map</span>
+    <span class="eyebrow">90-minute session on Resilience</span>
     <div class="feelrow">
       <div class="tile f">F<span class="em">🎤</span></div>
       <div class="tile e1">E<span class="em">🏹</span></div>
@@ -180,7 +181,7 @@
       <div class="tile l">L<span class="em">🪼</span></div>
     </div>
     <p class="tag">Don't just think it through. <b>FEEL it through, then choose.</b></p>
-    <p class="mantra">The smartest person in the room isn't the one who thinks the hardest. It's the one who learns to feel, and chooses anyway. Tap one letter at the start of each block. Close by asking the room which letter they needed most.</p>
+    <p class="mantra">The smartest person in the room isn't the one who knows the most or thinks the hardest. It's the one who learns to feel, and chooses anyway. Four letters for the hard days. Notice which one you need most right now.</p>
   </div>
 
   <div class="grid">
@@ -189,10 +190,10 @@
       <div class="tape"></div>
       <div class="chead"><div class="chip">F</div><div><div class="ctitle accent-f">Failure is an event.</div><div class="ctopic">An event, not your identity</div></div></div>
       <ul>
-        <li><span class="ic">🎤</span><div><b>The college talk that bombed.</b> <span>"I failed, but I am not a failure." Nothing rots in sunlight.</span></div></li>
-        <li><span class="ic">🛹</span><div><b>Falling, falling, falling.</b> <span>After every fall, one question: now what, and what will you change?</span></div></li>
+        <li><span class="ic">🎤</span><div><b>The college talk that bombed.</b> <span>"I failed, but I am not a failure." Nothing rots in sunlight.</span><span class="kick">"Say it out or write it out. Shame can't survive sunlight."</span></div></li>
+        <li><span class="ic">🛹</span><div><b>Falling, falling, falling.</b> <span>After every fall, one question: what next, and what will you change?</span></div></li>
         <li><span class="ic">🧰</span><div><b>Most failures are parts.</b> <span>A graveyard is really a workbench. Pull the good bolts out.</span></div></li>
-        <li><span class="ic">💡</span><div><b>Edison 10,000 · Dyson 5,127 · Picasso 50,000.</b> <span>The ugly stage of a painting.</span></div></li>
+        <li><span class="ic">💡</span><div><b>Edison 10,000 · Dyson 5,127 · Picasso 50,000.</b> <span>The ugly stage of a painting. Quality is born from quantity.</span><span class="kick">"I've not failed. I've found 10,000 ways that won't work."</span></div></li>
       </ul>
       <div class="punch">🎮 Respawn, not Game Over · 🚫 73 noes to a 9-figure co. · 🏀 Tatum: 298 days</div>
     </div>
@@ -201,23 +202,24 @@
       <div class="tape"></div>
       <div class="chead"><div class="chip">E</div><div><div class="ctitle accent-e1">Emotions are data.</div><div class="ctopic">Emotions + intelligence in decisions</div></div></div>
       <ul>
-        <li><span class="ic">🏹</span><div><b>Arjuna freezes on the battlefield.</b> <span>A clear head beside the full heart.</span></div></li>
-        <li><span class="ic">🔥</span><div><b>Akash vs Ashish.</b> <span>Fear engine or love engine. Same goal, different fuel.</span></div></li>
-        <li><span class="ic">🥔</span><div><b>The boiled potato.</b> <span>Judgment is earned, not read. "Retreat is also courage."</span></div></li>
-        <li><span class="ic">🖊️</span><div><b>Son in tears, the pen.</b> <span>"Are there any other possibilities?"</span></div></li>
-        <li><span class="ic">⚖️</span><div><b>Sacrifice vs compromise.</b> <span>Know your hierarchy before the decision arrives.</span></div></li>
+        <li><span class="ic">🏹</span><div><b>Arjuna freezes on the battlefield.</b> <span>Not a cold head that has killed the heart. Not a hot heart with no head. Both, side by side.</span></div></li>
+        <li><span class="ic">🔥</span><div><b>Akash vs Ashish.</b> <span>Fear engine or love engine. Same goal, different fuel.</span><span class="kick">"One leaves you empty. The other fills you up."</span></div></li>
+        <li><span class="ic">🥔</span><div><b>The boiled potato.</b> <span>Judgment is earned through enough successes and failures. "Informed retreat is also courage."</span><span class="kick">"The higher you rise, the more you're paid for judgment, not effort."</span></div></li>
+        <li><span class="ic">🖊️</span><div><b>Son in tears, the pen.</b> <span>"Are there any other possibilities?"</span><span class="kick">"Not a crossroads. An open field with three paths someone else drew."</span></div></li>
+        <li><span class="ic">⚖️</span><div><b>Sacrifice vs compromise.</b> <span>Know your hierarchy before the decision arrives.</span> <span style="display:block;margin-top:4px;font-style:italic;font-weight:600;color:var(--ink);">"The very ambitious don't compromise. They sacrifice. And the difference is just one thing, knowing what you want most before the decision arrives."</span></div></li>
       </ul>
+      <div class="punch">When a big feeling shows up before a decision, don't suppress it and don't obey it. Ask what it's telling you.</div>
     </div>
 
     <div class="card e2">
       <div class="tape"></div>
       <div class="chead"><div class="chip">E</div><div><div class="ctitle accent-e2">Engine over mood.</div><div class="ctopic">Emotional resilience</div></div></div>
       <ul>
-        <li><span class="ic">🛟</span><div><b>The submarine.</b> <span>Health is engines running, not whether you're up or down.</span></div></li>
+        <li><span class="ic">🛟</span><div><b>The submarine.</b> <span>Health is engines running, not whether you're up or down.</span><span class="kick">"You're not broken because you're down there."</span></div></li>
         <li><span class="ic">🚇</span><div><b>The tunnel periods.</b> <span>A tunnel is a conduit, not a home. Don't move in.</span></div></li>
         <li><span class="ic">🔱</span><div><b>Samudra Manthan, Neelkanth.</b> <span>Poison before nectar. Hold it in your throat.</span></div></li>
-        <li><span class="ic">🐦</span><div><b>The tired bird, and Hanuman.</b> <span>You have wings. You just forgot.</span></div></li>
-        <li><span class="ic">🧥</span><div><b>Consistency over motivation.</b> <span>No bad weather, only the wrong raincoat.</span></div></li>
+        <li><span class="ic">🐦</span><div><b>The tired bird, and Hanuman.</b> <span>You have wings. You just forgot.</span><span class="kick">"Confidence isn't the branch never breaking. It's knowing there's always another branch."</span></div></li>
+        <li><span class="ic">🧥</span><div><b>Consistency over motivation.</b> <span>No bad weather, only the wrong raincoat.</span><span class="kick">"You don't wait to feel like it. You put the raincoat on and walk."</span></div></li>
       </ul>
     </div>
 
@@ -225,10 +227,10 @@
       <div class="tape"></div>
       <div class="chead"><div class="chip">L</div><div><div class="ctitle accent-l">Little stays little.</div><div class="ctopic">Keep small things small</div></div></div>
       <ul>
-        <li><span class="ic">🪼</span><div><b>The jellyfish, "the party was over."</b> <span>The real party is inside the body.</span></div></li>
-        <li><span class="ic">📱</span><div><b>50 pings an hour.</b> <span>The dulled receiver. Social media is a 10,000-seat stadium.</span></div></li>
-        <li><span class="ic">🌾</span><div><b>The Sarpanch and the doubled wages.</b> <span>More is not better. The receiver decides.</span></div></li>
-        <li><span class="ic">🤫</span><div><b>The golden silence.</b> <span>The brain grows in the gap. Try 60 seconds of real quiet.</span></div></li>
+        <li><span class="ic">🪼</span><div><b>The jellyfish, "the party was over."</b> <span>The real party is how I'm feeling inside.</span><span class="kick">"Your peace got outsourced. Bring it back in."</span></div></li>
+        <li><span class="ic">📱</span><div><b>50 pings an hour.</b> <span>The dulled receiver. Social media is a 10,000-seat stadium.</span><span class="kick">"Walk into the stadium on purpose, or don't walk in at all."</span></div></li>
+        <li><span class="ic">🌾</span><div><b>The Sarpanch and the doubled wages.</b> <span>More is better only if I know how to process more.</span></div></li>
+        <li><span class="ic">🤫</span><div><b>The golden silence.</b> <span>The brain grows in the gap. Try 60 seconds of real quiet.</span><span class="kick">"Action is necessary. Silence chooses the direction."</span></div></li>
       </ul>
       <div class="punch">🌱 Touch grass · 🎯 side quest, not main quest · 🤸 balance is a verb</div>
     </div>
@@ -245,14 +247,14 @@
       <p><b>Samudra Manthan.</b> The poison comes before the nectar. Shiva holds it and becomes Neelkanth. <b>Arjuna and Krishna.</b> The greatest warrior froze. He needed a clear head, not less feeling.</p>
     </div>
     <div class="note n3">
-      <h4>🎮 Their language</h4>
-      <p><b>Respawn, not Game Over.</b> Failure is a checkpoint. <b>Side quest <span class="x">vs</span> main quest.</b> <b>"Touch grass,"</b> their own cure for the doom-spiral.</p>
+      <h4>🎮 You already say this</h4>
+      <p><b>Respawn, not Game Over.</b> Failure is a checkpoint. <b>Side quest <span class="x">vs</span> main quest.</b> <b>"Touch grass,"</b> the cure you already invented for the doom-spiral.</p>
     </div>
   </div>
 
   <div class="statwrap">
     <h3>Why this matters · the numbers</h3>
-    <p class="s3">The skills in this room are exactly the ones the world is asking for.</p>
+    <p class="s3">The skills you're building here are exactly the ones the world is asking for.</p>
     <div class="statgrid">
       <div class="statcard"><div class="num">67%</div><div class="lab">Resilience is the #2 most in-demand skill on earth, behind only analytical thinking.</div><div class="meta"><span class="src">WEF Future of Jobs 2025</span><span class="stattag t-eng">ENGINE</span></div></div>
       <div class="statcard"><div class="num">39%</div><div class="lab">of your core skills will change by 2030. The ground keeps moving, so adaptability is the edge.</div><div class="meta"><span class="src">WEF Future of Jobs 2025</span><span class="stattag t-eng">ENGINE</span></div></div>
@@ -403,7 +405,7 @@
   <section class="research">
     <span class="eyebrow2">Backed by research</span>
     <h2>The science behind FEEL</h2>
-    <p class="lead">Every reframe in this room has peer-reviewed legs. Here is the evidence, grouped by the letter it powers. Each card links to the original publication.</p>
+    <p class="lead">Every reframe here has peer-reviewed legs. The evidence, grouped by the letter it powers. Each card links to the original.</p>
 
     <div class="rgroup g-fail">
       <div class="rgrouphd"><span class="rdot"></span>F · Failure is an event <small>growth, not verdict</small></div>

@@ -98,6 +98,12 @@ module.exports = function(eleventyConfig) {
       });
   });
 
+  // Sessions (interactive session pages)
+  eleventyConfig.addCollection("sessions", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("sessions/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  });
+
   // All tags across letters
   eleventyConfig.addCollection("letterTags", (collectionApi) => {
     const tagSet = new Set();
