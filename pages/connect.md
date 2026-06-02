@@ -28,7 +28,7 @@ The best way to reach me depends on what you need.
   <div style="padding:1.5rem; background:var(--cream-dark); border:1px solid var(--border); border-radius:4px;">
     <div style="font-family:var(--font-serif); font-size:1.25rem; color:var(--navy); margin-bottom:0.4rem;">Message on WhatsApp</div>
     <p style="margin:0 0 1rem; color:var(--text-muted); font-size:0.95rem;">For a quick message.</p>
-    <a href="WHATSAPP_LINK_TBC" class="btn btn-ghost" style="font-size:0.875rem;">Open WhatsApp</a>
+    <a href="https://wa.me/919890969261" class="btn btn-ghost" style="font-size:0.875rem;">Open WhatsApp</a>
   </div>
 
 </div>
