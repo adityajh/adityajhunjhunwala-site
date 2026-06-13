@@ -1,0 +1,1020 @@
+---
+permalink: /adibrandguide/index.html
+templateEngineOverride: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand System · Aditya Jhunjhunwala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Lato:wght@400;700;900&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1A1A2E; --navy2:#16213E; --gold:#D4A843; --goldl:#F0D78C;
+    --goldb:#FED95D; --teal:#0F9B8E; --teall:#5EEAD4; --cream:#F8F6F0;
+    --muted:#6f6a5c; --line:#e6ddcb; --fail:#b0402a;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--cream);color:var(--navy);font-family:"Inter",system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:980px;margin:0 auto;padding:40px 26px 72px;}
+
+  /* ── header ── */
+  header{border-bottom:3px solid var(--gold);padding-bottom:18px;margin-bottom:8px;}
+  .brandline{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  h1{font-family:"DM Serif Display",serif;font-size:42px;margin:6px 0 6px;line-height:1.05;}
+  .frozen{display:inline-block;background:var(--navy);color:var(--cream);font-size:12px;font-weight:600;
+    letter-spacing:.04em;padding:5px 12px;border-radius:999px;margin-right:6px;}
+  .frozen b{color:var(--gold);}
+  .badge-agent{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:600;
+    letter-spacing:.04em;padding:5px 12px;border-radius:999px;}
+  .lead{color:var(--muted);font-size:15px;line-height:1.6;max-width:680px;margin:16px 0 0;}
+
+  /* ── section headings ── */
+  h2{font-family:"DM Serif Display",serif;font-size:24px;margin:52px 0 4px;}
+  h2.first{margin-top:32px;}
+  .sech{font-size:12.5px;color:var(--muted);margin:0 0 16px;letter-spacing:.02em;}
+  .section-rule{border:none;border-top:1px solid var(--line);margin:0 0 16px;}
+
+  /* ── color swatches ── */
+  .row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .sw{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 14px rgba(26,26,46,.07);background:#fff;}
+  .chip{height:118px;display:flex;align-items:flex-end;padding:12px 14px;font-weight:600;font-size:13px;}
+  .meta{padding:12px 14px 14px;}
+  .meta .nm{font-weight:700;font-size:15px;}
+  .meta .role{color:var(--muted);font-size:12.5px;margin:3px 0 9px;line-height:1.4;}
+  .codes{display:flex;gap:8px;flex-wrap:wrap;}
+  .code{font-family:"Inter";font-size:11.5px;font-weight:600;background:var(--cream);border:1px solid var(--line);
+    border-radius:6px;padding:3px 7px;letter-spacing:.02em;}
+  .ton{font-size:11px;color:var(--muted);margin-top:8px;}
+  .ton b{color:var(--navy);}
+
+  /* ── contrast table ── */
+  .ctable{width:100%;border-collapse:collapse;font-size:13px;}
+  .ctable th{background:var(--navy);color:var(--cream);text-align:left;padding:9px 12px;font-weight:600;}
+  .ctable td{padding:9px 12px;border-top:1px solid var(--line);}
+  .ctable tr:nth-child(even){background:rgba(248,246,240,.6);}
+  .pass{color:var(--teal);font-weight:700;}
+  .fail{color:var(--fail);font-weight:700;}
+  .ctable-wrap{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;}
+
+  /* ── pairs ── */
+  .pairs{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;}
+  .pair{border-radius:12px;overflow:hidden;border:1px solid var(--line);width:172px;box-shadow:0 4px 12px rgba(26,26,46,.07);}
+  .pair .demo{height:88px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;text-align:center;padding:8px;}
+  .pair .cap{font-size:11.5px;color:var(--muted);padding:8px 10px;background:#fff;}
+
+  /* ── ratio bar ── */
+  .ratio{display:flex;height:40px;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-top:8px;}
+  .ratio span{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;}
+
+  /* ── usage do/dont ── */
+  .usage{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px;}
+  .ucard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+  .ucard h3{font-size:14px;margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase;color:var(--gold);}
+  .ucard.dont h3{color:var(--fail);}
+  .ucard ul{margin:0;padding-left:18px;}
+  .ucard li{font-size:13.5px;line-height:1.6;margin-bottom:6px;}
+
+  /* ── fonts ── */
+  .fonts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px;}
+  .fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;}
+  .fcard .lbl{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .fcard .small{font-size:13.5px;color:var(--muted);line-height:1.5;}
+
+  /* ── positioning block ── */
+  .pos-hero{background:var(--navy);color:var(--cream);border-radius:18px;padding:32px 36px;margin-top:14px;}
+  .pos-hero .master{font-family:"DM Serif Display",serif;font-size:36px;color:var(--gold);line-height:1.1;margin:0 0 8px;}
+  .pos-hero .variant{font-size:14px;color:var(--teall);margin:0 0 20px;font-style:italic;}
+  .pos-hero .implicit{font-size:13.5px;color:var(--goldl);border-left:3px solid var(--gold);padding-left:14px;line-height:1.6;}
+  .pos-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+  .pos-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .pos-card .lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:6px;}
+  .pos-card p{font-size:13.5px;line-height:1.6;margin:0;color:var(--navy);}
+
+  /* ── voice guardrails ── */
+  .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
+  .vcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .vcard .vtitle{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:4px;}
+  .vcard .vdesc{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .vcard.bad{border-color:#f0d8d3;}
+  .vcard.bad .vtitle{color:var(--fail);}
+
+  /* ── hard rules ── */
+  .rules-list{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  .rules-list li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:12px 16px;font-size:13.5px;line-height:1.6;}
+  .rules-list li b{color:var(--navy);}
+  .rules-list li .rule-tag{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:3px;}
+
+  /* ── pillars ── */
+  .pillars{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
+  .pillar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:16px;}
+  .pillar .pct{font-family:"DM Serif Display",serif;font-size:28px;color:var(--gold);min-width:52px;}
+  .pillar .pname{font-weight:700;font-size:14px;color:var(--navy);}
+  .pillar .pslug{font-size:11.5px;color:var(--muted);font-family:monospace;margin-top:2px;}
+  .pillar .pdesc{font-size:13px;color:var(--muted);line-height:1.5;margin-top:4px;}
+  .pbar-wrap{height:6px;background:var(--line);border-radius:99px;margin-top:6px;}
+  .pbar{height:6px;background:var(--gold);border-radius:99px;}
+
+  /* ── platform map ── */
+  .platforms{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+  .platcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .platcard .platname{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:4px;}
+  .platcard .plataud{font-size:12px;color:var(--teal);font-weight:600;margin-bottom:6px;}
+  .platcard .platdesc{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .platcard .plat-works{font-size:12px;margin-top:8px;line-height:1.5;}
+  .platcard .plat-works b{color:var(--teal);}
+  .platcard .plat-tanks b{color:var(--fail);}
+
+  /* ── format templates ── */
+  .formats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px;}
+  .fmtcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .fmtcard .fmtpreview{height:110px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .fmtcard .fmtbody{padding:14px 16px;}
+  .fmtcard .fmttitle{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:2px;}
+  .fmtcard .fmtsize{font-size:11px;color:var(--muted);font-family:monospace;margin-bottom:8px;}
+  .fmtcard ul{margin:0;padding-left:16px;}
+  .fmtcard li{font-size:12.5px;line-height:1.6;color:var(--navy);margin-bottom:3px;}
+  .fmtcard .fmttag{display:inline-block;background:var(--cream);border:1px solid var(--line);
+    border-radius:6px;padding:2px 8px;font-size:11px;font-weight:600;color:var(--muted);margin-right:4px;margin-top:4px;}
+
+  /* ── thumbnail templates ── */
+  .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px;}
+  .thumbcard{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 14px rgba(26,26,46,.07);}
+  .thumbcard .thumbpreview{height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;text-align:center;position:relative;}
+  .thumbcard .thumbbody{background:#fff;padding:12px 14px;}
+  .thumbcard .thumbname{font-weight:700;font-size:13px;color:var(--navy);margin-bottom:3px;}
+  .thumbcard .thumbspec{font-size:11.5px;color:var(--muted);line-height:1.5;}
+
+  /* ── hooks ── */
+  .hooks-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+  .hook{background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;
+    padding:10px 14px;font-size:13.5px;line-height:1.5;color:var(--navy);font-style:italic;}
+  .hook .hook-type{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);display:block;margin-bottom:3px;font-style:normal;}
+
+  /* ── bio templates ── */
+  .bios{display:flex;flex-direction:column;gap:12px;margin-top:14px;}
+  .bio{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .bio .bio-lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:6px;}
+  .bio .bio-text{font-size:13.5px;line-height:1.65;color:var(--navy);white-space:pre-line;}
+
+  /* ── agent data note ── */
+  .agent-note{background:var(--navy2);color:var(--teall);border-radius:12px;padding:14px 18px;margin-top:14px;font-size:13px;line-height:1.6;}
+  .agent-note b{color:var(--goldb);}
+  .agent-note code{background:rgba(255,255,255,.1);border-radius:4px;padding:1px 6px;font-size:12px;}
+
+  /* ── footer ── */
+  footer{margin-top:52px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:12px;line-height:1.8;}
+  footer b{color:var(--navy);}
+  footer a{color:var(--gold);}
+
+  @media(max-width:720px){
+    .row,.usage,.fonts,.formats,.platforms,.pos-grid,.voice-grid,.hooks-grid{grid-template-columns:1fr;}
+    .thumbs{grid-template-columns:1fr 1fr;}
+    h1{font-size:34px;}
+  }
+  @media print{
+    @page{margin:12mm;}
+    body{background:#fff;}
+    .sw,.ucard,.pair,.fcard,.fmtcard,.thumbcard,.platcard,.vcard,.pillar,.hook,.bio,.pos-card{box-shadow:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     AGENT-READABLE DATA BLOCK
+     Agents: parse the JSON inside #adi-brand-data to
+     get all brand system values without reading HTML.
+     ═══════════════════════════════════════════════════ -->
+<script type="application/json" id="adi-brand-data">
+{
+  "meta": {
+    "version": "2.0",
+    "frozen": "2026-06-01",
+    "updated": "2026-06-13",
+    "canonical_file": "11-Schema/brand-color-guide.html",
+    "source": "vault: MessageAdi/11-Schema/brand-color-guide.html"
+  },
+  "positioning": {
+    "master_line": "The real work is you.",
+    "intimate_variant": "See yourself. Everything else follows.",
+    "implicit_message": "The real work isn't out there. It's in here. Start with yourself.",
+    "archetype": "The Playful Provocateur",
+    "handle": "@playful_ceo",
+    "website": "adityajhunjhunwala.com",
+    "newsletter": "Eat. Play. Love.",
+    "newsletter_subscribe": "https://qrto.to/66f8cc1e"
+  },
+  "palette": {
+    "navy_dark":     { "hex": "#1A1A2E", "rgb": "26 26 46",   "role": "Primary text, dark sections, logo on light" },
+    "navy_mid":      { "hex": "#16213E", "rgb": "22 33 62",   "role": "Layering, cards on navy, gradients" },
+    "cream":         { "hex": "#F8F6F0", "rgb": "248 246 240","role": "Primary background, default canvas" },
+    "gold_heritage": { "hex": "#D4A843", "rgb": "212 168 67", "role": "Primary accent: print, editorial, letters" },
+    "gold_light":    { "hex": "#F0D78C", "rgb": "240 215 140","role": "Tints, hover fills, soft highlights" },
+    "gold_bright":   { "hex": "#FED95D", "rgb": "254 217 93", "role": "Digital/social accent only. 12.4:1 on navy." },
+    "teal":          { "hex": "#0F9B8E", "rgb": "15 155 142", "role": "Secondary accent, tags, category highlights" },
+    "teal_light":    { "hex": "#5EEAD4", "rgb": "94 234 212", "role": "Soft fills, freshness on dark sections" }
+  },
+  "palette_rules": {
+    "ratio": { "cream": 60, "navy": 25, "gold": 10, "teal": 5 },
+    "two_gold_system": "Heritage #D4A843 for print/letters. Bright #FED95D for screens/social.",
+    "approved_pairings": [
+      { "fg": "#D4A843", "bg": "#1A1A2E", "ratio": "7.7:1",  "rating": "AAA", "use": "Headlines, hero" },
+      { "fg": "#1A1A2E", "bg": "#F8F6F0", "ratio": "15.8:1", "rating": "AAA", "use": "Body text default" },
+      { "fg": "#1A1A2E", "bg": "#D4A843", "ratio": "7.7:1",  "rating": "AAA", "use": "Buttons, badges, CTAs" },
+      { "fg": "#F8F6F0", "bg": "#0F9B8E", "ratio": "4.5:1",  "rating": "AA",  "use": "Secondary tags" },
+      { "fg": "#5EEAD4", "bg": "#16213E", "ratio": "8.1:1",  "rating": "AAA", "use": "Accent on dark" },
+      { "fg": "#FED95D", "bg": "#1A1A2E", "ratio": "12.4:1", "rating": "AAA", "use": "Social highlights, reel subtitles" }
+    ],
+    "never": [
+      "Gold text on cream (2.05:1 — FAIL)",
+      "White text on gold (2.21:1 — FAIL)",
+      "Coral, red, orange, or any hue not in this palette",
+      "Teal competing with gold for the headline",
+      "Gold as a large field — accent only"
+    ]
+  },
+  "typography": {
+    "system_a": {
+      "surfaces": ["Letter story sequences", "Web", "HTML to PNG via Playwright"],
+      "headline_pullquote": "DM Serif Display (regular + italic)",
+      "body_ui": "Inter (300, 400, 500, 600, 700)",
+      "accent_handwritten": "Caveat (Regular, 700)",
+      "source": "Google Fonts CDN"
+    },
+    "system_b": {
+      "surfaces": ["Carousels", "Quote cards", "1080x1080 PNG via Python"],
+      "punchline": "Lato Black",
+      "subhead_attribution": "Lato Bold",
+      "body_footer": "Lato Regular",
+      "accent_serif": "Lora Italic (Variable)",
+      "source": "System fonts"
+    },
+    "reel_subtitles": {
+      "font": "Lato Bold",
+      "color": "#FED95D",
+      "stroke_color": "black",
+      "stroke_width": 6,
+      "method": "ffmpeg drawtext"
+    },
+    "rule": "Never mix System A and System B in the same asset. Max two families per layout."
+  },
+  "voice": {
+    "guardrails": [
+      { "name": "Direct",       "desc": "Short sentences. No hedging." },
+      { "name": "Conversational","desc": "Like chai with a friend." },
+      { "name": "Playful",      "desc": "Finds humor in absurdity." },
+      { "name": "Provocative",  "desc": "Challenges sacred cows from care, not rage." },
+      { "name": "Concrete",     "desc": "Specific stories over abstractions." },
+      { "name": "Inside-out",   "desc": "Always brings it back to the person." }
+    ],
+    "never_sounds_like": ["LinkedIn guru", "doom-monger", "executive coach", "wellness influencer", "academic"]
+  },
+  "hard_rules": [
+    { "id": "no-dashes",    "rule": "Never use em dashes (—) or en dashes (–) in any content for posting. Replace with commas, periods, or restructure. Applies to all platforms." },
+    { "id": "95-5",         "rule": "95% thought leadership. 5% Let's Enterprise mentions, only obliquely (a student, an anecdote). Never admissions CTAs. Never 'apply now'." },
+    { "id": "ask-first",    "rule": "Ask 2-3 sharp questions before drafting any content. One must request a specific story or incident. Never start without an anchor." },
+    { "id": "no-promo-feed","rule": "No promotional posts (LE event invites, admissions) on the personal LinkedIn or Instagram feed." },
+    { "id": "no-series-fatigue", "rule": "Never run 3+ posts on the same external person. Analytics confirmed decay by post 3." }
+  ],
+  "content_pillars": [
+    { "name": "Education Disruptor", "slug": "education-disruptor", "weight": 35, "what": "System fails because it never teaches the real work. Marks Lie. 1095 days. Credential critique." },
+    { "name": "Playful Philosopher", "slug": "playful-philosopher",  "weight": 25, "what": "Letters, reflections, self-awareness. See yourself. The intimate register." },
+    { "name": "Building in Public",  "slug": "building-in-public",   "weight": 15, "what": "What I see in founders when they stop performing. LE anecdotes. Reality of building a small intentional thing." },
+    { "name": "Mentor's Lens",       "slug": "mentors-lens",         "weight": 15, "what": "Specific moments where someone saw themselves clearly. One scene, not a generalisation." },
+    { "name": "Provocative Collabs", "slug": "provocative-collabs",  "weight": 10, "what": "Conversations with founders, thinkers, builders. Podcasts, joint pieces." }
+  ],
+  "platforms": {
+    "linkedin":  { "audience": "Founders, CXOs (scrolling at 11pm)", "tone": "Provocative, data-backed, debate-triggering", "metric": "Comment velocity first 30-60 min", "works": ["Lived story + provocative claim + specific numbers + bifurcated validation", "Debate-triggering question at end"], "tanks": ["Abstract hooks with no personal story", "3+ posts on same external person", "Promotional posts", "Zero-comment posts — throttled immediately"] },
+    "instagram": { "audience": "Future founders, 18-35", "tone": "Visual, punchy, save-worthy", "metric": "Saves over views", "works": ["Off-theme human Reels", "Quote Reels from known figures", "Save-worthy carousels"], "tanks": ["100% education content with zero human moments", "To-the-X-year-old pattern overused", "Zero-save Reels"] },
+    "facebook":  { "audience": "Parents and educators, 35-54", "tone": "Story-led", "metric": "Shares", "works": ["Personal stories — non-negotiable"], "tanks": ["Abstract arguments without story anchor"] },
+    "youtube":   { "audience": "Mixed", "tone": "Reel-cut content", "metric": "Watch time", "works": ["Reel reposts with chapters"], "tanks": [] },
+    "letter":    { "audience": "Broad, intimate audience built over years", "tone": "Personal, reflective, recipe-inclusive", "metric": "Open rate (target 18%+)", "send_time": "Sunday 7pm IST", "subject_format": "Letter No NNN: <line>", "personalization_tag": "{{{contact.first_name|friend}}}" }
+  },
+  "formats": {
+    "carousel": {
+      "platform": "Instagram Feed",
+      "size_px": "1080x1080",
+      "slides": "5-8",
+      "words_per_slide": "20-30",
+      "slide_1": "Scroll-stopper hook",
+      "final_slide": "Punchline or reframe",
+      "cta": "Save CTA (not follow)",
+      "font_system": "B",
+      "bg": "#1A1A2E",
+      "accent": "#D4A843"
+    },
+    "story_frame": {
+      "platform": "Instagram Stories",
+      "size_px": "1080x1920",
+      "font_system": "A",
+      "palette": "Brand mandatory",
+      "sticker_placeholders": true,
+      "posting_guide": "POSTING-GUIDE.md alongside frames — tells Adi which sticker on each frame"
+    },
+    "quote_card": {
+      "platform": "Instagram Feed / LinkedIn",
+      "size_px": "1080x1080",
+      "font_system": "B",
+      "bg": "#1A1A2E",
+      "headline_font": "Lato Black",
+      "headline_color": "#D4A843",
+      "body_font": "Lato Regular",
+      "body_color": "#F8F6F0"
+    },
+    "linkedin_post": {
+      "formula": "Lived story + provocative named claim + specific numbers + bifurcated validation",
+      "hook_length": "1-2 lines max",
+      "reply_pattern": "Necessary but not sufficient",
+      "closer": "Debate-triggering question for comment velocity",
+      "no_dashes": true
+    },
+    "reel_script": {
+      "platform": "Instagram Reels / YouTube",
+      "vo_words": "~150 words for 60 seconds",
+      "deliverables": ["VO script (.docx, System A)", "Shot list with timing", "Shooting plan"],
+      "cover_frame_duration_s": 0.3,
+      "loudness_lufs": -17,
+      "subtitle_font": "Lato Bold",
+      "subtitle_color": "#FED95D",
+      "subtitle_stroke": "black borderw=6"
+    }
+  },
+  "thumbnail_templates": {
+    "actually_series": {
+      "series": "ACTUALLY · NN",
+      "size_px": "1080x1080",
+      "bg": "#1A1A2E",
+      "title_font": "Lato Black",
+      "title_color": "#FED95D",
+      "series_label": "ACTUALLY · [number] bottom-right, Lato Bold, #D4A843",
+      "subject_text": "PUNCH WORD OR SHORT CLAIM",
+      "style": "Bold, confrontational, high contrast"
+    },
+    "stillness_series": {
+      "series": "Stillness · NN",
+      "size_px": "1080x1080",
+      "bg": "Photo-forward — still photograph as background",
+      "title_font": "Lato Black",
+      "title_color": "#F8F6F0",
+      "cover_word": "ONE WORD (e.g. HOURS. / STAY.)",
+      "style": "Minimal, warm, intimate — quiet counterpoint to ACTUALLY"
+    },
+    "general_reel": {
+      "size_px": "1080x1080",
+      "bg": "#1A1A2E",
+      "headline_font": "Lato Black",
+      "headline_color": "#FED95D",
+      "subline_font": "Lato Bold",
+      "subline_color": "#F8F6F0",
+      "cover_duration_s": 0.3,
+      "prepend_method": "ffmpeg filter_complex"
+    }
+  },
+  "hooks": {
+    "openers": [
+      "Half.",
+      "Nobody asked me to build it.",
+      "I have said yes to people with no degree, no pedigree, no CV worth reading.",
+      "Indian parents will pay ₹50 lakhs for a sticker.",
+      "I am not hiring people who compete with AI. I am hiring the ones who can run it.",
+      "The permission you are waiting for is usually a story you are telling yourself."
+    ],
+    "reframes": [
+      "The tag gets you the interview. The work is what gets you in.",
+      "A link beats a line.",
+      "Proof over promise.",
+      "The body of work nobody asked you to make is the one that ends up mattering.",
+      "The sticker peels. What is underneath is what they actually hired."
+    ],
+    "evergreen": [
+      "The real work is you.",
+      "Plans don't compound. Work does.",
+      "You don't start with clarity. You start.",
+      "Marks lie.",
+      "Stop finding yourself. Start creating yourself.",
+      "Expression is the opposite of depression.",
+      "The heaviest burden is unused potential.",
+      "Raise the floor, not the ceiling.",
+      "Excellence is the currency.",
+      "The walk is part of the work.",
+      "Don't make the tunnel your home.",
+      "I inspire I.",
+      "Are there any other possibilities?",
+      "Action to identity.",
+      "Quality is born from quantity.",
+      "Start first. Get clear as you go.",
+      "You don't need a five-year plan. You need a 90-day experiment.",
+      "See yourself. Everything else follows."
+    ],
+    "reply_patterns": [
+      "Necessary but not sufficient.",
+      "Of course it is required, it is just not enough.",
+      "I am not saying don't get the sticker, just realise it is not the only sticker."
+    ],
+    "closers": [
+      "Founders and hirers: what is the one signal that makes you say yes to someone regardless of their resume? One line.",
+      "Founders, what did you start before anyone gave you permission? And what would have been lost if you had waited?",
+      "What is the first task you handed to AI in your business, and what did your team do with the time it freed up?",
+      "Founders, if you could add one real-world skill to every degree before these grads reach you, what would it be?"
+    ]
+  },
+  "bios": {
+    "linkedin_headline": "The real work is you. | Helping founders and future founders see themselves clearly. | Founder, Let's Enterprise | Author | TEDx Speaker",
+    "instagram_bio": "The real work is you.\nHelping founders see what they can't see alone.\nAuthor: Restless to Remarkable | IIM-A | TEDx\nFounder @lets_enterprise",
+    "stage_intro_30s": "Aditya Jhunjhunwala has spent 20 years inside education and has worked with founders ranging from 19-year-olds to 100-crore CEOs. His method is deceptively simple: he helps people see themselves clearly — their real ambition, their real friction — and then watches as the strategy, the team, and the culture become obvious. He calls it 'the real work.' He's the founder of Let's Enterprise, India's first Working BBA, and the author of Restless to Remarkable.",
+    "one_paragraph": "Aditya Jhunjhunwala helps founders and future founders do the one thing nobody teaches: see themselves clearly. He believes that most people are stuck because they're performing someone else's version of success. When they stop and look inward, the answers were already there. He calls this 'the real work.' It's the method behind everything he does — from building India's first Working BBA (Let's Enterprise) to advising CEOs on strategy, culture, and leadership."
+  },
+  "active_vocabulary": {
+    "seed_words": ["sticker", "compounds", "body of work", "the room", "necessary but not sufficient", "0.1% vs 99%"],
+    "audience_words_to_absorb": ["letterhead", "borrowed leverage", "signalling tax", "MVP/minimum viable proof", "half-life", "tattoo", "signal vs skill"]
+  }
+}
+</script>
+
+<div class="wrap">
+
+  <header>
+    <div class="brandline">Aditya Jhunjhunwala · @playful_ceo</div>
+    <h1>Brand System</h1>
+    <span class="frozen">Frozen · <b>1 June 2026</b></span>
+    <span class="frozen" style="background:var(--teal)">Updated · <b>13 June 2026</b></span>
+    <span class="badge-agent">Agent-readable · #adi-brand-data</span>
+    <p class="lead">The canonical brand reference. Everything Adi makes lives inside this file. Colors, voice, rules, formats, templates, hooks, bios — all in one place. Agents: read the JSON in <code style="background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px;font-size:13px">#adi-brand-data</code> for structured data. Humans: read the sections below.</p>
+  </header>
+
+  <!-- ── AGENT USAGE NOTE ── -->
+  <div class="agent-note">
+    <b>For agents:</b> Extract <code>&lt;script id="adi-brand-data"&gt;</code> to get all brand values as JSON — palette, voice rules, hard rules, content pillars, platform data, format specs, thumbnail templates, hooks, and bios. No need to parse HTML. The MD index at <code>01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md</code> reads from this file as its source of truth.
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 1: POSITIONING + VOICE    -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif first" id="positioning">Positioning</h2>
+  <p class="sech">The single idea every piece of content must leave behind.</p>
+
+  <div class="pos-hero">
+    <div class="master">"The real work is you."</div>
+    <div class="variant">Intimate variant: "See yourself. Everything else follows."</div>
+    <div class="implicit">Every piece of content must leave the audience with one implicit message: "The real work isn't out there. It's in here. Start with yourself."</div>
+  </div>
+
+  <div class="pos-grid">
+    <div class="pos-card">
+      <div class="lbl">Archetype</div>
+      <p><strong>The Playful Provocateur.</strong> Warm but uncompromising. Direct. Conversational. Challenges sacred cows from care, not rage.</p>
+    </div>
+    <div class="pos-card">
+      <div class="lbl">The method</div>
+      <p>Works <strong>inside-out</strong>. Help someone see themselves clearly — their real ambition, their real friction — and strategy, team, and culture become obvious.</p>
+    </div>
+    <div class="pos-card">
+      <div class="lbl">Primary audience</div>
+      <p>Founders and future founders (18-60+). The person performing someone else's version of success and stuck because of it.</p>
+    </div>
+    <div class="pos-card">
+      <div class="lbl">Connection to LE</div>
+      <p>LE's line: "Work is the curriculum." Adi's: "The real work is you." At LE, work is how you learn. With Adi, YOU are the work.</p>
+    </div>
+  </div>
+
+  <h2 class="serif" id="voice">Voice</h2>
+  <p class="sech">Six guardrails and the archetype it never becomes.</p>
+
+  <div class="voice-grid">
+    <div class="vcard"><div class="vtitle">Direct</div><div class="vdesc">Short sentences. No hedging. Say the thing.</div></div>
+    <div class="vcard"><div class="vtitle">Conversational</div><div class="vdesc">Like chai with a friend. Not a lecture.</div></div>
+    <div class="vcard"><div class="vtitle">Playful</div><div class="vdesc">Finds humor in absurdity. Never takes itself too seriously.</div></div>
+    <div class="vcard"><div class="vtitle">Provocative</div><div class="vdesc">Challenges sacred cows from care, not rage.</div></div>
+    <div class="vcard"><div class="vtitle">Concrete</div><div class="vdesc">Specific stories over abstractions. Always.</div></div>
+    <div class="vcard"><div class="vtitle">Inside-out</div><div class="vdesc">Brings it back to the person. The real work is in here.</div></div>
+  </div>
+  <div class="voice-grid" style="margin-top:10px">
+    <div class="vcard bad"><div class="vtitle">Not a LinkedIn guru</div><div class="vdesc">Polished, safe, outside-in. No.</div></div>
+    <div class="vcard bad"><div class="vtitle">Not a doom-monger</div><div class="vdesc">Too negative, too loud. No.</div></div>
+    <div class="vcard bad"><div class="vtitle">Not an exec coach</div><div class="vdesc">Process-driven, commoditised. No.</div></div>
+    <div class="vcard bad"><div class="vtitle">Not a wellness influencer</div><div class="vdesc">Vague, aspirational fluff. No.</div></div>
+    <div class="vcard bad"><div class="vtitle">Not an academic</div><div class="vdesc">Footnotes and hedges. No.</div></div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 2: HARD RULES             -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="rules">Hard Rules</h2>
+  <p class="sech">Non-negotiable. Applies to every agent, every draft, every platform.</p>
+
+  <ul class="rules-list">
+    <li><span class="rule-tag">Typography</span><b>No em dashes (—) or en dashes (–) ever.</b> In any content for posting. Replace with commas, periods, or restructure. All platforms, all formats — including internal docs.</li>
+    <li><span class="rule-tag">Let's Enterprise</span><b>The 95/5 rule.</b> 95% thought leadership. 5% LE mentions — only obliquely (a student, an anecdote). No admissions CTAs. Never "apply now."</li>
+    <li><span class="rule-tag">Drafting</span><b>Ask 2-3 sharp questions before writing anything.</b> One must request a specific story or incident. No anchor = no draft.</li>
+    <li><span class="rule-tag">Feed discipline</span><b>No promotional posts on personal feed.</b> LE event invites, admissions pushes — never on personal LinkedIn or Instagram.</li>
+    <li><span class="rule-tag">Series</span><b>No series fatigue.</b> Never run 3+ posts on the same external person. Decay confirmed by analytics by post 3.</li>
+  </ul>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 3: CONTENT PILLARS        -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="pillars">Content Pillars</h2>
+  <p class="sech">Every piece falls under one primary pillar. Monthly review checks drift.</p>
+
+  <div class="pillars">
+    <div class="pillar">
+      <div>
+        <div class="pct">35%</div>
+        <div class="pbar-wrap"><div class="pbar" style="width:100%"></div></div>
+      </div>
+      <div>
+        <div class="pname">Education Disruptor</div>
+        <div class="pslug">education-disruptor</div>
+        <div class="pdesc">System fails because it never teaches the real work. Marks Lie. 1095 days. Credential critique. Where 20 years of credibility runs deepest.</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div>
+        <div class="pct">25%</div>
+        <div class="pbar-wrap"><div class="pbar" style="width:71%"></div></div>
+      </div>
+      <div>
+        <div class="pname">Playful Philosopher</div>
+        <div class="pslug">playful-philosopher</div>
+        <div class="pdesc">Letters, reflections, self-awareness. "See yourself." The intimate register. Without this pillar Adi becomes just another education critic.</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div>
+        <div class="pct">15%</div>
+        <div class="pbar-wrap"><div class="pbar" style="width:43%"></div></div>
+      </div>
+      <div>
+        <div class="pname">Building in Public</div>
+        <div class="pslug">building-in-public</div>
+        <div class="pdesc">What I see in founders when they stop performing. LE anecdotes. Reality of running a small intentional thing. Keeps abstractions grounded.</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div>
+        <div class="pct">15%</div>
+        <div class="pbar-wrap"><div class="pbar" style="width:43%"></div></div>
+      </div>
+      <div>
+        <div class="pname">Mentor's Lens</div>
+        <div class="pslug">mentors-lens</div>
+        <div class="pdesc">The moment someone sees themselves clearly and everything changes. Specific scenes, one scene not a generalisation. This is the proof.</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div>
+        <div class="pct">10%</div>
+        <div class="pbar-wrap"><div class="pbar" style="width:29%"></div></div>
+      </div>
+      <div>
+        <div class="pname">Provocative Collabs</div>
+        <div class="pslug">provocative-collabs</div>
+        <div class="pdesc">Conversations with founders, thinkers, builders. Podcasts, joint pieces, shared frames. Lower frequency by design — higher coordination cost.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 4: PLATFORM MAP           -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="platforms">Platform Map</h2>
+  <p class="sech">Adapt voice and format by surface. Same positioning, different register.</p>
+
+  <div class="platforms">
+    <div class="platcard">
+      <div class="platname">LinkedIn</div>
+      <div class="plataud">Founders, CXOs — scrolling at 11pm</div>
+      <div class="platdesc">Provocative, data-backed, debate-triggering. Comment velocity in first 30-60 min is the kill/amplify signal.</div>
+      <div class="plat-works"><b>Works:</b> Lived story + provocative claim + specific numbers + bifurcated validation (two tribes both feel right). Debate-triggering closer.</div>
+      <div class="plat-tanks"><b>Tanks:</b> Abstract hooks, no personal story, series on one external person, promo posts, zero-comment posts (throttled immediately).</div>
+    </div>
+    <div class="platcard">
+      <div class="platname">Instagram</div>
+      <div class="plataud">Future founders, 18-35</div>
+      <div class="platdesc">Visual, punchy, save-worthy. Saves over views is the metric. Max 1 post/day.</div>
+      <div class="plat-works"><b>Works:</b> Off-theme human Reels. Quote Reels from known figures. Save-worthy carousels. Age-anchored formats (To the 18-year-old).</div>
+      <div class="plat-tanks"><b>Tanks:</b> 100% education content with no human moments. "To the X year-old" overused. Zero-save Reels.</div>
+    </div>
+    <div class="platcard">
+      <div class="platname">Facebook</div>
+      <div class="plataud">Parents and educators, 35-54</div>
+      <div class="platdesc">Story-led. Stories are non-negotiable here — abstract arguments don't travel.</div>
+      <div class="plat-works"><b>Works:</b> Personal story anchors. Parent-mode emotional resonance. Specific scenes from LE / mentoring.</div>
+      <div class="plat-tanks"><b>Tanks:</b> Pure argumentation without a story. Political content.</div>
+    </div>
+    <div class="platcard">
+      <div class="platname">Letter — Eat. Play. Love.</div>
+      <div class="plataud">Broad, intimate audience built over years</div>
+      <div class="platdesc">Personal, reflective, recipe-inclusive. Sunday 7pm IST send slot (18% open rate vs 7.4% at 8am). Subject format: <strong>Letter No NNN: &lt;line&gt;</strong>.</div>
+      <div class="plat-works"><b>Works:</b> One central letter narrative. Recipe anchor. Personalization tag: <code style="font-size:11px">{{{contact.first_name|friend}}}</code></div>
+      <div class="plat-tanks"><b>Tanks:</b> Subject lines without the Letter No prefix. Sending at 8am.</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 5: SOCIAL MEDIA TEMPLATES -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="social-templates">Social Media Templates</h2>
+  <p class="sech">Specs for every format in production. Font system, dimensions, structure.</p>
+
+  <div class="formats">
+
+    <div class="fmtcard">
+      <div class="fmtpreview" style="background:var(--navy)">
+        <div style="text-align:center;padding:12px">
+          <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:18px;color:var(--gold);line-height:1.1">HOOK LINE HERE</div>
+          <div style="font-family:'Lato',sans-serif;font-weight:400;font-size:10px;color:var(--cream);margin-top:6px;opacity:.7">slide 1 of 6</div>
+        </div>
+        <div style="position:absolute;bottom:8px;right:10px;font-size:9px;color:var(--goldl);font-weight:600;letter-spacing:.05em">1080 × 1080</div>
+      </div>
+      <div class="fmtbody">
+        <div class="fmttitle">Instagram Carousel</div>
+        <div class="fmtsize">1080 × 1080 px · System B fonts</div>
+        <ul>
+          <li>5-8 slides. 20-30 words per slide.</li>
+          <li>Slide 1: scroll-stopper hook. Final: punchline or reframe.</li>
+          <li>Navy background · Gold accent · Cream text.</li>
+          <li>End with <strong>save CTA</strong> — not follow.</li>
+          <li>Lato Black for punches, Lato Regular for body.</li>
+        </ul>
+        <span class="fmttag">instagram</span><span class="fmttag">feed</span><span class="fmttag">system-b</span>
+      </div>
+    </div>
+
+    <div class="fmtcard">
+      <div class="fmtpreview" style="background:var(--navy)">
+        <div style="text-align:center;padding:8px">
+          <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:22px;color:var(--goldb);line-height:1.1;letter-spacing:-.01em">QUOTE LINE</div>
+          <div style="font-family:'Lora',serif;font-style:italic;font-size:11px;color:var(--cream);margin-top:8px">— Aditya Jhunjhunwala</div>
+        </div>
+        <div style="position:absolute;bottom:8px;right:10px;font-size:9px;color:var(--goldl);font-weight:600;letter-spacing:.05em">1080 × 1080</div>
+      </div>
+      <div class="fmtbody">
+        <div class="fmttitle">Quote Card</div>
+        <div class="fmtsize">1080 × 1080 px · System B fonts</div>
+        <ul>
+          <li>One strong hook line. Lato Black. Bright Gold <code style="font-size:11px">#FED95D</code>.</li>
+          <li>Attribution in Lora Italic. Cream.</li>
+          <li>Navy dark background as rule.</li>
+          <li>@playful_ceo handle bottom-left, small, muted.</li>
+        </ul>
+        <span class="fmttag">instagram</span><span class="fmttag">linkedin</span><span class="fmttag">system-b</span>
+      </div>
+    </div>
+
+    <div class="fmtcard">
+      <div class="fmtpreview" style="background:var(--navy2);flex-direction:column;gap:6px">
+        <div style="font-family:'Inter',sans-serif;font-weight:600;font-size:11px;color:var(--teall);letter-spacing:.06em;text-transform:uppercase">Story frame</div>
+        <div style="font-family:'DM Serif Display',serif;font-size:16px;color:var(--cream);text-align:center;line-height:1.2">A moment.<br>A thought.</div>
+        <div style="background:var(--gold);border-radius:6px;padding:3px 10px;font-size:10px;font-weight:600;color:var(--navy);margin-top:4px">Poll sticker here</div>
+        <div style="position:absolute;bottom:8px;right:10px;font-size:9px;color:var(--goldl);font-weight:600;letter-spacing:.05em">1080 × 1920</div>
+      </div>
+      <div class="fmtbody">
+        <div class="fmttitle">Instagram Story Frame</div>
+        <div class="fmtsize">1080 × 1920 px · System A fonts</div>
+        <ul>
+          <li>DM Serif Display for quotes/headlines, Inter for body.</li>
+          <li>Include placeholder text for interactive stickers (polls, sliders, questions).</li>
+          <li>Save to <code style="font-size:11px">stories-&lt;slug&gt;/</code> with POSTING-GUIDE.md.</li>
+          <li>POSTING-GUIDE.md = no frontmatter, just sticker instructions per frame.</li>
+        </ul>
+        <span class="fmttag">instagram</span><span class="fmttag">stories</span><span class="fmttag">system-a</span>
+      </div>
+    </div>
+
+    <div class="fmtcard">
+      <div class="fmtpreview" style="background:var(--cream);flex-direction:column;align-items:flex-start;padding:16px">
+        <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;color:var(--navy);line-height:1.3;margin-bottom:8px">Nobody asked me to build it.</div>
+        <div style="font-family:'Inter',sans-serif;font-weight:400;font-size:10px;color:var(--muted);line-height:1.5">No one in India had. No boss to assign it.<br>No degree that said I was allowed.</div>
+        <div style="font-family:'Inter',sans-serif;font-weight:400;font-size:10px;color:var(--muted);line-height:1.5;margin-top:6px">I built it anyway.</div>
+      </div>
+      <div class="fmtbody">
+        <div class="fmttitle">LinkedIn Long-form Post</div>
+        <div class="fmtsize">Text · No image required</div>
+        <ul>
+          <li><strong>Formula:</strong> Lived story + provocative named claim + specific numbers + bifurcated validation.</li>
+          <li>Hook = 1-2 lines max. Make the first line a complete stop.</li>
+          <li>End with a debate-triggering question. Comment velocity = distribution.</li>
+          <li>No em dashes. No hedging. No abstract opener.</li>
+        </ul>
+        <span class="fmttag">linkedin</span><span class="fmttag">text</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 6: VIDEO THUMBNAIL TEMPLATES -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="thumbnail-templates">Video Thumbnail Templates</h2>
+  <p class="sech">Three distinct thumbnail systems. Never mix their visual registers.</p>
+
+  <div class="thumbs">
+
+    <div class="thumbcard">
+      <div class="thumbpreview" style="background:var(--navy)">
+        <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">ACTUALLY</div>
+        <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:26px;color:var(--goldb);line-height:1;text-align:center;letter-spacing:-.01em">MARKS<br>LIE.</div>
+        <div style="position:absolute;bottom:8px;right:10px;font-family:'Lato',sans-serif;font-weight:700;font-size:9px;color:var(--gold)">· 07</div>
+      </div>
+      <div class="thumbbody">
+        <div class="thumbname">ACTUALLY · NN Series</div>
+        <div class="thumbspec">
+          Navy bg · Lato Black · Bright Gold <code style="font-size:10px">#FED95D</code><br>
+          "ACTUALLY" label top, muted. Series number bottom-right in Heritage Gold.<br>
+          Short punch word or claim. Bold, confrontational, high contrast.
+        </div>
+      </div>
+    </div>
+
+    <div class="thumbcard">
+      <div class="thumbpreview" style="background:linear-gradient(160deg,#2a2a1a 0%,#1A1A2E 100%)">
+        <div style="position:absolute;inset:0;background:rgba(26,26,46,.45)"></div>
+        <div style="position:relative;z-index:1;text-align:center">
+          <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:22px;color:var(--cream);letter-spacing:.04em;line-height:1">HOURS.</div>
+          <div style="font-family:'Inter',sans-serif;font-size:9px;color:var(--goldl);margin-top:4px;letter-spacing:.06em;text-transform:uppercase">Stillness · 03</div>
+        </div>
+      </div>
+      <div class="thumbbody">
+        <div class="thumbname">Stillness · NN Series</div>
+        <div class="thumbspec">
+          Photo-forward — still photograph as background (personal, raw).<br>
+          One-word title card over photo. Lato Black. Cream or white.<br>
+          Quiet. Minimal. Intimate. No bright gold here.
+        </div>
+      </div>
+    </div>
+
+    <div class="thumbcard">
+      <div class="thumbpreview" style="background:var(--navy2)">
+        <div style="text-align:center;padding:10px">
+          <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:15px;color:var(--goldb);line-height:1.1">YOU'RE ASKING<br>THE WRONG QUESTION.</div>
+          <div style="font-family:'Lato',sans-serif;font-weight:700;font-size:9px;color:var(--cream);margin-top:6px;opacity:.7">@playful_ceo</div>
+        </div>
+        <div style="position:absolute;bottom:8px;right:10px;font-size:9px;color:var(--goldl);font-weight:600;letter-spacing:.05em">1080 × 1080</div>
+      </div>
+      <div class="thumbbody">
+        <div class="thumbname">General Reel Thumbnail</div>
+        <div class="thumbspec">
+          Navy bg · Lato Black · Bright Gold headline.<br>
+          Cover frame: 0.3s prepend via ffmpeg filter_complex.<br>
+          Burned subtitles: Lato Bold · <code style="font-size:10px">#FED95D</code> · black stroke borderw=6.<br>
+          Target loudness: -17 LUFS.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 7: FOUNDATIONS (COLORS)   -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="color-foundations">Color Foundations</h2>
+  <p class="sech">Seven colors, three jobs. Navy is the ink. Cream is the page. Gold is the signature.</p>
+  <div class="row">
+    <div class="sw">
+      <div class="chip" style="background:#1A1A2E;color:#F8F6F0">The ink. The dark.</div>
+      <div class="meta"><div class="nm">Navy Dark</div><div class="role">Primary text, dark sections, logo on light.</div>
+        <div class="codes"><span class="code">#1A1A2E</span><span class="code">RGB 26·26·46</span></div>
+        <div class="ton">Text on this: <b style="color:#888">Cream / white</b></div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#16213E;color:#F8F6F0">Depth, layers.</div>
+      <div class="meta"><div class="nm">Navy Mid</div><div class="role">Layering, cards on navy, gradients.</div>
+        <div class="codes"><span class="code">#16213E</span><span class="code">RGB 22·33·62</span></div>
+        <div class="ton">Text on this: <b style="color:#888">Cream / white</b></div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#F8F6F0;color:#1A1A2E;border-bottom:1px solid #e6ddcb">The page.</div>
+      <div class="meta"><div class="nm">Cream</div><div class="role">Primary background. The default canvas.</div>
+        <div class="codes"><span class="code">#F8F6F0</span><span class="code">RGB 248·246·240</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b></div></div>
+    </div>
+  </div>
+
+  <h2 class="serif" id="color-gold">Signature Accent</h2>
+  <p class="sech">Gold is the brand's handshake. Two-gold system: Heritage for print, Bright for screens.</p>
+  <div class="row">
+    <div class="sw">
+      <div class="chip" style="background:#D4A843;color:#1A1A2E">The signature.</div>
+      <div class="meta"><div class="nm">Heritage Gold</div><div class="role">Primary accent. Print, editorial, letters, buttons.</div>
+        <div class="codes"><span class="code">#D4A843</span><span class="code">7.7:1 AAA on navy</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b> (never white)</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#F0D78C;color:#1A1A2E">Soft gold.</div>
+      <div class="meta"><div class="nm">Gold Light</div><div class="role">Tints, hover fills, washi-tape accents.</div>
+        <div class="codes"><span class="code">#F0D78C</span><span class="code">RGB 240·215·140</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b></div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#FED95D;color:#1A1A2E">Brightened gold.</div>
+      <div class="meta">
+        <div class="nm">Bright Gold <span style="font-weight:500;color:var(--teal);font-size:11px">(digital accent)</span></div>
+        <div class="role">Screens and social only. Reel subtitles. 12.4:1 on navy — cleaner pop on phones.</div>
+        <div class="codes"><span class="code">#FED95D</span><span class="code">12.4:1 AAA on navy</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b>. Small areas only.</div></div>
+    </div>
+  </div>
+
+  <h2 class="serif" id="color-teal">Secondary Accent</h2>
+  <p class="sech">Teal is the cool counterweight to gold. Supporting role only, never louder than gold.</p>
+  <div class="row">
+    <div class="sw">
+      <div class="chip" style="background:#0F9B8E;color:#1A1A2E">The counterweight.</div>
+      <div class="meta"><div class="nm">Teal</div><div class="role">Secondary highlights, tags, category accent.</div>
+        <div class="codes"><span class="code">#0F9B8E</span><span class="code">4.95:1 AA on navy</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b></div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:#5EEAD4;color:#16213E">Fresh teal.</div>
+      <div class="meta"><div class="nm">Teal Light</div><div class="role">Tints, soft fills, freshness on dark sections.</div>
+        <div class="codes"><span class="code">#5EEAD4</span><span class="code">RGB 94·234·212</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b></div></div>
+    </div>
+    <div class="sw" style="background:transparent;border:1px dashed var(--line);box-shadow:none;">
+      <div class="meta" style="padding-top:16px">
+        <div class="nm">Usage ratio</div>
+        <div class="role">How much of each on any layout.</div>
+        <div class="ratio">
+          <span style="background:#F8F6F0;color:#1A1A2E;flex:60">Cream 60</span>
+          <span style="background:#1A1A2E;color:#fff;flex:25">Navy 25</span>
+          <span style="background:#D4A843;color:#1A1A2E;flex:10">Gold 10</span>
+          <span style="background:#0F9B8E;color:#fff;flex:5">Tl 5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="serif" id="pairings">Approved Pairings</h2>
+  <p class="sech">Combinations that always work. When in doubt, use one of these.</p>
+  <div class="pairs">
+    <div class="pair"><div class="demo" style="background:#1A1A2E;color:#D4A843">Gold on Navy</div><div class="cap">Signature combo. Headlines, hero.</div></div>
+    <div class="pair"><div class="demo" style="background:#F8F6F0;color:#1A1A2E">Navy on Cream</div><div class="cap">Default reading surface.</div></div>
+    <div class="pair"><div class="demo" style="background:#D4A843;color:#1A1A2E">Navy on Gold</div><div class="cap">Buttons, badges, CTAs.</div></div>
+    <div class="pair"><div class="demo" style="background:#0F9B8E;color:#F8F6F0">Cream on Teal</div><div class="cap">Secondary tags, accents.</div></div>
+    <div class="pair"><div class="demo" style="background:#16213E;color:#5EEAD4">Teal-light on Navy</div><div class="cap">Fresh accent on dark.</div></div>
+    <div class="pair"><div class="demo" style="background:#1A1A2E;color:#FED95D">Bright Gold on Navy</div><div class="cap">Social, reels, screens.</div></div>
+  </div>
+
+  <h2 class="serif" id="contrast">Contrast Cheatsheet</h2>
+  <p class="sech">WCAG 2 measured on exact hexes. AA = 4.5:1 body, 3:1 large. AAA = 7:1.</p>
+  <div class="ctable-wrap">
+    <table class="ctable">
+      <tr><th>Pairing</th><th>Ratio</th><th>Rating</th><th>Use for</th></tr>
+      <tr><td>Navy on Cream</td><td>15.8:1</td><td class="pass">AAA</td><td>Body text, default</td></tr>
+      <tr><td>Gold / Navy on Gold</td><td>7.7:1</td><td class="pass">AAA</td><td>Headlines, CTAs, badges</td></tr>
+      <tr><td>Bright Gold on Navy</td><td>12.4:1</td><td class="pass">AAA</td><td>Reel subtitles, social highlights</td></tr>
+      <tr><td>Navy on Teal</td><td>4.95:1</td><td class="pass">AA</td><td>Text on teal fills</td></tr>
+      <tr><td>Navy on Gold-light / Teal-light</td><td>12.0:1</td><td class="pass">AAA</td><td>Soft tinted panels</td></tr>
+      <tr><td>Gold text on Cream</td><td>2.05:1</td><td class="fail">FAIL</td><td>Never — gold as fill, not text</td></tr>
+      <tr><td>White text on Gold</td><td>2.21:1</td><td class="fail">FAIL</td><td>Never — always navy on gold</td></tr>
+    </table>
+  </div>
+
+  <h2 class="serif" id="color-rules">Color Do and Don't</h2>
+  <div class="usage">
+    <div class="ucard">
+      <h3>Do</h3>
+      <ul>
+        <li>Start from cream, set type in navy, accent with gold.</li>
+        <li>Use Heritage Gold for print and letters, Bright Gold for social and screens.</li>
+        <li>Let gold be the loudest color — use sparingly so it stays special.</li>
+        <li>Put navy text on gold fills, cream text on navy and teal.</li>
+        <li>Keep teal in a supporting role, cooler and quieter than gold.</li>
+      </ul>
+    </div>
+    <div class="ucard dont">
+      <h3>Don't</h3>
+      <ul>
+        <li>Introduce coral, red, orange, or any hue not on this page. (Confirmed ruled OUT.)</li>
+        <li>Set gold text on cream — 2.05:1, it fails accessibility.</li>
+        <li>Use white text on gold — 2.21:1, it also fails.</li>
+        <li>Let teal compete with gold or carry the headline.</li>
+        <li>Use Bright Gold on large fields — small accent areas only.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 8: TYPOGRAPHY             -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="typography">Typography</h2>
+  <p class="sech">Two systems by surface. Pick one per asset and never mix them.</p>
+  <div class="fonts">
+    <div class="fcard">
+      <div class="lbl">System A · Letter stories + web</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:32px;line-height:1.1;color:#1A1A2E;margin:8px 0 2px">The real work is you.</div>
+      <div style="font-family:'Inter';font-size:14px;color:#1A1A2E;line-height:1.6;margin-bottom:6px">Body and interface set in Inter. Clean, quiet, highly legible.</div>
+      <div style="font-family:'Caveat',cursive;font-size:24px;color:#0F9B8E">start with yourself</div>
+      <div class="small" style="margin-top:8px"><b style="color:#1A1A2E">DM Serif Display</b> headlines · <b style="color:#1A1A2E">Inter</b> body · <b style="color:#1A1A2E">Caveat</b> rare accent</div>
+    </div>
+    <div class="fcard">
+      <div class="lbl">System B · Carousels + quote cards (1080×1080)</div>
+      <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:26px;line-height:1.05;color:#1A1A2E;letter-spacing:-.01em;margin:8px 0 2px">FAILURE IS AN EVENT</div>
+      <div style="font-family:'Lato',sans-serif;font-weight:700;font-size:14px;color:#1A1A2E;margin-bottom:4px">Sub-heads and attribution in Lato Bold.</div>
+      <div style="font-family:'Lato',sans-serif;font-weight:400;font-size:13.5px;color:#1A1A2E;line-height:1.55">Body and footers in Lato Regular.</div>
+      <div style="font-family:'Lora',serif;font-style:italic;font-size:17px;color:#0F9B8E;margin-top:6px">and a quiet serif aside, in Lora italic</div>
+      <div class="small" style="margin-top:8px"><b style="color:#1A1A2E">Lato Black</b> punch lines · <b style="color:#1A1A2E">Lato Bold</b> sub-heads · <b style="color:#1A1A2E">Lato Regular</b> body · <b style="color:#1A1A2E">Lora Italic</b> accents</div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:19px;margin:26px 0 4px">Type scale (web / System A)</h3>
+  <p class="sech">Keep no more than two families on any single layout.</p>
+  <div style="background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden">
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'DM Serif Display',serif;font-size:34px;color:#1A1A2E;flex:1">Display</span><span class="code">DM Serif · 44-56px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'DM Serif Display',serif;font-size:27px;color:#1A1A2E;flex:1">Heading 1</span><span class="code">DM Serif · 32-40px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'DM Serif Display',serif;font-size:21px;color:#1A1A2E;flex:1">Heading 2</span><span class="code">DM Serif · 24-28px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'Inter';font-weight:600;font-size:18px;color:#1A1A2E;flex:1">Heading 3 / label</span><span class="code">Inter 600 · 18-20px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'Inter';font-weight:400;font-size:16px;color:#1A1A2E;flex:1">Body copy. Line-height 1.6-1.7.</span><span class="code">Inter 400 · 16px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px"><span style="font-family:'Inter';font-weight:500;font-size:13px;color:#6f6a5c;flex:1">Caption / meta</span><span class="code">Inter 500 · 12-13px</span></div>
+  </div>
+
+  <div class="usage" style="margin-top:18px">
+    <div class="ucard"><h3>Type do</h3>
+      <ul>
+        <li>Two families per layout maximum. Serif for feeling, sans for clarity.</li>
+        <li>Sentence case for almost everything — in line with the voice.</li>
+        <li>Body at 16px web with 1.6-1.7 line-height. Never below 14px.</li>
+        <li>Reserve Caveat and Lora italic for rare, deliberate accents.</li>
+      </ul>
+    </div>
+    <div class="ucard dont"><h3>Type don't</h3>
+      <ul>
+        <li>Mix System A and System B fonts in the same asset.</li>
+        <li>Set long passages in ALL CAPS. Caps for short punch labels only.</li>
+        <li>Stack three or more typefaces on one piece.</li>
+        <li>Use DM Serif or Lato Black for tiny body text.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 9: HOOKS                  -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="hooks">Hook Bank</h2>
+  <p class="sech">Ready-to-deploy lines. Agents: full list in #adi-brand-data → hooks.</p>
+
+  <div class="hooks-grid">
+    <div><p style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px">Openers</p>
+      <div class="hook"><span class="hook-type">Pause hook</span>"Half."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Personal authority</span>"I have said yes to people with no degree, no pedigree, no CV worth reading."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Provocative claim</span>"Indian parents will pay ₹50 lakhs for a sticker."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Minimal</span>"Nobody asked me to build it."</div>
+    </div>
+    <div><p style="font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px">Evergreen lines</p>
+      <div class="hook"><span class="hook-type">Master</span>"The real work is you."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Permission</span>"The permission you are waiting for is usually a story you are telling yourself."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Body of work</span>"Plans don't compound. Work does."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Start first</span>"You don't start with clarity. You start."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Scroll-stopper</span>"Marks lie."</div>
+      <div class="hook" style="margin-top:8px"><span class="hook-type">Anti-grindset</span>"You don't need a five-year plan. You need a 90-day experiment."</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SECTION 10: BIO TEMPLATES         -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="bios">Bio Templates</h2>
+  <p class="sech">Copy-ready. Use verbatim or adapt minimally.</p>
+
+  <div class="bios">
+    <div class="bio">
+      <div class="bio-lbl">LinkedIn Headline</div>
+      <div class="bio-text">The real work is you. | Helping founders and future founders see themselves clearly. | Founder, Let's Enterprise | Author | TEDx Speaker</div>
+    </div>
+    <div class="bio">
+      <div class="bio-lbl">Instagram Bio</div>
+      <div class="bio-text">The real work is you.
+Helping founders see what they can't see alone.
+Author: Restless to Remarkable | IIM-A | TEDx
+Founder @lets_enterprise</div>
+    </div>
+    <div class="bio">
+      <div class="bio-lbl">Stage Intro (30 seconds)</div>
+      <div class="bio-text">Aditya Jhunjhunwala has spent 20 years inside education and has worked with founders ranging from 19-year-olds to 100-crore CEOs. His method is deceptively simple: he helps people see themselves clearly, their real ambition, their real friction, and then watches as the strategy, the team, and the culture become obvious. He calls it the real work. He's the founder of Let's Enterprise, India's first Working BBA, and the author of Restless to Remarkable.</div>
+    </div>
+    <div class="bio">
+      <div class="bio-lbl">One Paragraph (website / proposals)</div>
+      <div class="bio-text">Aditya Jhunjhunwala helps founders and future founders do the one thing nobody teaches: see themselves clearly. He believes that most people are stuck because they're performing someone else's version of success. When they stop and look inward, the answers were already there. He calls this the real work. It's the method behind everything he does, from building India's first Working BBA (Let's Enterprise) to advising CEOs on strategy, culture, and leadership.</div>
+    </div>
+  </div>
+
+  <footer>
+    <b>Canonical source of truth for all brand work.</b> If it is not in this file, it is not a brand decision.<br>
+    <b>Agent data block:</b> <code>&lt;script id="adi-brand-data"&gt;</code> — parse for structured JSON of all brand values.<br>
+    <b>MD index:</b> <a href="../01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md">01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md</a> references this file as canonical.<br>
+    <b>Voice and rules source:</b> 11-Schema/voice-and-rules.md (this file supersedes it for visual + agent use).<br>
+    <b>Frozen:</b> 1 June 2026 · <b>Updated:</b> 13 June 2026 · <b>Version:</b> 2.0<br>
+    <b>One sentence to remember:</b> the real work isn't out there, it's in here. Start with yourself.
+  </footer>
+
+</div>
+</body>
+</html>
