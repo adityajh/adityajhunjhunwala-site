@@ -11,6 +11,12 @@ description: "200+ essays by Aditya Jhunjhunwala on self-awareness, founders, ed
       Essays on self-awareness, founders, education, relationships, and the work of building a life. Written over 20 years.
     </p>
   </div>
+
+  <!-- Search -->
+  <div class="search-wrap">
+    <div id="search"></div>
+  </div>
+
   <div class="article-grid">
     {%- for article in collections.articles %}
     <div class="article-card">
@@ -19,3 +25,9 @@ description: "200+ essays by Aditya Jhunjhunwala on self-awareness, founders, ed
     {%- endfor %}
   </div>
 </div>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  new PagefindUI({ element: "#search", showSubResults: false, placeholder: "Search writing..." });
+</script>
