@@ -30,7 +30,7 @@ This page is the kit I would hand a 19-year-old with no experience and no connec
     <button id="pf-submit" type="submit"
       style="padding:13px 22px;font-size:16px;font-weight:700;cursor:pointer;background:#D4A843;color:#1A1A2E;border:2px solid #1A1A2E;border-radius:10px;">Send it to me</button>
   </form>
-  <div id="pf-msg" style="font-size:14px;color:#0F9B8E;font-weight:600;margin-top:12px;display:none;">Done. Check your inbox. The kit is right here on this page too, so keep scrolling.</div>
+  <div id="pf-msg" style="font-size:14px;color:#0F9B8E;font-weight:600;margin-top:12px;display:none;">You are on the list. The full kit is right here on this page, so keep scrolling.</div>
   <div id="pf-err" style="font-size:14px;color:#b23b2e;margin-top:12px;display:none;">That email does not look right. Try again.</div>
 </div>
 <script>
