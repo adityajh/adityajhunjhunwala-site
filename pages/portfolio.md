@@ -18,6 +18,40 @@ A degree gets you the interview. It does not get you the job. What a selector ac
 
 This page is the kit I would hand a 19-year-old with no experience and no connections. Three parts. Open it, pick one project, and start today.
 
+<!-- Magnet capture card — inject into pages/portfolio.md right after the intro
+     ("Three parts. Open it, pick one project, and start today.") and before the first ---.
+     Non-gating: the kit stays fully visible; this just captures the email into Resend. -->
+<div id="pf-capture" style="margin:30px 0;padding:24px 24px 20px;border:2px solid #1A1A2E;border-radius:14px;background:#FFFDF8;">
+  <div style="font-weight:700;font-size:18px;color:#1A1A2E;margin-bottom:4px;">Want this kit sent to you, plus the weekly letter?</div>
+  <div style="font-size:15px;color:#6F6A5C;margin-bottom:14px;">Drop your email. I will send the kit and the one letter a week where the rest of this lives.</div>
+  <form id="pf-form" style="display:flex;gap:10px;flex-wrap:wrap;" novalidate>
+    <input id="pf-email" type="email" placeholder="you@email.com" autocomplete="email"
+      style="flex:1 1 240px;min-width:0;padding:13px 15px;font-size:16px;border:2px solid #1A1A2E;border-radius:10px;background:#fff;color:#1A1A2E;">
+    <button id="pf-submit" type="submit"
+      style="padding:13px 22px;font-size:16px;font-weight:700;cursor:pointer;background:#D4A843;color:#1A1A2E;border:2px solid #1A1A2E;border-radius:10px;">Send it to me</button>
+  </form>
+  <div id="pf-msg" style="font-size:14px;color:#0F9B8E;font-weight:600;margin-top:12px;display:none;">Done. Check your inbox. The kit is right here on this page too, so keep scrolling.</div>
+  <div id="pf-err" style="font-size:14px;color:#b23b2e;margin-top:12px;display:none;">That email does not look right. Try again.</div>
+</div>
+<script>
+(function(){
+  var f=document.getElementById('pf-form'),e=document.getElementById('pf-email'),
+      b=document.getElementById('pf-submit'),m=document.getElementById('pf-msg'),er=document.getElementById('pf-err'),
+      RE=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var v=(e.value||'').trim();
+    if(!RE.test(v)){er.style.display='block';return;}
+    er.style.display='none';b.disabled=true;b.textContent='Sending...';
+    fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:v,magnet:'portfolio'})}).catch(function(){}).finally(function(){
+      f.style.display='none';m.style.display='block';
+    });
+  });
+})();
+</script>
+
+
 ---
 
 ## 1. The one-page portfolio

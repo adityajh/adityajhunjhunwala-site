@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The CV a CEO actually shortlists · Aditya Jhunjhunwala</title>
+<meta name="description" content="The fill-in-the-blank CV format I use to shortlist in 6 seconds. Free.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="The CV a CEO actually shortlists">
+<meta property="og:description" content="The fill-in-the-blank format I use to shortlist in 6 seconds. Free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F6F0; --ink:#1A1A2E; --navy:#16213E; --gold:#D4A843; --teal:#0F9B8E;
+    --muted:#6F6A5C; --line:#E3D8C2; --card:#FFFDF8;
+    --shadow:4px 5px 0 rgba(26,26,46,.10);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;color:var(--ink);background:var(--paper);
+    font-family:"Inter",system-ui,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:680px;margin:0 auto;padding:48px 22px 72px;}
+  .serif{font-family:"DM Serif Display",Georgia,serif;font-weight:400;}
+  .eyebrow{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--navy);background:var(--gold);padding:6px 14px;border-radius:999px;}
+  h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(34px,7vw,52px);
+    line-height:1.08;margin:20px 0 14px;letter-spacing:-.01em;}
+  h1 em{font-style:italic;color:var(--teal);}
+  .lede{font-size:19px;color:var(--ink);max-width:560px;}
+  .lede b{box-shadow:inset 0 -.5em 0 rgba(212,168,67,.30);}
+  /* form */
+  .capture{margin:30px 0 6px;background:var(--card);border:2px solid var(--ink);border-radius:18px;
+    padding:22px 22px 20px;box-shadow:var(--shadow);}
+  .capture h2{font-size:18px;margin:0 0 12px;font-weight:700;}
+  form{display:flex;gap:10px;flex-wrap:wrap;}
+  input[type=email]{flex:1 1 240px;min-width:0;padding:14px 16px;font-size:16px;font-family:inherit;
+    border:2px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink);}
+  input[type=email]:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,155,142,.18);}
+  button{padding:14px 22px;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;
+    background:var(--ink);color:var(--paper);border:2px solid var(--ink);border-radius:12px;
+    transition:transform .12s ease;}
+  button:hover{transform:translateY(-1px);}
+  button:disabled{opacity:.6;cursor:default;transform:none;}
+  .fineprint{font-size:13px;color:var(--muted);margin:12px 2px 0;}
+  .err{color:#b23b2e;font-size:14px;margin:10px 2px 0;display:none;}
+  /* deliverable */
+  .deliverable{display:none;margin-top:34px;}
+  .deliverable.show{display:block;animation:rise .4s ease;}
+  @keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+  .ok{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--navy);
+    background:rgba(15,155,142,.16);border:1.5px solid var(--teal);padding:6px 13px;border-radius:999px;margin-bottom:18px;}
+  .doc{background:var(--card);border:2px solid var(--ink);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow);}
+  .doc h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:27px;margin:0 0 6px;}
+  .read1{font-size:15px;color:var(--muted);margin:0 0 22px;}
+  .box{border-top:2px solid var(--line);padding:18px 0 4px;}
+  .box .tag{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--teal);margin-bottom:8px;}
+  .box h4{font-size:17px;margin:0 0 10px;font-weight:700;}
+  .fill{font-family:"DM Serif Display",Georgia,serif;background:rgba(212,168,67,.12);border-left:3px solid var(--gold);
+    padding:10px 14px;border-radius:0 8px 8px 0;margin:6px 0;font-size:16px;}
+  .rule{font-size:14.5px;color:var(--muted);margin:8px 0;}
+  .rule b{color:var(--ink);}
+  .ex{font-size:14.5px;color:var(--ink);background:rgba(15,155,142,.07);padding:10px 14px;border-radius:8px;margin:8px 0;}
+  .ex em{color:var(--muted);font-style:normal;font-weight:600;}
+  .test{margin-top:8px;border-top:2px solid var(--line);padding-top:18px;}
+  .ba{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px;}
+  .ba div{padding:12px 14px;border-radius:8px;font-size:14.5px;}
+  .before{background:rgba(178,59,46,.07);border:1px solid rgba(178,59,46,.25);}
+  .after{background:rgba(15,155,142,.08);border:1px solid rgba(15,155,142,.30);}
+  .ba .lbl{font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:4px;}
+  .before .lbl{color:#b23b2e;} .after .lbl{color:var(--teal);}
+  .sig{margin-top:30px;font-size:15px;color:var(--muted);}
+  .sig b{color:var(--ink);}
+  footer{margin-top:40px;text-align:center;font-size:13px;color:var(--muted);}
+  footer a{color:var(--navy);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <span class="eyebrow">Free · from Aditya Jhunjhunwala</span>
+  <h1>The CV a CEO <em>actually</em> shortlists</h1>
+  <p class="lede">I read a CV in 6 seconds and I stop at the first line with no proof in it. So I made the exact format I shortlist. <b>Not a pretty template. The boxes, in the order I actually read them, with the rule for each one.</b></p>
+
+  <div class="capture" id="capture">
+    <h2>Where do I send it?</h2>
+    <form id="form" novalidate>
+      <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+      <button type="submit" id="submit">Send it to me</button>
+    </form>
+    <p class="err" id="err">That email does not look right. Try again.</p>
+    <p class="fineprint">One email. No spam, no list-selling. Unsubscribe anytime.</p>
+  </div>
+
+  <div class="deliverable" id="deliverable">
+    <span class="ok">Saved. Here it is, no inbox-waiting.</span>
+    <div class="doc">
+      <h3>The CV I shortlist (fill in the blanks)</h3>
+      <p class="read1">Read this once before you fill it: I read top to bottom and I stop at the first box that has no proof in it. So every box has to earn the next one. Words are not proof. A link is proof. A number is proof. A thing I can open is proof.</p>
+
+      <div class="box">
+        <span class="tag">Box 1</span>
+        <h4>The one line (this is the whole CV in 6 seconds)</h4>
+        <div class="fill">I help ______ do ______. Here is one thing I built: ______ [LINK].</div>
+        <p class="rule"><b>Rule:</b> no "objective," no "seeking a challenging role." The first thing I see is who you help and one link I can click. If there is no link in box 1, I am already gone.</p>
+        <p class="ex"><em>Worked example:</em> "I help small clinics stop missing appointments. I built a WhatsApp reminder bot two clinics now use: [link]."</p>
+      </div>
+
+      <div class="box">
+        <span class="tag">Box 2</span>
+        <h4>Three proof blocks (not jobs, not marks, proof)</h4>
+        <p class="rule">For each of three things you have built, fill exactly this:</p>
+        <div class="fill">What was broken: ______<br>What I made: ______<br>What changed (a number or a before-and-after): ______<br>Link or screenshot: ______</div>
+        <p class="rule"><b>Rule:</b> spec work counts. No client yet means you pick a brand you love, fix something of theirs, and show the before and after. A screenshot beats a paragraph. If you cannot put a link or an image, it is not a proof block yet, it is a claim. Cut it.</p>
+      </div>
+
+      <div class="box">
+        <span class="tag">Box 3</span>
+        <h4>Skills, but only the ones box 2 already proved</h4>
+        <div class="fill">Skills shown above: ______</div>
+        <p class="rule"><b>Rule:</b> you are only allowed to list a skill that appears in one of your three proof blocks. "Team player, hardworking, quick learner," gone. If box 2 does not show it, you do not get to claim it.</p>
+      </div>
+
+      <div class="box">
+        <span class="tag">Box 4</span>
+        <h4>The boring facts, kept to four lines</h4>
+        <div class="fill">Education (one line): ______<br>Tools you actually use: ______<br>Where to find your work (one link): ______<br>How to reach you (one button): ______</div>
+        <p class="rule"><b>Rule:</b> this is the bottom of the page, not the top. Your degree is a fact about you, not the proof of you. One line. Move on.</p>
+      </div>
+
+      <div class="test box">
+        <span class="tag">Run this on yourself</span>
+        <h4>The 6-second test</h4>
+        <p class="rule">Cover everything except box 1. Read only that. Do you know what this person built and can you click it? If yes, you survive. If no, your CV dies where mine died: at the first line with no proof in it.</p>
+        <p class="rule" style="margin-top:16px;"><b>Before and after</b> (one real rewrite, illustrative):</p>
+        <div class="ba">
+          <div class="before"><span class="lbl">Before</span>"Objective: a motivated, hardworking individual seeking a challenging role to utilise my skills in a reputed organisation."</div>
+          <div class="after"><span class="lbl">After</span>"I help D2C brands fix the page where buyers drop off. I rebuilt a skincare brand's checkout as spec work and cut the steps from 5 to 2: [link]."</div>
+        </div>
+        <p class="rule" style="margin-top:10px;">Same person. One survives 6 seconds. One does not.</p>
+      </div>
+
+      <p class="sig">Fill it in tonight. Then reply to my DM with your one line of proof and I will tell you if it survives 6 seconds. <b>Adi</b></p>
+    </div>
+  </div>
+
+  <footer>@playful_ceo · <a href="https://www.adityajhunjhunwala.com">adityajhunjhunwala.com</a></footer>
+</div>
+
+<script>
+  var form = document.getElementById('form');
+  var emailEl = document.getElementById('email');
+  var err = document.getElementById('err');
+  var submit = document.getElementById('submit');
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function reveal(){
+    document.getElementById('capture').style.display = 'none';
+    var d = document.getElementById('deliverable');
+    d.classList.add('show');
+    d.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = (emailEl.value || '').trim();
+    if(!EMAIL_RE.test(email)){ err.style.display='block'; return; }
+    err.style.display='none';
+    submit.disabled = true; submit.textContent = 'Sending...';
+    // Fire-and-forget capture; reveal no matter what so the payoff never blocks.
+    fetch('/api/subscribe', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({email: email, magnet: 'cv'})
+    }).catch(function(){}).finally(reveal);
+    // Safety net: if the network hangs, reveal anyway.
+    setTimeout(reveal, 1200);
+  });
+</script>
+</body>
+</html>
