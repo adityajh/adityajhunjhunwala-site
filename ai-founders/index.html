@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for Founders · a working session · Aditya Jhunjhunwala</title>
+<meta name="description" content="A small, invite-only room of Pune founders. Straight answers on AI, led by Moumita Sarker. Thursday 25 June 2026, 5 PM, Bhosalenagar, Pune.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="AI for Founders — you're invited">
+<meta property="og:description" content="A small room of Pune founders. Straight answers on AI, no pitch. Thu 25 June, 5 PM. Who's coming, where to go, and tell us what to cover.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F6F0; --ink:#1A1A2E; --navy:#16213E; --gold:#D4A843; --teal:#0F9B8E;
+    --muted:#6F6A5C; --line:#E3D8C2; --card:#FFFDF8;
+    --shadow:4px 5px 0 rgba(26,26,46,.10);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;color:var(--ink);background:var(--paper);
+    font-family:"Inter",system-ui,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .wrap{max-width:680px;margin:0 auto;padding:48px 22px 72px;}
+  .serif{font-family:"DM Serif Display",Georgia,serif;font-weight:400;}
+  .eyebrow{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--navy);background:var(--gold);padding:6px 14px;border-radius:999px;}
+  h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(34px,7vw,52px);
+    line-height:1.08;margin:20px 0 14px;letter-spacing:-.01em;}
+  h1 em{font-style:italic;color:var(--teal);}
+  .lede{font-size:19px;color:var(--ink);max-width:560px;}
+  .lede b{box-shadow:inset 0 -.5em 0 rgba(212,168,67,.30);}
+
+  .section{margin-top:40px;}
+  .kicker{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+  h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:28px;margin:0 0 14px;line-height:1.12;}
+  h3{font-size:17px;font-weight:700;margin:0 0 4px;}
+  p{font-size:15.5px;}
+  .muted{color:var(--muted);}
+
+  /* essentials card */
+  .card{background:var(--card);border:2px solid var(--ink);border-radius:18px;padding:22px 22px;box-shadow:var(--shadow);}
+  .facts{margin:26px 0 6px;}
+  .facts .row{display:flex;gap:14px;padding:11px 0;border-top:2px solid var(--line);font-size:16px;}
+  .facts .row:first-child{border-top:0;}
+  .facts .k{flex:0 0 92px;font-weight:700;color:var(--teal);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;padding-top:3px;}
+  .facts .v b{font-weight:700;}
+
+  /* puzzle graphic */
+  .puzzle{margin-top:12px;}
+  .puzzle img{display:block;width:100%;height:auto;}
+
+  /* expect */
+  .ex{border-top:2px solid var(--line);padding:16px 0 4px;}
+  .ex .tag{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+  .chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px;}
+  .chain .vc{flex:1 1 145px;background:#fff;border:2px solid var(--ink);border-radius:12px;padding:16px 12px;font-size:15.5px;font-weight:700;color:var(--navy);text-align:center;box-shadow:var(--shadow);}
+  .chain .arr{flex:0 0 auto;color:var(--gold);font-size:24px;font-weight:700;line-height:1;}
+
+  /* people */
+  .person{display:flex;gap:14px;align-items:flex-start;border-top:2px solid var(--line);padding:18px 0 4px;}
+  .person:first-of-type{border-top:0;}
+  .av{width:48px;height:48px;border-radius:50%;flex:0 0 48px;background:var(--navy);color:var(--paper);
+    display:flex;align-items:center;justify-content:center;font-family:"DM Serif Display",serif;font-size:19px;}
+  .av.g{background:var(--gold);color:var(--navy);}
+  .role{font-size:12.5px;color:var(--teal);font-weight:700;margin:0 0 7px;}
+
+  /* room */
+  .room{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px;}
+  .g{display:block;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;}
+  .g:hover{border-color:var(--teal);}
+  .g b{display:block;font-size:14px;color:var(--ink);font-weight:700;}
+  .g span{font-size:11.5px;color:var(--muted);}
+  .roomnote{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px;}
+
+  /* agenda */
+  .ag .row{display:flex;gap:16px;border-top:2px solid var(--line);padding:12px 0;}
+  .ag .row:first-child{border-top:0;}
+  .ag .t{flex:0 0 50px;font-family:"DM Serif Display",serif;color:var(--gold);font-size:18px;}
+  .ag .d b{font-size:15.5px;}
+  .ag .d span{display:block;font-size:14px;color:var(--muted);}
+
+  /* map + venue */
+  .mapbox{position:relative;border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);margin-top:4px;background:#fff;}
+  .mapbox img{display:block;width:100%;height:auto;}
+  .mapbox svg{position:absolute;top:0;left:0;width:100%;height:100%;}
+  .vrow{display:flex;gap:12px;border-top:2px solid var(--line);padding:13px 0;font-size:15px;}
+  .vrow:first-child{border-top:0;}
+  .vrow .ic{flex:0 0 24px;font-family:"DM Serif Display",serif;color:var(--gold);font-size:18px;text-align:center;}
+  .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+  .btn{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;font-size:15px;padding:14px;border-radius:12px;
+    border:2px solid var(--ink);}
+  .btn.dark{background:var(--ink);color:var(--paper);}
+  .btn.line{background:#fff;color:var(--ink);}
+
+  /* form */
+  .capture{margin-top:6px;background:var(--card);border:2px solid var(--ink);border-radius:18px;padding:24px 22px;box-shadow:var(--shadow);}
+  .capture h2{margin:0 0 6px;}
+  .fld{margin-top:14px;}
+  .fld label{display:block;font-size:14px;font-weight:700;margin-bottom:6px;}
+  .fld label .n{color:var(--gold);}
+  .fld input,.fld textarea,.fld select{width:100%;padding:13px 14px;font-size:16px;font-family:inherit;
+    border:2px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink);}
+  .fld select{height:52px;line-height:1.3;-webkit-appearance:menulist;appearance:menulist;}
+  .fld textarea{min-height:60px;resize:vertical;}
+  .li{display:inline-block;font-size:12.5px;font-weight:700;color:var(--teal);text-decoration:none;border-bottom:2px solid var(--teal);}
+  .fld input:focus,.fld textarea:focus,.fld select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,155,142,.18);}
+  button{margin-top:20px;width:100%;padding:15px 22px;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;
+    background:var(--ink);color:var(--paper);border:2px solid var(--ink);border-radius:12px;transition:transform .12s ease;}
+  button:hover{transform:translateY(-1px);}
+  button:disabled{opacity:.6;cursor:default;transform:none;}
+  .fineprint{font-size:13px;color:var(--muted);margin:12px 2px 0;text-align:center;}
+  .err{color:#b23b2e;font-size:14px;margin:10px 2px 0;display:none;}
+  .thanks{display:none;}
+  .thanks.show{display:block;text-align:center;padding:14px 0;animation:rise .4s ease;}
+  @keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+  .thanks .ok{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--navy);
+    background:rgba(15,155,142,.16);border:1.5px solid var(--teal);padding:6px 13px;border-radius:999px;margin-bottom:12px;}
+
+  footer{margin-top:48px;text-align:center;font-size:13px;color:var(--muted);}
+  footer a{color:var(--navy);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <span class="eyebrow">By invitation · from Aditya Jhunjhunwala</span>
+  <h1>AI for <em>Pune</em> founders.</h1>
+  <p class="lede">Straight talk on AI and where it actually earns its place in <b>your business</b>.</p>
+
+  <div class="facts card">
+    <div class="row"><span class="k">When</span><span class="v"><b>Thursday, 25 June 2026</b> · 5:00–6:30 PM, high tea to follow</span></div>
+    <div class="row"><span class="k">Where</span><span class="v"><b>Trimurty Honeygold, 6th Floor</b> · Bhosalenagar, Pune</span></div>
+    <div class="row"><span class="k">Host</span><span class="v">Aditya Jhunjhunwala · Let's Enterprise</span></div>
+    <div class="row"><span class="k">Led by</span><span class="v">Moumita Sarker · Illuminati Consulting</span></div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">Why this room</div>
+    <h2>The pieces every founder is holding</h2>
+    <div class="puzzle"><img src="puzzle.png" alt="A jigsaw of founder AI questions: too many AI tech choices, how to measure RoI, unstructured data, the economics of AI, choosing the right use case — and your piece"></div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">What to expect</div>
+    <h2>Built for blunt questions, not slides</h2>
+    <div class="ex"><span class="tag">01</span><h3>We've solved these pieces before</h3><p class="muted">Real production use cases from businesses your size — not big-tech vanity projects.</p></div>
+    <div class="ex"><span class="tag">02</span><h3>22 years, customised for you</h3><p class="muted">Where GenAI, traditional ML and agentic AI each fit — in plain English.</p></div>
+    <div class="ex"><span class="tag">03</span><h3>Practical, not theoretical</h3><p class="muted">Prototypes, and the honest success &amp; failure points of the AI journey.</p></div>
+    <p class="muted" style="margin-top:18px;">We'll cover use cases across the value chain —</p>
+    <div class="chain">
+      <span class="vc">Planning</span><span class="arr">›</span>
+      <span class="vc">Operations</span><span class="arr">›</span>
+      <span class="vc">Supply Chain</span><span class="arr">›</span>
+      <span class="vc">Sales &amp; Distribution</span><span class="arr">›</span>
+      <span class="vc">HR &amp; Finance</span><span class="arr">›</span>
+      <span class="vc">Customer Service</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">Who's leading it</div>
+    <div class="person">
+      <div class="av g">MS</div>
+      <div><h3>Moumita Sarker</h3><p class="role">Founder &amp; CEO, Illuminati Consulting · <a class="li" href="https://www.linkedin.com/in/moumitasarkervp/">LinkedIn ↗</a></p>
+      <p class="muted">One of India's most senior AI leaders. Built Deloitte India's Agentic AI Centre of Excellence for South Asia (Partner); co-founded Cartesian Consulting; founding member of HDFC Bank's analytics team. 20+ years getting AI past the pilot stage and into real P&amp;L — across BFSI, FMCG, QSR, retail and hospitality.</p></div>
+    </div>
+    <div class="person">
+      <div class="av">AJ</div>
+      <div><h3>Aditya Jhunjhunwala</h3><p class="role">Your host · Founder, Let's Enterprise · <a class="li" href="https://www.linkedin.com/in/playfulceo/">LinkedIn ↗</a></p>
+      <p class="muted">Founder and coach to founders. Convening this room so we can ask the blunt questions in good company — and make introductions across it afterwards.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">The room</div>
+    <h2>Founders joining you</h2>
+    <div class="room">
+      <a class="g" href="https://www.linkedin.com/in/satyajit-hange-930b186/"><b>Satyajit Hange</b><span>Two Brothers Organic Farms</span></a>
+      <a class="g" href="https://www.linkedin.com/in/dhruv-rajiv-agarwal/"><b>Dhruv Agarwal</b><span>Stahl Kitchens</span></a>
+      <a class="g" href="https://www.linkedin.com/in/chandrashekhar-khapre-84800b5/"><b>C. R. Khapre</b><span>Syscraft Global</span></a>
+      <a class="g" href="https://www.linkedin.com/in/rahul-sangoi-45a4b2a/"><b>Rahul Sangoi</b><span>Rio Innobev</span></a>
+      <a class="g" href="https://www.linkedin.com/in/ashwini-malhotra-094444366/"><b>Ashwini Malhotra</b><span>Weikfield</span></a>
+      <a class="g" href="https://www.linkedin.com/in/hrishikesh-manjrekar-4126011b1/"><b>Hrishikesh Manjrekar</b><span>Amar Builders</span></a>
+      <a class="g" href="https://www.linkedin.com/in/dheeman-kadam-031b8189/"><b>Dheeman Kadam</b><span>goEgoNetwork</span></a>
+      <a class="g" href="https://www.linkedin.com/in/shivraj-jadhav-694272334/"><b>Shivraj Jadhav</b><span>SKYi</span></a>
+      <a class="g" href="https://www.linkedin.com/in/mrugank-karandikar/"><b>Mrugank Karandikar</b><span>Praditi Pressparts</span></a>
+      <a class="g" href="https://www.linkedin.com/in/rujuta-jagtap/"><b>Rujuta Jagtap</b><span>SAJ Test Plant</span></a>
+      <a class="g" href="https://www.linkedin.com/in/chris-kolenaty-b10a0a33/"><b>Chris Kolenaty</b><span>Snow Leopard Ventures</span></a>
+      <a class="g" href="https://www.linkedin.com/in/chiragghube/"><b>Chirag Ghube</b><span>Multitech Group</span></a>
+      <a class="g" href="https://www.linkedin.com/in/purugupta/"><b>Puru Gupta</b><span>True Elements</span></a>
+      <a class="g" href="https://www.linkedin.com/in/vik-thapar-a68198/"><b>Vik Thapar</b><span>Emcure</span></a>
+      <a class="g" href="https://www.linkedin.com/in/ashok-shyam/"><b>Dr Ashok Shyam</b><span>Sancheti Hospital</span></a>
+    </div>
+    <p class="roomnote">A curated room across very different industries — the cross-pollination is half the value. A few seats are still being confirmed.</p>
+  </div>
+
+  <div class="section">
+    <div class="kicker">The flow</div>
+    <h2>90 minutes, then high tea</h2>
+    <div class="ag">
+      <div class="row"><div class="t">5:00</div><div class="d"><b>Opening &amp; welcome</b><span>Adi — why we're here; AI as a strategic decision, not a tech problem.</span></div></div>
+      <div class="row"><div class="t">5:10</div><div class="d"><b>The working session</b><span>Moumita — the landscape simplified, real use cases, your first quick win.</span></div></div>
+      <div class="row"><div class="t">5:50</div><div class="d"><b>Q&amp;A</b><span>Your problems, in the room, out loud.</span></div></div>
+      <div class="row"><div class="t">6:00</div><div class="d"><b>Introductions &amp; discussion</b><span>Founders, in good company — Adi connects the room.</span></div></div>
+      <div class="row"><div class="t">6:30</div><div class="d"><b>High tea &amp; networking</b></div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">Getting there</div>
+    <h2>Trimurty Honeygold · 6th floor</h2>
+    <div class="mapbox">
+      <img src="venue-map.png" alt="Map showing Let's Enterprise at Trimurty Honeygold off Range Hill Road, Bhosalenagar, with ABIL House and parking">
+      <svg viewBox="0 0 1378 1094" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" role="img" aria-label="L marks Let's Enterprise, A marks ABIL House, P marks parking along the loop road">
+        <path d="M 1115 215 C 1180 225 1212 268 1206 306 C 1201 360 1190 406 1140 426 C 1090 442 1038 410 1029 350 C 1021 300 1041 254 1086 235 C 1099 229 1108 221 1115 215 Z" fill="#E8632A" fill-opacity="0.12" stroke="#E8632A" stroke-opacity="0.6" stroke-width="22" stroke-linejoin="round"/>
+        <g transform="translate(1115 438)"><circle r="27" fill="#E8632A" stroke="#fff" stroke-width="3"/><text y="10" text-anchor="middle" font-size="30" font-weight="700" fill="#fff" font-family="DM Serif Display, serif">P</text></g>
+        <g transform="translate(1115 484)"><rect x="-78" y="-15" width="156" height="30" rx="9" fill="#16213E"/><text x="0" y="6" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">Parking · self-drive</text></g>
+        <g transform="translate(1125 200)"><circle r="29" fill="#D4A843" stroke="#16213E" stroke-width="3"/><text y="11" text-anchor="middle" font-size="32" font-weight="700" fill="#16213E" font-family="DM Serif Display, serif">L</text></g>
+        <g transform="translate(1125 150)"><rect x="-132" y="-30" width="264" height="48" rx="10" fill="#FFFDF8" stroke="#16213E" stroke-width="2.5"/><text x="0" y="-8" text-anchor="middle" font-size="19" font-weight="700" fill="#1A1A2E" font-family="DM Serif Display, serif">Let&#39;s Enterprise</text><text x="0" y="11" text-anchor="middle" font-size="14.5" font-weight="700" fill="#16213E">Trimurty Honeygold · 6th floor</text></g>
+        <g transform="translate(435 752)"><circle r="29" fill="#16213E" stroke="#D4A843" stroke-width="4"/><text y="11" text-anchor="middle" font-size="32" font-weight="700" fill="#fff" font-family="DM Serif Display, serif">A</text></g>
+        <g transform="translate(435 808)"><rect x="-70" y="-15" width="140" height="30" rx="9" fill="#fff" stroke="#16213E" stroke-width="2"/><text x="0" y="6" text-anchor="middle" font-size="17" font-weight="700" fill="#16213E">ABIL House</text></g>
+      </svg>
+    </div>
+    <div style="margin-top:18px;">
+      <div class="vrow"><span class="ic">◆</span><div><b>Trimurty Honeygold, 6th Floor.</b> Bhosalenagar, Pune. Easiest landmark — the building with <b>AXIS Bank</b> in it.</div></div>
+      <div class="vrow"><span class="ic">P</span><div><b>Parking (self-drive):</b> the semicircular loop road off Range Hill Road, right by the building.</div></div>
+      <div class="vrow"><span class="ic">☏</span><div><b>On arrival, call Jonathan Pimento:</b> +91 78755 19894 — he'll help you up.</div></div>
+    </div>
+    <div class="btnrow">
+      <a class="btn dark" href="https://maps.app.goo.gl/RdwSGb1gWSxdihyP8" target="_blank" rel="noopener">Open in Google Maps</a>
+      <a class="btn line" href="tel:+917875519894">Call Jonathan</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">Before we meet</div>
+    <div class="capture" id="capture">
+      <h2>Tell us your 3 pieces</h2>
+      <p class="muted" style="margin:0;">What 3 things would you want covered, so we make this genuinely relevant to <em>your</em> business? Specific beats polished. Two minutes.</p>
+      <form id="form" novalidate>
+        <div class="fld"><label>Your name</label><input id="name" name="name" placeholder="First and last name" required></div>
+        <div class="fld"><label>Where are you with AI today?</label>
+          <select id="stage" name="stage">
+            <option value="">Choose one…</option>
+            <option>Haven't really started</option>
+            <option>Experimenting personally (ChatGPT etc.)</option>
+            <option>A few pilots running in the business</option>
+            <option>At least one thing live in production</option>
+            <option>Actively scaling across functions</option>
+          </select>
+        </div>
+        <div class="fld"><label><span class="n">Piece 1.</span> The biggest AI question on your mind</label><textarea id="q1" name="q1" placeholder="A real bottleneck, decision, or cost…" required></textarea></div>
+        <div class="fld"><label><span class="n">Piece 2.</span> Another thing to cover <span class="muted" style="font-weight:400;">(optional)</span></label><textarea id="q2" name="q2"></textarea></div>
+        <div class="fld"><label><span class="n">Piece 3.</span> And one more <span class="muted" style="font-weight:400;">(optional)</span></label><textarea id="q3" name="q3"></textarea></div>
+        <button type="submit" id="submit">Send my pieces</button>
+      </form>
+      <p class="err" id="err">Please add your name and your first piece.</p>
+    </div>
+    <div class="thanks" id="thanks">
+      <span class="ok">Your pieces are in.</span>
+      <p class="serif" style="font-size:22px;margin:0;">See you Thursday.</p>
+    </div>
+  </div>
+
+  <footer>@playful_ceo · <a href="https://www.adityajhunjhunwala.com">adityajhunjhunwala.com</a></footer>
+</div>
+
+<script>
+
+  var form = document.getElementById('form');
+  var err = document.getElementById('err');
+  var submit = document.getElementById('submit');
+
+  function reveal(){
+    document.getElementById('capture').style.display = 'none';
+    var t = document.getElementById('thanks');
+    t.classList.add('show');
+    t.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+
+  function val(id){ var e=document.getElementById(id); return e ? (e.value||'').trim() : ''; }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!val('name') || !val('q1')){ err.style.display='block'; return; }
+    err.style.display='none';
+    submit.disabled = true; submit.textContent = 'Sending...';
+
+    // ===== GOOGLE FORM WIRING (see DEPLOY note) — fill FORM_ID + entry ids =====
+    var FORM_ID = '1FAIpQLSc9yqQoGBFCF6K3UONeiMUvh1-ObO0sC8mAkKaEdseN1cPygA';
+    var ENTRY = { name:'entry.1017566748', stage:'entry.2022732746', q1:'entry.1842707826', q2:'entry.2112882369', q3:'entry.592580115' };
+    if(FORM_ID.indexOf('PASTE') !== 0){
+      var body = new URLSearchParams();
+      ['name','stage','q1','q2','q3'].forEach(function(k){ body.append(ENTRY[k], val(k)); });
+      fetch('https://docs.google.com/forms/d/e/'+FORM_ID+'/formResponse', {method:'POST', mode:'no-cors', body:body}).catch(function(){}).finally(reveal);
+    }
+    // Safety net: reveal the thank-you even if the network hangs (or form not yet wired).
+    setTimeout(reveal, 1000);
+  });
+</script>
+</body>
+</html>
