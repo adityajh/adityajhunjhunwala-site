@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("feel");
+  eleventyConfig.addPassthroughCopy("ai-founders");
   eleventyConfig.addPassthroughCopy("open");
   eleventyConfig.addPassthroughCopy("cv");
   

@@ -67,7 +67,8 @@
   /* room */
   .room{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px;}
   .g{display:block;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;}
-  .g:hover{border-color:var(--teal);}
+  a.g:hover{border-color:var(--teal);}
+  div.g{cursor:default;}
   .g b{display:block;font-size:14px;color:var(--ink);font-weight:700;}
   .g span{font-size:11.5px;color:var(--muted);}
   .roomnote{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px;}
@@ -130,7 +131,7 @@
   <div class="facts card">
     <div class="row"><span class="k">When</span><span class="v"><b>Thursday, 25 June 2026</b> · 5:00–6:30 PM, high tea to follow</span></div>
     <div class="row"><span class="k">Where</span><span class="v"><b>Trimurty Honeygold, 6th Floor</b> · Bhosalenagar, Pune</span></div>
-    <div class="row"><span class="k">Host</span><span class="v">Aditya Jhunjhunwala · Let's Enterprise</span></div>
+    <div class="row"><span class="k">Host</span><span class="v">Aditya Jhunjhunwala · <a href="https://www.letsenterprise.in" target="_blank" rel="noopener" style="color:var(--navy);font-weight:700;">Let's Enterprise</a></span></div>
     <div class="row"><span class="k">Led by</span><span class="v">Moumita Sarker · Illuminati Consulting</span></div>
   </div>
 
@@ -175,21 +176,22 @@
     <div class="kicker">The room</div>
     <h2>Founders joining you</h2>
     <div class="room">
-      <a class="g" href="https://www.linkedin.com/in/satyajit-hange-930b186/"><b>Satyajit Hange</b><span>Two Brothers Organic Farms</span></a>
-      <a class="g" href="https://www.linkedin.com/in/dhruv-rajiv-agarwal/"><b>Dhruv Agarwal</b><span>Stahl Kitchens</span></a>
-      <a class="g" href="https://www.linkedin.com/in/chandrashekhar-khapre-84800b5/"><b>C. R. Khapre</b><span>Syscraft Global</span></a>
-      <a class="g" href="https://www.linkedin.com/in/rahul-sangoi-45a4b2a/"><b>Rahul Sangoi</b><span>Rio Innobev</span></a>
-      <a class="g" href="https://www.linkedin.com/in/ashwini-malhotra-094444366/"><b>Ashwini Malhotra</b><span>Weikfield</span></a>
-      <a class="g" href="https://www.linkedin.com/in/hrishikesh-manjrekar-4126011b1/"><b>Hrishikesh Manjrekar</b><span>Amar Builders</span></a>
-      <a class="g" href="https://www.linkedin.com/in/dheeman-kadam-031b8189/"><b>Dheeman Kadam</b><span>goEgoNetwork</span></a>
-      <a class="g" href="https://www.linkedin.com/in/shivraj-jadhav-694272334/"><b>Shivraj Jadhav</b><span>SKYi</span></a>
-      <a class="g" href="https://www.linkedin.com/in/mrugank-karandikar/"><b>Mrugank Karandikar</b><span>Praditi Pressparts</span></a>
-      <a class="g" href="https://www.linkedin.com/in/rujuta-jagtap/"><b>Rujuta Jagtap</b><span>SAJ Test Plant</span></a>
-      <a class="g" href="https://www.linkedin.com/in/chris-kolenaty-b10a0a33/"><b>Chris Kolenaty</b><span>Snow Leopard Ventures</span></a>
-      <a class="g" href="https://www.linkedin.com/in/chiragghube/"><b>Chirag Ghube</b><span>Multitech Group</span></a>
-      <a class="g" href="https://www.linkedin.com/in/purugupta/"><b>Puru Gupta</b><span>True Elements</span></a>
-      <a class="g" href="https://www.linkedin.com/in/vik-thapar-a68198/"><b>Vik Thapar</b><span>Emcure</span></a>
-      <a class="g" href="https://www.linkedin.com/in/ashok-shyam/"><b>Dr Ashok Shyam</b><span>Sancheti Hospital</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/satyajit-hange-930b186/"><b>Satyajit Hange</b><span>Two Brothers Organic Farms</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/dhruv-rajiv-agarwal/"><b>Dhruv Agarwal</b><span>Stahl Kitchens</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/chandrashekhar-khapre-84800b5/"><b>C. R. Khapre</b><span>Syscraft Global</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/rahul-sangoi-45a4b2a/"><b>Rahul Sangoi</b><span>Rio Innobev</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/ashwini-malhotra-094444366/"><b>Ashwini Malhotra</b><span>Weikfield</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/hrishikesh-manjrekar-4126011b1/"><b>Hrishikesh Manjrekar</b><span>Amar Builders</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/dheeman-kadam-031b8189/"><b>Dheeman Kadam</b><span>goEgoNetwork</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shivraj-jadhav-694272334/"><b>Shivraj Jadhav</b><span>SKYi</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/mrugank-karandikar/"><b>Mrugank Karandikar</b><span>Praditi Pressparts</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/rujuta-jagtap/"><b>Rujuta Jagtap</b><span>SAJ Test Plant</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/chris-kolenaty-b10a0a33/"><b>Chris Kolenaty</b><span>Snow Leopard Ventures</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/chiragghube/"><b>Chirag Ghube</b><span>Multitech Group</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/purugupta/"><b>Puru Gupta</b><span>True Elements</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/vik-thapar-a68198/"><b>Vik Thapar</b><span>Emcure</span></a>
+      <a class="g" target="_blank" rel="noopener" href="https://www.linkedin.com/in/ashok-shyam/"><b>Dr Ashok Shyam</b><span>Sancheti Hospital</span></a>
+      <div class="g"><b>Zahaam Pudumjee</b><span>Thermax Ltd</span></div>
     </div>
     <p class="roomnote">A curated room across very different industries — the cross-pollination is half the value. A few seats are still being confirmed.</p>
   </div>
