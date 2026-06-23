@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("feel");
-  eleventyConfig.addPassthroughCopy("founders-room");
+  eleventyConfig.addPassthroughCopy("in-good-company");
   eleventyConfig.addPassthroughCopy("open");
   eleventyConfig.addPassthroughCopy("cv");
   
