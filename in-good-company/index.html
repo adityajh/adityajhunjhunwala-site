@@ -230,71 +230,96 @@
     </div>
   </div>
 
+  <style>
+    /* recap */
+    .recap-photo{border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);margin-top:4px;background:#fff;}
+    .recap-photo img{display:block;width:100%;height:auto;}
+    .recap-cap{font-size:13px;color:var(--muted);font-style:italic;margin:10px 2px 0;text-align:center;}
+    .oneline{background:var(--card);border:2px solid var(--ink);border-radius:18px;padding:20px 22px;box-shadow:var(--shadow);margin-top:18px;font-size:16.5px;}
+    .oneline b{box-shadow:inset 0 -.5em 0 rgba(212,168,67,.30);}
+    /* technique chips */
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+    .chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:700;color:var(--navy);box-shadow:2px 3px 0 rgba(26,26,46,.08);}
+    .chip .dot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;}
+    .chip .t{font-weight:400;color:var(--muted);font-size:12.5px;}
+    .d-stat{background:var(--muted);} .d-ml{background:var(--teal);} .d-vis{background:var(--navy);} .d-gen{background:var(--gold);} .d-ag{background:#E8632A;}
+    .legend{font-size:12.5px;color:var(--muted);margin-top:12px;display:flex;flex-wrap:wrap;gap:14px;}
+    .legend span{display:inline-flex;align-items:center;gap:6px;}
+    .legend i{width:9px;height:9px;border-radius:50%;display:inline-block;}
+    /* takeaway cards */
+    .takes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;}
+    @media (max-width:560px){.takes{grid-template-columns:1fr;}}
+    .take{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow);}
+    .take .num{display:inline-block;font-family:"DM Serif Display",serif;font-size:20px;color:var(--gold);line-height:1;margin-bottom:6px;}
+    .take h4{font-size:14.5px;font-weight:700;margin:0 0 4px;color:var(--ink);}
+    .take p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
+    /* led-by line */
+    .ledby{display:flex;gap:12px;align-items:flex-start;border:2px solid var(--ink);border-radius:14px;background:#fff;padding:14px 16px;box-shadow:var(--shadow);margin-top:18px;}
+    .ledby .av{width:40px;height:40px;flex:0 0 40px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:"DM Serif Display",serif;font-size:17px;}
+    .ledby div b{font-size:14.5px;} .ledby div span{display:block;font-size:12.5px;color:var(--muted);}
+  </style>
+
   <div class="section">
-    <div class="kicker">Before we meet</div>
-    <div class="capture" id="capture">
-      <h2>Tell us your 3 pieces</h2>
-      <p class="muted" style="margin:0;">What 3 things would you want covered, so we make this genuinely relevant to <em>your</em> business? Specific beats polished. Two minutes.</p>
-      <form id="form" novalidate>
-        <div class="fld"><label>Your name</label><input id="name" name="name" placeholder="First and last name" required></div>
-        <div class="fld"><label>Where are you with AI today?</label>
-          <select id="stage" name="stage">
-            <option value="">Choose one…</option>
-            <option>Haven't really started</option>
-            <option>Experimenting personally (ChatGPT etc.)</option>
-            <option>A few pilots running in the business</option>
-            <option>At least one thing live in production</option>
-            <option>Actively scaling across functions</option>
-          </select>
-        </div>
-        <div class="fld"><label><span class="n">Piece 1.</span> The biggest AI question on your mind</label><textarea id="q1" name="q1" placeholder="A real bottleneck, decision, or cost…" required></textarea></div>
-        <div class="fld"><label><span class="n">Piece 2.</span> Another thing to cover <span class="muted" style="font-weight:400;">(optional)</span></label><textarea id="q2" name="q2"></textarea></div>
-        <div class="fld"><label><span class="n">Piece 3.</span> And one more <span class="muted" style="font-weight:400;">(optional)</span></label><textarea id="q3" name="q3"></textarea></div>
-        <button type="submit" id="submit">Send my pieces</button>
-      </form>
-      <p class="err" id="err">Please add your name and your first piece.</p>
+    <div class="kicker">The session · 25 June 2026</div>
+    <h2>What we covered, in good company</h2>
+    <div class="recap-photo"><img src="/in-good-company/session-group.jpg" alt="The In Good Company Edition 01 room: founders and leaders across manufacturing, FMCG, real estate, healthcare, mobility and pharma, gathered at Let's Enterprise, Pune"></div>
+    <p class="recap-cap">Edition 01 · a room across manufacturing, FMCG, real estate, healthcare, mobility and pharma.</p>
+
+    <div class="ledby">
+      <div class="av">MS</div>
+      <div><b>Led by Moumita Sarker</b><span>Illuminati Consulting · 21+ years across BFSI, FMCG, QSR, retail &amp; hospitality · ex-Deloitte (Agentic AI, South Asia)</span></div>
     </div>
-    <div class="thanks" id="thanks">
-      <span class="ok">Your pieces are in.</span>
-      <p class="serif" style="font-size:22px;margin:0;">See you Thursday.</p>
+
+    <div class="oneline">AI is not one thing you "adopt." It is a toolbox. The job of a leader is to know <b>where to use what</b>, pick your <b>core</b> processes, design on paper first, and ship a real prototype in <b>six weeks</b>, not a six-month science project.</div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">The map</div>
+    <h2>Know where to use what</h2>
+    <p class="muted" style="margin:0 0 4px;">AI is a superset of techniques, not a single tool. Match the question to the technique.</p>
+    <div class="chips">
+      <span class="chip"><span class="dot d-stat"></span>Descriptive <span class="t">dashboards, KPIs · statistics</span></span>
+      <span class="chip"><span class="dot d-stat"></span>Diagnostic <span class="t">"why is this down?" · statistics</span></span>
+      <span class="chip"><span class="dot d-ml"></span>Predictive <span class="t">forecasts · classical ML</span></span>
+      <span class="chip"><span class="dot d-ml"></span>Prescriptive <span class="t">recommendations · ML</span></span>
+      <span class="chip"><span class="dot d-vis"></span>Computer vision <span class="t">share-of-shelf, invoices · deep learning</span></span>
+      <span class="chip"><span class="dot d-gen"></span>Generative AI <span class="t">create new, without your data</span></span>
+      <span class="chip"><span class="dot d-ag"></span>Agentic AI <span class="t">stitches it all into a workflow</span></span>
     </div>
+    <p class="muted" style="margin-top:14px;font-style:italic;">"You don't need a gun to kill a mosquito." Some things are still best solved in Excel.</p>
+  </div>
+
+  <div class="section">
+    <div class="kicker">Ten things worth taking back</div>
+    <h2>The playbook</h2>
+    <div class="takes">
+      <div class="take"><span class="num">01</span><h4>Go bold with the core</h4><p>Not the periphery. Take five core processes, choose two for the year. Reimagine finance, manufacturing or sales, not an investor-report generator.</p></div>
+      <div class="take"><span class="num">02</span><h4>Don't throw away what you have</h4><p>Old bots, dashboards, legacy systems are pillars you stitch together. Build agents around SAP; don't rebuild SAP.</p></div>
+      <div class="take"><span class="num">03</span><h4>Prototype in six weeks</h4><p>On your own real data, fully integrated, even for one small region. A toy in a box that isn't integrated will not work.</p></div>
+      <div class="take"><span class="num">04</span><h4>Design on paper first</h4><p>If you can't draw the process and mark where humans approve and agents act, you can't build it. No paper design, no go.</p></div>
+      <div class="take"><span class="num">05</span><h4>Choose on AI economics</h4><p>Run a 2x2 where one axis is whether it makes economic sense. Direct value, indirect value and cost decide the final two.</p></div>
+      <div class="take"><span class="num">06</span><h4>Tame token cost with a router</h4><p>Simple questions answer from existing dashboards (cheap); only real reasoning hits an LLM. One bank let everyone "just query" and killed it in three months on cost.</p></div>
+      <div class="take"><span class="num">07</span><h4>Format and silos no longer matter</h4><p>Dump Excel, PDF, even legacy design IP as-is. Agents will read it, but only if you give them the knowledge base. They are not magic.</p></div>
+      <div class="take"><span class="num">08</span><h4>Humans and agents, one screen</h4><p>Build the human-in-the-loop in, with confidence scores and tolerances ("below 98%, notify a human"). No parallel human system.</p></div>
+      <div class="take"><span class="num">09</span><h4>Visibility is non-negotiable</h4><p>Show every step: what was extracted, what's pending, where exceptions are. Done right, it's more transparent than a human team.</p></div>
+      <div class="take"><span class="num">10</span><h4>Go modular</h4><p>Break a big program into 8-week sprints that each stand alone but add to one number. Britannia's field-only move drove ~4% incremental top line.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">On people &amp; judgement</div>
+    <h2>The human edge</h2>
+    <div class="takes">
+      <div class="take"><span class="num">·</span><h4>LLMs only where reasoning lives</h4><p>Front-line, deterministic tasks don't need them. Reserve the expensive thinking for genuine strategy questions.</p></div>
+      <div class="take"><span class="num">·</span><h4>AI flatters you</h4><p>By the 11th iteration it often just mirrors your own thinking. Original thinkers pull ahead; pure tool-users plateau.</p></div>
+      <div class="take"><span class="num">·</span><h4>Awareness at the manager level</h4><p>Ask people to whiteboard a paper design first. You can tell genuine thinking from copy-paste.</p></div>
+      <div class="take"><span class="num">·</span><h4>Integration is simpler than you fear</h4><p>Agents talk to systems through plain APIs (and MCP where it exists). No MCP? A simple file drop-off works.</p></div>
+    </div>
+    <p class="muted" style="margin-top:18px;font-style:italic;">Shared with the room of In Good Company · Edition 01. Different industries, the same questions.</p>
   </div>
 
   <footer><b style="color:var(--ink);font-weight:700;">In Good Company</b> · convened by Aditya Jhunjhunwala<br>@playful_ceo · <a href="https://www.adityajhunjhunwala.com">adityajhunjhunwala.com</a></footer>
 </div>
 
-<script>
-
-  var form = document.getElementById('form');
-  var err = document.getElementById('err');
-  var submit = document.getElementById('submit');
-
-  function reveal(){
-    document.getElementById('capture').style.display = 'none';
-    var t = document.getElementById('thanks');
-    t.classList.add('show');
-    t.scrollIntoView({behavior:'smooth', block:'center'});
-  }
-
-  function val(id){ var e=document.getElementById(id); return e ? (e.value||'').trim() : ''; }
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    if(!val('name') || !val('q1')){ err.style.display='block'; return; }
-    err.style.display='none';
-    submit.disabled = true; submit.textContent = 'Sending...';
-
-    // ===== GOOGLE FORM WIRING (see DEPLOY note): FORM_ID + entry ids =====
-    var FORM_ID = '1FAIpQLSc9yqQoGBFCF6K3UONeiMUvh1-ObO0sC8mAkKaEdseN1cPygA';
-    var ENTRY = { name:'entry.1017566748', stage:'entry.2022732746', q1:'entry.1842707826', q2:'entry.2112882369', q3:'entry.592580115' };
-    if(FORM_ID.indexOf('PASTE') !== 0){
-      var body = new URLSearchParams();
-      ['name','stage','q1','q2','q3'].forEach(function(k){ body.append(ENTRY[k], val(k)); });
-      fetch('https://docs.google.com/forms/d/e/'+FORM_ID+'/formResponse', {method:'POST', mode:'no-cors', body:body}).catch(function(){}).finally(reveal);
-    }
-    // Safety net: reveal the thank-you even if the network hangs (or form not yet wired).
-    setTimeout(reveal, 1000);
-  });
-</script>
 </body>
 </html>
