@@ -213,23 +213,6 @@
     </div>
   </div>
 
-  <div class="section">
-    <div class="kicker">Getting there</div>
-    <h2>Trimurty Honeygold · 6th floor</h2>
-    <div class="mapbox">
-      <img src="/in-good-company/venue-map.png" alt="Map: Let's Enterprise at Trimurty Honeygold (6th floor, landmark AXIS Bank) off Range Hill Road, Bhosalenagar. Park anywhere on the loop road; ABIL House nearby; routes towards Pune University and Sancheti Hospital marked.">
-    </div>
-    <div style="margin-top:18px;">
-      <div class="vrow"><span class="ic">◆</span><div><b>Trimurty Honeygold, 6th Floor.</b> Bhosalenagar, Pune. Easiest landmark, the building with <b>AXIS Bank</b> in it.</div></div>
-      <div class="vrow"><span class="ic">P</span><div><b>Parking (self-drive):</b> the semicircular loop road off Range Hill Road, right by the building.</div></div>
-      <div class="vrow"><span class="ic">☏</span><div><b>On arrival, call Jonathan Pimento:</b> +91 78755 19894. He'll help you up.</div></div>
-    </div>
-    <div class="btnrow">
-      <a class="btn dark" href="https://maps.app.goo.gl/RdwSGb1gWSxdihyP8" target="_blank" rel="noopener">Open in Google Maps</a>
-      <a class="btn line" href="tel:+917875519894">Call Jonathan</a>
-    </div>
-  </div>
-
   <style>
     /* recap */
     .recap-photo{border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);margin-top:4px;background:#fff;}
@@ -237,11 +220,44 @@
     .recap-cap{font-size:13px;color:var(--muted);font-style:italic;margin:10px 2px 0;text-align:center;}
     .oneline{background:var(--card);border:2px solid var(--ink);border-radius:18px;padding:20px 22px;box-shadow:var(--shadow);margin-top:18px;font-size:16.5px;}
     .oneline b{box-shadow:inset 0 -.5em 0 rgba(212,168,67,.30);}
-    .opened{margin-top:18px;background:var(--paper);border:2px solid var(--ink);border-left:7px solid var(--gold);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);}
-    .opened-tag{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
-    .opened p{margin:0 0 12px;font-size:15.5px;color:var(--ink);line-height:1.65;}
-    .opened p:last-child{margin-bottom:0;}
-    .opened b{box-shadow:inset 0 -.5em 0 rgba(212,168,67,.30);}
+    .opened-tag{font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+    /* wand element */
+    .wand{background:var(--navy);border:2px solid var(--ink);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);}
+    .wand-eyebrow{font-family:"DM Serif Display",serif;font-size:20px;color:var(--paper);margin-bottom:12px;}
+    .wand-rules{display:flex;flex-direction:column;gap:7px;}
+    .wand-rules span{font-size:14px;font-weight:600;padding:7px 12px;border-radius:9px;}
+    .wand-rules .can{background:rgba(212,168,67,.20);color:#F4E3B8;border:1px solid rgba(212,168,67,.5);}
+    .wand-rules .cant{background:rgba(255,255,255,.06);color:#B9B6CE;border:1px solid rgba(255,255,255,.12);}
+    /* big question */
+    .bigq{margin-top:14px;background:var(--card);border:2px solid var(--ink);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);}
+    .bigq-label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+    .bigq p{font-family:"DM Serif Display",serif;font-size:clamp(21px,4vw,27px);line-height:1.25;color:var(--ink);margin:0;}
+    .bigq-note{display:block;margin-top:12px;font-size:13.5px;color:var(--muted);font-style:italic;}
+    /* insight (the turn) */
+    .insight{margin-top:14px;display:flex;gap:0;border:2px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);}
+    .insight-l{flex:0 0 86px;background:#E8632A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:"DM Serif Display",serif;font-size:17px;text-align:center;padding:10px;}
+    .insight-r{flex:1;background:#fff;padding:16px 18px;font-size:15.5px;line-height:1.6;color:var(--ink);}
+    .insight-r b{box-shadow:inset 0 -.5em 0 rgba(232,99,42,.18);}
+    @media (max-width:520px){.insight{flex-direction:column;}.insight-l{flex-basis:auto;padding:8px;}}
+    /* IKEA story */
+    .story{margin-top:14px;background:var(--paper);border:2px solid var(--ink);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);}
+    .story-tag{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+    .story p{margin:0;font-size:15px;color:var(--ink);line-height:1.6;}
+    .story-lesson{margin-top:12px;padding-top:12px;border-top:2px dashed var(--line);font-size:14.5px;font-weight:600;color:var(--navy);}
+    /* closing banner */
+    .banner{margin-top:14px;background:var(--gold);border:2px solid var(--ink);border-radius:16px;padding:18px 22px;box-shadow:var(--shadow);font-family:"DM Serif Display",serif;font-size:clamp(19px,3.4vw,24px);line-height:1.3;color:var(--navy);}
+    .banner-k{display:block;font-family:"Inter",sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);opacity:.7;margin-bottom:8px;}
+    /* questions brought (themes) */
+    .qthemes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px;}
+    @media (max-width:560px){.qthemes{grid-template-columns:1fr;}}
+    .qtheme{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:13px 15px;box-shadow:2px 3px 0 rgba(26,26,46,.08);}
+    .qtheme .qn{display:block;font-weight:700;font-size:14px;color:var(--navy);margin-bottom:4px;}
+    .qtheme .qd{display:block;font-size:12.5px;color:var(--muted);line-height:1.5;}
+    /* questions live */
+    .qlive{margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+    .qrow{display:flex;gap:12px;align-items:flex-start;background:#fff;border:2px solid var(--ink);border-radius:12px;padding:12px 15px;box-shadow:2px 3px 0 rgba(26,26,46,.08);}
+    .qrow .qmark{flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"DM Serif Display",serif;font-size:15px;}
+    .qrow p{margin:0;font-size:14.5px;color:var(--ink);line-height:1.5;padding-top:2px;}
     /* technique chips */
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
     .chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:700;color:var(--navy);box-shadow:2px 3px 0 rgba(26,26,46,.08);}
@@ -275,12 +291,37 @@
       <div><b>Led by Moumita Sarker</b><span>Illuminati Consulting · 21+ years across BFSI, FMCG, QSR, retail &amp; hospitality · ex-Deloitte (Agentic AI, South Asia)</span></div>
     </div>
 
-    <div class="opened">
-      <div class="opened-tag">How we opened · Aditya</div>
-      <p>I started by handing everyone a wand. Think of AI as the wand Harry Potter always wanted: it can do almost anything you ask, everything except make someone fall in love, and move money on its own. So I asked the room a question: if I gave you this wand today and we met again in a year, who would have built the most wealth?</p>
-      <p>The answers came back fast, audacity, disruption, hunger. All true. But here is the turn. If the wand can do anything I ask, then the only thing that separates us is <b>what we ask for</b>. What we are courageous and imaginative enough to ask for. That is a deeply human ability. So the paradox of this moment is simple: as technology becomes more powerful, our humanness becomes more important, not less.</p>
-      <p>Then I told the IKEA story. A worker there once gestured for me to carry my own coffee cup to the bin, rather than clearing it herself, because IKEA had trained her to. A small act, but it quietly disrupted a deep culture code about who cleans up after whom. That is the power of a business: its impact is not only profit, it is the behaviour it normalises, subtle, powerful, and often irreversible. I believe in business as a force for good.</p>
-      <p>So as a room of leaders who shape lives and organisations, that is what <b>In Good Company</b> is for: to sharpen our humanness even more, as we move boldly forward.</p>
+    <div class="opened-tag" style="margin-top:22px;">The opening · a wand</div>
+
+    <div class="wand">
+      <div class="wand-eyebrow">Imagine AI is a wand</div>
+      <div class="wand-rules">
+        <span class="can">✦ It can do almost anything you ask</span>
+        <span class="cant">✕ except make someone fall in love</span>
+        <span class="cant">✕ and move money on its own</span>
+      </div>
+    </div>
+
+    <div class="bigq">
+      <span class="bigq-label">The question to the room</span>
+      <p>"If I gave you this wand today, and we met again in a year, who would have built the most wealth?"</p>
+      <span class="bigq-note">The answers came fast: audacity, disruption, hunger. All true. But there's a sharper turn.</span>
+    </div>
+
+    <div class="insight">
+      <div class="insight-l">The turn</div>
+      <div class="insight-r">If the wand does anything you ask, the only thing separating us is <b>what we ask for</b>. The courage and imagination to ask. That is deeply human. So the paradox: as technology gets more powerful, our humanness matters <b>more</b>, not less.</div>
+    </div>
+
+    <div class="story">
+      <div class="story-tag">The IKEA cup</div>
+      <p>An IKEA worker once gestured for me to carry my own coffee cup to the bin, rather than clearing it herself, because IKEA had trained her to. A small act that quietly disrupted a deep culture code about who cleans up after whom.</p>
+      <div class="story-lesson">A business's impact is not only profit. It is the behaviour it normalises: subtle, powerful, often irreversible. Business can be a force for good.</div>
+    </div>
+
+    <div class="banner">
+      <span class="banner-k">What In Good Company is for</span>
+      To sharpen our humanness even more, as we move boldly forward.
     </div>
 
     <div class="oneline">AI is not one thing you "adopt." It is a toolbox. The job of a leader is to know <b>where to use what</b>, pick your <b>core</b> processes, design on paper first, and ship a real prototype in <b>six weeks</b>, not a six-month science project.</div>
@@ -329,6 +370,41 @@
       <div class="take"><span class="num">·</span><h4>Integration is simpler than you fear</h4><p>Agents talk to systems through plain APIs (and MCP where it exists). No MCP? A simple file drop-off works.</p></div>
     </div>
     <p class="muted" style="margin-top:18px;font-style:italic;">Shared with the room of In Good Company · Edition 01. Different industries, the same questions.</p>
+  </div>
+
+  <div class="section">
+    <div class="kicker">What the room was asking</div>
+    <h2>The questions we brought</h2>
+    <p class="muted" style="margin:0 0 4px;">From the room's own submissions before we met. Different industries, remarkably overlapping concerns.</p>
+    <div class="qthemes">
+      <div class="qtheme"><span class="qn">Where does it actually earn its place?</span><span class="qd">Identifying the areas of the business where AI has lasting impact, and where it truly unlocks value.</span></div>
+      <div class="qtheme"><span class="qn">Data privacy, security &amp; confidentiality</span><span class="qd">Using AI on the job without diluting privacy or leaking confidential data.</span></div>
+      <div class="qtheme"><span class="qn">Keeping AI under control</span><span class="qd">How to keep agents on a tight leash; responsible, governed use.</span></div>
+      <div class="qtheme"><span class="qn">Cost &amp; token economics</span><span class="qd">Managing token cost; the real cost-versus-benefit of going live.</span></div>
+      <div class="qtheme"><span class="qn">From experiment to operations</span><span class="qd">Moving past pilots; upskilling teams; ideas into actual execution.</span></div>
+      <div class="qtheme"><span class="qn">Structured vs unstructured data</span><span class="qd">Is there enough structured data, and how to make existing data relevant?</span></div>
+      <div class="qtheme"><span class="qn">Which model, which technique</span><span class="qd">Which models are better at what; which AI types suit an MSME, and on what timeline.</span></div>
+      <div class="qtheme"><span class="qn">People vs AI</span><span class="qd">The future of jobs, overdependence, and what we let go of for a better long-term future.</span></div>
+      <div class="qtheme"><span class="qn">Sector-specific unlocks</span><span class="qd">Discrete manufacturing &amp; capital goods, healthcare outcomes, farming decisions, BIM &amp; clash detection, decisions across functions.</span></div>
+      <div class="qtheme"><span class="qn">AI as a moat</span><span class="qd">How to make AI a genuine competitive advantage, and measure its success.</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker">Asked live, in the room</div>
+    <h2>The questions out loud</h2>
+    <div class="qlive">
+      <div class="qrow"><span class="qmark">Q</span><p>In a trading company, how much of the human can agentic AI actually replace?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>In engineering, architecture, radiology, can't everything be automated?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>Can ten or twenty years of legacy design knowledge really just be dumped and processed?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>An invoice goes to a customer. How do I make sure AI doesn't slip in a wrong tax or HSN code, and notifies me to step in?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>Token cost looks like it can balloon. How do you put rails on usage?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>If someone uses AI to reach the same conclusions as a natural talent, do they get over-promoted for ability they don't really have?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>How do the agents actually operate, web app, phone, laptop? And can they build on top of our existing third-party sales app?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>If a system like Tally has no MCP, can we still integrate with it?</p></div>
+      <div class="qrow"><span class="qmark">Q</span><p>Why is it even called "agentic"?</p></div>
+    </div>
+    <p class="muted" style="margin-top:16px;font-style:italic;">Every one of these got answered in the room. The short version: choose the core use case, design on paper, prototype in six weeks, and keep a human on the same screen.</p>
   </div>
 
   <footer><b style="color:var(--ink);font-weight:700;">In Good Company</b> · convened by Aditya Jhunjhunwala<br>@playful_ceo · <a href="https://www.adityajhunjhunwala.com">adityajhunjhunwala.com</a></footer>
