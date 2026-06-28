@@ -452,8 +452,61 @@
     <p class="muted" style="margin-top:14px;font-style:italic;">Shared with the room of In Good Company · Edition 01. Different industries, the same questions.</p>
   </div>
 
+  <style>
+    .sub{margin-top:40px;background:var(--navy);border:2px solid var(--ink);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow);}
+    .sub h2{color:var(--paper);margin:0 0 6px;}
+    .sub p{color:#C5C2D6;font-size:14.5px;margin:0;line-height:1.55;}
+    .sub form{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;}
+    .sub input{flex:1 1 200px;padding:13px 15px;font-size:16px;font-family:inherit;border:2px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink);}
+    .sub input:focus{outline:none;box-shadow:0 0 0 3px rgba(212,168,67,.4);}
+    .sub button{flex:0 0 auto;margin:0;width:auto;padding:13px 24px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;background:var(--gold);color:var(--navy);border:2px solid var(--ink);border-radius:12px;transition:transform .12s ease;}
+    .sub button:hover{transform:translateY(-1px);}
+    .sub button:disabled{opacity:.6;cursor:default;transform:none;}
+    .sub-err{color:#F6B8AE;font-size:13.5px;margin:10px 2px 0;display:none;}
+    .sub-ok{display:none;margin-top:14px;}
+    .sub-ok.show{display:block;}
+    .sub-ok .ok{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--navy);background:var(--gold);padding:7px 14px;border-radius:999px;}
+    .sub-ok p{color:var(--paper);font-family:"DM Serif Display",serif;font-size:20px;margin:12px 0 0;}
+  </style>
+
+  <div class="sub" id="sub">
+    <h2>Get my weekly letter</h2>
+    <p>Eat. Play. Love. One honest note a week on building a life, and a body of work.</p>
+    <form id="subform" novalidate>
+      <input id="subemail" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" aria-label="Your email" required>
+      <button type="submit" id="subbtn">Subscribe</button>
+    </form>
+    <p class="sub-err" id="suberr">Please enter a valid email.</p>
+    <div class="sub-ok" id="subok">
+      <span class="ok">You're in.</span>
+      <p>A letter lands in your inbox each week.</p>
+    </div>
+  </div>
+
   <footer><b style="color:var(--ink);font-weight:700;">In Good Company</b> · convened by Aditya Jhunjhunwala<br>@playful_ceo · <a href="https://www.adityajhunjhunwala.com">adityajhunjhunwala.com</a></footer>
 </div>
 
+<script>
+  (function(){
+    var f=document.getElementById('subform'),e=document.getElementById('subemail'),
+        b=document.getElementById('subbtn'),err=document.getElementById('suberr'),
+        ok=document.getElementById('subok'),box=document.getElementById('sub');
+    var RE=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    f.addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var email=(e.value||'').trim();
+      if(!RE.test(email)){err.style.display='block';return;}
+      err.style.display='none';b.disabled=true;b.textContent='Adding...';
+      fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({email:email,magnet:'letters'})})
+        .catch(function(){})
+        .finally(function(){
+          f.style.display='none';
+          box.querySelector('p').style.display='none';
+          ok.classList.add('show');
+        });
+    });
+  })();
+</script>
 </body>
 </html>
