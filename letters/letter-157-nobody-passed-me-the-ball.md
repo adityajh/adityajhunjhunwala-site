@@ -65,7 +65,7 @@ There is a line in the Gita I keep close. Better to live your own path imperfect
 ------
 
 
-If you know a parent watching a restless, hard to place young person right now, forward them this letter. And if this was forwarded to you, welcome. You can get one of your own every Sunday. Subscribe here: https://qrto.to/66f8cc1e
+If you know a parent watching a restless, hard to place young person right now, forward them this letter. And if this was forwarded to you, welcome. You can get one of your own every Sunday. Subscribe here: https://www.adityajhunjhunwala.com/subscribe/
 
 
 ------

@@ -85,7 +85,7 @@ That is what two thousand deliberate hours can build that a degree cannot. A vis
 
 If you know a family deep in the college search right now, the ones with the lists and the late night worry, forward them this letter. It will not tell them which college to choose. It will do something more useful. It will lift the pressure off the wrong question, and set it back down on the one that matters. Not which door, but what gets built in the three years behind it.
 
-And if this letter was forwarded to you, welcome. You can get one of your own every Sunday. Subscribe here: https://qrto.to/66f8cc1e
+And if this letter was forwarded to you, welcome. You can get one of your own every Sunday. Subscribe here: https://www.adityajhunjhunwala.com/subscribe/
 
 
 ------

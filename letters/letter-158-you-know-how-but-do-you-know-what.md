@@ -89,7 +89,7 @@ It teaches the one thing the scorecard never will. That you do not wait until yo
 ------
 
 
-If you know a parent staring at a scorecard this week, wondering what it really predicts, forward them this letter. And if this was forwarded to you, welcome. You can get one of your own every Sunday. Subscribe here: https://qrto.to/66f8cc1e
+If you know a parent staring at a scorecard this week, wondering what it really predicts, forward them this letter. And if this was forwarded to you, welcome. You can get one of your own every Sunday. Subscribe here: https://www.adityajhunjhunwala.com/subscribe/
 
 
 ------
