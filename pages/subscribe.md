@@ -10,7 +10,6 @@ permalink: /subscribe/
     <h1 style="font-family:var(--font-serif); font-size:2.5rem; margin-bottom:0.5rem;">A letter every Sunday.</h1>
     <p style="font-size:1.125rem; font-style:italic; color:var(--text-muted); margin-bottom:2rem;">Eat. Play. Love.</p>
     <p style="margin-bottom:1.5rem;">An honest letter about work, life, food, and the inner game, to your inbox every Sunday. 155 letters and counting, since 2020.</p>
-    <p style="margin-bottom:2rem; color:var(--text-muted); font-size:0.9rem;">No pitch. No sponsor mentions. Just the work.</p>
     <form id="subform" class="sub-inline" novalidate>
       <input id="subemail" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" aria-label="Your email" required>
       <button type="submit" id="subbtn" class="btn btn-primary" style="font-size:1rem; padding:0.875rem 2rem;">Subscribe free</button>
