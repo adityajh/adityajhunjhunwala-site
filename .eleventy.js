@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("in-good-company");
   eleventyConfig.addPassthroughCopy("open");
   eleventyConfig.addPassthroughCopy("cv");
+  eleventyConfig.addPassthroughCopy("pyma");
   
 
   // --- Filters ---

@@ -9,6 +9,7 @@ const AUDIENCES = {
   open:      "5f3a3506-2bc7-4092-83dc-e365d1f72884", // Magnet: OPEN (Comment OPEN / IG)
   portfolio: "964241d7-e734-4287-b671-dfa8d7168e31", // Magnet: Portfolio (Build your proof of work)
   letters:   "c58a5996-3a4d-4b59-9535-dd046c8c4a4b", // AdiLetters (Eat. Play. Love. weekly letter)
+  pyma:      "e7dfca31-3954-48ed-bfae-84e88f62115b", // Magnet: PYMA (career archetype session)
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
