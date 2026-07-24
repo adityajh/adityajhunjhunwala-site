@@ -193,13 +193,12 @@
     <div class="kicker">Step 2 of 4 · Your day</div>
     <h2>Design your ideal day</h2>
     <div class="cue">Facilitator: it has to add up to 24 hours. Lock what you refuse to give up, the rest rebalances. Watch your build hours against your screen hours.</div>
-    <div class="qlabel" style="margin-top:0">Most of my day already goes to...</div>
+    <div class="qlabel" style="margin-top:0">Quick fill: most of my day goes to...</div>
     <div class="chips" id="commit-chips">
-      <span class="chip pick" onclick="setCommit('college',this)">🎓 Day college</span>
-      <span class="chip pick" onclick="setCommit('job',this)">💼 Day job</span>
-      <span class="chip pick on" id="commit-free" onclick="setCommit('free',this)">🌱 Free / on myself</span>
+      <span class="chip pick" onclick="setWork('college',this)">🎓 Day college</span>
+      <span class="chip pick" onclick="setWork('job',this)">💼 Day job</span>
+      <span class="chip pick on" id="commit-free" onclick="setWork('free',this)">🌱 Free / on myself</span>
     </div>
-    <div id="commitRow"></div>
     <div class="hbar"><span class="fine" style="font-weight:700">24 hours, your way</span><span class="hl" id="hleft">24h</span></div>
     <div id="sliders"></div>
     <div class="leg" id="leg"></div>
@@ -329,6 +328,7 @@ const Q = [
 /* ---------- SLIDER MODEL (ported from BBA calculator) ---------- */
 const TD=24, D=90; // total hours/day, days in plan
 const C=[
+  {k:'work',l:'Work / College',desc:'Time in a job, classes, or on campus',h:'#475569',i:'💼',mn:0,mx:12,lo:0,hi:12,hiE:'',bn:'Use the chips above to pre-fill, then drag to adjust',short:'WORK'},
   {k:'learning',l:'Learning',desc:'Classes, courses, reading, studying',h:'#3B82F6',i:'📖',mn:0,mx:6,lo:0,hi:5,hiE:'🤓',bn:'Most students: about 3h on class days',short:'LEARN'},
   {k:'building',l:'Building / real work',desc:'Projects, apprenticeships, real work, applied practice',h:'#0F9B8E',i:'🔧',mn:0,mx:10,lo:0,hi:8,hiE:'💪',bn:'This is where proof gets made',short:'BUILD'},
   {k:'growth',l:'Growth',desc:'Fitness, reflection, hobbies, personal development',h:'#7B5EA7',i:'🧠',mn:0,mx:5,lo:1,hi:3.5,hiE:'🧘',bn:'WHO: 60 min fitness plus 30 min reflection',short:'GROW'},
@@ -336,15 +336,13 @@ const C=[
   {k:'home',l:'Home',desc:'Family, chores, commute, errands',h:'#F87171',i:'🏠',mn:0,mx:6,lo:1,hi:4,hiE:'🚗',bn:'Family and commute, 2 to 4h typical',short:'HOME'},
   {k:'sleep',l:'Sleep',desc:'Sleep and rest',h:'#64748B',i:'😴',mn:4,mx:12,lo:6,hi:10,hiE:'😴',bn:'WHO: 7 to 9 hours for ages 18 to 25',short:'SLEEP'}
 ];
-const DEF={learning:2,building:3,growth:2,screens:6,home:3,sleep:8};
+const DEF={work:0,learning:2,building:3,growth:2,screens:6,home:3,sleep:8};
 const SWEET={learning:[1,3],building:[2,6],growth:[1.5,3.5],screens:[2,5],home:[2,4],sleep:[7,9]};
 const SHRINK=['screens','home','learning','growth','building','sleep'];
-const COMMITMETA={college:{hrs:6,l:'Day college',i:'🎓',short:'COLLEGE',col:'#3B82F6'},job:{hrs:8,l:'Day job',i:'💼',short:'DAY JOB',col:'#475569'},free:{hrs:0}};
-const FITORDER=['screens','home','growth','learning','building','sleep'];
-let commitMeta=null;
+const WORKPRESET={college:6,job:8,free:0};
 
 /* ---------- STATE ---------- */
-let vals={...DEF,commit:0}, locks={};
+let vals={...DEF}, locks={};
 let state={email:'',name:'',i:0,answers:new Array(12).fill(null),dir:'',known:'',field:'',projects:['','',''],move:'',people:'',commit:'',top:'',second:''};
 const $=id=>document.getElementById(id);
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));$(id).classList.add('active');if(id==='s-w2')initSliders();window.scrollTo({top:0,behavior:'smooth'});}
@@ -425,13 +423,13 @@ function initSliders(){
   paint();
 }
 function tL(k,on){locks[k]=on;$('lk_'+k).className='sglk'+(on?' on':'');}
-function setCommit(type,el){
+function setWork(type,el){
   document.querySelectorAll('#commit-chips .pick').forEach(p=>p.classList.remove('on'));el.classList.add('on');
-  const m=COMMITMETA[type];vals.commit=m.hrs||0;commitMeta=type==='free'?null:m;
+  vals.work=WORKPRESET[type]||0;
   fitTo24();paint();
 }
 function fitTo24(){
-  let diff=24-(C.reduce((a,c)=>a+vals[c.k],0)+vals.commit);
+  let diff=24-C.reduce((a,c)=>a+vals[c.k],0);
   if(Math.abs(diff)<.01)return;
   // spread the change evenly across discretionary categories (protect building and sleep)
   const pool=['screens','home','growth','learning'].filter(k=>!locks[k]);
@@ -459,18 +457,12 @@ function paint(){
     const vb=$('v_'+c.k);if(vb)vb.innerHTML='<span class="v3y">'+h90.toLocaleString()+'h / 90 days</span>'+sv.toFixed(1)+'h/day · '+pct+'%';
     if(sl)sl.style.background='linear-gradient(to right,'+c.h+' '+((sv-c.mn)/(c.mx-c.mn)*100)+'%,var(--b1) '+((sv-c.mn)/(c.mx-c.mn)*100)+'%)';
     const sg=$('sg_'+c.k),em=$('em_'+c.k);
-    if(sg){const sw=SWEET[c.k];sg.classList.toggle('sweet',sv>=sw[0]&&sv<=sw[1]);sg.classList.toggle('wh',sv>c.hi);}
+    if(sg){const sw=SWEET[c.k];sg.classList.toggle('sweet',!!sw&&sv>=sw[0]&&sv<=sw[1]);sg.classList.toggle('wh',sv>c.hi);}
     if(em)em.textContent=sv>c.hi&&c.hiE?c.hiE:'';
   });
-  // committed block row
-  const cr=$('commitRow');
-  if(cr)cr.innerHTML=vals.commit>0&&commitMeta?'<div class="sg" style="border-color:'+commitMeta.col+';opacity:.9"><div class="sgh"><div class="sgl"><span class="sg-ico">'+commitMeta.i+'</span>'+commitMeta.l+'</div><div class="sgv" style="color:'+commitMeta.col+'">'+vals.commit.toFixed(1)+'h/day · locked</div></div><div class="sg-desc">Already committed. The rest of your 24 hours splits below.</div></div>':'';
-  // legend + bar (includes committed block)
-  const tot=(C.reduce((a,c)=>a+vals[c.k],0)+vals.commit)||1;
+  // legend + bar
+  const tot=C.reduce((a,c)=>a+vals[c.k],0)||1;
   const lBar=$('lBar'),leg=$('leg');lBar.innerHTML='';leg.innerHTML='';
-  if(vals.commit>0&&commitMeta){const pct=vals.commit/tot*100;
-    lBar.innerHTML+='<div class="bar-s" style="flex:'+pct+';background:'+commitMeta.col+'"></div>';
-    leg.innerHTML+='<div class="li" style="flex:'+pct+'"><div class="ll" style="color:'+commitMeta.col+'">'+commitMeta.short+'</div></div>';}
   C.forEach(c=>{const v=vals[c.k];if(v<=0)return;const pct=v/tot*100;
     lBar.innerHTML+='<div class="bar-s" style="flex:'+pct+';background:'+c.h+'"></div>';
     leg.innerHTML+='<div class="li" style="flex:'+pct+'"><div class="ll" style="color:'+c.h+'">'+c.short+'</div></div>';});
@@ -496,8 +488,7 @@ function collect(){
 function buildPlan(){
   collect();const A=ARCH[state.top];const name=state.name||'Your';
   const projs=state.projects.filter(Boolean);const projList=(projs.length?projs:A.projects).map(p=>'<li>'+p+'</li>').join('');
-  const commitRow=(vals.commit>0&&commitMeta)?'<div style="display:flex;justify-content:space-between;font-size:13px;padding:3px 0"><span>'+commitMeta.i+' '+commitMeta.l+'</span><b>'+vals.commit.toFixed(1)+'h</b></div>':'';
-  const dayRows=commitRow+C.map(c=>'<div style="display:flex;justify-content:space-between;font-size:13px;padding:3px 0"><span>'+c.i+' '+c.l+'</span><b>'+vals[c.k].toFixed(1)+'h</b></div>').join('');
+  const dayRows=C.map(c=>'<div style="display:flex;justify-content:space-between;font-size:13px;padding:3px 0"><span>'+c.i+' '+c.l+'</span><b>'+vals[c.k].toFixed(1)+'h</b></div>').join('');
   const buildH=Math.round(vals.building*D);
   $('plansheet').innerHTML=
     '<div class="ph"><div class="plabel">90-day body of work</div><h2 style="margin:.1em 0">'+(name==='Your'?'Your':name+"'s")+' 90-Day Plan</h2>'+
@@ -513,7 +504,7 @@ function buildPlan(){
     '<div class="fine" style="text-align:center;margin-top:16px">The real work is not out there. It is in here. Start with yourself. Build your body of work.<br>adityajhunjhunwala.com/pyma</div>';
   showScreen('s-plan');
 }
-function restart(){vals={...DEF,commit:0};locks={};commitMeta=null;$('sliders').dataset.built='';
+function restart(){vals={...DEF};locks={};$('sliders').dataset.built='';
   document.querySelectorAll('#commit-chips .pick').forEach(p=>p.classList.remove('on'));if($('commit-free'))$('commit-free').classList.add('on');
   state={email:'',name:'',i:0,answers:new Array(12).fill(null),dir:'',known:'',field:'',projects:['','',''],move:'',people:'',commit:'',top:'',second:''};
   ['email','name','w1-known','w1-field','w1-dirown','w3-p1','w3-p2','w3-p3','w4-move','w4-people','w4-commit'].forEach(id=>{if($(id))$(id).value='';});showScreen('s-gate');}
