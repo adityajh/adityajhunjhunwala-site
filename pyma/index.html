@@ -168,11 +168,11 @@
   .a4wrap{overflow:hidden;position:relative;margin:0 auto}
   :root{--paper:#F8F6F0;--gold-d:#1A1A2E;--gold-l:#F0D78C;--know:#16213E;--grow:#0F9B8E;--show:#D4A843}
 /* ---------- the sheet ---------- */
-.a4{width:180mm;height:265mm;background:#F8F6F0;color:#1A1A2E;position:relative;
+.a4{width:194mm;height:281mm;background:#F8F6F0;color:#1A1A2E;position:relative;
     overflow:hidden;border-radius:3px;box-shadow:0 18px 54px rgba(0,0,0,.45);
     font-family:var(--sans);flex:none}
 .a4 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.a4pad{position:absolute;inset:0;padding:6mm 6mm 5mm;display:flex;flex-direction:column}
+.a4pad{position:absolute;inset:0;padding:8mm 8mm 7mm;display:flex;flex-direction:column}
 .a4 .k{font-size:8px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;color:#1A1A2E}
 .a4 .rule{height:2.5px;border-radius:2px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-l) 55%,rgba(212,168,67,0) 100%)}
 
@@ -353,7 +353,8 @@
 /* the 90 day log: one row a week */
 .a4 .log{margin-top:1px}
 .a4 .lg{display:flex;align-items:flex-end;gap:6px;padding:5px 0}
-.a4 .lg .no{width:11mm;flex:none;font-size:7.4px;font-weight:800;color:#1A1A2E;letter-spacing:.05em;padding-bottom:2px}
+.a4 .lg .no{width:15mm;flex:none;font-size:7.6px;font-weight:800;color:#1A1A2E;letter-spacing:.04em;padding-bottom:2px}
+.a4 .lg .no em{display:block;font-style:normal;font-size:6.6px;font-weight:700;color:rgba(26,26,46,.52);letter-spacing:0;margin-top:1px}
 .a4 .lg .days{display:flex;gap:1.3mm;flex:none}
 .a4 .lg .cell{width:7.6mm;height:7.6mm;border:1px solid rgba(26,26,46,.26);border-radius:2px;background:#fff;position:relative}
 .a4 .lg .cell i{position:absolute;left:1.4px;top:.6px;font-style:normal;font-size:5.2px;color:rgba(26,26,46,.34);line-height:1.4}
@@ -366,7 +367,7 @@
 .a4 .mo b{font-size:6.8px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:rgba(26,26,46,.5);flex:none}
 .a4 .mo i{flex:1;height:1px;background:rgba(26,26,46,.16)}
 .a4 .loghd span{font-size:6.6px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:rgba(26,26,46,.4)}
-.a4 .loghd .a{width:11mm;flex:none}
+.a4 .loghd .a{width:15mm;flex:none}
 .a4 .loghd .b{width:62.3mm;flex:none}
 .a4 .loghd .c2{width:11mm;flex:none;text-align:center}
 .a4 .loghd .d2{flex:1;padding-left:2px}
@@ -1232,9 +1233,12 @@ function buildPlan(){
   const miles=[['Day 7',state.miles[0]],['Day 30',state.miles[1]],['Day 60',state.miles[2]],['Day 90',state.miles[3]]];
   const tot=C.reduce((a,c)=>a+vals[c.k],0)||24;
   const yn=YESNO[state.fnl]||YESNO['0'];
-  const d90=new Date(Date.now()+90*864e5);
   const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  const d90s=d90.getDate()+' '+MON[d90.getMonth()]+' '+d90.getFullYear();
+  const day1=new Date(); day1.setHours(0,0,0,0);
+  const dayN=n=>new Date(day1.getTime()+(n-1)*864e5);
+  const fmt=d=>d.getDate()+' '+MON[d.getMonth()];
+  const fmtY=d=>fmt(d)+' '+d.getFullYear();
+  const d90=dayN(90), d90s=fmtY(d90), d1s=fmtY(day1);
   const fnl=FUNNEL.find(x=>x.k===state.fnl)||FUNNEL[0];
 
   /* ---- page 1 ---- */
@@ -1259,7 +1263,7 @@ function buildPlan(){
   const showLine=(lane?'The '+lane+' lane. ':'')+miles.filter(m=>m[1]).length+' checkpoints in 90 days.'+(state.audience?' Seen by '+state.audience+'.':'');
 
   const stops=miles.map((m,i)=>'<div class="stop'+(i===3?' last':'')+'"><div class="dot"><i>DAY</i><b>'+
-    [7,30,60,90][i]+'</b></div><div class="tx">'+esc(m[1]||'')+'</div>'+(i===3?'<div class="dt">'+d90s+'</div>':'')+'</div>').join('');
+    [7,30,60,90][i]+'</b></div><div class="tx">'+esc(m[1]||'')+'</div><div class="dt">'+fmt(dayN([7,30,60,90][i]))+'</div></div>').join('');
 
   $('a4pad').innerHTML=
   '<div class="hd"><div>'+
@@ -1360,11 +1364,11 @@ function buildPlan(){
       cells+= d>90 ? '<span class="cell" style="visibility:hidden"></span>'
         : '<span class="cell'+(MILE[d]?' m':'')+'"><i>'+d+'</i></span>';
     }
-    log+='<div class="lg"><span class="no">WK '+w+'</span><span class="days">'+cells+
+    log+='<div class="lg"><span class="no">WK '+w+'<em>'+fmt(dayN((w-1)*7+1))+'</em></span><span class="days">'+cells+
       '</span><span class="hrs"></span><span class="ln"></span></div>';
   }
   const cps=miles.map((m,i)=>'<div class="cp"><div class="tick">'+[7,30,60,90][i]+'</div>'+
-    '<div class="said"><i>'+m[0]+'</i>'+esc(m[1]||'')+'</div><div class="got"></div></div>').join('');
+    '<div class="said"><i>'+m[0]+' &middot; '+fmt(dayN([7,30,60,90][i]))+'</i>'+esc(m[1]||'')+'</div><div class="got"></div></div>').join('');
 
   $('a4pad2').innerHTML=
   '<div class="banner"><div class="t"><small>Page 2 &middot; the instrument</small>The next 90 days</div>'+
@@ -1381,7 +1385,7 @@ function buildPlan(){
     cps+'</div>'+
 
   '<div class="sec" style="margin-top:10px">'+
-    '<div class="sechd"><div class="k">The 90 day log</div><div class="n">One box a day. Not one box a mood. Hours you actually put in, one line on what you shipped.</div></div>'+
+    '<div class="sechd"><div class="k">The 90 day log &middot; day 1 is '+d1s+'</div><div class="n">One box a day. Not one box a mood. Hours you actually put in, one line on what you shipped.</div></div>'+
     '<div class="loghd"><span class="a"></span><span class="b">one box a day</span><span class="c2">hrs</span>'+
       '<span class="d2">what I shipped &middot; what I learned</span></div>'+
     '<div class="log">'+log+'</div></div>'+
@@ -1418,7 +1422,7 @@ function fitSheet(padId,sheetId){
 
 /* Scale both sheets to the phone screen. */
 function fitPlan(){
-  const SHEET_W=180*96/25.4, SHEET_H=265*96/25.4;
+  const SHEET_W=194*96/25.4, SHEET_H=281*96/25.4;
   [['a4wrap','a4'],['a4wrap2','a4b']].forEach(p=>{
     const wrap=$(p[0]),sheet=$(p[1]);
     if(!wrap||!sheet)return;
