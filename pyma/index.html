@@ -14,16 +14,17 @@
     --teal:#0F9B8E; --teal-l:#5EEAD4;
     --bg:var(--cream); --ink:var(--navy); --card:#FFFFFF;
     --muted:rgba(26,26,46,.72); --line:#E5E0D2; --soft:#EFEBDF;
-    --err:#B23B2E;
-    --b:#D4A843; --s:#E4572E; --c:#0F9B8E; --a:#2F6FB0; --m:#7B5EA7; --x:#D1495B;
+    --err:#16213E;
+    --b:#D4A843; --s:#FED95D; --c:#0F9B8E; --a:#16213E; --m:#5EEAD4; --x:#8C8577;
     --shadow:0 10px 30px rgba(26,26,46,.08);
     --disp:'DM Serif Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --hand:'Caveat',cursive;
   }
   html[data-theme="light"]{color-scheme:light}
   html[data-theme="dark"]{
     color-scheme:dark;
-    --bg:#15152A; --ink:#F5F1E8; --card:#1F1F3A;
-    --muted:rgba(245,241,232,.75); --line:#2C2C4A; --soft:#22223E;
+    --bg:#1A1A2E; --ink:#F8F6F0; --card:#16213E;
+    --muted:rgba(248,246,240,.76); --line:rgba(248,246,240,.16); --soft:rgba(248,246,240,.08);
+    --know:#F8F6F0; --grow:#5EEAD4; --show:#D4A843;
     --shadow:0 10px 30px rgba(0,0,0,.35);
   }
   *{box-sizing:border-box}
@@ -75,14 +76,14 @@
   .field{width:100%;padding:14px 16px;font-size:16px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font-family:var(--sans);margin-bottom:10px;min-height:48px}
   textarea.field{min-height:76px;resize:vertical}
   .field:focus{outline:none;border-color:var(--gold)}
-  .qlabel{font-weight:700;font-size:15px;margin:18px 0 6px}
-  .fine{font-size:14px;color:var(--muted)}
+  .qlabel{font-weight:600;font-size:18px;margin:20px 0 7px}
+  .fine{font-size:16px;color:var(--muted)}
   .err{color:var(--err);font-size:14px;font-weight:600;display:none;margin-top:4px}
   /* inspiration card */
   .insp{margin:20px 0;padding:16px 18px;background:var(--soft);border-radius:14px}
   .insp .q{font-family:var(--disp);font-size:19px;line-height:1.3}
   .insp cite{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:6px}
-  .story{margin:16px 0;padding:16px 18px;border:1px solid var(--line);border-radius:14px;font-size:15px}
+  .story{margin:16px 0;padding:16px 18px;border:1px solid var(--line);border-radius:14px;font-size:16px}
   .story b{font-family:var(--disp);font-weight:400;font-size:17px}
   .story cite{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:6px}
   /* quiz */
@@ -117,7 +118,7 @@
   .chip.pick.on{background:var(--gold);border-color:var(--gold);color:var(--navy)}
   .quote{font-family:var(--disp);font-size:21px;line-height:1.3;margin:18px 0;padding-left:16px;border-left:3px solid var(--gold)}
   .statband{display:grid;gap:10px;margin:14px 0}
-  .stat{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:14px}
+  .stat{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:15.5px}
   .stat cite{display:block;font-size:12px;color:var(--muted);font-style:normal;margin-top:3px}
   .sectlabel{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:24px 0 8px}
   /* career type choice */
@@ -138,7 +139,7 @@
   .sg{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:12px;transition:border-color .2s,box-shadow .2s}
   .sg.sweet{border-color:var(--teal);box-shadow:0 0 10px rgba(15,155,142,.14)}
   .sgh{display:flex;justify-content:space-between;align-items:center;gap:8px}
-  .sgl{font-weight:700;font-size:15px;display:flex;align-items:center;gap:7px}
+  .sgl{font-weight:700;font-size:17px;display:flex;align-items:center;gap:7px}
   .sgv{font-size:13px;font-weight:700;text-align:right}
   .sgv .v90{display:block;font-size:11px;color:var(--muted);font-weight:600}
   .sglk{margin-left:6px;cursor:pointer;opacity:.4;font-size:18px;user-select:none;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;border:none;background:none}
@@ -147,11 +148,11 @@
   input[type=range]{-webkit-appearance:none;width:100%;height:6px;border-radius:4px;outline:none;margin:8px 0}
   input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;cursor:pointer;box-shadow:0 1px 6px rgba(0,0,0,.3);border:2px solid var(--navy)}
   input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:#fff;cursor:pointer;border:2px solid var(--navy)}
-  .mirror{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:14px;margin-top:6px}
+  .mirror{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:16px;margin-top:6px}
   /* proof types */
   .ptype{width:100%;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px;cursor:pointer;font-family:var(--sans);color:var(--ink);transition:border-color .15s,background .12s}
   .ptype b{font-family:var(--disp);font-weight:400;font-size:18px;display:block}
-  .ptype span{font-size:14px;color:var(--muted)}
+  .ptype span{font-size:16px;color:var(--muted)}
   .ptype.on{border-color:var(--gold);background:var(--soft)}
   /* milestones */
   .mile{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
@@ -159,56 +160,58 @@
   .mile .field{margin-bottom:0}
   /* people */
   .role{margin-bottom:16px}
-  .role .why{font-size:14px;color:var(--muted);margin:2px 0 8px}
+  .role .why{font-size:16px;color:var(--muted);margin:2px 0 8px}
   /* illustrations */
   .illo{width:100%;border-radius:14px;margin:12px 0}
   .illo.small{width:min(70%,320px);display:block;margin:12px auto}
   /* ---------- TWO PAGE A4 PLAN ---------- */
   .a4wrap{overflow:hidden;position:relative;margin:0 auto}
-  :root{--paper:#FFFDF7;--gold-d:#8A7327;--gold-l:#F0D78C;--know:#2F6FB0;--grow:#D1495B;--show:#0F9B8E}
+  :root{--paper:#F8F6F0;--gold-d:#1A1A2E;--gold-l:#F0D78C;--know:#16213E;--grow:#0F9B8E;--show:#D4A843}
 /* ---------- the sheet ---------- */
-.a4{width:180mm;height:265mm;background:#FFFDF7;color:#1A1A2E;position:relative;
+.a4{width:180mm;height:265mm;background:#F8F6F0;color:#1A1A2E;position:relative;
     overflow:hidden;border-radius:3px;box-shadow:0 18px 54px rgba(0,0,0,.45);
     font-family:var(--sans);flex:none}
 .a4 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .a4pad{position:absolute;inset:0;padding:6mm 6mm 5mm;display:flex;flex-direction:column}
-.a4 .k{font-size:7.6px;letter-spacing:.19em;text-transform:uppercase;font-weight:800;color:var(--gold-d)}
+.a4 .k{font-size:8px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;color:#1A1A2E}
 .a4 .rule{height:2.5px;border-radius:2px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-l) 55%,rgba(212,168,67,0) 100%)}
 
 /* header */
 .a4 .hd{display:flex;align-items:flex-start;justify-content:space-between;gap:7px;flex:none}
 .a4 .hd h1{font-family:var(--disp);font-size:27px;line-height:1;margin:3px 0 0;letter-spacing:-.012em}
 .a4 .hd .sub{font-size:8.8px;color:rgba(26,26,46,.62);margin-top:4px;line-height:1.3;max-width:95mm}
-.a4 .arch{flex:none;width:24mm;text-align:center;border:1px solid var(--line);border-radius:8px;
+.a4 .arch{flex:none;width:26mm;text-align:center;border:1px solid var(--line);border-radius:8px;
       padding:3px;background:#fff}
 .a4 .arch .top{height:2.5px;border-radius:2px;background:var(--teal);margin-bottom:3px}
 .a4 .arch img{width:100%;border-radius:4px;display:block}
-.a4 .arch b{display:block;font-family:var(--disp);font-weight:400;font-size:10.5px;line-height:1.1;margin-top:3px}
-.a4 .arch small{display:block;font-size:6.6px;color:rgba(26,26,46,.58);line-height:1.2;margin-top:1px}
+.a4 .arch b{display:block;font-family:var(--disp);font-weight:400;font-size:11.5px;line-height:1.1;margin-top:3px}
+.a4 .arch small{display:block;font-size:7px;color:rgba(26,26,46,.58);line-height:1.2;margin-top:1px}
 
 /* vow */
 .a4 .vow{margin-top:5px;background:var(--navy);border-radius:9px;padding:7px 13px 8px 15px;position:relative;overflow:hidden;flex:none}
 .a4 .vow .acc{position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--gold)}
-.a4 .vow .k{color:#E7C15C}
+.a4 .vow .k{color:#D4A843}
 .a4 .vow .v{font-family:var(--disp);font-size:23px;line-height:1.08;color:var(--paper);margin-top:2px}
 .a4 .vow .mark{position:absolute;right:8px;bottom:-14px;font-family:var(--disp);font-size:62px;line-height:1;color:rgba(255,253,247,.07)}
 
 /* ---- BIG NUMBER BAND ---- */
 .a4 .big{margin-top:7px;border:1.4px solid var(--line);border-radius:10px;background:#fff;
   display:flex;align-items:stretch;overflow:hidden;flex:none}
-.a4 .big .eq{flex:none;width:82mm;padding:6px 9px 7px;display:flex;flex-direction:column;justify-content:center;
-  border-right:1.4px solid var(--line);background:#FFFCF2}
+.a4 .big .eq{flex:none;width:84mm;padding:7px 10px 8px;display:flex;flex-direction:column;justify-content:center;
+  border-right:1.4px solid var(--line);background:#FFFFFF}
 .a4 .big .eqr{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:3px}
-.a4 .big .n{font-family:var(--disp);font-size:40px;line-height:.95;letter-spacing:-.02em}
-.a4 .big .n small{display:block;font-family:var(--sans);font-size:6.4px;letter-spacing:.14em;
-  text-transform:uppercase;color:rgba(26,26,46,.55);font-weight:700;margin-top:2px}
+.a4 .big .n{font-family:var(--disp);font-size:41px;line-height:.95;letter-spacing:-.02em}
+.a4 .big .n.hi{background:#D4A843;color:#1A1A2E;border-radius:9px;padding:3px 11px 5px}
+.a4 .big .n small{display:block;font-family:var(--sans);font-size:7px;letter-spacing:.13em;
+  text-transform:uppercase;color:rgba(26,26,46,.62);font-weight:800;margin-top:3px}
 .a4 .big .op{font-family:var(--disp);font-size:23px;color:var(--gold-d);line-height:1}
 .a4 .big .clk{flex:1;display:flex}
 .a4 .big .clk div{flex:1;padding:6px 4px 7px;text-align:center;display:flex;flex-direction:column;justify-content:center;
   border-left:1px solid var(--line)}
 .a4 .big .clk div:first-child{border-left:none}
-.a4 .big .clk .h{font-size:9.5px;font-weight:800;color:var(--gold-d);letter-spacing:.02em}
-.a4 .big .clk .w{font-size:6.4px;line-height:1.22;color:rgba(26,26,46,.6);margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.a4 .big .clk .h{font-size:10px;font-weight:800;color:#1A1A2E;letter-spacing:.02em}
+.a4 .big .clk .w{font-size:7px;line-height:1.28;color:rgba(26,26,46,.62);margin-top:3px;min-height:19px;
+  display:flex;align-items:center;justify-content:center;text-align:center}
 .a4 .big .clk .a{font-family:var(--disp);font-size:19px;line-height:1;margin-top:3px}
 .a4 .big .clk .a em{font-style:normal;font-family:var(--sans);font-size:5.4px;letter-spacing:.12em;
   text-transform:uppercase;color:rgba(26,26,46,.48);display:block;font-weight:700}
@@ -219,11 +222,11 @@
 .a4 .daybar{display:flex;height:13px;border-radius:7px;overflow:hidden;margin-top:5px;gap:1.2px;background:var(--soft)}
 .a4 .daybar span{display:block;position:relative}
 .a4 .daylg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px 7px;margin-top:5px}
-.a4 .daylg div{display:flex;align-items:center;gap:3px;font-size:7.4px;line-height:1.75}
+.a4 .daylg div{display:flex;align-items:center;gap:4px;font-size:7.8px;line-height:1.75}
 .a4 .daylg i{width:6px;height:6px;border-radius:2px;flex:none}
 .a4 .daylg b{margin-left:auto;font-weight:800;font-size:9px}
 .a4 .mixrow{display:flex;align-items:center;gap:5px;margin-top:3.4px}
-.a4 .mixrow .nm{font-size:8px;font-weight:800;width:14mm;flex:none;text-transform:uppercase;letter-spacing:.05em}
+.a4 .mixrow .nm{font-size:8.4px;font-weight:800;width:14mm;flex:none;text-transform:uppercase;letter-spacing:.05em}
 .a4 .mixrow .tr{flex:1;height:9px;border-radius:5px;background:var(--soft);overflow:hidden}
 .a4 .mixrow .tr i{display:block;height:100%;border-radius:5px}
 .a4 .mixrow .nv{font-family:var(--disp);font-size:14px;width:5mm;text-align:right;flex:none;line-height:1}
@@ -231,41 +234,43 @@
 /* ---- VENN ROW ---- */
 .a4 .mid{display:flex;gap:4mm;margin-top:5px;flex:none;align-items:flex-start}
 .a4 .vennwrap{width:66mm;flex:none}
-.a4 .venn{position:relative;width:66mm;height:58mm;margin-top:2px}
-.a4 .venn .c{position:absolute;border-radius:50%;border:1.9px solid}
-.a4 .venn .lab{position:absolute;text-align:center;width:22mm;margin-left:-11mm;
-  font-family:var(--disp);font-size:10px;line-height:1}
+.a4 .venn{position:relative;width:66mm;height:63mm;margin-top:4px}
+.a4 .venn .c{position:absolute;border-radius:50%;border:2.4px solid}
+.a4 .venn .lab{position:absolute;text-align:center;width:24mm;margin-left:-12mm;
+  font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.05em;line-height:1;color:#1A1A2E}
+.a4 .venn .lab i{display:block;width:11mm;height:2.2px;border-radius:2px;margin:3px auto 0}
 .a4 .core{position:absolute;text-align:center;width:22mm;margin-left:-11mm}
-.a4 .core .pill{display:inline-block;background:var(--gold);color:var(--navy);border-radius:20px;
-  padding:2px 7px;font-size:7.4px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
-.a4 .venncap{font-family:var(--hand);font-size:11px;color:rgba(26,26,46,.6);text-align:center;margin-top:1px}
+.a4 .core .pill{display:inline-block;background:#D4A843;color:#1A1A2E;border-radius:20px;
+  padding:3px 9px;font-size:8.4px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.a4 .venncap{font-family:var(--hand);font-size:12.5px;color:rgba(26,26,46,.72);text-align:center;margin-top:3px}
 
 .a4 .leg3{width:48mm;flex:none;padding-top:9px}
 .a4 .leg3 .r{display:flex;gap:5px;margin-bottom:4px}
 .a4 .leg3 .r i{width:3px;border-radius:2px;flex:none;margin-top:1px}
 .a4 .leg3 .r .x{min-width:0}
-.a4 .leg3 .r .x b{display:block;font-size:7.6px;letter-spacing:.1em;text-transform:uppercase;font-weight:800}
-.a4 .leg3 .r .x u{display:block;text-decoration:none;font-size:7.6px;line-height:1.35;color:rgba(26,26,46,.78);margin-top:1px}
+.a4 .leg3 .r .x b{display:block;font-size:8px;letter-spacing:.1em;text-transform:uppercase;font-weight:800}
+.a4 .leg3 .r .x u{display:block;text-decoration:none;font-size:8px;line-height:1.35;color:rgba(26,26,46,.78);margin-top:1px}
 .a4 .badge{background:var(--navy);border-radius:8px;padding:6px 8px 7px;color:var(--paper);margin-top:2px}
-.a4 .badge .k{color:#E7C15C}
+.a4 .badge .k{color:#D4A843}
 .a4 .badge .n{font-family:var(--disp);font-size:15px;line-height:1.05;margin-top:1px}
 .a4 .badge .d{font-size:7.1px;color:rgba(255,253,247,.66);line-height:1.28;margin-top:2px}
 
 .a4 .facts{flex:1;min-width:0;padding-top:9px}
 
 /* road */
-.a4 .road{margin-top:6px;flex:none}
+.a4 .road{margin-top:10px;flex:none}
 .a4 .track{position:relative;margin-top:4px}
 .a4 .track .ln{position:absolute;left:12.5%;right:12.5%;top:5.8mm;height:2px;
-  background:repeating-linear-gradient(90deg,#D5CCAB 0 4px,transparent 4px 9px)}
+  background:repeating-linear-gradient(90deg,rgba(26,26,46,.26) 0 4px,transparent 4px 9px)}
 .a4 .stops{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;position:relative}
 .a4 .stop{text-align:center;min-width:0}
 .a4 .stop .dot{width:11.6mm;height:11.6mm;border-radius:50%;margin:0 auto;background:#fff;border:1.8px solid var(--gold);
   display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
-.a4 .stop .dot i{font-style:normal;font-size:5.4px;letter-spacing:.14em;font-weight:800;color:var(--gold-d)}
+.a4 .stop .dot i{font-style:normal;font-size:6.2px;letter-spacing:.14em;font-weight:800;color:var(--gold-d)}
 .a4 .stop .dot b{font-family:var(--disp);font-size:14px;line-height:1}
 .a4 .stop.last .dot{background:var(--gold);border-color:var(--gold)}
 .a4 .stop.last .dot i{color:rgba(26,26,46,.7)}
+.a4 .stop .dt{font-size:7px;font-weight:800;letter-spacing:.05em;margin-top:3px;color:#1A1A2E}
 .a4 .stop .tx{font-size:7.6px;line-height:1.28;margin-top:3px;color:rgba(26,26,46,.82)}
 
 /* two col facts */
@@ -279,26 +284,27 @@
 
 
 /* funnel */
-.a4 .fun{margin-top:6px;padding-top:0;flex:none}
+.a4 .fun{margin-top:auto;padding-top:8px;flex:none}
 .a4 .funbox{position:relative;height:29mm;margin-top:5px}
 .a4 .funbox svg{position:absolute;inset:0;width:100%;height:100%}
-.a4 .funbox .yes{position:absolute;left:0;top:10.6mm;font-family:var(--disp);font-size:20px;color:#0B7A70;line-height:1}
-.a4 .funbox .no{position:absolute;right:0;top:10.6mm;font-family:var(--disp);font-size:20px;color:#A83A48;line-height:1}
+.a4 .funbox .yes{position:absolute;left:0;top:10.6mm;font-family:var(--disp);font-size:20px;color:#0F9B8E;line-height:1}
+.a4 .funbox .no{position:absolute;right:0;top:10.6mm;font-family:var(--disp);font-size:20px;color:#1A1A2E;line-height:1}
 .a4 .funbox .you{position:absolute;text-align:center;width:34mm;margin-left:-17mm}
 .a4 .funbox .you .d{width:4.6mm;height:4.6mm;border-radius:50%;background:var(--gold);margin:0 auto;border:1.6px solid var(--navy)}
-.a4 .funbox .you .t{font-size:6.6px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-d);margin-top:2px}
-.a4 .funbox .you .s{font-size:6.6px;color:rgba(26,26,46,.6);line-height:1.25}
+.a4 .funbox .you .t{font-size:7.2px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A1A2E;margin-top:3px}
+.a4 .funbox .you .s{font-size:7.2px;color:rgba(26,26,46,.6);line-height:1.25}
 .a4 .funbox .cap{position:absolute;right:14mm;bottom:1mm;width:60mm;text-align:right;font-family:var(--hand);
   font-size:11.5px;color:rgba(26,26,46,.58);line-height:1.15}
 
 /* yes no */
 .a4 .yn{display:flex;gap:5px;margin-top:5px;flex:none}
-.a4 .yn div{flex:1;border-radius:8px;padding:6px 9px 7px}
-.a4 .yn .y{background:rgba(15,155,142,.1);border:1px solid rgba(15,155,142,.4)}
-.a4 .yn .n{background:rgba(209,73,91,.08);border:1px solid rgba(209,73,91,.35)}
-.a4 .yn .h{font-size:7.4px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
-.a4 .yn .y .h{color:#0B7A70}.a4 .yn .n .h{color:#A83A48}
-.a4 .yn p{margin:2px 0 0;font-size:8.2px;line-height:1.32}
+.a4 .yn div{flex:1;border-radius:9px;padding:8px 11px 9px}
+.a4 .yn .y{background:#0F9B8E}
+.a4 .yn .n{background:#1A1A2E}
+.a4 .yn .h{font-size:7.6px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.a4 .yn .y .h{color:rgba(248,246,240,.8)}.a4 .yn .n .h{color:#D4A843}
+.a4 .yn p{margin:3px 0 0;font-size:9px;line-height:1.35;font-weight:600}
+.a4 .yn .y p{color:#F8F6F0}.a4 .yn .n p{color:#F8F6F0}
 
 /* clamps so long answers never push the sheet over one page */
 .a4 .clamp2, .a4 .stop .tx, .a4 .blk .t{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -307,71 +313,75 @@
 .a4 .vow .v{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .a4 .cp .said{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* footer */
-.a4 .ft{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;margin-top:auto;
+.a4 .ft{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-top:9px;
     border-top:1px solid var(--line);padding-top:4px;flex:none}
-.a4 .ft .q{font-family:var(--disp);font-size:11.5px;line-height:1.15;max-width:112mm}
-.a4 .ft .q small{display:block;font-family:var(--sans);font-size:6.4px;color:rgba(26,26,46,.55);margin-top:2px;line-height:1.3}
+.a4 .ft .q{font-family:var(--disp);font-size:14px;line-height:1.16;max-width:104mm}
+.a4 .ft .q small{display:block;font-family:var(--sans);font-size:7.2px;color:rgba(26,26,46,.6);margin-top:3px;line-height:1.35}
 .a4 .ft .sig{text-align:right;flex:none}
-.a4 .ft .sig .l{font-family:var(--hand);font-size:19px;line-height:1;border-bottom:1px solid var(--navy);padding:0 6px 1px}
-.a4 .ft .sig .u{font-size:5.8px;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,46,.55);margin-top:2px}
-.a4 .ft .sig .w{font-size:6.6px;font-weight:700;color:var(--teal);margin-top:2px}
+.a4 .ft .sig .l{font-family:var(--hand);font-size:21px;line-height:1;border-bottom:1.4px solid #1A1A2E;padding:0 10px 2px;min-width:30mm;display:inline-block}
+.a4 .ft .sig .u{font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,46,.6);font-weight:700;margin-top:3px}
+.a4 .ft .sig .w{font-size:10.5px;font-weight:800;color:#1A1A2E;margin-top:5px;letter-spacing:.005em}
 
 /* ============ PAGE 2 ============ */
 .a4 .banner{background:var(--navy);color:var(--paper);border-radius:9px;padding:7px 13px 8px;
   display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none}
 .a4 .banner .t{font-family:var(--disp);font-size:21px;line-height:1}
 .a4 .banner .t small{display:block;font-family:var(--sans);font-size:7.4px;letter-spacing:.18em;
-  text-transform:uppercase;font-weight:800;color:#E7C15C;margin-bottom:2px}
-.a4 .banner .s{font-family:var(--hand);font-size:14px;color:#E7C15C;line-height:1.12;text-align:right}
+  text-transform:uppercase;font-weight:800;color:#D4A843;margin-bottom:2px}
+.a4 .banner .s{font-family:var(--hand);font-size:14px;color:#D4A843;line-height:1.12;text-align:right}
 
 .a4 .sec{flex:none}
 .a4 .sechd{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:3px}
-.a4 .sechd .n{font-size:6.8px;color:rgba(26,26,46,.52);text-align:right;flex:1;line-height:1.3}
+.a4 .sechd .n{font-size:7.2px;color:rgba(26,26,46,.52);text-align:right;flex:1;line-height:1.3}
 
 /* hand-fill multiplier */
 .a4 .fill{display:flex;align-items:stretch;justify-content:center;gap:8px}
 .a4 .fill .bx{width:44mm;height:17mm;border:2px solid var(--navy);border-radius:8px;background:#fff;
   position:relative;display:flex;align-items:flex-end;justify-content:center;padding-bottom:1.5mm}
-.a4 .fill .bx u{text-decoration:none;font-size:6.2px;letter-spacing:.11em;text-transform:uppercase;color:rgba(26,26,46,.42)}
+.a4 .fill .bx u{text-decoration:none;font-size:7.2px;letter-spacing:.11em;text-transform:uppercase;color:rgba(26,26,46,.42)}
 .a4 .fill .op{font-family:var(--disp);font-size:27px;line-height:17mm}
 .a4 .fill .x3b{font-family:var(--disp);font-size:31px;line-height:17mm}
 
 /* checkpoints */
-.a4 .cp{display:flex;align-items:flex-end;gap:7px;padding:4px 0 2px;border-bottom:1px dotted #D8D0B6}
+.a4 .cp{display:flex;align-items:flex-end;gap:8px;padding:6px 0 3px;border-bottom:1px dotted rgba(26,26,46,.26)}
 .a4 .cp .tick{width:7mm;height:7mm;border-radius:50%;border:1.7px solid var(--gold);flex:none;
   display:flex;align-items:center;justify-content:center;font-size:6px;font-weight:800;color:var(--gold-d);background:#fff}
 .a4 .cp .said{width:56mm;flex:none;font-size:7.8px;line-height:1.25;padding-bottom:1px}
-.a4 .cp .said i{display:block;font-style:normal;font-size:5.9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);font-weight:800}
-.a4 .cp .got{flex:1;border-bottom:1px solid #CFC6A8;height:8mm}
+.a4 .cp .said i{display:block;font-style:normal;font-size:6.8px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);font-weight:800}
+.a4 .cp .got{flex:1;border-bottom:1px solid rgba(26,26,46,.34);height:8mm}
 
 /* the 90 day log: one row a week */
 .a4 .log{margin-top:1px}
-.a4 .lg{display:flex;align-items:flex-end;gap:5px;padding:2.6px 0}
-.a4 .lg .no{width:11mm;flex:none;font-size:6.3px;font-weight:800;color:rgba(26,26,46,.45);letter-spacing:.07em;padding-bottom:1.5px}
+.a4 .lg{display:flex;align-items:flex-end;gap:6px;padding:5px 0}
+.a4 .lg .no{width:11mm;flex:none;font-size:7.4px;font-weight:800;color:#1A1A2E;letter-spacing:.05em;padding-bottom:2px}
 .a4 .lg .days{display:flex;gap:1.3mm;flex:none}
-.a4 .lg .cell{width:6.1mm;height:6.1mm;border:1px solid #D8D0B6;border-radius:2px;background:#fff;position:relative}
-.a4 .lg .cell i{position:absolute;left:1px;top:0;font-style:normal;font-size:4.4px;color:rgba(26,26,46,.3);line-height:1.45}
+.a4 .lg .cell{width:7.6mm;height:7.6mm;border:1px solid rgba(26,26,46,.26);border-radius:2px;background:#fff;position:relative}
+.a4 .lg .cell i{position:absolute;left:1.4px;top:.6px;font-style:normal;font-size:5.2px;color:rgba(26,26,46,.34);line-height:1.4}
 .a4 .lg .cell.m{border:1.7px solid var(--gold);background:#FDF3D8}
 .a4 .lg .cell.m i{color:var(--gold-d);font-weight:800}
-.a4 .lg .hrs{width:9mm;height:6.1mm;flex:none;border:1px solid #CFC6A8;border-radius:2px;background:#fff}
-.a4 .lg .ln{flex:1;border-bottom:1px solid #CFC6A8;height:6.1mm}
-.a4 .loghd{display:flex;align-items:flex-end;gap:5px;margin-bottom:2px}
-.a4 .loghd span{font-size:5.7px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:rgba(26,26,46,.4)}
+.a4 .lg .hrs{width:11mm;height:7.6mm;flex:none;border:1px solid rgba(26,26,46,.34);border-radius:2px;background:#fff}
+.a4 .lg .ln{flex:1;border-bottom:1px solid rgba(26,26,46,.34);height:7.6mm}
+.a4 .loghd{display:flex;align-items:flex-end;gap:6px;margin-bottom:3px}
+.a4 .mo{display:flex;align-items:center;gap:6px;margin:5px 0 1px}
+.a4 .mo b{font-size:6.8px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:rgba(26,26,46,.5);flex:none}
+.a4 .mo i{flex:1;height:1px;background:rgba(26,26,46,.16)}
+.a4 .loghd span{font-size:6.6px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:rgba(26,26,46,.4)}
 .a4 .loghd .a{width:11mm;flex:none}
-.a4 .loghd .b{width:50.5mm;flex:none}
-.a4 .loghd .c2{width:9mm;flex:none;text-align:center}
+.a4 .loghd .b{width:62.3mm;flex:none}
+.a4 .loghd .c2{width:11mm;flex:none;text-align:center}
 .a4 .loghd .d2{flex:1;padding-left:2px}
 
 /* day 90 venn */
 .a4 .v90{position:relative;width:100%;height:61mm}
-.a4 .v90 .c{position:absolute;border-radius:50%;border:1.6px dashed #B3A985}
+.a4 .v90 .c{position:absolute;border-radius:50%;border:1.6px dashed rgba(26,26,46,.28)}
 .a4 .v90 .t{position:absolute;font-size:7px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;
   color:rgba(26,26,46,.38);text-align:center;width:26mm;margin-left:-13mm}
 .a4 .v90 .hand{position:absolute;right:0;top:18mm;width:48mm;font-family:var(--hand);font-size:14px;
   color:rgba(26,26,46,.55);line-height:1.15;text-align:left}
 
 
-  .a4{--soft:#EFEBDF;--line:#E5E0D2;--card:#FFFFFF;--ink:#1A1A2E;--muted:rgba(26,26,46,.72);--bg:#FFFDF7;--paper:#FFFDF7}
+  .a4{--soft:#EFEBDF;--line:#E5E0D2;--card:#FFFFFF;--ink:#1A1A2E;--muted:rgba(26,26,46,.72);--bg:#F8F6F0;--paper:#F8F6F0;
+    --know:#16213E;--grow:#0F9B8E;--show:#D4A843}
 
   /* ---------- v3: three acts ---------- */
   .acts{display:flex;gap:6px;margin:0 0 12px}
@@ -410,8 +420,8 @@
   .pwc.on{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,168,67,.2)}
   .pwc .c{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--teal)}
   .pwc .n{font-family:var(--disp);font-size:21px;line-height:1.1;margin-top:2px}
-  .pwc .d{font-size:13.5px;color:var(--muted);margin-top:4px;line-height:1.4}
-  .pwc .t{font-size:12.5px;color:var(--muted);margin-top:7px;padding-top:7px;border-top:1px dashed var(--line)}
+  .pwc .d{font-size:16px;color:var(--muted);margin-top:4px;line-height:1.4}
+  .pwc .t{font-size:14px;color:var(--muted);margin-top:7px;padding-top:7px;border-top:1px dashed var(--line)}
   .pwc .t b{color:var(--ink)}
   /* ---------- v3: funnel ---------- */
   .fnl{position:relative;height:150px;margin:14px 0 2px}
@@ -425,7 +435,7 @@
     letter-spacing:.1em;text-transform:uppercase;color:var(--gold);white-space:nowrap;transition:left .35s ease}
   .rulecard{border-left:3px solid var(--gold);padding:2px 0 2px 13px;margin-top:12px}
   .rulecard .h{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-  .rulecard .b{font-size:16px;line-height:1.35;margin-top:3px}
+  .rulecard .b{font-size:17px;line-height:1.35;margin-top:3px}
   /* ---------- v3: x300 interstitial ---------- */
   .x3{text-align:center;padding:6px 0 0}
   .x3 .row{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px 0 6px;flex-wrap:wrap}
@@ -440,19 +450,19 @@
   .clk .a{font-family:var(--disp);font-size:22px;line-height:1;margin-top:4px}
   .clk .a em{display:block;font-style:normal;font-family:var(--sans);font-size:9px;letter-spacing:.12em;
     text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:2px}
-  .shadow{margin-top:14px;border-radius:14px;padding:12px 14px;background:rgba(228,87,46,.09);
-    border:1px solid rgba(228,87,46,.3);font-size:14.5px;line-height:1.45}
+  .shadow{margin-top:14px;border-radius:14px;padding:14px 16px;background:rgba(22,33,62,.07);
+    border:1px solid rgba(22,33,62,.34);font-size:16px;line-height:1.5}
   .shadow b{font-weight:800}
   footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
   @media print{
     @page{size:A4;margin:8mm}
     header.bar,.actionbar,.toggle,.acts,.waitline,footer{display:none!important}
-    :root{color-scheme:light}
-    html,body{background:#fff!important;color:#1A1A2E!important}
+    :root,html[data-theme="dark"]{color-scheme:light!important}
+    html,html[data-theme="dark"],body{background:#FFFFFF!important;color:#1A1A2E!important}
     .wrap{padding:0;max-width:none}
     .screen{display:none!important}
     #s-plan{display:block!important;margin:0;padding:0;animation:none}
-    #s-plan>p,#s-plan>.chips,#s-plan>.actionbar{display:none!important}
+    #s-plan>*:not(.a4wrap){display:none!important}
     .a4wrap{display:block!important;overflow:visible!important;height:auto!important;width:auto!important;margin:0!important}
     .a4{transform:none!important;box-shadow:none;border-radius:0;margin:0 auto;
         break-inside:avoid;page-break-inside:avoid}
@@ -474,7 +484,7 @@
 <!-- GATE -->
 <section id="s-gate" class="screen active">
   <div class="eyebrow">Career Archetype</div>
-  <h1>Stop choosing careers. Start discovering yourself.</h1>
+  <h1>Stop picking a career. Start seeing yourself.</h1>
   <p class="lead">Find the work you are wired for. Then build your 90 day plan, live, in this room. Four minutes to your archetype.</p>
   <div class="insp"><div class="q">"Stop finding yourself. Start creating yourself."</div><cite>Adi, Letter 70</cite></div>
   <div class="card">
@@ -484,7 +494,7 @@
     <input class="field" id="name" type="text" placeholder="First name (for your plan)" autocomplete="given-name" autocapitalize="words">
     <input class="field" id="age" type="number" inputmode="numeric" min="13" max="70" placeholder="Age (for your mastery clock)">
     <button class="btn primary" style="width:100%" onclick="startQuiz()">Let's go</button>
-    <p class="fine" style="margin:12px 0 0">Your result shows up right here the moment you finish. Your email gets you your plan and a seat in the community. One letter a week from Adi. No spam.</p>
+    <p class="fine" style="margin:12px 0 0">Your result shows up right here, the moment you finish. Your email gets you the plan and one letter a week from Adi. That is it. No spam, no funnel.</p>
   </div>
 </section>
 
@@ -506,7 +516,7 @@
   <div class="breathe">
     <div>
       <div class="q">"What has a master mastered?<br>Themselves."</div>
-      <p class="fine" style="margin-top:18px">Reading your answers...</p>
+      <p class="fine" style="margin-top:18px">Doing the maths on who you are.</p>
     </div>
   </div>
 </section>
@@ -579,9 +589,9 @@
 <!-- STEP 2 DAY -->
 <section id="s-w2" class="screen">
   <div class="acts" data-acts></div>
-  <h2>Design your ideal day</h2>
+  <h2>Where do your 24 hours actually go?</h2>
   <div class="cue"><small>From the front</small>It has to add up to 24 hours. Lock what you refuse to give up. The rest rebalances.</div>
-  <div class="qlabel" style="margin-top:4px">Quick fill: most of my day goes to...</div>
+  <div class="qlabel" style="margin-top:4px">Be honest, right now. Most of my day actually goes to...</div>
   <div class="chips" id="commit-chips">
     <span class="chip pick" onclick="setWork('college',this)">Day college</span>
     <span class="chip pick" onclick="setWork('job',this)">Day job</span>
@@ -633,8 +643,8 @@
   <div class="chips" id="fnl-chips"></div>
   <div class="fnl">
     <svg viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
-      <line x1="160" y1="12" x2="900" y2="110" stroke="#B9AF8E" stroke-width="9" stroke-linecap="round"/>
-      <line x1="160" y1="208" x2="900" y2="110" stroke="#B9AF8E" stroke-width="9" stroke-linecap="round"/>
+      <line x1="160" y1="12" x2="900" y2="110" stroke="rgba(26,26,46,.30)" stroke-width="9" stroke-linecap="round"/>
+      <line x1="160" y1="208" x2="900" y2="110" stroke="rgba(26,26,46,.30)" stroke-width="9" stroke-linecap="round"/>
     </svg>
     <div class="yes">Yes!</div>
     <div class="no">No!</div>
@@ -663,7 +673,7 @@
   <textarea class="field" id="w4-thing" placeholder="What will you build in the next 90 days?" autocapitalize="sentences"></textarea>
   <div class="qlabel">On day 90, done looks like...</div>
   <input class="field" id="w4-done" type="text" placeholder="e.g. 20 published pieces and 3 real replies" autocapitalize="sentences">
-  <div class="qlabel" style="margin-top:18px">Four checkpoints. We prefilled them from your lane. Edit until they feel like yours.</div>
+  <div class="qlabel" style="margin-top:18px">Four checkpoints. We guessed. Change every word until it sounds like you, not us.</div>
   <div class="mile"><div class="day">Day 7</div><input class="field" id="m7" type="text" autocapitalize="sentences"></div>
   <div class="mile"><div class="day">Day 30</div><input class="field" id="m30" type="text" autocapitalize="sentences"></div>
   <div class="mile"><div class="day">Day 60</div><input class="field" id="m60" type="text" autocapitalize="sentences"></div>
@@ -701,7 +711,7 @@
   <input class="field" id="w7-move" type="text" placeholder="e.g. publish a first post, ship a rough prototype, call one person" autocapitalize="sentences">
   <div class="qlabel">Finish this line: In 90 days, I will have...</div>
   <input class="field" id="w7-commit" type="text" placeholder="...something you can point to and say I made that." autocapitalize="sentences">
-  <div class="insp"><div class="q">"Knowledge is free. Activation is rare."</div><cite>Adi</cite></div>
+  <div class="insp"><div class="q">"You just typed three real names into a browser, in a room full of people. That is the whole trick. A plan nobody knows about is a wish."</div><cite>Adi</cite></div>
   <div class="actionbar">
     <button class="linkback" onclick="showScreen('s-w4')">Back</button>
     <button class="btn primary" onclick="buildPlan()">#karo &middot; Make my plan</button>
@@ -716,7 +726,7 @@
   </div>
   <div class="a4wrap" id="a4wrap"><div class="a4" id="a4"><div class="a4pad" id="a4pad"></div></div></div>
   <div class="a4wrap" id="a4wrap2" style="display:none"><div class="a4 p2" id="a4b"><div class="a4pad" id="a4pad2"></div></div></div>
-  <p class="fine" style="margin:14px 0 0">Two pages. Page one you read. Page two you write on. Print both, stick them where you will see them, tick a box a day.</p>
+  <p class="fine" style="margin:14px 0 0">You just built that in one sitting. Page one you read. Page two you write on. Print both, stick them where you will see them, tick a box a day.</p>
   <div class="insp" style="margin-top:18px">
     <div class="q">There is a part two, for when you get home.</div>
     <cite><a href="/pyma/part2/" style="color:var(--teal);font-weight:700;text-decoration:none">The three circles, what your 18 to 24 is for, and what your days will actually be made of &rarr;</a></cite>
@@ -828,13 +838,13 @@ const PTORDER={B:['make','start','master','publish','portfolio','investigate'],
 /* ---------- SLIDERS ---------- */
 const TD=24,D=90;
 const C=[
- {k:'work',l:'Work / College',desc:'Time in a job, classes, or on campus',h:'#475569',mn:0,mx:12,short:'WORK'},
- {k:'learning',l:'Learning',desc:'Courses, reading, studying',h:'#2F6FB0',mn:0,mx:6,short:'LEARN'},
- {k:'building',l:'Building / real work',desc:'Projects, practice, real output. Proof gets made here.',h:'#0F9B8E',mn:0,mx:10,short:'BUILD'},
- {k:'growth',l:'Growth',desc:'Fitness, reflection, hobbies',h:'#7B5EA7',mn:0,mx:5,short:'GROW'},
- {k:'screens',l:'Screens / hanging out',desc:'Social media, streaming, friends',h:'#E4572E',mn:0,mx:12,short:'SCREEN'},
- {k:'home',l:'Home',desc:'Family, chores, commute',h:'#D1495B',mn:0,mx:6,short:'HOME'},
- {k:'sleep',l:'Sleep',desc:'Sleep and rest',h:'#64748B',mn:4,mx:12,short:'SLEEP'}
+ {k:'work',l:'Work / College',desc:'Time in a job, classes, or on campus',h:'#16213E',mn:0,mx:12,short:'WORK'},
+ {k:'learning',l:'Learning',desc:'Courses, reading, studying',h:'#0F9B8E',mn:0,mx:6,short:'LEARN'},
+ {k:'building',l:'Building / real work',desc:'Projects, practice, real output. Proof gets made here.',h:'#D4A843',mn:0,mx:10,short:'BUILD'},
+ {k:'growth',l:'Growth',desc:'Fitness, reflection, hobbies',h:'#5EEAD4',mn:0,mx:5,short:'GROW'},
+ {k:'screens',l:'Screens / hanging out',desc:'Social media, streaming, friends',h:'#8C8577',mn:0,mx:12,short:'SCREENS'},
+ {k:'home',l:'Home',desc:'Family, chores, commute',h:'#1A1A2E',mn:0,mx:6,short:'HOME'},
+ {k:'sleep',l:'Sleep',desc:'Sleep and rest',h:'#C9C2B2',mn:4,mx:12,short:'SLEEP'}
 ];
 const DEF={work:0,learning:2,building:3,growth:2,screens:6,home:3,sleep:8};
 const SWEET={learning:[1,3],building:[2,6],growth:[1.5,3.5],screens:[2,5],home:[2,4],sleep:[7,9]};
@@ -842,11 +852,11 @@ const WORKPRESET={college:6,job:8,free:0};
 
 /* ---------- v3: FIVE WORK TYPES ---------- */
 const WT=[
- {k:'decide', l:'Decide', d:'Calls, judgment, direction. You are the one who chooses.', h:'#2F6FB0'},
+ {k:'decide', l:'Decide', d:'Calls, judgment, direction. You are the one who chooses.', h:'#1A1A2E'},
  {k:'make',   l:'Make',   d:'Hands on the work. Building, writing, designing, coding.', h:'#D4A843'},
  {k:'meet',   l:'Meet',   d:'Rooms and relationships. Selling, persuading, connecting.', h:'#0F9B8E'},
- {k:'support',l:'Support',d:'Lifting other people. Teaching, coaching, caring, healing.', h:'#7B5EA7'},
- {k:'monitor',l:'Monitor',d:'Checking and verifying. Numbers, quality, risk, evidence.', h:'#D1495B'}
+ {k:'support',l:'Support',d:'Lifting other people. Teaching, coaching, caring, healing.', h:'#5EEAD4'},
+ {k:'monitor',l:'Monitor',d:'Checking and verifying. Numbers, quality, risk, evidence.', h:'#8C8577'}
 ];
 const MIXDEF={
  B:{decide:3,make:4,meet:1,support:0,monitor:2},
@@ -1176,7 +1186,7 @@ function renderX300(){
   const tiers=[[100,'better than most who ever try'],[1000,'good enough to be paid for it'],[10000,'among the best in the country']];
   if($('x3clock')){
     $('x3clock').innerHTML=tiers.map(t=>{
-      let when='&mdash;';
+      let when='Not yet';
       if(yr>0){
         const yrs=t[0]/yr;
         when=age?('<em>at age</em>'+Math.round(age+yrs)):(yrs<1?Math.round(yrs*12)+'mo':yrs.toFixed(1)+'yr');
@@ -1222,6 +1232,9 @@ function buildPlan(){
   const miles=[['Day 7',state.miles[0]],['Day 30',state.miles[1]],['Day 60',state.miles[2]],['Day 90',state.miles[3]]];
   const tot=C.reduce((a,c)=>a+vals[c.k],0)||24;
   const yn=YESNO[state.fnl]||YESNO['0'];
+  const d90=new Date(Date.now()+90*864e5);
+  const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const d90s=d90.getDate()+' '+MON[d90.getMonth()]+' '+d90.getFullYear();
   const fnl=FUNNEL.find(x=>x.k===state.fnl)||FUNNEL[0];
 
   /* ---- page 1 ---- */
@@ -1236,7 +1249,7 @@ function buildPlan(){
 
   const tiers=[[100,'better than most who ever try'],[1000,'good enough to be paid'],[10000,'among the best']];
   const clock=tiers.map(t=>{
-    let when='&mdash;';
+    let when='Not yet';
     if(yr>0){const y=t[0]/yr;when=age?('<em>at age</em>'+Math.round(age+y)):(y<1?'<em>in</em>'+Math.round(y*12)+' mo':'<em>in</em>'+y.toFixed(1)+' yr');}
     return '<div><div class="h">'+t[0].toLocaleString()+' hrs</div><div class="w">'+t[1]+'</div><div class="a">'+when+'</div></div>';
   }).join('');
@@ -1246,7 +1259,7 @@ function buildPlan(){
   const showLine=(lane?'The '+lane+' lane. ':'')+miles.filter(m=>m[1]).length+' checkpoints in 90 days.'+(state.audience?' Seen by '+state.audience+'.':'');
 
   const stops=miles.map((m,i)=>'<div class="stop'+(i===3?' last':'')+'"><div class="dot"><i>DAY</i><b>'+
-    [7,30,60,90][i]+'</b></div><div class="tx">'+esc(m[1]||'')+'</div></div>').join('');
+    [7,30,60,90][i]+'</b></div><div class="tx">'+esc(m[1]||'')+'</div>'+(i===3?'<div class="dt">'+d90s+'</div>':'')+'</div>').join('');
 
   $('a4pad').innerHTML=
   '<div class="hd"><div>'+
@@ -1266,7 +1279,8 @@ function buildPlan(){
       '<div class="k">What '+b.toFixed(1)+' hours a day becomes</div>'+
       '<div class="eqr"><div class="n">'+b.toFixed(1)+'<small>hours a day</small></div>'+
         '<div class="op">&times;300</div><div class="op">=</div>'+
-        '<div class="n" style="color:#8A7327">'+yr.toLocaleString()+'<small>hours this year</small></div></div>'+
+        '<div style="text-align:center"><div class="n hi">'+yr.toLocaleString()+'</div>'+
+        '<div style="font-family:var(--sans);font-size:7px;letter-spacing:.13em;text-transform:uppercase;color:rgba(26,26,46,.62);font-weight:800;margin-top:5px">hours this year</div></div></div>'+
     '</div><div class="clk">'+clock+'</div></div>'+
 
   '<div class="data">'+
@@ -1278,13 +1292,13 @@ function buildPlan(){
   '<div class="mid">'+
     '<div class="vennwrap"><div class="k">The three circles</div>'+
       '<div class="venn">'+
-        '<div class="c" style="width:40mm;height:40mm;left:2mm;top:2mm;border-color:var(--know);background:rgba(47,111,176,.06)"></div>'+
-        '<div class="c" style="width:40mm;height:40mm;left:24mm;top:2mm;border-color:var(--grow);background:rgba(209,73,91,.06)"></div>'+
-        '<div class="c" style="width:40mm;height:40mm;left:13mm;top:20mm;border-color:var(--show);background:rgba(15,155,142,.06)"></div>'+
-        '<div class="lab" style="left:15mm;top:14mm;color:var(--know)">Know</div>'+
-        '<div class="lab" style="left:51mm;top:14mm;color:var(--grow)">Grow</div>'+
-        '<div class="lab" style="left:33mm;top:48mm;color:var(--show)">Show</div>'+
-        (lane?'<div class="core" style="left:33mm;top:26mm"><div class="pill">'+esc(lane)+'</div></div>':'')+
+        '<div class="c" style="width:40mm;height:40mm;left:2mm;top:2mm;border-color:var(--know);background:rgba(22,33,62,.05)"></div>'+
+        '<div class="c" style="width:40mm;height:40mm;left:24mm;top:2mm;border-color:var(--grow);background:rgba(15,155,142,.06)"></div>'+
+        '<div class="c" style="width:40mm;height:40mm;left:13mm;top:20mm;border-color:var(--show);background:rgba(212,168,67,.09)"></div>'+
+        '<div class="lab" style="left:13mm;top:15mm">Know<i style="background:var(--know)"></i></div>'+
+        '<div class="lab" style="left:53mm;top:15mm">Grow<i style="background:var(--grow)"></i></div>'+
+        '<div class="lab" style="left:33mm;top:49mm">Show<i style="background:var(--show)"></i></div>'+
+        (lane?'<div class="core" style="left:33mm;top:25mm"><div class="pill">'+esc(lane)+'</div></div>':'')+
       '</div><div class="venncap">Where the three meet is the one thing.</div></div>'+
 
     '<div class="leg3">'+
@@ -1314,8 +1328,8 @@ function buildPlan(){
   '<div class="fun"><div class="k">The decision funnel &middot; where you are today</div>'+
     '<div class="funbox">'+
       '<svg viewBox="0 0 1000 120" preserveAspectRatio="none">'+
-        '<line x1="78" y1="5" x2="905" y2="60" stroke="#BDB393" stroke-width="6" stroke-linecap="round"/>'+
-        '<line x1="78" y1="115" x2="905" y2="60" stroke="#BDB393" stroke-width="6" stroke-linecap="round"/>'+
+        '<line x1="78" y1="5" x2="905" y2="60" stroke="rgba(26,26,46,.24)" stroke-width="5" stroke-linecap="round"/>'+
+        '<line x1="78" y1="115" x2="905" y2="60" stroke="rgba(26,26,46,.24)" stroke-width="5" stroke-linecap="round"/>'+
       '</svg>'+
       '<div class="yes">Yes!</div><div class="no">No!</div>'+
       '<div class="you" style="left:'+fnl.pos+'%;top:9.6mm"><div class="d"></div>'+
@@ -1329,14 +1343,17 @@ function buildPlan(){
   '</div>'+
 
   '<div class="ft"><div class="q">The world can only see your work.'+
-    '<small>The real work is not out there. It is in here. Start with yourself. Build your body of work.</small></div>'+
-    '<div class="sig"><div class="l">'+esc(name)+'</div><div class="u">Signed &middot; Day 1</div>'+
-    '<div class="w">www.adityajhunjhunwala.com</div></div></div>';
+    '<small>Read this again on '+d90s+'. Whoever signed it was you, before you started.</small></div>'+
+    '<div class="sig"><div class="l">'+esc(name)+'</div>'+
+    '<div class="u">Signed &middot; Day 1'+(state.anchor?' &middot; witnessed by '+esc(state.anchor):'')+'</div>'+
+    '<div class="w">adityajhunjhunwala.com</div></div></div>';
 
   /* ---- page 2 ---- */
   const MILE={7:1,30:1,60:1,90:1};
   let log='';
+  const MONTHS={1:'Month one',5:'Month two',9:'Month three'};
   for(let w=1;w<=13;w++){
+    if(MONTHS[w])log+='<div class="mo"><b>'+MONTHS[w]+'</b><i></i></div>';
     let cells='';
     for(let i=0;i<7;i++){
       const d=(w-1)*7+i+1;
@@ -1364,22 +1381,18 @@ function buildPlan(){
     cps+'</div>'+
 
   '<div class="sec" style="margin-top:10px">'+
-    '<div class="sechd"><div class="k">The 90 day log</div><div class="n">One box a day. Hours you actually put in that week. One line on what you shipped.</div></div>'+
+    '<div class="sechd"><div class="k">The 90 day log</div><div class="n">One box a day. Not one box a mood. Hours you actually put in, one line on what you shipped.</div></div>'+
     '<div class="loghd"><span class="a"></span><span class="b">one box a day</span><span class="c2">hrs</span>'+
       '<span class="d2">what I shipped &middot; what I learned</span></div>'+
     '<div class="log">'+log+'</div></div>'+
 
-  '<div class="sec" style="margin-top:auto;padding-top:6px">'+
-    '<div class="sechd"><div class="k">Day 90 &middot; draw your circles again</div>'+
-      '<div class="n">Then hold it next to page 1. That gap is the whole point.</div></div>'+
-    '<div class="v90">'+
-      '<div class="c" style="width:38mm;height:38mm;left:28.25mm;top:2mm"></div>'+
-      '<div class="c" style="width:38mm;height:38mm;left:49.75mm;top:2mm"></div>'+
-      '<div class="c" style="width:38mm;height:38mm;left:39mm;top:20.6mm"></div>'+
-      '<div class="t" style="left:39mm;top:14mm">Know</div>'+
-      '<div class="t" style="left:77mm;top:14mm">Grow</div>'+
-      '<div class="t" style="left:58mm;top:50mm">Show</div>'+
-      '<div class="hand">Same three circles.<br>Ninety days later.<br>In your handwriting this time.</div>'+
+  '<div class="sec" style="margin-top:auto;padding-top:9px">'+
+    '<div style="border-top:2.4px solid #1A1A2E;padding-top:10px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px">'+
+      '<div style="min-width:0"><div class="k">Day 90 &middot; '+d90s+'</div>'+
+        '<div style="font-family:var(--disp);font-size:16px;line-height:1.18;margin-top:4px;max-width:108mm">'+
+          'On that day this page is the evidence, not the plan.</div></div>'+
+      '<div style="font-family:var(--hand);font-size:14px;line-height:1.12;color:rgba(26,26,46,.6);text-align:right;flex:none">'+
+        'Ninety boxes.<br>One at a time.</div>'+
     '</div></div>';
 
   showScreen('s-plan');
@@ -1390,21 +1403,17 @@ function buildPlan(){
 
 /* If a long answer pushes a sheet past one page, shrink that sheet's contents. */
 function fitSheet(padId,sheetId){
+  /* zoom, not transform: transform leaves the layout box full size, and the print
+     engine then paginates on that box and silently eats the bottom of the sheet. */
   const pad=$(padId),sheet=$(sheetId);if(!pad||!sheet)return;
-  pad.style.transform='none';pad.style.width='';pad.style.right='';
+  pad.style.zoom='';pad.style.transform='';pad.style.width='';pad.style.right='';
   pad.style.bottom='auto';pad.style.height='auto';
   const need=pad.scrollHeight, have=sheet.clientHeight;
-  if(need>have+1){
-    const k=Math.max(.68,have/need);
-    pad.style.transformOrigin='top left';
-    pad.style.right='auto';
-    pad.style.width=(100/k)+'%';
-    pad.style.height=(100/k)+'%';
-    pad.style.transform='scale('+k+')';
-  }else{
-    pad.style.bottom='';pad.style.height='';
-  }
+  pad.style.bottom='';pad.style.height='';
+  if(have&&need>have-2)pad.style.zoom=Math.max(.66,(have-2)/need);
 }
+
+
 
 
 /* Scale both sheets to the phone screen. */
@@ -1421,6 +1430,19 @@ function fitPlan(){
   });
 }
 window.addEventListener('resize',()=>{if($('a4pad')&&$('a4pad').innerHTML)fitPlan();});
+window.addEventListener('beforeprint',()=>{
+  if(!$('a4pad')||!$('a4pad').innerHTML)return;
+  const w1=$('a4wrap'),w2=$('a4wrap2');
+  w1.dataset.d=w1.style.display;w2.dataset.d=w2.style.display;
+  w1.style.display='';w2.style.display='';
+  fitSheet('a4pad','a4');fitSheet('a4pad2','a4b');
+});
+window.addEventListener('afterprint',()=>{
+  const w1=$('a4wrap'),w2=$('a4wrap2');
+  if(w1&&w1.dataset.d!==undefined)w1.style.display=w1.dataset.d;
+  if(w2&&w2.dataset.d!==undefined)w2.style.display=w2.dataset.d;
+  fitPlan();
+});
 function restart(){
   vals={...DEF};locks={};if($('sliders'))$('sliders').dataset.built='';
   document.querySelectorAll('#commit-chips .pick').forEach(p=>p.classList.remove('on'));

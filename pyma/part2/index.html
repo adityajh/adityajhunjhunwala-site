@@ -15,15 +15,16 @@
   --teal:#0F9B8E; --teal-l:#5EEAD4;
   --bg:var(--cream); --ink:var(--navy); --card:#FFFFFF;
   --muted:rgba(26,26,46,.72); --line:#E5E0D2; --soft:#EFEBDF;
-  --know:#2F6FB0; --grow:#D1495B; --show:#0F9B8E;
+  --know:#16213E; --grow:#0F9B8E; --show:#D4A843;
   --disp:'DM Serif Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --hand:'Caveat',cursive;
   --shadow:0 10px 30px rgba(26,26,46,.08);
 }
 html[data-theme="light"]{color-scheme:light}
 html[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#15152A; --ink:#F5F1E8; --card:#1F1F3A;
-  --muted:rgba(245,241,232,.75); --line:#2C2C4A; --soft:#22223E;
+  --bg:#1A1A2E; --ink:#F8F6F0; --card:#16213E;
+  --muted:rgba(248,246,240,.76); --line:rgba(248,246,240,.16); --soft:rgba(248,246,240,.08);
+  --know:#F8F6F0; --grow:#5EEAD4; --show:#D4A843;
   --shadow:0 10px 30px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
@@ -48,7 +49,7 @@ p{margin:.5em 0 1em}
 .cue{font-family:var(--hand);font-size:21px;line-height:1.3;margin:.6em 0 1.1em;padding-left:14px;border-left:3px solid var(--gold)}
 .sec{margin:44px 0 0;padding-top:30px;border-top:1px solid var(--line)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;box-shadow:var(--shadow);margin:16px 0}
-.fine{font-size:13px;color:var(--muted)}
+.fine{font-size:16px;color:var(--muted);line-height:1.6}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
 .chip{border:1px solid var(--line);border-radius:22px;padding:9px 15px;font-size:14px;font-weight:600;
   cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s,border-color .15s,color .15s}
@@ -62,32 +63,33 @@ p{margin:.5em 0 1em}
 /* ---------- diagnostic ---------- */
 .rate{margin:14px 0 4px}
 .rate .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
-.rate .top b{font-size:16px}
+.rate .top b{font-size:17px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:8px}
+.rate .top b i{width:12px;height:12px;border-radius:4px;flex:none;display:inline-block}
 .rate .top .v{font-family:var(--disp);font-size:26px;line-height:1}
-.rate .q{font-size:13.5px;color:var(--muted);line-height:1.4;margin-top:1px}
+.rate .q{font-size:16px;color:var(--muted);line-height:1.5;margin-top:3px}
 .dots{display:flex;gap:8px;margin-top:9px}
 .dots button{flex:1;height:44px;border-radius:12px;border:1px solid var(--line);background:transparent;
   color:var(--muted);font-weight:800;font-size:15px;cursor:pointer;-webkit-tap-highlight-color:transparent}
-.dots button.on{color:#fff;border-color:transparent}
+.dots button.on{border-color:transparent;font-weight:800}
 .venn3{position:relative;width:100%;max-width:340px;margin:22px auto 6px;aspect-ratio:1/.92}
-.venn3 .c{position:absolute;border-radius:50%;border:2.5px solid;transition:background .3s}
-.venn3 .t{position:absolute;font-family:var(--disp);font-size:17px;transform:translate(-50%,-50%);text-align:center}
+.venn3 .c{position:absolute;border-radius:50%;border:3px solid;transition:background .3s}
+.venn3 .t{position:absolute;font-family:var(--sans);font-weight:800;letter-spacing:.05em;font-size:16px;transform:translate(-50%,-50%);text-align:center}
 .verdict{border-left:3px solid var(--gold);padding-left:14px;margin-top:16px}
 .verdict .h{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
 .verdict .b{font-size:17px;line-height:1.45;margin-top:4px}
 
 /* ---------- matrix ---------- */
 .band{margin-top:18px}
-.band .bh{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);
+.band .bh{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
   padding-bottom:6px;border-bottom:1px solid var(--line)}
 .row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
-.row .n{flex:1;min-width:0;font-size:15.5px;font-weight:600}
+.row .n{flex:1;min-width:0;font-size:16px;font-weight:600}
 .row .m{flex:none;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   padding:5px 9px;border-radius:20px;white-space:nowrap}
-.m.p{background:rgba(15,155,142,.16);color:#0F9B8E;border:1px solid rgba(15,155,142,.45)}
-.m.s{background:rgba(212,168,67,.14);color:var(--gold);border:1px solid rgba(212,168,67,.4)}
+.m.p{background:#0F9B8E;color:#F8F6F0;border:1px solid #0F9B8E}
+.m.s{background:rgba(212,168,67,.22);color:var(--ink);border:1px solid rgba(212,168,67,.55)}
 .m.x{background:transparent;color:var(--muted);border:1px dashed var(--line);opacity:.75}
-html[data-theme="dark"] .m.p{color:var(--teal-l)}
+
 
 /* ---------- work mix ---------- */
 .mx{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
@@ -95,7 +97,7 @@ html[data-theme="dark"] .m.p{color:var(--teal-l)}
 .mx .ic{width:40px;height:40px;border-radius:12px;flex:none;display:flex;align-items:center;justify-content:center;
   color:#fff;font-family:var(--disp);font-size:17px}
 .mx .bd{flex:1;min-width:0}
-.mx .bd b{font-size:15.5px;display:block}
+.mx .bd b{font-size:16px;display:block}
 .mx .tr{height:9px;border-radius:5px;background:var(--soft);margin-top:6px;overflow:hidden}
 .mx .tr i{display:block;height:100%;border-radius:5px;transition:width .2s}
 .mx .ctl{display:flex;align-items:center;gap:4px;flex:none}
@@ -110,11 +112,11 @@ html[data-theme="dark"] .m.p{color:var(--teal-l)}
 .match .pct{font-family:var(--disp);font-size:26px;width:56px;flex:none;text-align:right;line-height:1}
 .match .nm{flex:1;min-width:0}
 .match .nm b{font-size:16px;display:block}
-.match .nm span{font-size:12.5px;color:var(--muted);display:block;line-height:1.35}
+.match .nm span{font-size:14px;color:var(--muted);display:block;line-height:1.4}
 .pill{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   padding:3px 8px;border-radius:20px;background:var(--soft);color:var(--muted);margin-right:5px}
-.note{border-radius:14px;padding:14px 16px;margin:12px 0;font-size:15px;line-height:1.5;
-  background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.32)}
+.note{border-radius:14px;padding:16px 18px;margin:14px 0;font-size:16.5px;line-height:1.55;
+  background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.4)}
 .note b{font-weight:800}
 footer{text-align:center;color:var(--muted);font-size:13px;margin-top:46px;padding-top:24px;border-top:1px solid var(--line)}
 footer a{color:var(--teal)}
@@ -145,17 +147,17 @@ footer a{color:var(--teal)}
 
     <div class="card">
       <div class="rate">
-        <div class="top"><b style="color:var(--know)">What I know</b><span class="v" id="v-k">3</span></div>
+        <div class="top"><b><i style="background:var(--know)"></i>What I know</b><span class="v" id="v-k">3</span></div>
         <div class="q">How clearly can you say, in one sentence, what you are good at and where you are going?</div>
         <div class="dots" id="d-k"></div>
       </div>
       <div class="rate">
-        <div class="top"><b style="color:var(--grow)">How I grow</b><span class="v" id="v-g">3</span></div>
+        <div class="top"><b><i style="background:var(--grow)"></i>How I grow</b><span class="v" id="v-g">3</span></div>
         <div class="q">How deliberately are you getting better right now? Not learning in general. Better at one thing, on purpose, this week.</div>
         <div class="dots" id="d-g"></div>
       </div>
       <div class="rate">
-        <div class="top"><b style="color:var(--show)">What I show</b><span class="v" id="v-s">3</span></div>
+        <div class="top"><b><i style="background:var(--show)"></i>What I show</b><span class="v" id="v-s">3</span></div>
         <div class="q">If a stranger searched for you today, how much finished work of yours could they actually see?</div>
         <div class="dots" id="d-s"></div>
       </div>
@@ -164,15 +166,15 @@ footer a{color:var(--teal)}
         <div class="c" id="c-k" style="left:2%;top:2%;width:62%;height:62%;border-color:var(--know)"></div>
         <div class="c" id="c-g" style="left:36%;top:2%;width:62%;height:62%;border-color:var(--grow)"></div>
         <div class="c" id="c-s" style="left:19%;top:34%;width:62%;height:62%;border-color:var(--show)"></div>
-        <div class="t" style="left:22%;top:22%;color:var(--know)">Know</div>
-        <div class="t" style="left:78%;top:22%;color:var(--grow)">Grow</div>
-        <div class="t" style="left:50%;top:82%;color:var(--show)">Show</div>
+        <div class="t" style="left:22%;top:22%">Know</div>
+        <div class="t" style="left:78%;top:22%">Grow</div>
+        <div class="t" style="left:50%;top:84%">Show</div>
       </div>
 
       <div class="verdict"><div class="h">What this says</div><div class="b" id="verdict"></div></div>
     </div>
 
-    <div class="note">The world can only see your work. Not your potential, not your marks, not the thing you are about to start. <b>Whichever circle is smallest is the only one worth working on this quarter.</b></div>
+    <div class="note">The world can only see your work. Not your potential. Marks lie. Not the thing you are about to start, only the thing you finished. <b>Whichever circle is smallest is the only one worth working on this quarter.</b></div>
   </div>
 
   <!-- ============ 2. THE 18-24 MATRIX ============ -->
@@ -187,7 +189,7 @@ footer a{color:var(--teal)}
 
     <div class="card" id="matrix"></div>
 
-    <div class="note"><b>The blanks are the point.</b> Six years is not long. Every hour you spend on a row marked <i>not the lever</i> is an hour not spent on the ones that are. Not the lever does not mean useless. It means it is not the thing that moves your outcome on the pathway you picked. Nobody is telling you to drop out of anything. They are telling you where the compounding happens for the pathway you picked.</div>
+    <div class="note"><b>The blanks are the point.</b> Six years is not long. Every hour on a row marked <i>not the lever</i> is an hour stolen from a row that is. Not the lever does not mean useless. It means it will not move your outcome. Nobody is telling you to drop anything. This is telling you where the compounding actually happens.</div>
   </div>
 
   <!-- ============ 3. WORK MIX vs ROLES ============ -->
@@ -225,7 +227,7 @@ footer a{color:var(--teal)}
     <p>The plan you printed has a page you write on. Nothing on this page matters unless a box gets ticked on that one. Start today, badly. Day one is the only day you get to start.</p>
     <div class="cue">The real work is not out there. It is in here. Start with yourself. Build your body of work.</div>
     <div class="actions">
-      <a class="btn" href="/pyma/">Redo the tool</a>
+      <a class="btn" href="/pyma/">Go again</a>
       <a class="btn ghost" href="https://qrto.to/66f8cc1e" target="_blank" rel="noopener">Adi's letters, one a week</a>
     </div>
   </div>
@@ -234,24 +236,30 @@ footer a{color:var(--teal)}
 </div>
 
 <script>
-function toggleTheme(){const h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';}
+function toggleTheme(){const h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';paintVenn();drawDots();}
 const $=id=>document.getElementById(id);
 
 /* ================= 1. THREE CIRCLES ================= */
 const KGS={k:3,g:3,s:3};
 const KGSN={k:'know',g:'grow',s:'show'};
 function drawDots(){
-  [['k','--know'],['g','--grow'],['s','--show']].forEach(([key,col])=>{
+  const dark=document.documentElement.dataset.theme==='dark';
+  /* every on-state has to be an approved pairing in BOTH themes */
+  const ON=dark?{k:['#F8F6F0','#1A1A2E'],g:['#5EEAD4','#1A1A2E'],s:['#D4A843','#1A1A2E']}
+               :{k:['#16213E','#F8F6F0'],g:['#0F9B8E','#F8F6F0'],s:['#D4A843','#1A1A2E']};
+  ['k','g','s'].forEach(key=>{
     const box=$('d-'+key);
     box.innerHTML=[1,2,3,4,5].map(n=>
-      '<button'+(KGS[key]===n?' class="on" style="background:var('+col+')"':'')+
+      '<button'+(KGS[key]===n?' class="on" style="background:'+ON[key][0]+';color:'+ON[key][1]+'"':'')+
       ' onclick="setKGS(\''+key+'\','+n+')" aria-label="'+n+' out of 5">'+n+'</button>').join('');
     $('v-'+key).textContent=KGS[key];
   });
 }
 function setKGS(k,n){KGS[k]=n;drawDots();paintVenn();}
 function paintVenn(){
-  const alpha={k:'47,111,176',g:'209,73,91',s:'15,155,142'};
+  const ALPHA_L={k:'22,33,62',g:'15,155,142',s:'212,168,67'};
+  const ALPHA_D={k:'248,246,240',g:'94,234,212',s:'212,168,67'};
+  const alpha=document.documentElement.dataset.theme==='dark'?ALPHA_D:ALPHA_L;
   ['k','g','s'].forEach(key=>{
     const a=0.03+KGS[key]*0.055;
     $('c-'+key).style.background='rgba('+alpha[key]+','+a.toFixed(3)+')';
@@ -273,7 +281,7 @@ function paintVenn(){
   } else {
     msg='You are producing, and people can see it, which already puts you ahead. What is missing is a direction, so that three years of work adds up to one body of work instead of thirty unrelated things. Right now you are building. You are not yet building <i>something</i>.';
   }
-  $('verdict').innerHTML=msg+'<br><br><span class="fine">Smallest circle: <b style="color:var(--'+KGSN[low]+')">'+
+  $('verdict').innerHTML=msg+'<br><br><span class="fine">Smallest circle: <b style="color:var(--ink)">'+
     KGSN[low].charAt(0).toUpperCase()+KGSN[low].slice(1)+'</b>. That is your next ninety days.</span>';
 }
 
@@ -322,11 +330,11 @@ function setPath(k){path=k;renderPath();}
 
 /* ================= 3. WORK MIX vs ROLES ================= */
 const WT=[
- {k:'decide', l:'Decide', d:'Calls, judgment, direction. You are the one who chooses.', h:'#2F6FB0'},
+ {k:'decide', l:'Decide', d:'Calls, judgment, direction. You are the one who chooses.', h:'#1A1A2E'},
  {k:'make',   l:'Make',   d:'Hands on the work. Building, writing, designing, coding.', h:'#D4A843'},
  {k:'meet',   l:'Meet',   d:'Rooms and relationships. Selling, persuading, connecting.', h:'#0F9B8E'},
- {k:'support',l:'Support',d:'Lifting other people. Teaching, coaching, caring, healing.', h:'#7B5EA7'},
- {k:'monitor',l:'Monitor',d:'Checking and verifying. Numbers, quality, risk, evidence.', h:'#D1495B'}
+ {k:'support',l:'Support',d:'Lifting other people. Teaching, coaching, caring, healing.', h:'#5EEAD4'},
+ {k:'monitor',l:'Monitor',d:'Checking and verifying. Numbers, quality, risk, evidence.', h:'#8C8577'}
 ];
 let mix={decide:0,make:0,meet:0,support:0,monitor:0};
 /* every row sums to 10 */
