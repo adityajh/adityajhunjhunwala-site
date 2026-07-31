@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,9 @@
     --shadow:0 10px 30px rgba(26,26,46,.08);
     --disp:'DM Serif Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --hand:'Caveat',cursive;
   }
+  html[data-theme="light"]{color-scheme:light}
   html[data-theme="dark"]{
+    color-scheme:dark;
     --bg:#15152A; --ink:#F5F1E8; --card:#1F1F3A;
     --muted:rgba(245,241,232,.75); --line:#2C2C4A; --soft:#22223E;
     --shadow:0 10px 30px rgba(0,0,0,.35);
@@ -31,7 +33,16 @@
   header.bar{display:flex;justify-content:space-between;align-items:center;max-width:680px;margin:0 auto;padding:14px 20px 0}
   .brand{font-family:var(--disp);font-size:15px}
   .brand b{color:var(--teal);font-weight:400}
-  .toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:20px;padding:8px 14px;font-size:14px;cursor:pointer;font-family:var(--sans);min-height:44px}
+  .toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:50%;
+    width:44px;height:44px;min-height:44px;padding:0;cursor:pointer;display:flex;align-items:center;
+    justify-content:center;flex:none;transition:border-color .2s,color .2s,background .2s;-webkit-tap-highlight-color:transparent}
+  .toggle:hover{border-color:var(--gold);color:var(--gold)}
+  .toggle svg{width:20px;height:20px;display:block;stroke:currentColor;fill:none;stroke-width:1.7;
+    stroke-linecap:round;stroke-linejoin:round}
+  html[data-theme="dark"] .toggle .i-sun{display:block}
+  html[data-theme="dark"] .toggle .i-moon{display:none}
+  html[data-theme="light"] .toggle .i-sun{display:none}
+  html[data-theme="light"] .toggle .i-moon{display:block}
   h1{font-family:var(--disp);font-weight:400;font-size:clamp(32px,8vw,48px);line-height:1.05;margin:.25em 0 .3em}
   h2{font-family:var(--disp);font-weight:400;font-size:clamp(24px,6vw,32px);line-height:1.12;margin:0 0 .3em}
   h3{font-family:var(--disp);font-weight:400;font-size:20px;margin:0 0 .2em}
@@ -152,37 +163,106 @@
   /* illustrations */
   .illo{width:100%;border-radius:14px;margin:12px 0}
   .illo.small{width:min(70%,320px);display:block;margin:12px auto}
-  /* plan */
-  .plansheet{background:var(--cream);color:var(--navy);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow)}
-  .plansheet .ph{border-bottom:2px solid var(--gold);padding-bottom:12px;margin-bottom:16px}
-  .plansheet .plabel{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(26,26,46,.72);font-weight:700;margin-bottom:3px}
-  .plansheet .big{font-family:var(--disp);font-size:22px;line-height:1.2}
-  .plansheet .commit{font-family:var(--disp);font-size:20px;border-top:1px dashed var(--line);padding-top:14px;margin-top:14px}
-  .plansheet .pline{margin:0 0 14px}
-  .plansheet .mini{font-size:13px}
-  .cht{display:flex;gap:10px;margin:8px 0}
-  .cht div{flex:1;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 6px;text-align:center;font-weight:700;font-size:13px}
-  .cht div small{display:block;font-weight:600;font-size:11px;color:rgba(26,26,46,.72)}
-  .dreamer{font-family:var(--hand);font-size:24px;color:var(--navy);margin:14px 0 2px}
-  .lawrence{font-size:12px;color:rgba(26,26,46,.72)}
+  /* ---------- ONE PAGE A4 PLAN ---------- */
+  .a4wrap{overflow:hidden;position:relative;margin:0 auto}
+  .a4{width:180mm;height:265mm;box-sizing:border-box;background:#FFFDF7;color:#1A1A2E;
+      transform-origin:top left;position:relative;overflow:hidden;border-radius:3px;
+      box-shadow:0 18px 54px rgba(0,0,0,.30);font-family:var(--sans)}
+  .a4 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .a4pad{position:absolute;inset:0;padding:5mm;display:flex;flex-direction:column}
+  .a4 .rule{height:3px;border-radius:2px;margin:5px 0 0;
+    background:linear-gradient(90deg,#D4A843 0%,#F0D78C 55%,rgba(212,168,67,0) 100%)}
+  /* header */
+  .ph2{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+  .ph2 .eyeb{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:#8A7327}
+  .ph2 h1{font-family:var(--disp);font-size:31px;line-height:1.02;margin:3px 0 0;letter-spacing:-.012em}
+  .ph2 .sub{font-size:9.5px;color:rgba(26,26,46,.66);margin-top:4px;line-height:1.35;max-width:104mm}
+  .archbox{flex:none;width:33mm;text-align:center;border:1px solid #E5E0D2;border-radius:9px;padding:4px;background:#fff}
+  .archbox img{width:100%;border-radius:5px;display:block}
+  .archbox b{display:block;font-family:var(--disp);font-weight:400;font-size:13px;line-height:1.12;margin-top:4px}
+  .archbox small{display:block;font-size:7.5px;color:rgba(26,26,46,.6);line-height:1.25;margin-top:2px}
+  /* the vow */
+  .vow{margin-top:7px;border-left:3px solid #0F9B8E;padding:6px 0 6px 9px;
+    background:linear-gradient(90deg,rgba(15,155,142,.09),rgba(15,155,142,0) 70%)}
+  .vow .k{font-size:8px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;color:#0C7A70}
+  .vow .v{font-family:var(--disp);font-size:19px;line-height:1.18;margin-top:2px}
+  /* columns */
+  .cols{margin-top:8px;flex:0 0 auto;max-height:118mm;overflow:hidden}
+  .colsin{display:flex;gap:7mm;transform-origin:top left;width:100%}
+  /* the space that is left over becomes something useful */
+  .notes{flex:1 1 0;min-height:0;overflow:hidden;margin-top:8px;padding-top:7px;border-top:1px solid #E5E0D2;display:flex;flex-direction:column}
+  .notes .k{font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#8A7327}
+  .notes .hand{font-family:var(--hand);font-size:15px;line-height:1.15;color:#1A1A2E;margin:2px 0 4px}
+  .notes .lines{flex:1 1 auto;min-height:0;border-radius:3px;
+    background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 6.4mm,#E7E0CC 6.4mm,#E7E0CC calc(6.4mm + 1px))}
+  .col{min-width:0}
+  .col.l{flex:1 1 auto}
+  .col.r{flex:0 0 58mm}
+  .blk{margin-bottom:8px}
+  .blk .k{font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#8A7327;margin-bottom:3px}
+  .blk .t{font-family:var(--disp);font-size:15px;line-height:1.24;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .blk .s{font-size:9.5px;line-height:1.35;color:rgba(26,26,46,.74);margin-top:2px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  /* timeline */
+  .tl{border-left:1.5px dotted #C9C0A5;margin:2px 0 0 4px;padding-left:9px}
+  .tl .row{position:relative;margin-bottom:5px}
+  .tl .row::before{content:"";position:absolute;left:-13.7px;top:3px;width:7px;height:7px;
+    border-radius:50%;background:#D4A843;box-shadow:0 0 0 2px #FFFDF7}
+  .tl .d{font-size:7.5px;font-weight:800;letter-spacing:.12em;color:#8A7327;text-transform:uppercase}
+  .tl .x{font-size:10px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  /* rhythm */
+  .rbar{display:flex;height:7px;border-radius:4px;overflow:hidden;margin:2px 0 5px}
+  .rrow{display:flex;justify-content:space-between;align-items:center;font-size:9px;
+    line-height:1.55;border-bottom:1px dotted #EAE4D3}
+  .rrow b{font-variant-numeric:tabular-nums}
+  .rdot{display:inline-block;width:6px;height:6px;border-radius:2px;margin-right:5px;vertical-align:middle}
+  .pp{font-size:9.5px;line-height:1.38;margin-bottom:3px}
+  /* 90 day tracker */
+  .trk{flex:none;padding-top:7px;border-top:1px solid #E5E0D2}
+  .trk .hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .trk .hd .k{font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#8A7327}
+  .trk .hd .n{font-size:8px;color:rgba(26,26,46,.6)}
+  .grid{display:grid;grid-template-columns:repeat(30,1fr);gap:1mm;margin-top:5px}
+  .cell{aspect-ratio:1;border:1px solid #D8D1BC;border-radius:1.5px;background:#fff;position:relative}
+  .cell i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-style:normal;font-size:4.4px;color:#BDB59C;font-weight:700;letter-spacing:-.02em}
+  .cell.m{border-color:#D4A843;border-width:1.3px;background:#FCF3DC}
+  .cell.m i{color:#8A7327}
+  /* footer */
+  .a4f{flex:none;margin-top:7px;padding-top:6px;border-top:2px solid #1A1A2E;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:8px}
+  .a4f .q{font-family:var(--disp);font-size:13.5px;line-height:1.2;max-width:100mm}
+  .a4f .q small{display:block;font-family:var(--sans);font-size:8.2px;color:rgba(26,26,46,.66);
+    margin-top:4px;line-height:1.4;font-style:normal}
+  .a4f .sig{flex:none;text-align:right}
+  .a4f .sig .l{font-family:var(--hand);font-size:18px;line-height:1;border-bottom:1px solid #1A1A2E;
+    padding:0 12px 2px;display:inline-block;min-width:32mm}
+  .a4f .sig .u{font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,46,.58);margin-top:3px}
+  .a4f .sig .w{font-size:10px;font-weight:800;color:#0C7A70;margin-top:5px}
   footer{text-align:center;color:var(--muted);font-size:13px;margin-top:36px}
   @media print{
-    @page{size:A4;margin:14mm}
-    header.bar,.actionbar,.toggle,button,.stepbar,.waitline,.proto-note,footer{display:none!important}
+    @page{size:A4;margin:12mm}
+    header.bar,.actionbar,.toggle,.stepbar,.waitline,.proto-note,footer{display:none!important}
     :root{color-scheme:light}
-    body{background:#fff!important;color:var(--navy)!important}
+    html,body{background:#fff!important;color:#1A1A2E!important}
     .wrap{padding:0;max-width:none}
     .screen{display:none!important}
-    #s-plan{display:block!important}
-    .plansheet{box-shadow:none;border:none;padding:0;break-inside:avoid}
-    .plan-illo{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    #s-plan{display:block!important;margin:0;padding:0;animation:none}
+    #s-plan>*:not(.a4wrap){display:none!important}
+    .a4wrap{overflow:visible!important;height:auto!important;width:auto!important;margin:0!important}
+    .a4{transform:none!important;box-shadow:none;border-radius:0;margin:0;
+        break-inside:avoid;page-break-inside:avoid;page-break-after:avoid}
   }
 </style>
 </head>
 <body>
 <header class="bar">
   <div class="brand">aditya jhunjhunwala <b>x PYMA</b></div>
-  <button class="toggle" onclick="toggleTheme()">theme</button>
+  <button class="toggle" id="themebtn" onclick="toggleTheme()" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.2v2.4M12 19.4v2.4M4.1 4.1l1.7 1.7M18.2 18.2l1.7 1.7M2.2 12h2.4M19.4 12h2.4M4.1 19.9l1.7-1.7M18.2 5.8l1.7-1.7"/></svg>
+    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+  </button>
 </header>
 
 <div class="wrap">
@@ -191,15 +271,15 @@
 <section id="s-gate" class="screen active">
   <div class="eyebrow">Career Archetype</div>
   <h1>Stop choosing careers. Start discovering yourself.</h1>
-  <p class="lead">Discover the work you are naturally wired for, then build your 90 day plan together, live in this room. About 4 minutes to your archetype.</p>
+  <p class="lead">Find the work you are wired for. Then build your 90 day plan, live, in this room. Four minutes to your archetype.</p>
   <div class="insp"><div class="q">"Stop finding yourself. Start creating yourself."</div><cite>Adi, Letter 70</cite></div>
   <div class="card">
     <label class="qlabel" for="email" style="margin-top:0">Drop your email to begin</label>
     <input class="field" id="email" type="email" inputmode="email" placeholder="you@email.com" autocomplete="email" autocapitalize="off" spellcheck="false">
     <div class="err" id="email-err">That email does not look right. Try again.</div>
     <input class="field" id="name" type="text" placeholder="First name (for your plan)" autocomplete="given-name" autocapitalize="words">
-    <button class="btn primary" style="width:100%" onclick="startQuiz()">Begin the discovery</button>
-    <p class="fine" style="margin:12px 0 0">Your result appears on this screen the moment you finish. Your email gets you your plan and a spot in the accountability community. One letter a week from Adi. No spam.</p>
+    <button class="btn primary" style="width:100%" onclick="startQuiz()">Let's go</button>
+    <p class="fine" style="margin:12px 0 0">Your result shows up right here the moment you finish. Your email gets you your plan and a seat in the community. One letter a week from Adi. No spam.</p>
   </div>
 </section>
 
@@ -238,11 +318,11 @@
     <div class="quote" id="result-line"></div>
     <div class="sectlabel">The research behind this</div>
     <div class="statband">
-      <div class="stat">73% of recruiters now prioritise proof of work over grades.<cite>Unstop Talent Report 2025</cite></div>
-      <div class="stat">Half a million AI agents now work alongside half a million employees at one Indian company alone. The entry rung is gone. Judgment remains.<cite>TCS AGM 2026</cite></div>
-      <div class="stat">In India, work experience drives about 58% of lifetime earnings, more than any country studied.<cite>McKinsey Global Institute 2022</cite></div>
+      <div class="stat">73% of recruiters care more about proof of work than marks.<cite>Unstop Talent Report 2025</cite></div>
+      <div class="stat">One Indian company now runs half a million AI agents next to half a million people. The easy first job is disappearing. Judgment is what stays.<cite>TCS AGM 2026</cite></div>
+      <div class="stat">In India, about 58% of what you earn in your lifetime comes from work experience. Higher than any country studied.<cite>McKinsey Global Institute 2022</cite></div>
     </div>
-    <div class="story"><b>"My goals found me."</b><br>Adi stopped chasing goals and started building visible work instead. The goals, and the opportunities, began arriving uninvited. That is what a body of work does.<cite>From Adi's letters</cite></div>
+    <div class="story"><b>"My goals found me."</b><br>Adi stopped chasing goals and started building work people could see. The goals, and the opportunities, started showing up on their own. That is what a body of work does.<cite>From Adi's letters</cite></div>
     <div class="sectlabel">Not quite you?</div>
     <p class="fine" style="margin:0 0 4px">"Learn, unlearn, relearn." Your result comes from your answers. If another one fits better, pick it, and your whole plan updates.</p>
     <div class="chips" id="arch-switch"></div>
@@ -267,7 +347,7 @@
       <b>The 7 Course</b><span>One clear pathway. Focused. Step by step.</span>
     </div>
   </div>
-  <p class="fine">Neither is better. Knowing which one you are building changes every decision after it.</p>
+  <p class="fine">Neither is better. But knowing which one you are building changes every choice after it.</p>
   <div class="qlabel">Your archetype leans toward these. Tap the one that pulls you most.</div>
   <div class="chips" id="w1-dirs"></div>
   <input class="field" id="w1-dirown" type="text" placeholder="Or type a direction in your own words" autocapitalize="sentences" oninput="clearDirChips()">
@@ -398,13 +478,14 @@
   <div class="insp"><div class="q">"Knowledge is free. Activation is rare."</div><cite>Adi</cite></div>
   <div class="actionbar">
     <button class="linkback" onclick="showScreen('s-w6')">Back</button>
-    <button class="btn primary" onclick="buildPlan()">#karo · Generate my plan</button>
+    <button class="btn primary" onclick="buildPlan()">#karo · Make my plan</button>
   </div>
 </section>
 
 <!-- PLAN -->
 <section id="s-plan" class="screen">
-  <div class="plansheet" id="plansheet"></div>
+  <div class="a4wrap" id="a4wrap"><div class="a4" id="a4"><div class="a4pad" id="a4pad"></div></div></div>
+  <p class="fine" style="margin:14px 0 0">One page. Print it, stick it where you will see it, tick a box a day.</p>
   <div class="actionbar">
     <button class="btn tealbtn" onclick="window.print()">Print / save as PDF</button>
     <button class="linkback" onclick="showScreen('s-w7')">Edit</button>
@@ -467,18 +548,18 @@ const ARCH={
 
 /* ---------- QUIZ (two-pick: first tap 2 pts, second tap 1 pt) ---------- */
 const Q=[
- {t:'Free weekend, no one is watching. Where do you drift?',o:[['Practising or perfecting a skill I care about.','M'],['Out with people, hosting or deep in conversation.','C'],['Down a rabbit hole trying to understand something.','A'],['Starting some random new project on a whim.','X']]},
- {t:'Pick the compliment that would land hardest.',o:[['You actually started the thing everyone talks about.','X'],['You made me feel something.','S'],['You saw what everyone else missed.','A'],['The craft in this is unreal.','M']]},
- {t:'A big project lands. Which part do you grab?',o:[['Making it land: the pitch, the story, the look.','S'],['Rallying the team and keeping everyone in.','C'],['Perfecting the one part that has to be excellent.','M'],['Getting a rough version moving before we overthink it.','X']]},
+ {t:'Free weekend, no one is watching. Where do you drift?',o:[['Getting better at a skill I care about.','M'],['Out with people, hosting or deep in conversation.','C'],['Down a rabbit hole trying to understand something.','A'],['Starting some random new project on a whim.','X']]},
+ {t:'Which of these would you most love to hear?',o:[['You actually started the thing everyone talks about.','X'],['You made me feel something.','S'],['You saw what everyone else missed.','A'],['The craft in this is unreal.','M']]},
+ {t:'Your group gets a big project. Which part do you grab?',o:[['The pitch, the story, the look.','S'],['Getting everyone in and keeping them in.','C'],['The one part that has to be excellent.','M'],['Getting a rough version moving before we overthink it.','X']]},
  {t:'What frustrates you most?',o:[['People not talking to each other.','C'],['A great idea explained badly.','S'],['Decisions made on vibes, not evidence.','A'],['Endless talk with nobody starting anything.','X']]},
- {t:'In a year, you would be proudest to have made...',o:[['Research that answered a real question.','A'],['A product or system people actually use.','B'],['A body of work that shows real mastery.','M'],['A new venture solving a problem I care about.','X']]},
- {t:'How do you get good at something?',o:[['Build real things and learn on the way.','B'],['Learn with people, teach as I go.','C'],['Practise one thing obsessively till it is sharp.','M'],['Jump in the deep end and figure it out live.','X']]},
+ {t:'A year from now, which one would make you proudest?',o:[['Research that answered a real question.','A'],['A product or system people actually use.','B'],['A body of work that shows real skill.','M'],['A new venture solving a problem I care about.','X']]},
+ {t:'How do you get good at something?',o:[['Build real things and learn on the way.','B'],['Learn with people, teach as I go.','C'],['Practise one thing daily till it is sharp.','M'],['Jump in the deep end and figure it out live.','X']]},
  {t:'Which workspace feels like home?',o:[['A buzzing room full of people.','C'],['A workbench, tools and half built things everywhere.','B'],['A quiet desk, data and a big question.','A'],['A studio where I can go deep, undisturbed.','M']]},
  {t:'You are stuck on a hard problem. First instinct?',o:[['Change the whole approach and start fresh.','X'],['Try something, break it, try again.','B'],['Talk or write it out till it clicks.','S'],['Research it properly before touching anything.','A']]},
  {t:'What kind of praise means the most?',o:[['That is beautifully made.','M'],['You built something that actually works.','B'],['I could not stop reading or watching that.','S'],['That was so well reasoned.','A']]},
- {t:'A new opportunity should mostly give you...',o:[['A stage and an audience.','S'],['Something real to build.','B'],['People to grow alongside.','C'],['A frontier nobody has figured out yet.','X']]},
- {t:'Your relationship with structure?',o:[['Give me a system, then I will optimise it.','B'],['I will follow it, but I will make it more human.','S'],['I care more about the people than the process.','C'],['I go deep inside the rules to master the craft.','M']]},
- {t:'Ten years out, the quiet win you would want...',o:[['I became the person who truly understands this field.','A'],['I built things that outlast me.','B'],['My work changed how people see something.','S'],['I am known for lifting everyone around me.','C']]}
+ {t:'What should a new opportunity give you first?',o:[['A stage and an audience.','S'],['Something real to build.','B'],['People to grow with.','C'],['Something new that nobody has figured out yet.','X']]},
+ {t:'Rules and routines. How do you deal with them?',o:[['Give me a system and I will make it better.','B'],['I will follow it, but I will make it more human.','S'],['I care more about the people than the process.','C'],['I use the rules to go deep and master the craft.','M']]},
+ {t:'Ten years from now, which quiet win do you want?',o:[['I became the person who truly understands this field.','A'],['I built things that outlast me.','B'],['My work changed how people see something.','S'],['I am known for lifting everyone around me.','C']]}
 ];
 
 /* ---------- PROOF TYPES ---------- */
@@ -532,7 +613,13 @@ let state={email:'',name:'',i:0,ans:Q.map(()=>({p1:null,p2:null})),top:'',second
 const $=id=>document.getElementById(id);
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));$(id).classList.add('active');
   if(id==='s-w2')initSliders();window.scrollTo({top:0,behavior:'smooth'});}
-function toggleTheme(){const h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';}
+function toggleTheme(){
+  const h=document.documentElement;
+  h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';
+  const b=$('themebtn');
+  if(b){const l=h.dataset.theme==='dark'?'Switch to light mode':'Switch to dark mode';
+        b.setAttribute('aria-label',l);b.setAttribute('title',l);}
+}
 function dots(){for(let n=1;n<=7;n++){const el=$('d'+n);if(!el)continue;el.innerHTML='';for(let i=1;i<=7;i++){el.innerHTML+='<i class="'+(i<=n?'on':'')+'"></i>';}}}
 dots();
 
@@ -719,37 +806,102 @@ function collect(){
   state.anchor=$('p-anchor').value.trim();state.guide=$('p-guide').value.trim();state.audience=$('p-audience').value.trim();
   state.move=$('w7-move').value.trim();state.commit=$('w7-commit').value.trim();
 }
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function buildPlan(){
   collect();
   const A=ARCH[state.top];const name=state.name||'';
   const pt=state.pt?PT[state.pt].t:'';
-  const ct=state.ctype==='thaali'?'A Thaali career: broad, mixed, in your own sequence':(state.ctype==='seven'?'A 7 Course career: one clear pathway, step by step':'');
+  const ct=state.ctype==='thaali'?'Thaali career: broad, mixed, my own order':(state.ctype==='seven'?'7 Course career: one pathway, step by step':'');
   const miles=[['Day 7',state.miles[0]],['Day 30',state.miles[1]],['Day 60',state.miles[2]],['Day 90',state.miles[3]]].filter(m=>m[1]);
-  const dayRows=C.map(c=>'<div style="display:flex;justify-content:space-between;font-size:13px;padding:2px 0"><span>'+c.l+'</span><b>'+vals[c.k].toFixed(1)+'h</b></div>').join('');
-  $('plansheet').innerHTML=
-    '<div class="ph"><div class="plabel">90 day body of work</div>'+
-      '<h1 style="margin:.05em 0;font-size:clamp(28px,7vw,40px)">'+(name?name+"'s":'My')+' 90 Day Plan</h1>'+
-      '<div style="display:flex;align-items:center;gap:12px;margin-top:6px"><img class="plan-illo" src="'+IMG[state.top]+'" alt="" style="width:110px;border-radius:10px">'+
-      '<div><div style="font-family:var(--disp);font-size:20px;color:'+A.color+'">'+A.name+'</div><div class="mini">'+A.tag+'</div></div></div></div>'+
-    '<div class="pline"><div class="plabel">In 90 days, I will have...</div><div class="big">'+(state.commit||'something I can point to and say: I made that.')+'</div></div>'+
-    (state.thing?'<div class="pline"><div class="plabel">The one thing'+(pt?' · '+pt+' lane':'')+'</div><div class="big" style="font-size:19px">'+state.thing+'</div>'+(state.done?'<div class="mini">Done looks like: '+state.done+'</div>':'')+'</div>':'')+
-    (miles.length?'<div class="pline"><div class="plabel">The timeline</div>'+miles.map(m=>'<div style="display:flex;gap:10px;margin:6px 0"><b style="flex:none;width:62px;font-size:13px">'+m[0]+'</b><span style="font-size:14px">'+m[1]+'</span></div>').join('')+'</div>':'')+
-    (state.move?'<div class="pline"><div class="plabel">Shipping in the next 7 days</div><div class="big" style="font-size:18px">'+state.move+'</div></div>':'')+
-    ((state.anchor||state.guide||state.audience)?'<div class="pline"><div class="plabel">My people</div>'+
-      (state.anchor?'<div class="mini"><b>'+state.anchor+'</b> holds me to it. I tell them this plan within 7 days.</div>':'')+
-      (state.guide?'<div class="mini"><b>'+state.guide+'</b> guides me. I ask one specific question this month.</div>':'')+
-      (state.audience?'<div class="mini"><b>'+state.audience+'</b> sees the finished thing on day 90.</div>':'')+'</div>':'')+
-    ((state.known||state.dir||state.field||ct)?'<div class="pline"><div class="plabel">Direction</div>'+
-      (state.known?'<div class="mini">Known for: '+state.known+'</div>':'')+
-      '<div class="mini">'+[state.dir,state.field].filter(Boolean).join(' · ')+'</div>'+
-      (ct?'<div class="mini">'+ct+'</div>':'')+'</div>':'')+
-    '<div class="pline"><div class="plabel">My daily rhythm</div>'+dayRows+'<div class="mini" style="margin-top:4px">About '+Math.round(vals.building*D).toLocaleString()+' hours of building over 90 days.</div></div>'+
-    '<div class="pline"><div class="plabel">What great companies really look for</div><div class="cht"><div>Confidence<small>built by shipping</small></div><div>Hunger<small>kept by the streak</small></div><div>Time<small>placed on purpose</small></div></div></div>'+
-    '<div class="dreamer">You are now a Dream-alitist.</div>'+
-    '<div class="lawrence">"The dreamers of the day are dangerous, for they act their dreams with open eyes to make it possible." T. E. Lawrence</div>'+
-    '<div class="commit">The world can only see your work.<br><span style="font-size:15px">The real work is not out there. It is in here. Start with yourself. Build your body of work.</span><br><span class="mini" style="font-family:var(--sans)">Signed, '+(name||'________________')+' · adityajhunjhunwala.com/pyma</span></div>';
+  const tot=C.reduce((a,c)=>a+vals[c.k],0)||24;
+
+  /* 90 boxes, one a day. Checkpoint days get the gold box. */
+  const MILEDAYS={7:1,30:1,60:1,90:1};
+  let cells='';
+  for(let d=1;d<=90;d++){cells+='<div class="cell'+(MILEDAYS[d]?' m':'')+'"><i>'+d+'</i></div>';}
+
+  const rows=C.map(c=>'<div class="rrow"><span><span class="rdot" style="background:'+c.h+'"></span>'+c.l+'</span><b>'+vals[c.k].toFixed(1)+'h</b></div>').join('');
+  const bar=C.filter(c=>vals[c.k]>0).map(c=>'<span style="flex:'+(vals[c.k]/tot)+' 1 0;background:'+c.h+'"></span>').join('');
+
+  $('a4pad').innerHTML=
+    '<div class="ph2">'+
+      '<div><div class="eyeb">90 Day Body of Work</div>'+
+        '<h1>'+(name?esc(name)+'&rsquo;s':'My')+' 90 Day Plan</h1>'+
+        '<div class="sub">'+esc(A.line)+'</div></div>'+
+      '<div class="archbox">'+
+        '<div style="height:3px;border-radius:2px;background:'+A.color+';margin:0 0 4px"></div>'+
+        '<img src="'+IMG[state.top]+'" alt="">'+
+        '<b>'+esc(A.name)+'</b><small>'+esc(A.tag)+'</small></div>'+
+    '</div>'+
+    '<div class="rule"></div>'+
+
+    '<div class="vow"><div class="k">In 90 days, I will have</div>'+
+      '<div class="v">'+esc(state.commit||'something I can point to and say: I made that.')+'</div></div>'+
+
+    '<div class="cols"><div class="colsin">'+
+      '<div class="col l">'+
+        (state.thing?'<div class="blk"><div class="k">The one thing'+(pt?' &middot; '+esc(pt)+' lane':'')+'</div>'+
+          '<div class="t">'+esc(state.thing)+'</div>'+
+          (state.done?'<div class="s">Done looks like: '+esc(state.done)+'</div>':'')+'</div>':'')+
+        (miles.length?'<div class="blk"><div class="k">The checkpoints</div><div class="tl">'+
+          miles.map(m=>'<div class="row"><div class="d">'+m[0]+'</div><div class="x">'+esc(m[1])+'</div></div>').join('')+
+          '</div></div>':'')+
+        (state.move?'<div class="blk"><div class="k">Shipping in the next 7 days</div>'+
+          '<div class="t" style="font-size:13.5px">'+esc(state.move)+'</div></div>':'')+
+      '</div>'+
+      '<div class="col r">'+
+        ((state.anchor||state.guide||state.audience)?'<div class="blk"><div class="k">My people</div>'+
+          (state.anchor?'<div class="pp"><b>'+esc(state.anchor)+'</b> holds me to it. I tell them this plan within 7 days.</div>':'')+
+          (state.guide?'<div class="pp"><b>'+esc(state.guide)+'</b> guides me. I ask one sharp question this month.</div>':'')+
+          (state.audience?'<div class="pp"><b>'+esc(state.audience)+'</b> sees the finished thing on day 90.</div>':'')+'</div>':'')+
+        ((state.known||state.dir||state.field||ct)?'<div class="blk"><div class="k">Direction</div>'+
+          (state.known?'<div class="pp">Known for: '+esc(state.known)+'</div>':'')+
+          ([state.dir,state.field].filter(Boolean).length?'<div class="pp">'+esc([state.dir,state.field].filter(Boolean).join(' · '))+'</div>':'')+
+          (ct?'<div class="pp">'+ct+'</div>':'')+'</div>':'')+
+        '<div class="blk"><div class="k">My daily rhythm</div>'+
+          '<div class="rbar">'+bar+'</div>'+rows+
+          '<div class="pp" style="margin-top:5px"><b>'+Math.round(vals.building*D).toLocaleString()+' hours</b> of building over 90 days.</div>'+
+        '</div>'+
+      '</div>'+
+    '</div></div>'+
+
+    '<div class="notes"><div class="k">What I shipped &middot; what I learned</div>'+
+      '<div class="hand">Write one line here every week. In 90 days this becomes the proof.</div>'+
+      '<div class="lines"></div></div>'+
+
+    '<div class="trk"><div class="hd"><div class="k">90 days &middot; one box a day</div>'+
+      '<div class="n">Gold boxes are your checkpoints. Miss one, tick the next.</div></div>'+
+      '<div class="grid">'+cells+'</div></div>'+
+
+    '<div class="a4f">'+
+      '<div class="q">The world can only see your work.'+
+        '<small>The real work is not out there. It is in here. Start with yourself. Build your body of work.</small></div>'+
+      '<div class="sig"><div class="l">'+esc(name)+'</div>'+
+        '<div class="u">Signed &middot; Day 1</div>'+
+        '<div class="w">www.adityajhunjhunwala.com</div></div>'+
+    '</div>';
   showScreen('s-plan');
+  fitPlan();
 }
+/* Keep the sheet to exactly one A4 page, and scale it to the phone screen. */
+function fitPlan(){
+  const wrap=$('a4wrap'),sheet=$('a4');
+  if(!wrap||!sheet)return;
+  const cols=document.querySelector('#a4pad .cols'),cin=document.querySelector('#a4pad .colsin');
+  if(cols&&cin){
+    cin.style.transform='none';cin.style.width='100%';
+    const need=cin.offsetHeight,have=cols.clientHeight;
+    const cs=need>have&&need>0?Math.max(.62,have/need):1;
+    if(cs<1){cin.style.transform='scale('+cs+')';cin.style.width=(100/cs)+'%';}
+  }
+  const SHEET_W=180*96/25.4, SHEET_H=265*96/25.4;
+  const avail=wrap.parentElement.clientWidth;
+  const s=Math.min(1,avail/SHEET_W);
+  sheet.style.transform='scale('+s+')';
+  wrap.style.height=(SHEET_H*s)+'px';
+  wrap.style.width=(SHEET_W*s)+'px';
+}
+window.addEventListener('resize',()=>{if($('a4pad')&&$('a4pad').innerHTML)fitPlan();});
 function restart(){
   vals={...DEF};locks={};if($('sliders'))$('sliders').dataset.built='';
   document.querySelectorAll('#commit-chips .pick').forEach(p=>p.classList.remove('on'));if($('commit-free'))$('commit-free').classList.add('on');
