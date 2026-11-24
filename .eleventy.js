@@ -12,6 +12,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("cv");
   eleventyConfig.addPassthroughCopy("pyma");
   eleventyConfig.addPassthroughCopy("counsellors");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("favicon.svg");
+  eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("icon-192.png");
+  eleventyConfig.addPassthroughCopy("icon-512.png");
+  eleventyConfig.addPassthroughCopy("site.webmanifest");
   
 
   // --- Filters ---
