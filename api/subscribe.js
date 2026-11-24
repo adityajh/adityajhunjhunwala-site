@@ -13,11 +13,12 @@ const AUDIENCES = {
   "counsellor-webinar-2026-12-12": "6c7c5d80-3b4e-4cb4-951e-618af23d4987", // Webinar: Change the question (12 Dec 2026), /counsellors/webinar
 };
 
-// Webinar registrations: the full form (role, city, org, WhatsApp, session request) does not fit
-// a Resend contact, so each registration is also emailed to Adi. Stopgap until the outreach CRM
-// intake exists (crm.letsenterprise.in, Neon le-outreach). Registrants get a short confirmation.
+// Webinar registrations: Resend audience (for the reminder and toolkit mails), the outreach CRM
+// (contact + org, tag, a call reminder when they ask for a session), and a notification to Adi that
+// says whether the CRM write worked. Registrants get a short confirmation.
 const WEBINARS = {
   "counsellor-webinar-2026-12-12": {
+    crmTag: "Webinar-12Dec2026",
     title: "Change the question: three tools you can use the next day",
     when: "Saturday 12 December 2026, 10:00 to 11:30 am IST, online",
   },
@@ -27,6 +28,68 @@ const NOTIFY_TO = "aditya@letsenterprise.in";
 
 function clean(s, n) { return String(s || "").replace(/[\r\n<>]/g, " ").trim().slice(0, n || 200); }
 function esc(s) { return clean(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;"); }
+
+// Registrations go into the LE outreach CRM through its agent door (/api/bot, see BOT-API.md in
+// adityajh/le-outreach-crm). CRM_BOT_TOKEN is a per-agent token issued on the CRM's Users page;
+// without it the CRM step is skipped and the notification email says so.
+const CRM = "https://crm.letsenterprise.in/api/bot";
+
+function crmOrgFor(f) {
+  const org = f.org;
+  switch (f.role) {
+    case "School counsellor":
+    case "Teacher or principal":
+      return org ? { kind: "school", name: org, city: f.city } : { kind: "counsellor", self_employed: true };
+    case "College or university educator":
+      return org ? { kind: "community", name: org, city: f.city } : { kind: "counsellor", self_employed: true };
+    case "Independent career counsellor":
+      return org ? { kind: "counsellor", name: org, city: f.city } : { kind: "counsellor", self_employed: true };
+    default:
+      return org ? { kind: "company", name: org, city: f.city } : { kind: "counsellor", self_employed: true };
+  }
+}
+
+async function crmCall(token, path, body, method) {
+  const r = await fetch(CRM + path, {
+    method: method || "POST",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  let j = {};
+  try { j = await r.json(); } catch (e) {}
+  return { status: r.status, j };
+}
+
+async function toCrm(f, w) {
+  const token = process.env.CRM_BOT_TOKEN;
+  if (!token) return "skipped (CRM_BOT_TOKEN not set on Vercel)";
+  const day = new Date().toISOString().slice(0, 10);
+  const notes = `Webinar registration ${day} (${w.when}). Role: ${f.role || "?"}.` +
+    (f.session === "YES" ? " Asked for a free session for their students or parents." : "");
+  const contact = { name: f.name || f.email, email: f.email, phone: f.phone || undefined, city: f.city || undefined,
+    designation: f.role || undefined, notes };
+  let made = await crmCall(token, "/contacts/with-org", { contact, org: crmOrgFor(f) });
+  let contactId, orgId, how = "added";
+  if (made.status === 200 && made.j.ok) {
+    contactId = made.j.contact && made.j.contact.id; orgId = made.j.org && made.j.org.id;
+  } else if (made.status === 409) {
+    const found = await crmCall(token, `/contacts?q=${encodeURIComponent(f.email)}`, null, "GET");
+    const c = (found.j.contacts || []).find((x) => (x.email || "").toLowerCase() === f.email);
+    if (!c) return `failed: duplicate email but contact not found (${found.status})`;
+    contactId = c.id; orgId = c.org && c.org.id; how = "already in CRM, tagged";
+  } else {
+    return `failed: ${made.status} ${(made.j && made.j.message) || ""}`.trim();
+  }
+  const tagged = await crmCall(token, "/contacts/tags", { ids: [contactId], add: [w.crmTag] });
+  if (tagged.status !== 200) how += `; tag failed (${tagged.status})`;
+  if (f.session === "YES" && orgId) {
+    const due = new Date(Date.now() + 2 * 864e5).toISOString().slice(0, 10);
+    const a = await crmCall(token, "/actions", { org_id: orgId, contact_id: contactId, kind: "call", due_on: due,
+      note: `Webinar registrant asked for a free session for their students or parents (${f.city || "city?"}). In person in Pune or Mumbai, online elsewhere.` });
+    how += a.status === 200 ? "; call reminder filed" : `; reminder failed (${a.status})`;
+  }
+  return `${how} (contact ${contactId}, org ${orgId})`;
+}
 
 async function sendEmail(key, payload) {
   try {
@@ -90,11 +153,13 @@ export default async function handler(req, res) {
           name: fullName, email, role: clean(body.role, 80), city: clean(body.city, 80),
           org: clean(body.org, 160), phone: clean(body.phone, 40), session: body.session === true ? "YES" : "no",
         };
-        const rows = Object.entries(f).map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0"><b>${k}</b></td><td>${esc(v)}</td></tr>`).join("");
+        let crm;
+      try { crm = await toCrm(f, w); } catch (e) { crm = "failed: " + (e && e.message); console.error("crm", e); }
+      const rows = Object.entries({ ...f, crm }).map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0"><b>${k}</b></td><td>${esc(v)}</td></tr>`).join("");
         await sendEmail(key, {
           from: FROM, to: [NOTIFY_TO],
-          subject: `${f.session === "YES" ? "SESSION REQUEST: " : ""}Webinar registration: ${f.name || email} (${f.role || "role?"}, ${f.city || "city?"})`,
-          html: `<p>New registration for <b>${esc(w.title)}</b> (${esc(w.when)}).</p><table>${rows}</table><p>Add to the outreach CRM. Session requests need a reply within 48 hours.</p>`,
+          subject: `${f.session === "YES" ? "SESSION REQUEST: " : ""}${crm.startsWith("failed") || crm.startsWith("skipped") ? "[NOT IN CRM] " : ""}Webinar registration: ${f.name || email} (${f.role || "role?"}, ${f.city || "city?"})`,
+          html: `<p>New registration for <b>${esc(w.title)}</b> (${esc(w.when)}).</p><table>${rows}</table><p>${crm.startsWith("added") || crm.startsWith("already") ? "In the outreach CRM, tagged " + esc(w.crmTag) + "." : "<b>Not in the CRM yet. Add by hand.</b>"} Session requests need a reply within 48 hours.</p>`,
         });
         const first = contact.first_name || "there";
         await sendEmail(key, {
