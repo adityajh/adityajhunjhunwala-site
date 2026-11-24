@@ -20,7 +20,7 @@ const WEBINARS = {
   "counsellor-webinar-2026-12-12": {
     crmTag: "Webinar-12Dec2026",
     crmSessionTag: "Session requested", // must exist in the CRM tag registry (Tags page); added in its own call
-    notifyCc: [], // e.g. the funnel owner; add once Adi confirms the address
+    notifyCc: ["akshay@letsenterprise.in"], // Akshay Jain, counsellor funnel owner (confirmed by Adi 24 Nov 2026)
     title: "Change the question: three tools you can use the next day",
     when: "Saturday 12 December 2026, 10:00 to 11:30 am IST, online",
   },
