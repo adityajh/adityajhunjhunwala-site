@@ -19,6 +19,8 @@ const AUDIENCES = {
 const WEBINARS = {
   "counsellor-webinar-2026-12-12": {
     crmTag: "Webinar-12Dec2026",
+    crmSessionTag: "Session requested", // must exist in the CRM tag registry (Tags page); added in its own call
+    notifyCc: [], // e.g. the funnel owner; add once Adi confirms the address
     title: "Change the question: three tools you can use the next day",
     when: "Saturday 12 December 2026, 10:00 to 11:30 am IST, online",
   },
@@ -49,6 +51,17 @@ function crmOrgFor(f) {
   }
 }
 
+// Best-effort per-IP rate limit. Serverless instances do not share memory, so this only slows a
+// burst hitting one warm instance; the honeypot and timing check below do most of the work.
+const HITS = new Map();
+function rateLimited(ip) {
+  const now = Date.now(), win = 10 * 60 * 1000, max = 5;
+  const list = (HITS.get(ip) || []).filter((t) => now - t < win);
+  list.push(now); HITS.set(ip, list);
+  if (HITS.size > 5000) HITS.clear();
+  return list.length > max;
+}
+
 async function crmCall(token, path, body, method) {
   const r = await fetch(CRM + path, {
     method: method || "POST",
@@ -77,11 +90,16 @@ async function toCrm(f, w) {
     const c = (found.j.contacts || []).find((x) => (x.email || "").toLowerCase() === f.email);
     if (!c) return `failed: duplicate email but contact not found (${found.status})`;
     contactId = c.id; orgId = c.org && c.org.id; how = "already in CRM, tagged";
+    if (c.do_not_contact || c.unsubscribed) how += "; NOTE: this person is marked " + [c.do_not_contact ? "do-not-contact" : "", c.unsubscribed ? "unsubscribed" : ""].filter(Boolean).join(" and ") + " in the CRM. They registered themselves; a person should decide whether to change that";
   } else {
     return `failed: ${made.status} ${(made.j && made.j.message) || ""}`.trim();
   }
   const tagged = await crmCall(token, "/contacts/tags", { ids: [contactId], add: [w.crmTag] });
-  if (tagged.status !== 200) how += `; tag failed (${tagged.status})`;
+  if (tagged.status !== 200) how += `; TAG FAILED: ${w.crmTag} (${tagged.status} ${(tagged.j && tagged.j.message) || ""})`;
+  if (f.session === "YES" && w.crmSessionTag) {
+    const st = await crmCall(token, "/contacts/tags", { ids: [contactId], add: [w.crmSessionTag] });
+    if (st.status !== 200) how += `; TAG FAILED: ${w.crmSessionTag} (${st.status} ${(st.j && st.j.message) || ""})`;
+  }
   if (f.session === "YES" && orgId) {
     const due = new Date(Date.now() + 2 * 864e5).toISOString().slice(0, 10);
     const a = await crmCall(token, "/actions", { org_id: orgId, contact_id: contactId, kind: "call", due_on: due,
@@ -121,6 +139,17 @@ export default async function handler(req, res) {
   if (!EMAIL_RE.test(email)) return res.status(400).json({ ok: false, error: "bad_email" });
   if (!audienceId)          return res.status(400).json({ ok: false, error: "bad_magnet" });
 
+  // Spam gate for the webinar form: honeypot, too-fast submit, name required, per-IP burst limit.
+  // Bots get a normal-looking success so they do not retry; nothing is written anywhere.
+  if (WEBINARS[magnet]) {
+    const ip = String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || "unknown";
+    const tookMs = Number(body && body.t) || 0;
+    const name = clean(body && body.name, 120);
+    if ((body && body.website) || (tookMs && tookMs < 2500)) return res.status(200).json({ ok: true, captured: true });
+    if (name.length < 2) return res.status(400).json({ ok: false, error: "bad_name" });
+    if (rateLimited(ip)) return res.status(429).json({ ok: false, error: "rate_limited" });
+  }
+
   const fullName = clean(body && body.name, 120);
   const parts = fullName.split(/\s+/).filter(Boolean);
   const contact = { email, unsubscribed: false };
@@ -157,8 +186,8 @@ export default async function handler(req, res) {
       try { crm = await toCrm(f, w); } catch (e) { crm = "failed: " + (e && e.message); console.error("crm", e); }
       const rows = Object.entries({ ...f, crm }).map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0"><b>${k}</b></td><td>${esc(v)}</td></tr>`).join("");
         await sendEmail(key, {
-          from: FROM, to: [NOTIFY_TO],
-          subject: `${f.session === "YES" ? "SESSION REQUEST: " : ""}${crm.startsWith("failed") || crm.startsWith("skipped") ? "[NOT IN CRM] " : ""}Webinar registration: ${f.name || email} (${f.role || "role?"}, ${f.city || "city?"})`,
+          from: FROM, to: [NOTIFY_TO], ...(w.notifyCc && w.notifyCc.length ? { cc: w.notifyCc } : {}),
+          subject: `${f.session === "YES" ? "SESSION REQUESTED: " : ""}${crm.startsWith("failed") || crm.startsWith("skipped") ? "[NOT IN CRM] " : ""}Webinar registration: ${f.name || email} (${f.role || "role?"}, ${f.city || "city?"})`,
           html: `<p>New registration for <b>${esc(w.title)}</b> (${esc(w.when)}).</p><table>${rows}</table><p>${crm.startsWith("added") || crm.startsWith("already") ? "In the outreach CRM, tagged " + esc(w.crmTag) + "." : "<b>Not in the CRM yet. Add by hand.</b>"} Session requests need a reply within 48 hours.</p>`,
         });
         const first = contact.first_name || "there";
