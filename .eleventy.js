@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("open");
   eleventyConfig.addPassthroughCopy("cv");
   eleventyConfig.addPassthroughCopy("pyma");
+  eleventyConfig.addPassthroughCopy("counsellors");
   
 
   // --- Filters ---
