@@ -10,7 +10,8 @@ stack: ["TypeScript"]
 repo: "https://github.com/adityajh/LEBrandingKit"
 repo_public: true
 url: ""
-pushed: "2026-04-05"
-order: 16
+pushed: "2026-09-03"
+image: "/images/technology/lebrandingkit.jpg"
+order: 15
 permalink: false
 ---

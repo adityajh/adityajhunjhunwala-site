@@ -14,7 +14,7 @@ description: "The full body of work: letters, essays, art, code, speaking, books
   </div>
   <div class="work-rooms">
     <a href="/letters/" class="work-room">
-      <div class="work-room__count">{{ collections.letters | length }}+</div>
+      <div class="work-room__count">{{ collections.lettersNewest[0].data.letter_number }}</div>
       <div class="work-room__label">Letters</div>
       <div class="work-room__desc">Weekly personal letters since 2020. Food, play, love, and the inside game.</div>
     </a>
@@ -26,7 +26,7 @@ description: "The full body of work: letters, essays, art, code, speaking, books
     <a href="/speaking/" class="work-room">
       <div class="work-room__count">2</div>
       <div class="work-room__label">TEDx Talks</div>
-      <div class="work-room__desc">A College of Lifelong Learning (TEDxPune) and Why Everyone Should Create a Body of Work (TEDx).</div>
+      <div class="work-room__desc">A college of life learning (TEDxPune) and Why everyone should create a Body of Work (TEDxSunshineWorldwideSchool). Plus keynotes, like AICCC 2026.</div>
     </a>
     <a href="/books/" class="work-room">
       <div class="work-room__count">2</div>
@@ -38,6 +38,11 @@ description: "The full body of work: letters, essays, art, code, speaking, books
       <div class="work-room__label">Sessions</div>
       <div class="work-room__desc">Interactive recall maps and frameworks from talks and workshops. Built to be felt, not just read.</div>
     </a>
+    <a href="/spirit-of-enterprise/" class="work-room">
+      <div class="work-room__count">5</div>
+      <div class="work-room__label">Podcast</div>
+      <div class="work-room__desc">Spirit of Enterprise. Five conversations with founders on one idea: good people must succeed. Episode 1, Namita Thapar, is out.</div>
+    </a>
     <a href="/technology/" class="work-room">
       <div class="work-room__count">{{ collections.technology | length }}</div>
       <div class="work-room__label">Technology</div>
@@ -48,10 +53,10 @@ description: "The full body of work: letters, essays, art, code, speaking, books
       <div class="work-room__label">Artworks</div>
       <div class="work-room__desc">Caricatures, paintings, alla prima oil work. Gallery coming soon.</div>
     </div>
-    <div class="work-room" style="cursor:default;">
-      <div class="work-room__count">2110+</div>
+    <a href="https://www.instagram.com/playful_ceo/" target="_blank" rel="noopener" class="work-room">
+      <div class="work-room__count">2,110+</div>
       <div class="work-room__label">IG Posts</div>
       <div class="work-room__desc">Daily content on entrepreneurial mindset, education, and life. Follow @playful_ceo.</div>
-    </div>
+    </a>
   </div>
 </div>

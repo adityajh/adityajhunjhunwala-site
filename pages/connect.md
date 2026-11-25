@@ -35,7 +35,7 @@ The best way to reach me depends on what you need.
 
 <div class="subscribe-cta" id="subscribe" style="max-width:560px; margin:2.5rem 0 0;">
   <h2>A letter every Sunday.</h2>
-  <p>An honest letter about work, life, food, and the inner game, to your inbox every Sunday. 155 letters and counting.</p>
+  <p>An honest letter about work, life, food, and the inner game, to your inbox every Sunday. 160 letters and counting.</p>
   <form id="subform" class="sub-inline" novalidate>
     <input id="subemail" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" aria-label="Your email" required>
     <button type="submit" id="subbtn" class="btn btn-primary">Subscribe free</button>

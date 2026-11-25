@@ -11,6 +11,7 @@ repo: "https://github.com/adityajh/LE-TheBusinessAcademy"
 repo_public: false
 url: "https://le-the-business-academy.vercel.app"
 pushed: "2026-05-13"
-order: 13
+image: "/images/technology/le-thebusinessacademy.jpg"
+order: 14
 permalink: false
 ---

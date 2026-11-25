@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: "Aditya Jhunjhunwala"
-description: "Founder of Let's Enterprise. Author. TEDx Speaker. 155 letters and 200+ essays on self-awareness, founders, education, and the work of building a life."
+description: "Founder of Let's Enterprise. Author. TEDx Speaker. 160 letters and 170+ essays on self-awareness, founders, education, and the work of building a life."
 ---
 
 {%- set latestLetter = collections.lettersNewest | head(1) %}
@@ -33,7 +33,7 @@ description: "Founder of Let's Enterprise. Author. TEDx Speaker. 155 letters and
   </div>
   {%- endif %}
   <p style="margin-top:1.5rem; font-size:0.875rem;">
-    <a href="/letters/" style="color:var(--text-muted);">All {{ collections.letters | length }} letters &rarr;</a>
+    <a href="/letters/" style="color:var(--text-muted);">All {{ collections.lettersNewest[0].data.letter_number }} letters &rarr;</a>
   </p>
 </section>
 
@@ -46,7 +46,7 @@ description: "Founder of Let's Enterprise. Author. TEDx Speaker. 155 letters and
   </p>
   <div class="bow-stats">
     <div>
-      <div class="bow-stat__num">{{ collections.letters | length }}+</div>
+      <div class="bow-stat__num">{{ collections.lettersNewest[0].data.letter_number }}</div>
       <div class="bow-stat__label">Letters</div>
     </div>
     <div>
@@ -110,7 +110,7 @@ description: "Founder of Let's Enterprise. Author. TEDx Speaker. 155 letters and
 <div style="padding:0 var(--gutter) 6rem;">
   <div class="subscribe-cta" id="subscribe">
     <h2>A letter every Sunday.</h2>
-    <p>An honest letter about work, life, food, and the inner game, to your inbox every Sunday. 155 letters and counting.</p>
+    <p>An honest letter about work, life, food, and the inner game, to your inbox every Sunday. 160 letters and counting.</p>
     <form id="subform" class="sub-inline" novalidate>
       <input id="subemail" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" aria-label="Your email" required>
       <button type="submit" id="subbtn" class="btn btn-primary">Subscribe free</button>

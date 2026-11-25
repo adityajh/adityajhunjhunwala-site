@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: "Letters"
-description: "145+ personal letters by Aditya Jhunjhunwala. Every Sunday, something honest about work, life, food, and the inside game. Published since 2020."
+description: "160 personal letters by Aditya Jhunjhunwala. Every Sunday, something honest about work, life, food, and the inside game. Published since 2020."
 pagination:
   data: collections.lettersNewest
   size: 50
@@ -12,7 +12,7 @@ permalink: "letters/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNum
 <div class="page-wrap page-wrap--wide">
   <div class="archive-header">
     <div class="archive-count" style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">
-      {{ collections.letters | length }} Letters
+      {{ collections.lettersNewest[0].data.letter_number }} Letters
     </div>
     <h1 style="font-family:var(--font-serif); font-size:clamp(1.75rem,4vw,2.5rem);">Letters from Adi</h1>
     <p style="color:var(--text-muted); max-width:520px; margin-top:0.75rem; font-size:0.9375rem;">

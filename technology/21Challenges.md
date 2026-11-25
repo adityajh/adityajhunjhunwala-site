@@ -11,6 +11,7 @@ repo: "https://github.com/adityajh/21Challenges"
 repo_public: false
 url: "https://21-challenges.vercel.app"
 pushed: "2026-03-19"
-order: 18
+image: "/images/technology/21challenges.jpg"
+order: 51
 permalink: false
 ---

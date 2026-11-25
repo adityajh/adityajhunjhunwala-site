@@ -11,6 +11,7 @@ repo: "https://github.com/adityajh/le-persona-quiz"
 repo_public: true
 url: "https://le-persona-quiz.vercel.app"
 pushed: "2025-12-12"
-order: 6
+image: "/images/technology/le-persona-quiz.jpg"
+order: 11
 permalink: false
 ---

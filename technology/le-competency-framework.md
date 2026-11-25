@@ -11,6 +11,7 @@ repo: "https://github.com/adityajh/le-competency-framework"
 repo_public: true
 url: "https://le-competency-framework.vercel.app"
 pushed: "2026-04-06"
-order: 7
+image: "/images/technology/le-competency-framework.jpg"
+order: 10
 permalink: false
 ---

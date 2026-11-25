@@ -11,6 +11,7 @@ repo: "https://github.com/adityajh/LE-studentroster"
 repo_public: true
 url: ""
 pushed: "2026-06-01"
-order: 14
+image: "/images/technology/le-studentroster.jpg"
+order: 5
 permalink: false
 ---

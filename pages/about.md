@@ -37,7 +37,7 @@ India has always been a land of creators, problem-solvers, and entrepreneurs. Ye
 
 ## Writing
 
-155 weekly letters published since 2020. Every Sunday, food, play, love, and the inside game. [Read the archive.](/letters/)
+160 weekly letters published since 2020. Every Sunday, food, play, love, and the inside game. [Read the archive.](/letters/)
 
 Author of *Restless to Remarkable* and co-author of *Winning Habits*. [See books.](/books/)
 

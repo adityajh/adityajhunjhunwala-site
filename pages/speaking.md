@@ -8,8 +8,8 @@ jsonLd: |
     "@context": "https://schema.org",
     "@type": "ItemList",
     "itemListElement": [
-      { "@type": "VideoObject", "name": "A college of lifelong learning | TEDxPune", "description": "On moving into a world shaped by AI, the changing nature of human work, and a college built for lifelong learning.", "thumbnailUrl": "https://img.youtube.com/vi/DaTYeoeQNYU/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/DaTYeoeQNYU", "uploadDate": "2023-11-01" },
-      { "@type": "VideoObject", "name": "Why everyone should create a Body of Work | TEDxSunshineWorldwideSchool", "description": "Intrinsic motivation, a body of work as a source of it, and how a strong body of work makes you an opportunity magnet.", "thumbnailUrl": "https://img.youtube.com/vi/8iqUPtWs-8Q/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/8iqUPtWs-8Q", "uploadDate": "2023-01-01" },
+      { "@type": "VideoObject", "name": "A college of life learning. | Aditya Jhunjhunwala | TEDxPune", "description": "On moving into a world shaped by AI, the changing nature of human work, and a college built for lifelong learning.", "thumbnailUrl": "https://img.youtube.com/vi/DaTYeoeQNYU/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/DaTYeoeQNYU", "uploadDate": "2023-11-01" },
+      { "@type": "VideoObject", "name": "Why everyone should create a Body of Work | Aditya Jhunjhunwala | TEDxSunshineWorldwideSchool", "description": "Intrinsic motivation, a body of work as a source of it, and how a strong body of work makes you an opportunity magnet.", "thumbnailUrl": "https://img.youtube.com/vi/8iqUPtWs-8Q/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/8iqUPtWs-8Q", "uploadDate": "2023-01-01" },
       { "@type": "VideoObject", "name": "How to choose your boss wisely", "description": "Why who you work for in the first years of your career matters, and how to attract and choose the right boss.", "thumbnailUrl": "https://img.youtube.com/vi/I8UjG1s8LZY/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/I8UjG1s8LZY" },
       { "@type": "VideoObject", "name": "Deconstructing College", "description": "How to look beyond rankings and placements and break a college down into the components that actually shape your mindset and life.", "thumbnailUrl": "https://img.youtube.com/vi/j6ji_5hyC90/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/j6ji_5hyC90" },
       { "@type": "VideoObject", "name": "How to sell", "description": "Why selling is the most fundamental skill every entrepreneur needs, and why no business exists without it.", "thumbnailUrl": "https://img.youtube.com/vi/1IAwJaASw9g/hqdefault.jpg", "embedUrl": "https://www.youtube.com/embed/1IAwJaASw9g" },
@@ -34,11 +34,11 @@ I speak on entrepreneurial mindset, education reform, self-awareness, and buildi
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
     <img src="https://img.youtube.com/vi/DaTYeoeQNYU/hqdefault.jpg"
-         alt="A college of lifelong learning, Aditya Jhunjhunwala, TEDxPune"
+         alt="A college of life learning, Aditya Jhunjhunwala, TEDxPune"
          style="width:100%; display:block; aspect-ratio:16/9; object-fit:cover;">
     <div style="padding:1rem;">
       <div style="font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.25rem;">TEDxPune</div>
-      <div style="font-family:var(--font-serif); font-size:1.0625rem; color:var(--navy);">A college of lifelong learning</div>
+      <div style="font-family:var(--font-serif); font-size:1.0625rem; color:var(--navy);">A college of life learning.</div>
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
@@ -235,6 +235,12 @@ A few of the rooms the work has reached, schools and colleges across India, foun
 ---
 
 ## Workshops and keynotes
+
+<div style="background:var(--cream-dark); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:4px; padding:1.25rem 1.4rem; margin:1.5rem 0 2rem;">
+  <div style="font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.3rem;">Keynote &middot; AICCC 2026 &middot; 8 August 2026</div>
+  <div style="font-family:var(--font-serif); font-size:1.2rem; color:var(--navy);">Beyond Credentials</div>
+  <p style="font-size:0.9rem; color:var(--text-muted); margin:0.5rem 0 0; line-height:1.6;">Keynote to around 200 career counsellors at the All India Career Counsellors Conference (APCCI), Navi Mumbai. On why the degree ladder is losing its rungs, what real experience does that a credential cannot, and the counsellor's part in handing young people the ball.</p>
+</div>
 
 I have spoken at and run workshops for schools and colleges across India, the Bohra community leadership forum (300+ leaders in Mumbai), MCCIA Pune, YI (Young Indians), IIM-A new entrant programs, Symbiosis, NGOs, and corporate leadership teams. I have also received an Education Innovation award in Bangalore.
 

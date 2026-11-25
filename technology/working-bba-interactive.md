@@ -11,6 +11,7 @@ repo: "https://github.com/adityajh/working-bba-interactive"
 repo_public: true
 url: "https://working-bba-interactive.vercel.app"
 pushed: "2026-03-23"
-order: 4
+image: "/images/technology/working-bba-interactive.jpg"
+order: 12
 permalink: false
 ---
