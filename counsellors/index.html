@@ -3,399 +3,466 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Change the question · A toolkit for counsellors and educators · Aditya Jhunjhunwala</title>
+<title>Change the question: a toolkit for counsellors and educators | Aditya Jhunjhunwala</title>
 <meta name="description" content="Nine tools for the conversations that decide a young person's next three years, each with a short video and a printable template. From Aditya Jhunjhunwala's twelve years of work with students and families.">
+<link rel="canonical" href="https://www.adityajhunjhunwala.com/counsellors/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.adityajhunjhunwala.com/counsellors/">
 <meta property="og:title" content="Change the question: a toolkit for India's counsellors and educators">
 <meta property="og:description" content="Nine tools for the conversations that decide a young person's next three years. Three of them run live, free, on 12 December.">
-<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://www.adityajhunjhunwala.com/counsellors/webinar/og.jpg">
+<meta name="twitter:image" content="https://www.adityajhunjhunwala.com/counsellors/webinar/og.jpg">
+<meta name="twitter:title" content="Change the question: a toolkit for India's counsellors and educators">
+<meta name="twitter:description" content="Nine tools for the conversations that decide a young person's next three years. Three of them run live, free, on 12 December.">
+<meta name="theme-color" content="#1A1A2E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <style>
-  :root{
-    --navy:#1A1A2E; --navy2:#16213E; --cream:#F8F6F0; --gold:#D4A843; --goldb:#FED95D;
-    --goldl:#F0D78C; --teal:#0F9B8E; --teall:#5EEAD4;
-    --card:#FFFFFF; --line:#E5E0D2; --muted:#4D4A5C; --grey:#8C8577; --grey2:#C9C2B2;
-  }
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;background:var(--cream);color:var(--navy);
-    font-family:"Inter",system-ui,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;}
-  a{color:var(--navy);}
-  .serif{font-family:"DM Serif Display",Georgia,serif;font-weight:400;}
-  .wrap{max-width:1060px;margin:0 auto;padding:0 22px;}
-  .narrow{max-width:760px;}
+:root{
+--navy:#1A1A2E; --navy2:#16213E; --cream:#F8F6F0; --goldb:#FED95D; --goldl:#F0D78C;
+--teal:#0F9B8E; --teall:#5EEAD4;
+--ink2:#1A1A2E; --grey2:#F8F6F0; --line:#F0D78C; --paper:#F8F6F0;
+--hair:rgba(248,246,240,.18);
+--serif:"DM Serif Display",Georgia,serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+--wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--cream);color:var(--navy);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.on-navy :focus-visible,.top :focus-visible{outline-color:var(--teall)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(32px,3.4vw,40px)}
+p{margin:0 0 1em}
+.lede{font-size:19px;line-height:1.6;color:var(--ink2);max-width:36em}
+.label{font-weight:600;font-size:18px;letter-spacing:0;margin:0 0 14px;color:var(--navy)}
+.on-navy{background:var(--navy);color:var(--cream)}
+.on-navy .label{color:var(--teall)}
 
-  /* top bar */
-  .top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px;}
-  .top a{text-decoration:none;font-weight:600;}
-  .top .home{font-weight:800;}
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--navy);border-bottom:1px solid var(--hair)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-family:var(--serif);font-size:21px;text-decoration:none;color:var(--cream)}
+.top-r{display:flex;align-items:center;gap:18px;font-size:16px;font-weight:600}
+.top-r .when{color:var(--cream)}
 
-  /* hero */
-  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:34px 0 56px;}
-  .eyebrow{display:inline-block;background:var(--navy);color:var(--goldb);font-weight:700;font-size:13px;
-    letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:999px;}
-  h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:56px;line-height:1.05;margin:18px 0 16px;}
-  .lede{font-size:19px;line-height:1.6;max-width:560px;margin:0 0 26px;}
-  .btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;text-decoration:none;
-    padding:14px 24px;border-radius:12px;border:2px solid var(--navy);box-shadow:4px 4px 0 var(--navy);font-size:16px;}
-  .btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--navy);}
-  .meta{margin-top:16px;font-size:14px;color:var(--muted);}
-  .photo{aspect-ratio:4/5;border-radius:18px;border:2px solid var(--navy);background:var(--navy2);
-    display:flex;align-items:center;justify-content:center;color:var(--cream);text-align:center;padding:24px;
-    box-shadow:8px 8px 0 var(--gold);overflow:hidden;position:relative;}
-  .photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
-  .photo span{font-size:15px;opacity:.85;}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 var(--sans);text-decoration:none;cursor:pointer;
+background:var(--goldb);color:var(--navy);border:2px solid var(--goldb);border-radius:4px;padding:14px 22px;transition:filter .12s ease}
+.btn:hover{filter:brightness(.96)}
+.btn.sm{padding:10px 16px;font-size:15px}
+.link{font-weight:700;font-size:16px;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.link:hover{text-decoration-color:var(--teall)}
 
-  section{padding:64px 0;}
-  section.dark{background:var(--navy);color:var(--cream);}
-  section.dark a{color:var(--goldb);}
-  section.tint{background:#EFEBE0;}
-  .kicker{font-weight:800;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--navy2);margin:0 0 8px;}
-  section.dark .kicker{color:var(--teall);}
-  h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:40px;line-height:1.12;margin:0 0 18px;}
-  h3{font-size:19px;font-weight:700;margin:0 0 8px;line-height:1.35;}
-  p{margin:0 0 16px;}
+/* hero */
+.hero{padding:72px 0 80px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:64px;align-items:start}
+.hero-grid>*{min-width:0}
+.for{font-weight:600;font-size:18px;color:var(--goldb);margin:0 0 22px}
+.hero h1{font-size:clamp(44px,5vw,56px);line-height:1.02;margin:0 0 26px;color:var(--cream)}
+.hero .lede{color:var(--cream);margin-bottom:30px}
+.ctas{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin:0 0 40px}
+.hero-photo{margin:0}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:68% 40%;border-radius:6px;background:var(--navy2)}
+.hero-photo figcaption{font-size:14px;color:var(--cream);margin-top:10px}
+.rail{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;max-width:34em;border-top:1px solid rgba(248,246,240,.2)}
+.rail li{padding:16px 16px 16px 0;border-bottom:1px solid rgba(248,246,240,.2);font-size:16px;line-height:1.4;color:var(--cream);min-width:0}
+.rail li:nth-child(even){padding-left:18px;border-left:1px solid rgba(248,246,240,.2)}
+.rail b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.1;color:var(--goldb);margin-bottom:2px}
 
-  /* stats */
-  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px;}
-  .stat{background:var(--navy2);border-radius:16px;padding:24px 22px;border:1px solid rgba(248,246,240,.12);}
-  .num{font-family:"DM Serif Display",Georgia,serif;font-size:46px;line-height:1;color:var(--goldb);margin-bottom:12px;}
-  .num small{font-size:22px;color:var(--cream);opacity:.75;}
-  .stat p{margin:0;font-size:16px;}
-  .stat .src{display:block;margin-top:10px;font-size:13px;opacity:.7;}
-  .pull{font-family:"DM Serif Display",Georgia,serif;font-size:30px;line-height:1.25;margin:36px 0 0;max-width:800px;}
-  .pull em{font-style:normal;background:linear-gradient(transparent 62%, rgba(254,217,93,.35) 62%);}
+/* shift */
+.shift{padding:88px 0 96px;border-top:1px solid var(--hair)}
+.shift h2{color:var(--cream)}
+.qa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;margin:34px 0 34px;border:1px solid var(--hair);border-radius:6px;overflow:hidden}
+.qa>div{padding:30px 32px;min-width:0}
+.qa>div+div{background:var(--navy2);border-left:1px solid var(--hair)}
+.qa .when{font-size:16px;font-weight:700;color:var(--cream);margin-bottom:10px}
+.qa>div+div .when{color:var(--teall)}
+.qa q{font-family:var(--serif);font-size:clamp(24px,2.6vw,32px);line-height:1.25;quotes:"\201C" "\201D"}
+.qa>div:first-child q{color:var(--cream);opacity:.72}
+.shift-p{max-width:44em;color:var(--cream);margin:0 0 56px}
+.evidence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;padding-top:40px;border-top:1px solid var(--hair)}
+.evidence .n{font-family:var(--serif);font-size:clamp(44px,4.4vw,56px);line-height:1;color:var(--goldb);margin-bottom:14px}
+.evidence p{color:var(--cream);font-size:17px;margin-bottom:10px}
+.evidence .src{font-size:14px;color:var(--cream)}
+.evidence .src a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.floor{margin:72px 0 0;padding-top:40px;border-top:1px solid var(--hair);font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);line-height:1.15;max-width:20em}
+.floor em{font-style:normal;color:var(--goldb)}
 
-  /* counsellor section */
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
-  blockquote{margin:0;padding:26px 28px;background:var(--card);border-left:6px solid var(--gold);border-radius:0 14px 14px 0;
-    font-family:"DM Serif Display",Georgia,serif;font-size:30px;line-height:1.25;}
-  blockquote cite{display:block;font-family:"Inter",sans-serif;font-style:normal;font-size:14px;color:var(--muted);margin-top:12px;}
-  .greens{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;margin:12px 0 6px;}
-  .greens.big{grid-template-columns:repeat(24,1fr);gap:2px;}
-  .greens i{display:block;aspect-ratio:1;border-radius:3px;}
-  .cap{font-size:14px;color:var(--muted);margin:0 0 14px;}
-  .fact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:22px;}
-  .fact b{font-weight:800;}
+/* toolkit */
+.kit{padding:100px 0 88px}
+.kit-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;margin-bottom:48px}
+.kit-head .lede{margin:0}
+.kit-head .lede+.lede{margin-top:12px;font-weight:600}
+.stagebar{list-style:none;margin:0 0 8px;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1.5px solid var(--navy)}
+.stagebar li{min-width:0}
+.stagebar a{display:block;text-decoration:none;padding:14px 12px 14px 0;font-weight:600;font-size:18px;line-height:1.3}
+.stagebar li+li a{padding-left:14px;border-left:1px solid var(--line)}
+.stagebar a span{display:block;font-size:14px;font-weight:500;line-height:1.3;margin-bottom:4px}
+.stagebar a:hover{text-decoration:underline;text-underline-offset:4px}
+.stage{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;border-top:1.5px solid var(--navy);padding:32px 0 8px}
+.stage>*{min-width:0}
+.stage-h{position:sticky;top:88px;align-self:start}
+.stage-h p{margin:0 0 4px;font-weight:600;font-size:16px}
+.stage-h h3{font-size:36px;line-height:1.05}
+.t-row{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(0,.9fr);gap:28px;padding:0 0 28px}
+.t-row>*{min-width:0}
+.t-row+.t-row{border-top:1px solid var(--line);padding-top:28px}
+.t-row .no{font-family:var(--serif);font-size:44px;line-height:.9}
+.t-row h4{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.4vw,28px);line-height:1.15;margin:0 0 4px}
+.t-row .sub{display:block;font-weight:600;font-size:16px;margin:0 0 10px}
+.t-row p{margin:0;font-size:16px}
+.ask,.t-row .ask{font-family:var(--serif);font-size:21px;line-height:1.35;margin:0;padding-left:16px;border-left:4px solid var(--teal)}
+.live{display:inline-block;margin-top:14px;background:var(--goldl);color:var(--navy);font-weight:600;font-size:16px;line-height:1.3;text-decoration:none;border-radius:3px;padding:5px 10px}
+.live:hover{text-decoration:underline;text-underline-offset:3px}
+.bonus{margin-top:48px;padding-top:28px;border-top:1.5px solid var(--navy);display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px}
+.bonus>*{min-width:0}
+.bonus h3{font-family:var(--sans);font-weight:600;font-size:20px;line-height:1.3}
+.bonus ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.bonus li{padding:12px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.5;min-width:0}
+.bonus li b{font-weight:700;margin-right:6px}
 
-  /* tools */
-  .tools{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px;}
-  .tool{background:var(--card);border:2px solid var(--navy);border-radius:18px;padding:26px 24px;box-shadow:5px 5px 0 rgba(26,26,46,.12);}
-  .tool .n{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--goldb);
-    align-items:center;justify-content:center;font-weight:800;font-size:16px;margin-bottom:12px;}
-  .tool .line{font-weight:700;border-top:1px solid var(--line);padding-top:12px;margin:14px 0 0;}
-  .ask{display:block;background:#F3EFE3;border-radius:10px;padding:12px 14px;margin-top:12px;font-size:15px;}
-  .ask b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy2);}
+/* quote band */
+.quote{padding:80px 0}
+.quote p{font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);line-height:1.18;max-width:22em;margin:0;padding-left:22px;border-left:4px solid var(--teall)}
+.quote small{display:block;font-family:var(--sans);font-size:16px;color:var(--cream);margin-top:16px;padding-left:26px}
 
-  /* waffle */
-  .waffle{display:grid;grid-template-columns:repeat(20,1fr);gap:2px;margin:12px 0 8px;}
-  .waffle i{display:block;aspect-ratio:1;border-radius:2px;background:var(--grey2);}
-  .waffle i.c{background:var(--navy);} .waffle i.l{background:var(--gold);}
-  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;color:var(--muted);}
-  .legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--k);}
+/* host */
+.host{padding:100px 0 96px}
+.host-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.host-grid>*{min-width:0}
+.host h2{margin-bottom:20px}
+.host figure{margin:0}
+.host figure img{height:auto;border-radius:6px;aspect-ratio:4/3;object-fit:cover;object-position:50% 50%;width:100%;background:var(--navy)}
+.host figure figcaption{font-size:14px;color:var(--ink2);margin-top:10px}
+.creds{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 24px;border-top:1.5px solid var(--navy)}
+.creds li{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.45;min-width:0}
+.creds li b{display:block}
+.host-b{display:flex;gap:16px;align-items:center;margin-top:32px}
+.host-b img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--navy);flex:0 0 auto}
+.host-b p{margin:0;font-size:16px;line-height:1.5}
+.host-b b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.1;margin-bottom:2px}
+.worked{margin-top:32px}
+.worked p{font-size:16px;margin:0 0 8px}
+.worked ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 28px}
+.worked li{font-family:var(--serif);font-size:24px;line-height:1.2}
+.books{margin-top:72px;padding-top:40px;border-top:1.5px solid var(--navy)}
+.books-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.book{display:flex;gap:24px;align-items:flex-start;color:var(--navy);min-width:0}
+.book img{width:150px;height:auto;flex:0 0 auto;border-radius:2px;border:1px solid rgba(26,26,46,.18)}
+.book span{display:block;font-size:16px;line-height:1.55;min-width:0}
+.book b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.15;margin-bottom:4px}
+.book em{display:block;font-style:normal;font-weight:600;margin-bottom:10px}
 
-  /* 2x2 */
-  .quad{display:grid;grid-template-columns:auto 1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:6px;margin:12px 0 4px;font-size:14px;}
-  .quad .ax{font-weight:700;font-size:13px;color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;}
-  .quad .ax.v{writing-mode:vertical-rl;transform:rotate(180deg);}
-  .room{border-radius:10px;padding:10px 12px;min-height:92px;}
-  .room b{display:block;font-size:15px;letter-spacing:.04em;}
-  .r1{background:var(--navy);color:var(--cream);} .r2{background:var(--navy2);color:var(--cream);}
-  .r3{background:var(--goldl);} .r4{background:var(--gold);}
+/* final */
+.final{padding:88px 0}
+.final-grid{display:flex;justify-content:space-between;align-items:center;gap:32px 40px;flex-wrap:wrap}
+.final-grid>div{max-width:44em;min-width:0}
+.final h2{color:var(--cream)}
+.final p{color:var(--cream);margin:12px 0 0;font-size:17px}
 
-  /* layers */
-  .layers{margin:12px 0 4px;display:grid;gap:6px;}
-  .layer{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;}
-  .layer div{border-radius:8px;padding:9px 12px;}
-  .layer .nm{font-weight:700;}
-  .L3 .nm{background:var(--gold);} .L2 .nm{background:var(--goldl);} .L1 .nm{background:var(--grey2);}
-  .layer .ai{background:#F3EFE3;}
+/* sources and footer */
+.sources{padding:56px 0 40px;font-size:14px;color:var(--ink2)}
+.sources ol{padding-left:18px;margin:10px 0 0;columns:2;column-gap:48px}
+.sources li{margin-bottom:8px;break-inside:avoid;line-height:1.5}
+.sources li:target{background:var(--goldl)}
+footer{border-top:1px solid var(--line);padding:24px 0 48px;font-size:14px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
-  /* paths */
-  .paths{display:grid;gap:8px;margin:12px 0 4px;}
-  .path{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:15px;}
-  .path b{font-weight:700;} .path span{color:var(--muted);text-align:right;}
-
-  /* close */
-  .closer{text-align:center;}
-  .closer .big{font-family:"DM Serif Display",Georgia,serif;font-size:54px;line-height:1.1;margin:10px 0 18px;}
-
-  /* webinar */
-  .webinar{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
-  .wcard{background:var(--card);color:var(--navy);border-radius:18px;padding:28px 26px;border:2px solid var(--goldb);}
-  .wcard label{display:block;font-weight:600;font-size:15px;margin:12px 0 6px;}
-  .wcard input{width:100%;font:inherit;padding:12px 14px;border:1.5px solid var(--grey2);border-radius:10px;background:var(--cream);color:var(--navy);}
-  .wcard input:focus{outline:2px solid var(--teal);border-color:var(--teal);}
-  .wcard button{margin-top:18px;width:100%;cursor:pointer;font:inherit;}
-  .wcard .note{font-size:14px;color:var(--muted);margin:12px 0 0;}
-  .ok{display:none;background:var(--teall);color:var(--navy);border-radius:10px;padding:14px;margin-top:14px;font-weight:600;}
-  .wlist{list-style:none;padding:0;margin:18px 0 0;}
-  .wlist li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid rgba(248,246,240,.14);}
-  .wlist li::before{content:"";position:absolute;left:0;top:17px;width:14px;height:14px;border-radius:50%;background:var(--goldb);}
-  .when{display:inline-block;background:var(--goldb);color:var(--navy);font-weight:800;border-radius:8px;padding:8px 14px;margin:6px 0 10px;}
-
-  /* about */
-  .about{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;}
-  .avatar{width:120px;height:120px;border-radius:50%;background:var(--navy2);border:3px solid var(--gold);overflow:hidden;}
-  .avatar img{width:100%;height:100%;object-fit:cover;}
-  .creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
-  .creds span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;}
-
-  .sources{font-size:14px;color:var(--muted);line-height:1.6;}
-  .sources ol{padding-left:20px;margin:8px 0 0;}
-  footer{padding:30px 0 46px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);}
-
-  .shift{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px;}
-  .shift div{border-radius:16px;padding:22px 24px;}
-  .shift span{display:block;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;}
-  .shift p{margin:0;font-size:26px;line-height:1.25;}
-  .then{background:var(--navy2);border:1px solid rgba(248,246,240,.15);}
-  .now{background:var(--goldb);color:var(--navy);}
-  .quad.two{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
-  .funnel{display:flex;align-items:center;margin:12px 0 14px;font-weight:700;font-size:14px;}
-  .funnel .y{background:var(--gold);padding:22px 12px;border-radius:10px 0 0 10px;}
-  .funnel .arrow{flex:1;height:44px;background:linear-gradient(90deg,var(--goldl),var(--grey2));clip-path:polygon(0 0,100% 30%,100% 70%,0 100%);}
-  .funnel .no{background:var(--navy);color:var(--cream);padding:8px 12px;border-radius:0 10px 10px 0;}
-  .tails{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0 4px;}
-  .tails div{display:flex;align-items:flex-end;gap:5px;height:110px;position:relative;padding-top:24px;border-bottom:2px solid var(--navy);}
-  .tails b{position:absolute;top:0;left:0;font-size:14px;}
-  .tails i{flex:1;height:var(--h);background:var(--navy2);border-radius:4px 4px 0 0;}
-  .tails div:last-child i{background:var(--teal);}
-  .venn{position:relative;height:320px;max-width:360px;margin:0 auto;}
-  .venn .c{position:absolute;width:190px;height:190px;border-radius:50%;display:flex;justify-content:center;padding-top:34px;font-weight:800;border:2px solid var(--navy);mix-blend-mode:multiply;}
-  .venn .k{left:0;top:0;background:var(--goldl);} .venn .g{right:0;top:0;background:var(--teall);}
-  .venn .s{left:50%;transform:translateX(-50%);bottom:0;background:var(--gold);align-items:flex-end;padding:0 0 34px;}
-  .venn b{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);background:var(--navy);color:var(--goldb);padding:6px 10px;border-radius:8px;font-size:14px;white-space:nowrap;}
-  @media (max-width:860px){ .shift{grid-template-columns:1fr;} .shift p{font-size:22px;} .venn{transform:scale(.9);} }
-  .photo img{position:static;}
-  .hero .photo{aspect-ratio:3/2;padding:0;}
-  .room{margin:0;padding:0;background:var(--navy);display:block;}
-  .room img{display:block;width:100%;max-height:640px;object-fit:cover;object-position:center 40%;}
-  .room figcaption{color:var(--cream);font-size:15px;padding:14px 22px 18px;}
-  img.slide{width:100%;border-radius:16px;border:2px solid var(--navy);display:block;}
-  .lib{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px;}
-  .li{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:14px;padding:22px;}
-  .li p{font-size:16px;margin:0 0 12px;}
-  .li a{font-weight:700;}
-  @media (max-width:860px){ .lib{grid-template-columns:1fr;} }
-  .ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
-  .ghost{font-weight:700;text-decoration:underline;text-underline-offset:4px;}
-  .track{list-style:none;padding:0;margin:18px 0 0;}
-  .track li{padding:12px 0 12px 26px;border-bottom:1px solid var(--line);position:relative;}
-  .track li::before{content:"";position:absolute;left:0;top:20px;width:12px;height:12px;border-radius:50%;background:var(--gold);}
-  figure.pic{margin:0;} figure.pic img{width:100%;border-radius:16px;border:2px solid var(--navy);display:block;}
-  figure.pic figcaption{font-size:14px;color:var(--muted);margin-top:8px;}
-  .wcard select{width:100%;font:inherit;padding:12px 14px;border:1.5px solid var(--grey2);border-radius:10px;background:var(--cream);color:var(--navy);}
-  .wcard .chk{display:flex;gap:10px;align-items:center;font-weight:500;margin-top:14px;}
-  .wcard .chk input{width:auto;}
-  @media (max-width:860px){
-    h1{font-size:42px;} h2{font-size:32px;} .closer .big{font-size:38px;}
-    .hero,.split,.tools,.webinar,.stats{grid-template-columns:1fr;}
-    .photo{aspect-ratio:4/3;}
-    blockquote,.pull{font-size:24px;}
-  }
+@media (max-width:960px){
+.hero-grid,.host-grid,.kit-head{grid-template-columns:1fr;gap:36px}
+.hero-photo{order:-1}
+.hero-photo img{aspect-ratio:3/2;object-position:68% 35%}
+.evidence{grid-template-columns:1fr;gap:30px}
+.stage,.bonus{grid-template-columns:1fr;gap:20px}
+.stage-h{position:static}
+.sources ol{columns:1}
+.books-grid{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.wrap{padding:0 20px}
+.top-r .when{display:none}
+.hero{padding:32px 0 56px}
+.hero-grid{gap:28px}
+.rail li{padding:12px 10px 12px 0}
+.rail li:nth-child(even){padding-left:14px}
+.rail b{font-size:22px}
+.qa{grid-template-columns:1fr}
+.qa>div{padding:24px 22px}
+.qa>div+div{border-left:0;border-top:1px solid var(--hair)}
+.shift,.kit,.host{padding:64px 0}
+.stagebar{grid-template-columns:repeat(3,minmax(0,1fr))}
+.stagebar li:nth-child(4) a{padding-left:0;border-left:0}
+.stagebar li:nth-child(n+4){border-top:1px solid var(--line)}
+.stagebar a{font-size:16px;padding:12px 8px 12px 0}
+.stagebar li+li a{padding-left:10px}
+.stagebar a span{font-size:14px}
+.t-row{grid-template-columns:36px minmax(0,1fr);gap:14px}
+.t-row .no{font-size:32px}
+.t-row .ask-col{grid-column:2}
+.ask{font-size:20px}
+.bonus ul{grid-template-columns:1fr}
+.creds{grid-template-columns:1fr}
+.book img{width:110px}
+.book b{font-size:22px}
+.quote{padding:56px 0}
+.final{padding:64px 0}
+}
 </style>
-<style>
-  .kit{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;}
-  .card2{background:var(--card);border:2px solid var(--navy);border-radius:16px;padding:20px 20px 18px;display:flex;flex-direction:column;box-shadow:4px 4px 0 rgba(26,26,46,.10);}
-  .card2 .top{display:flex;justify-content:space-between;align-items:center;padding:0;margin-bottom:10px;font-size:13px;}
-  .card2 .no{display:inline-flex;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--goldb);align-items:center;justify-content:center;font-weight:800;font-size:15px;}
-  .card2 .stage{font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy2);}
-  .card2 h3{margin:0 0 6px;}
-  .card2 p{font-size:16px;margin:0 0 12px;}
-  .card2 .q{margin-top:auto;background:#F3EFE3;border-radius:10px;padding:10px 12px;font-size:15px;font-weight:600;}
-  .tags{display:flex;gap:6px;margin-top:12px;}
-  .tags span{font-size:13px;font-weight:700;border:1.5px solid var(--navy);border-radius:999px;padding:3px 10px;}
-  .tags span.v{background:var(--goldb);}
-  .bonus{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px;}
-  .bonus div{border:1px dashed var(--grey);border-radius:12px;padding:14px;font-size:15px;}
-  .bonus b{display:block;font-size:16px;margin-bottom:4px;}
-  .gets{list-style:none;padding:0;margin:16px 0 0;}
-  .gets li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid rgba(248,246,240,.14);}
-  .gets li::before{content:"";position:absolute;left:0;top:15px;width:14px;height:14px;border-radius:50%;background:var(--goldb);}
-  .quote-band{background:var(--navy2);color:var(--cream);padding:34px 0;text-align:center;}
-  .quote-band p{font-family:"DM Serif Display",Georgia,serif;font-size:30px;line-height:1.3;max-width:860px;margin:0 auto;}
-  .quote-band span{display:block;font-family:Inter,sans-serif;font-size:14px;opacity:.75;margin-top:10px;}
-  .ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
-  .ghost{font-weight:700;text-decoration:underline;text-underline-offset:4px;}
-  .track{list-style:none;padding:0;margin:18px 0 0;}
-  .track li{padding:12px 0 12px 26px;border-bottom:1px solid var(--line);position:relative;}
-  .track li::before{content:"";position:absolute;left:0;top:20px;width:12px;height:12px;border-radius:50%;background:var(--gold);}
-  figure.pic{margin:0;} figure.pic img{width:100%;border-radius:16px;border:2px solid var(--navy);display:block;}
-  figure.pic figcaption{font-size:14px;color:var(--muted);margin-top:8px;}
-  .wcard select{width:100%;font:inherit;padding:12px 14px;border:1.5px solid var(--grey2);border-radius:10px;background:var(--cream);color:var(--navy);}
-  .wcard .chk{display:flex;gap:10px;align-items:center;font-weight:500;margin-top:14px;}
-  .wcard .chk input{width:auto;}
-  .photo img{position:static;}
-  .hero .photo{aspect-ratio:3/2;padding:0;}
-  @media (max-width:860px){ .kit,.bonus{grid-template-columns:1fr;} .quote-band p{font-size:24px;} }
-</style>
-<style>
-  .sub{display:block;font-size:14px;color:var(--muted);font-weight:600;margin:-2px 0 8px;}
-  .when-hero{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px;}
-  .when-hero span{background:var(--navy);color:var(--goldb);font-weight:700;border-radius:10px;padding:8px 14px;font-size:15px;}
-  .runshow{list-style:none;padding:0;margin:16px 0 0;counter-reset:r;}
-  .runshow li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);}
-  .runshow b{font-variant-numeric:tabular-nums;}
-  .who{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px;}
-  .who div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;font-size:15px;}
-  .who b{display:block;font-size:16px;margin-bottom:4px;}
-  .faq details{border-bottom:1px solid var(--line);padding:14px 0;}
-  .faq summary{font-weight:700;cursor:pointer;}
-  .faq p{margin:10px 0 0;}
-  .privacy{font-size:14px;color:var(--muted);margin:10px 0 0;}
-  .cta-band{background:var(--navy);color:var(--cream);padding:54px 0;}
-  .cta-band .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;}
-  .cta-band h2{color:var(--cream);margin:0;}
-  .cta-band p{margin:8px 0 0;max-width:620px;}
-  .tool-full{background:var(--card);border:2px solid var(--navy);border-radius:18px;padding:26px;margin-top:26px;}
-  .tool-full h3{font-size:24px;font-family:"DM Serif Display",Georgia,serif;font-weight:400;margin:0;}
-  .video{position:relative;aspect-ratio:16/9;background:var(--navy2);border-radius:12px;margin:16px 0;display:flex;align-items:center;justify-content:center;color:var(--cream);font-size:15px;text-align:center;padding:20px;}
-  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px;}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-  .box15{background:#F3EFE3;border-radius:12px;padding:16px 18px;}
-  .box15 b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy2);margin-bottom:6px;}
-  .dl{display:inline-block;margin-top:10px;font-weight:800;}
-  .soon{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;}
-  .soon div{border:1px dashed var(--grey);border-radius:12px;padding:14px;font-size:15px;}
-  .soon b{display:block;font-size:16px;}
-  @media (max-width:860px){ .who,.soon,.two{grid-template-columns:1fr;} .runshow li{grid-template-columns:80px 1fr;} }
-</style>
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-<div class="wrap top">
-  <a class="home" href="/">Aditya Jhunjhunwala</a>
-  <a href="/counsellors/webinar/">Live session, 12 Dec</a>
-</div>
-
-<!-- HERO -->
-<div class="wrap hero">
-  <div>
-    <span class="eyebrow">For counsellors and educators</span>
-    <h1>Change the question.</h1>
-    <p class="lede">A toolkit for the conversations that decide a young person's next three years: nine tools, each with a short video and a printable template, built from twelve years of work with students and their families.</p>
-    <div class="ctas"><a class="btn" href="/counsellors/webinar/">Join the free live session on 12 Dec</a><a class="ghost" href="#toolkit">See the tools</a></div>
-    <p class="meta">12 years with young people and their families · 1,000+ mentored · Two TEDx talks · Keynote, AICCC 2026</p>
-  </div>
-  <div class="photo"><img src="/counsellors/speaking.jpg" alt="Aditya Jhunjhunwala speaking to a room of counsellors and educators"></div>
-</div>
-
-<!-- WHY -->
-<section class="dark">
+<header class="top">
   <div class="wrap">
-    <p class="kicker">Why a toolkit</p>
-    <h2>The question has changed.</h2>
-    <div class="shift">
-      <div class="then"><span>For thirty years, parents asked</span><p class="serif">"Which college will accept my child?"</p></div>
-      <div class="now"><span>Today, families are asking</span><p class="serif">"In three years, what will I be able to do? How much will I earn? What kind of life will I have?"</p></div>
-    </div>
-    <p class="narrow" style="margin-top:26px">Rankings and college lists answer the old question. Few tools exist for the new one. In ten years of asking founders and CEOs what they look for in a fresher, not one has said "degree."</p>
-    <p class="pull">Degree is no longer the aspiration. <em>Degree is now the floor.</em></p>
-    <div class="stats">
-      <div class="stat">
-        <div class="num">&lt;4<small>%</small></div>
-        <p>of job postings that dropped a degree requirement actually hired someone without a degree. The floor is still very real.</p>
-        <span class="src">Burning Glass Institute and OneTen, Feb 2026</span>
-      </div>
-      <div class="stat">
-        <div class="num">37<small>%</small></div>
-        <p>of IIT Guwahati students who registered for campus placement in 2025-26 were not placed: 1,004 of 1,592 got a job. If an IIT seat no longer guarantees the next step, no college brand does.</p>
-        <span class="src">IIT Guwahati placement report 2025-26</span>
-      </div>
-      <div class="stat">
-        <div class="num">1,180</div>
-        <p>career counsellors registered on the National Career Service portal. CBSE's own rule of one counsellor per 500 students means Classes 9 to 12 alone need about 1.3 lakh. The families who reach you are the lucky few. Every conversation you have carries more weight than the system admits.</p>
-        <span class="src">Lok Sabha reply, Jan 2026 · CBSE bye-laws Cl. 2.4.12 · UDISE+ 2024-25</span>
-      </div>
+    <a class="brand" href="/">Aditya Jhunjhunwala</a>
+    <div class="top-r">
+      <span class="when">Free live session, Sat 12 Dec</span>
+      <a class="btn sm" href="/counsellors/webinar/#register">Save my seat</a>
     </div>
   </div>
-</section>
+</header>
 
-<!-- TOOLKIT -->
-<section class="tint" id="toolkit">
-  <div class="wrap">
-    <p class="kicker">The toolkit</p>
-    <h2>Nine tools, in the order of a real conversation.</h2>
-    <p class="narrow">Each one runs on paper, in one sitting, with one family or a whole class. Each ends in a question the student answers, not advice they receive.</p>
-    <div class="kit">
-      <div class="card2"><div class="top"><span class="no">1</span><span class="stage">Open</span></div><h3>The 1,095-day swap</h3><span class="sub">Three years, in hours</span><p>When a parent asks "which college?", change the question to how 17,520 waking hours will be spent. Class takes about a tenth of them.</p><div class="q">How will you spend the next 17,520 waking hours?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">2</span><span class="stage">Open</span></div><h3>Get the vanilla right</h3><span class="sub">The skills under the skills</span><p>Chocolate ice cream is vanilla with a little sauce. Thinking, analysing, explaining and working with people are the vanilla. Find the proof.</p><div class="q">Where is the proof of the skills under the skills?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">3</span><span class="stage">Understand</span></div><h3>Seventeen years of data</h3><span class="sub">What your story already shows</span><p>No test needed. Eight questions for student and parent together reveal the environment this child will thrive in.</p><div class="q">What do 17 years of you already tell us?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">4</span><span class="stage">Understand</span></div><h3>Five colours of work</h3><span class="sub">The mix you want in a day</span><p>Decide, make, meet, support, monitor. Two people with the same title can have completely different days. The mix is the job.</p><div class="q">What mix of work do you want in your day?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">5</span><span class="stage">Map</span></div><h3>Thaali map: four rooms</h3><span class="sub">Who lets you in, and is there a seat?</span><p>Two questions sort any career into Ladder, Double Gate, Craft or Risk, and show what a student has to get good at in each.</p><div class="q">Who lets you in, and is there a seat when you get good?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">6</span><span class="stage">Map</span></div><h3>Three pathways</h3><span class="sub">Mastery, recognition or judgment</span><p>Skill, certification or experience. Each pays in a different currency, so each needs a different plan from 18 to 24.</p><div class="q">Which currency are you building?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">7</span><span class="stage">Decide</span></div><h3>The decision funnel</h3><span class="sub">What to say yes to right now</span><p>Beginners say yes to everything. Experts earn the right to say no. Selectivity is a reward, not a personality.</p><div class="q">What should you be saying yes to right now?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">8</span><span class="stage">Decide</span></div><h3>Six questions before a big decision</h3><span class="sub">Haircut or tattoo?</span><p>For the stuck student facing one heavy choice. Most decisions leave at the first question, because they turn out to be reversible.</p><div class="q">Is this a haircut or a tattoo?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-      <div class="card2"><div class="top"><span class="no">9</span><span class="stage">Act</span></div><h3>The 30-day proof sprint</h3><span class="sub">Something finished in 30 days</span><p>Turn "I want to make vlogs" into a number, a format and a date. Quality is born from quantity.</p><div class="q">What can you show me, finished, in 30 days?</div><div class="tags"><span class="v">Video</span><span>Template</span></div></div>
-    </div>
-    <h3 style="margin-top:34px">Plus four bonus cards</h3>
-    <div class="bonus">
-      <div><b>Know, grow, show</b>A simple practice card. Whichever circle is smallest is the one to work on.</div>
-      <div><b>The family conversation card</b>Questions for the dinner table, when parent and child are stuck in the same argument.</div>
-      <div><b>Three layers of skill</b>A staff-room sheet on what AI is changing in what schools teach.</div>
-      <div><b>Do you know what to ask the wand?</b>A short room exercise on AI for a class or a parents' meeting.</div>
-    </div>
-  </div>
-</section>
-
-<div class="quote-band"><p>"The job of a good counsellor is not to give answers. It is to ask the right questions."</p><span>Every tool in the kit is built on that line.</span></div>
-
-<!-- ABOUT -->
-<section>
-  <div class="wrap split">
+<main>
+<section class="hero on-navy">
+  <div class="wrap hero-grid">
     <div>
-      <p class="kicker">Where these tools come from</p>
-      <h2>Twelve years in the room.</h2>
-      <p>None of this started as a framework. It started as conversations with young people who did not fit the path laid out for them, and with the parents who were worried about it. Every tool in the kit has been used live, with students, parents, schools or counsellors.</p>
-      <ul class="track">
-        <li><b>Five unpaid years</b> running a weekly programme for 17 to 21 year olds, before any of this had a name.</li>
-        <li><b>1,000+ young people mentored,</b> and their families met, one conversation at a time.</li>
-        <li><b>Two TEDx talks,</b> on lifelong learning and on building a body of work, and the book <i>Restless to Remarkable</i>.</li>
-        <li><b>Sessions with school, education and industry leaders</b> across the country, and the keynote at AICCC 2026, the All India Convention of Career Counsellors.</li>
+      <p class="for">For counsellors and educators</p>
+      <h1>Change the question.</h1>
+      <p class="lede">A toolkit for the conversations that decide a young person's next three years: nine tools, each with a short video and a printable template, built from twelve years of work with students and their families.</p>
+      <div class="ctas"><a class="btn" href="/counsellors/webinar/">Join the free live session on 12 Dec</a><a class="link" href="#toolkit">See the nine tools</a></div>
+      <ul class="rail">
+        <li><b>IIM Ahmedabad</b>PGDBM, 2002</li>
+        <li><b>2 books</b><i>Restless to Remarkable</i> and <i>Winning Habits</i></li>
+        <li><b>2 TEDx talks</b>Pune: &ldquo;A college of life learning.&rdquo;<br>Goa: &ldquo;Why everyone should create a body of work&rdquo;</li>
+        <li><b>1,000+</b>young people mentored over 12 years</li>
       </ul>
-      <div class="about" style="margin-top:26px;grid-template-columns:auto 1fr">
-        <div class="avatar"><img src="/counsellors/adi.jpg" alt="Aditya Jhunjhunwala"></div>
-        <div>
-          <h3>Aditya Jhunjhunwala</h3>
-          <p style="margin-bottom:8px">IIM Ahmedabad, MIT Pune engineering. Co-founder of Let's Enterprise, which runs India's first Working BBA.</p>
-        </div>
-      </div>
     </div>
-    <figure class="pic">
-      <img src="/counsellors/room.jpg" alt="Aditya with the AICCC 2026 audience of counsellors and educators, hands raised">
-      <figcaption>With the room at AICCC 2026, Navi Mumbai.</figcaption>
+    <figure class="hero-photo">
+      <img src="speaking.jpg" alt="Aditya Jhunjhunwala speaking to a room of counsellors and educators" width="1800" height="1201">
     </figure>
   </div>
 </section>
 
-<!-- CTA -->
-<div class="cta-band">
+<section class="shift on-navy">
   <div class="wrap">
+    <p class="label">Why a toolkit</p>
+    <h2>The question has changed.</h2>
+    <div class="qa">
+      <div><p class="when">For thirty years, parents asked</p><q>Which college will accept my child?</q></div>
+      <div><p class="when">Today, families are asking</p><q>In three years, what will I be able to do? How much will I earn? What kind of life will I have?</q></div>
+    </div>
+    <p class="shift-p">Rankings and college lists answer the old question. Few tools exist for the new one. In ten years of asking founders and CEOs what they look for in a fresher, not one has said &ldquo;degree.&rdquo;</p>
+    <div class="evidence">
+      <div>
+        <div class="n">&lt;4%</div>
+        <p>of job postings that dropped a degree requirement actually hired someone without a degree. The floor is still very real.</p>
+        <p class="src"><a href="#src-1">Source 1</a>: Burning Glass Institute and OneTen, Feb 2026</p>
+      </div>
+      <div>
+        <div class="n">37%</div>
+        <p>of IIT Guwahati students who registered for campus placement in 2025-26 were not placed: 1,004 of 1,592 got a job. If an IIT seat no longer guarantees the next step, no college brand does.</p>
+        <p class="src"><a href="#src-2">Source 2</a>: IIT Guwahati placement report 2025-26</p>
+      </div>
+      <div>
+        <div class="n">1,180</div>
+        <p>career counsellors registered on the National Career Service portal. CBSE's own rule of one counsellor per 500 students means Classes 9 to 12 alone need about 1.3 lakh. The families who reach you are the lucky few. Every conversation you have carries more weight than the system admits.</p>
+        <p class="src"><a href="#src-3">Source 3</a>: Lok Sabha reply, Jan 2026; CBSE bye-laws Cl. 2.4.12; UDISE+ 2024-25</p>
+      </div>
+    </div>
+    <p class="floor">Degree is no longer the aspiration. <em>Degree is now the floor.</em></p>
+  </div>
+</section>
+
+<section class="kit" id="toolkit">
+  <div class="wrap">
+    <div class="kit-head">
+      <div><p class="label">The toolkit</p><h2>Nine tools, in the order of a real conversation.</h2></div>
+      <div>
+        <p class="lede">Each one runs on paper, in one sitting, with one family or a whole class. Each ends in a question the student answers, not advice they receive.</p>
+        <p class="lede">Each tool comes with a short video and a printable template.</p>
+      </div>
+    </div>
+
+    <ol class="stagebar" aria-label="The five stages of the conversation">
+      <li><a href="#stage-open"><span>Tools 1 and 2</span>Open</a></li>
+      <li><a href="#stage-understand"><span>Tools 3 and 4</span>Understand</a></li>
+      <li><a href="#stage-map"><span>Tools 5 and 6</span>Map</a></li>
+      <li><a href="#stage-decide"><span>Tools 7 and 8</span>Decide</a></li>
+      <li><a href="#stage-act"><span>Tool 9</span>Act</a></li>
+    </ol>
+
+    <div class="stage" id="stage-open">
+      <div class="stage-h"><p>Tools 1 and 2</p><h3>Open</h3></div>
+      <div>
+        <div class="t-row">
+          <div class="no">1</div>
+          <div><h4>The 1,095-day swap</h4><span class="sub">Three years, in hours</span><p>When a parent asks &ldquo;which college?&rdquo;, change the question to how 17,520 waking hours will be spent. Class takes about a tenth of them.</p></div>
+          <div class="ask-col"><p class="ask">How will you spend the next 17,520 waking hours?</p><a class="live" href="/counsellors/webinar/">Run live on 12 Dec</a></div>
+        </div>
+        <div class="t-row">
+          <div class="no">2</div>
+          <div><h4>Get the vanilla right</h4><span class="sub">The skills under the skills</span><p>Chocolate ice cream is vanilla with a little sauce. Thinking, analysing, explaining and working with people are the vanilla. Find the proof.</p></div>
+          <div class="ask-col"><p class="ask">Where is the proof of the skills under the skills?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-understand">
+      <div class="stage-h"><p>Tools 3 and 4</p><h3>Understand</h3></div>
+      <div>
+        <div class="t-row">
+          <div class="no">3</div>
+          <div><h4>Seventeen years of data</h4><span class="sub">What your story already shows</span><p>No test needed. Eight questions for student and parent together reveal the environment this child will thrive in.</p></div>
+          <div class="ask-col"><p class="ask">What do 17 years of you already tell us?</p></div>
+        </div>
+        <div class="t-row">
+          <div class="no">4</div>
+          <div><h4>Five colours of work</h4><span class="sub">The mix you want in a day</span><p>Decide, make, meet, support, monitor. Two people with the same title can have completely different days. The mix is the job.</p></div>
+          <div class="ask-col"><p class="ask">What mix of work do you want in your day?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-map">
+      <div class="stage-h"><p>Tools 5 and 6</p><h3>Map</h3></div>
+      <div>
+        <div class="t-row">
+          <div class="no">5</div>
+          <div><h4>Thaali map: four rooms</h4><span class="sub">Who lets you in, and is there a seat?</span><p>Two questions sort any career into Ladder, Double Gate, Craft or Risk, and show what a student has to get good at in each.</p></div>
+          <div class="ask-col"><p class="ask">Who lets you in, and is there a seat when you get good?</p><a class="live" href="/counsellors/webinar/">Run live on 12 Dec</a></div>
+        </div>
+        <div class="t-row">
+          <div class="no">6</div>
+          <div><h4>Three pathways</h4><span class="sub">Mastery, recognition or judgment</span><p>Skill, certification or experience. Each pays in a different currency, so each needs a different plan from 18 to 24.</p></div>
+          <div class="ask-col"><p class="ask">Which currency are you building?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-decide">
+      <div class="stage-h"><p>Tools 7 and 8</p><h3>Decide</h3></div>
+      <div>
+        <div class="t-row">
+          <div class="no">7</div>
+          <div><h4>The decision funnel</h4><span class="sub">What to say yes to right now</span><p>Beginners say yes to everything. Experts earn the right to say no. Selectivity is a reward, not a personality.</p></div>
+          <div class="ask-col"><p class="ask">What should you be saying yes to right now?</p></div>
+        </div>
+        <div class="t-row">
+          <div class="no">8</div>
+          <div><h4>Six questions before a big decision</h4><span class="sub">Haircut or tattoo?</span><p>For the stuck student facing one heavy choice. Most decisions leave at the first question, because they turn out to be reversible.</p></div>
+          <div class="ask-col"><p class="ask">Is this a haircut or a tattoo?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-act">
+      <div class="stage-h"><p>Tool 9</p><h3>Act</h3></div>
+      <div>
+        <div class="t-row">
+          <div class="no">9</div>
+          <div><h4>The 30-day proof sprint</h4><span class="sub">Something finished in 30 days</span><p>Turn &ldquo;I want to make vlogs&rdquo; into a number, a format and a date. Quality is born from quantity.</p></div>
+          <div class="ask-col"><p class="ask">What can you show me, finished, in 30 days?</p><a class="live" href="/counsellors/webinar/">Run live on 12 Dec</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bonus">
+      <h3>Plus four bonus cards</h3>
+      <ul>
+        <li><b>Know, grow, show</b>A simple practice card. Whichever circle is smallest is the one to work on.</li>
+        <li><b>The family conversation card</b>Questions for the dinner table, when parent and child are stuck in the same argument.</li>
+        <li><b>Three layers of skill</b>A staff-room sheet on what AI is changing in what schools teach.</li>
+        <li><b>Do you know what to ask the wand?</b>A short room exercise on AI for a class or a parents' meeting.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="quote on-navy">
+  <div class="wrap">
+    <p>&ldquo;The job of a good counsellor is not to give answers. It is to ask the right questions.&rdquo;</p>
+    <small>Every tool in the kit is built on that line.</small>
+  </div>
+</section>
+
+<section class="host">
+  <div class="wrap host-grid">
+    <div>
+      <p class="label">Where these tools come from</p>
+      <h2>Twelve years in the room.</h2>
+      <p>None of this started as a framework. It started as conversations with young people who did not fit the path laid out for them, and with the parents who were worried about it. Every tool in the kit has been used live, with students, parents, schools or counsellors.</p>
+      <ul class="creds">
+        <li><b>Five unpaid years</b>running a weekly programme for 17 to 21 year olds, before any of this had a name.</li>
+        <li><b>1,000+ young people mentored</b>and their families met, one conversation at a time.</li>
+        <li><b>Two TEDx talks</b>on lifelong learning and on building a body of work, and the book <i>Restless to Remarkable</i>.</li>
+        <li><b>Sessions with school, education and industry leaders</b>across the country, and the keynote at AICCC 2026, the All India Convention of Career Counsellors.</li>
+      </ul>
+      <div class="host-b">
+        <img src="adi.jpg" alt="Aditya Jhunjhunwala" width="72" height="72">
+        <p><b>Aditya Jhunjhunwala</b>IIM Ahmedabad, MIT Pune engineering. Co-founder of Let's Enterprise, which runs India's first Working BBA.</p>
+      </div>
+      <div class="worked"><p>Leadership work with teams at</p><ul><li>Red Hat</li><li>Secure Meters</li><li>Stahl</li><li>The Kalyani School</li></ul></div>
+    </div>
+    <figure>
+      <img src="room.jpg" alt="Aditya with the AICCC 2026 audience of counsellors and educators, hands raised" width="1800" height="1350" loading="lazy">
+      <figcaption>With the room at AICCC 2026, Navi Mumbai.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="books">
+      <p class="label">Books</p>
+      <div class="books-grid">
+        <div class="book">
+          <img src="webinar/restless-to-remarkable.jpg" alt="Cover of Restless to Remarkable by Aditya Jhunjhunwala" width="289" height="436" loading="lazy">
+          <span><b>Restless to Remarkable</b><em>A companion for parents of teenagers</em>For the young person who knows they are capable of more but hasn't found the door yet, and the parent trying to help without getting in the way.</span>
+        </div>
+        <div class="book">
+          <img src="webinar/winning-habits.jpg" alt="Cover of Winning Habits by Narendra Goidani and Aditya Jhunjhunwala" width="288" height="395" loading="lazy">
+          <span><b>Winning Habits</b><em>What makes winners... winners. With Narendra Goidani</em>A practical guide to the habits that build lasting success.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final on-navy">
+  <div class="wrap final-grid">
     <div>
       <h2>Start with three of them, live.</h2>
       <p>Join the free live session on Saturday 12 December, 10:00 to 11:30 am IST. We run three of these tools live on real student cases, and everyone who registers gets the recording and printable templates for those three.</p>
     </div>
-    <a class="btn" href="/counsellors/webinar/">Save my seat</a>
+    <a class="btn" href="/counsellors/webinar/#register">Save my seat</a>
   </div>
-</div>
+</section>
 
-<div class="wrap sources narrow" id="sources">
-  <b>Sources</b>
-  <ol>
-    <li>Degree-requirement removals vs actual non-degree hires: Burning Glass Institute and OneTen, February 2026.</li>
-    <li>Campus placement, all programmes, 2025-26: 1,592 registered, 1,004 placed (63%). Centre for Career Development, IIT Guwahati, Placement Report 2025-26.</li>
-    <li>Career counsellors on the NCS portal: Lok Sabha reply, January 2026. CBSE counsellor ratio: Affiliation bye-laws Clause 2.4.12, amended 19 January 2026. Students in Classes 9 to 12: UDISE+ 2024-25.</li>
-    <li>Waking hours: 3 years x 365 days x 16 hours = 17,520. Class time: 1 credit = 15 contact hours (UGC/AICTE norms), about 1,800 hours for a 3-year degree.</li>
-  </ol>
-</div>
+<section class="sources" id="sources">
+  <div class="wrap">
+    <p class="label">Sources</p>
+    <ol>
+      <li id="src-1">Degree-requirement removals vs actual non-degree hires: Burning Glass Institute and OneTen, February 2026.</li>
+      <li id="src-2">Campus placement, all programmes, 2025-26: 1,592 registered, 1,004 placed (63%). Centre for Career Development, IIT Guwahati, Placement Report 2025-26.</li>
+      <li id="src-3">Career counsellors on the NCS portal: Lok Sabha reply, January 2026. CBSE counsellor ratio: Affiliation bye-laws Clause 2.4.12, amended 19 January 2026. Students in Classes 9 to 12: UDISE+ 2024-25.</li>
+      <li id="src-4">Waking hours: 3 years x 365 days x 16 hours = 17,520. Class time: 1 credit = 15 contact hours (UGC/AICTE norms), about 1,800 hours for a 3-year degree.</li>
+    </ol>
+  </div>
+</section>
+</main>
 
 <footer>
-  <div class="wrap">© Aditya Jhunjhunwala · <a href="/">adityajhunjhunwala.com</a> · <a href="/counsellors/webinar/">Live session, 12 Dec</a></div>
+  <div class="wrap">
+    <span>© 2026 Aditya Jhunjhunwala</span>
+    <span><a href="/">adityajhunjhunwala.com</a> &nbsp; <a href="/counsellors/webinar/">Live session, 12 Dec</a></span>
+  </div>
 </footer>
-
 </body>
 </html>
