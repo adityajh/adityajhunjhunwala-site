@@ -28,7 +28,7 @@ templateEngineOverride: false
   .frozen{display:inline-block;background:var(--navy);color:var(--cream);font-size:12px;font-weight:600;
     letter-spacing:.04em;padding:5px 12px;border-radius:999px;margin-right:6px;}
   .frozen b{color:var(--gold);}
-  .badge-agent{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:600;
+  .badge-agent{display:inline-block;background:var(--teall);color:var(--navy);font-size:12px;font-weight:600;
     letter-spacing:.04em;padding:5px 12px;border-radius:999px;}
   .lead{color:var(--muted);font-size:15px;line-height:1.6;max-width:680px;margin:16px 0 0;}
 
@@ -73,7 +73,7 @@ templateEngineOverride: false
   /* ── usage do/dont ── */
   .usage{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px;}
   .ucard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
-  .ucard h3{font-size:14px;margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase;color:var(--gold);}
+  .ucard h3{font-size:14px;margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);}
   .ucard.dont h3{color:var(--fail);}
   .ucard ul{margin:0;padding-left:18px;}
   .ucard li{font-size:13.5px;line-height:1.6;margin-bottom:6px;}
@@ -111,7 +111,7 @@ templateEngineOverride: false
   /* ── pillars ── */
   .pillars{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
   .pillar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:16px;}
-  .pillar .pct{font-family:"DM Serif Display",serif;font-size:28px;color:var(--gold);min-width:52px;}
+  .pillar .pct{font-family:"DM Serif Display",serif;font-size:28px;color:var(--navy);min-width:52px;}
   .pillar .pname{font-weight:700;font-size:14px;color:var(--navy);}
   .pillar .pslug{font-size:11.5px;color:var(--muted);font-family:monospace;margin-top:2px;}
   .pillar .pdesc{font-size:13px;color:var(--muted);line-height:1.5;margin-top:4px;}
@@ -166,20 +166,51 @@ templateEngineOverride: false
   .agent-note b{color:var(--goldb);}
   .agent-note code{background:rgba(255,255,255,.1);border-radius:4px;padding:1px 6px;font-size:12px;}
 
+
+  /* ── v2.1: names, say-it-like-this, authority and play, mark, spacing ── */
+  .names{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
+  .name-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .name-card .nm{font-family:"DM Serif Display",serif;font-size:21px;line-height:1.15;}
+  .name-card .when{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:6px;}
+  .say td:nth-child(2){color:var(--muted);font-style:italic;}
+  .say td:nth-child(3){font-weight:600;}
+  .play-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;}
+  .play-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .play-card .demo{height:132px;display:flex;align-items:center;justify-content:center;background:var(--cream);position:relative;padding:12px;}
+  .play-card .body{padding:14px 16px;}
+  .play-card .t{font-weight:700;font-size:14px;}
+  .play-card .d{font-size:13.5px;color:var(--muted);line-height:1.55;margin-top:4px;}
+  .sbar{position:relative;display:inline-block;}
+  .sbar::after{content:"";position:absolute;left:8%;right:8%;bottom:-6px;height:5px;border-radius:999px;background:var(--gold);}
+  .on-navy .sbar::after{background:var(--goldb);}
+  .mnote{font-family:"Caveat",cursive;font-weight:700;font-size:26px;color:var(--teal);transform:rotate(-3deg);display:inline-block;}
+  .on-navy .mnote{color:var(--teall);}
+  .dial td:nth-child(2),.dial td:nth-child(3){font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .meter{display:flex;height:10px;border-radius:999px;overflow:hidden;min-width:120px;}
+  .meter span:first-child{background:var(--navy);} .meter span:last-child{background:var(--teal);}
+  .marks{display:flex;gap:22px;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:14px;}
+  .marks figure{margin:0;text-align:center;font-size:12px;color:var(--muted);}
+  .marks img{display:block;margin:0 auto 6px;}
+  .scale{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:10px;}
+  .scale .step{text-align:center;font-size:12px;color:var(--muted);}
+  .scale .blk{background:var(--navy);margin:0 auto 6px;}
+  .scale .rad{width:64px;height:48px;background:var(--goldl);border:2px solid var(--navy);margin:0 auto 6px;}
+  .assumed{display:inline-block;font-size:12px;font-weight:600;background:var(--goldl);color:var(--navy);border-radius:999px;padding:2px 10px;margin-left:6px;vertical-align:middle;}
+
   /* ── footer ── */
   footer{margin-top:52px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:12px;line-height:1.8;}
   footer b{color:var(--navy);}
-  footer a{color:var(--gold);}
+  footer a{color:var(--navy);text-decoration-color:var(--gold);text-decoration-thickness:2px;}
 
   @media(max-width:720px){
-    .row,.usage,.fonts,.formats,.platforms,.pos-grid,.voice-grid,.hooks-grid{grid-template-columns:1fr;}
+    .row,.usage,.fonts,.formats,.platforms,.pos-grid,.voice-grid,.hooks-grid,.names,.play-grid{grid-template-columns:1fr;}
     .thumbs{grid-template-columns:1fr 1fr;}
     h1{font-size:34px;}
   }
   @media print{
     @page{margin:12mm;}
     body{background:#fff;}
-    .sw,.ucard,.pair,.fcard,.fmtcard,.thumbcard,.platcard,.vcard,.pillar,.hook,.bio,.pos-card{box-shadow:none;}
+    .sw,.ucard,.pair,.fcard,.fmtcard,.thumbcard,.platcard,.vcard,.pillar,.hook,.bio,.pos-card,.name-card,.play-card{box-shadow:none;}
   }
 </style>
   <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -197,11 +228,14 @@ templateEngineOverride: false
 <script type="application/json" id="adi-brand-data">
 {
   "meta": {
-    "version": "2.0",
+    "version": "2.1",
     "frozen": "2026-06-01",
-    "updated": "2026-06-13",
+    "updated": "2026-11-25",
     "canonical_file": "11-Schema/brand-color-guide.html",
-    "source": "vault: MessageAdi/11-Schema/brand-color-guide.html"
+    "source": "vault: MessageAdi/11-Schema/brand-color-guide.html",
+    "changelog": {
+      "2.1": "Adds naming, authority_and_play, voice.say_it_like_this, messaging_framework, logo, spacing, radius. Teal recast as the play colour. Cream-on-teal pairing retired (3.2:1, it was listed as 4.5:1)."
+    }
   },
   "positioning": {
     "master_line": "The real work is you.",
@@ -211,47 +245,132 @@ templateEngineOverride: false
     "handle": "@playful_ceo",
     "website": "adityajhunjhunwala.com",
     "newsletter": "Eat. Play. Love.",
-    "newsletter_subscribe": "https://www.adityajhunjhunwala.com/subscribe/"
+    "newsletter_subscribe": "https://www.adityajhunjhunwala.com/subscribe/",
+    "brand_mix": "Authority plus play. Authority: navy, gold, the serif. Play: the handwriting, teal, the wit."
   },
   "palette": {
-    "navy_dark":     { "hex": "#1A1A2E", "rgb": "26 26 46",   "role": "Primary text, dark sections, logo on light" },
-    "navy_mid":      { "hex": "#16213E", "rgb": "22 33 62",   "role": "Layering, cards on navy, gradients" },
-    "cream":         { "hex": "#F8F6F0", "rgb": "248 246 240","role": "Primary background, default canvas" },
-    "gold_heritage": { "hex": "#D4A843", "rgb": "212 168 67", "role": "Primary accent: print, editorial, letters" },
-    "gold_light":    { "hex": "#F0D78C", "rgb": "240 215 140","role": "Tints, hover fills, soft highlights" },
-    "gold_bright":   { "hex": "#FED95D", "rgb": "254 217 93", "role": "Digital/social accent only. 12.4:1 on navy." },
-    "teal":          { "hex": "#0F9B8E", "rgb": "15 155 142", "role": "Secondary accent, tags, category highlights" },
-    "teal_light":    { "hex": "#5EEAD4", "rgb": "94 234 212", "role": "Soft fills, freshness on dark sections" }
+    "navy_dark": {
+      "hex": "#1A1A2E",
+      "rgb": "26 26 46",
+      "role": "Primary text, dark sections, logo on light"
+    },
+    "navy_mid": {
+      "hex": "#16213E",
+      "rgb": "22 33 62",
+      "role": "Layering, cards on navy, gradients"
+    },
+    "cream": {
+      "hex": "#F8F6F0",
+      "rgb": "248 246 240",
+      "role": "Primary background, default canvas"
+    },
+    "gold_heritage": {
+      "hex": "#D4A843",
+      "rgb": "212 168 67",
+      "role": "Primary accent: print, editorial, letters"
+    },
+    "gold_light": {
+      "hex": "#F0D78C",
+      "rgb": "240 215 140",
+      "role": "Tints, hover fills, soft highlights"
+    },
+    "gold_bright": {
+      "hex": "#FED95D",
+      "rgb": "254 217 93",
+      "role": "Digital/social accent only. 12.4:1 on navy."
+    },
+    "teal": {
+      "hex": "#0F9B8E",
+      "rgb": "15 155 142",
+      "role": "The play colour: margin notes, strike-throughs, small highlights. Not a large fill, not a tag fill. Text on cream only at 24px+ (3.2:1)."
+    },
+    "teal_light": {
+      "hex": "#5EEAD4",
+      "rgb": "94 234 212",
+      "role": "Play colour on navy (margin notes, highlights). Soft tag fills with navy text (11.5:1)."
+    }
   },
   "palette_rules": {
-    "ratio": { "cream": 60, "navy": 25, "gold": 10, "teal": 5 },
+    "ratio": {
+      "cream": 60,
+      "navy": 25,
+      "gold": 10,
+      "teal": 5
+    },
     "two_gold_system": "Heritage #D4A843 for print/letters. Bright #FED95D for screens/social.",
     "approved_pairings": [
-      { "fg": "#D4A843", "bg": "#1A1A2E", "ratio": "7.7:1",  "rating": "AAA", "use": "Headlines, hero" },
-      { "fg": "#1A1A2E", "bg": "#F8F6F0", "ratio": "15.8:1", "rating": "AAA", "use": "Body text default" },
-      { "fg": "#1A1A2E", "bg": "#D4A843", "ratio": "7.7:1",  "rating": "AAA", "use": "Buttons, badges, CTAs" },
-      { "fg": "#F8F6F0", "bg": "#0F9B8E", "ratio": "4.5:1",  "rating": "AA",  "use": "Secondary tags" },
-      { "fg": "#5EEAD4", "bg": "#16213E", "ratio": "8.1:1",  "rating": "AAA", "use": "Accent on dark" },
-      { "fg": "#FED95D", "bg": "#1A1A2E", "ratio": "12.4:1", "rating": "AAA", "use": "Social highlights, reel subtitles" }
+      {
+        "fg": "#D4A843",
+        "bg": "#1A1A2E",
+        "ratio": "7.7:1",
+        "rating": "AAA",
+        "use": "Headlines, hero"
+      },
+      {
+        "fg": "#1A1A2E",
+        "bg": "#F8F6F0",
+        "ratio": "15.8:1",
+        "rating": "AAA",
+        "use": "Body text default"
+      },
+      {
+        "fg": "#1A1A2E",
+        "bg": "#D4A843",
+        "ratio": "7.7:1",
+        "rating": "AAA",
+        "use": "Buttons, badges, CTAs"
+      },
+      {
+        "fg": "#1A1A2E",
+        "bg": "#5EEAD4",
+        "ratio": "11.5:1",
+        "rating": "AAA",
+        "use": "Tags, soft fills"
+      },
+      {
+        "fg": "#5EEAD4",
+        "bg": "#16213E",
+        "ratio": "10.7:1",
+        "rating": "AAA",
+        "use": "Margin notes and play on dark"
+      },
+      {
+        "fg": "#FED95D",
+        "bg": "#1A1A2E",
+        "ratio": "12.4:1",
+        "rating": "AAA",
+        "use": "Social highlights, reel subtitles"
+      }
     ],
     "never": [
-      "Gold text on cream (2.05:1 — FAIL)",
-      "White text on gold (2.21:1 — FAIL)",
+      "Gold text on cream (2.05:1, FAIL)",
+      "White text on gold (2.21:1, FAIL)",
       "Coral, red, orange, or any hue not in this palette",
       "Teal competing with gold for the headline",
-      "Gold as a large field — accent only"
+      "Gold as a large field: accent only",
+      "Teal text on cream below 24px (3.2:1)",
+      "Teal as a large fill or tag fill"
     ]
   },
   "typography": {
     "system_a": {
-      "surfaces": ["Letter story sequences", "Web", "HTML to PNG via Playwright"],
+      "surfaces": [
+        "Letter story sequences",
+        "Web",
+        "HTML to PNG via Playwright"
+      ],
       "headline_pullquote": "DM Serif Display (regular + italic)",
       "body_ui": "Inter (300, 400, 500, 600, 700)",
-      "accent_handwritten": "Caveat (Regular, 700)",
-      "source": "Google Fonts CDN"
+      "accent_handwritten": "Caveat: the margin note. One per layout, 24px+, play colour, tilted 2-4 degrees.",
+      "source": "Google Fonts CDN",
+      "label": "Inter 600, 12px, all caps, 0.08em tracking. The one place for caps."
     },
     "system_b": {
-      "surfaces": ["Carousels", "Quote cards", "1080x1080 PNG via Python"],
+      "surfaces": [
+        "Carousels",
+        "Quote cards",
+        "1080x1080 PNG via Python"
+      ],
       "punchline": "Lato Black",
       "subhead_attribution": "Lato Bold",
       "body_footer": "Lato Regular",
@@ -269,35 +388,188 @@ templateEngineOverride: false
   },
   "voice": {
     "guardrails": [
-      { "name": "Direct",       "desc": "Short sentences. No hedging." },
-      { "name": "Conversational","desc": "Like chai with a friend." },
-      { "name": "Playful",      "desc": "Finds humor in absurdity." },
-      { "name": "Provocative",  "desc": "Challenges sacred cows from care, not rage." },
-      { "name": "Concrete",     "desc": "Specific stories over abstractions." },
-      { "name": "Inside-out",   "desc": "Always brings it back to the person." }
+      {
+        "name": "Direct",
+        "desc": "Short sentences. No hedging."
+      },
+      {
+        "name": "Conversational",
+        "desc": "Like chai with a friend."
+      },
+      {
+        "name": "Playful",
+        "desc": "Finds humor in absurdity."
+      },
+      {
+        "name": "Provocative",
+        "desc": "Challenges sacred cows from care, not rage."
+      },
+      {
+        "name": "Concrete",
+        "desc": "Specific stories over abstractions."
+      },
+      {
+        "name": "Inside-out",
+        "desc": "Always brings it back to the person."
+      }
     ],
-    "never_sounds_like": ["LinkedIn guru", "doom-monger", "executive coach", "wellness influencer", "academic"]
+    "never_sounds_like": [
+      "LinkedIn guru",
+      "doom-monger",
+      "executive coach",
+      "wellness influencer",
+      "academic"
+    ],
+    "say_it_like_this": [
+      {
+        "idea": "Starting before you are ready",
+        "no": "Clarity is the cornerstone of every successful journey. Here are 5 frameworks to find yours.",
+        "yes": "You don't start with clarity. You start."
+      },
+      {
+        "idea": "Rest",
+        "no": "High performers understand the strategic value of recovery.",
+        "yes": "Relaxation is a life skill. Nobody taught us. So we scroll."
+      },
+      {
+        "idea": "Degrees and jobs",
+        "no": "In today's dynamic landscape, experiential learning is a key differentiator.",
+        "yes": "Nobody ever hired a marksheet."
+      },
+      {
+        "idea": "Perfectionism",
+        "no": "Embrace an iterative mindset to unlock your potential.",
+        "yes": "Perfect is a very polite way of saying scared."
+      },
+      {
+        "idea": "Motivation",
+        "no": "Thrilled to share that purpose drives performance!",
+        "yes": "There are no lazy people. Only people doing work that isn't theirs."
+      }
+    ],
+    "say_it_like_this_note": "Illustrations of the voice, not approved copy."
   },
   "hard_rules": [
-    { "id": "no-dashes",    "rule": "Never use em dashes (—) or en dashes (–) in any content for posting. Replace with commas, periods, or restructure. Applies to all platforms." },
-    { "id": "95-5",         "rule": "95% thought leadership. 5% Let's Enterprise mentions, only obliquely (a student, an anecdote). Never admissions CTAs. Never 'apply now'." },
-    { "id": "ask-first",    "rule": "Ask 2-3 sharp questions before drafting any content. One must request a specific story or incident. Never start without an anchor." },
-    { "id": "no-promo-feed","rule": "No promotional posts (LE event invites, admissions) on the personal LinkedIn or Instagram feed." },
-    { "id": "no-series-fatigue", "rule": "Never run 3+ posts on the same external person. Analytics confirmed decay by post 3." }
+    {
+      "id": "no-dashes",
+      "rule": "Never use em dashes (U+2014) or en dashes (U+2013) in any content for posting, or in code and built files. Replace with commas, periods, colons, or restructure."
+    },
+    {
+      "id": "95-5",
+      "rule": "95% thought leadership. 5% Let's Enterprise mentions, only obliquely (a student, an anecdote). Never admissions CTAs. Never 'apply now'."
+    },
+    {
+      "id": "ask-first",
+      "rule": "Ask 2-3 sharp questions before drafting any content. One must request a specific story or incident. Never start without an anchor."
+    },
+    {
+      "id": "no-promo-feed",
+      "rule": "No promotional posts (LE event invites, admissions) on the personal LinkedIn or Instagram feed."
+    },
+    {
+      "id": "no-series-fatigue",
+      "rule": "Never run 3+ posts on the same external person. Analytics confirmed decay by post 3."
+    },
+    {
+      "id": "sentence-case",
+      "rule": "Sentence case everywhere. All caps only for short labels and punch words."
+    },
+    {
+      "id": "one-play-moment",
+      "rule": "One play moment per layout: one signature bar, at most one margin note."
+    }
   ],
   "content_pillars": [
-    { "name": "Education Disruptor", "slug": "education-disruptor", "weight": 35, "what": "System fails because it never teaches the real work. Marks Lie. 1095 days. Credential critique." },
-    { "name": "Playful Philosopher", "slug": "playful-philosopher",  "weight": 25, "what": "Letters, reflections, self-awareness. See yourself. The intimate register." },
-    { "name": "Building in Public",  "slug": "building-in-public",   "weight": 15, "what": "What I see in founders when they stop performing. LE anecdotes. Reality of building a small intentional thing." },
-    { "name": "Mentor's Lens",       "slug": "mentors-lens",         "weight": 15, "what": "Specific moments where someone saw themselves clearly. One scene, not a generalisation." },
-    { "name": "Provocative Collabs", "slug": "provocative-collabs",  "weight": 10, "what": "Conversations with founders, thinkers, builders. Podcasts, joint pieces." }
+    {
+      "name": "Education Disruptor",
+      "slug": "education-disruptor",
+      "weight": 35,
+      "what": "System fails because it never teaches the real work. Marks Lie. 1095 days. Credential critique."
+    },
+    {
+      "name": "Playful Philosopher",
+      "slug": "playful-philosopher",
+      "weight": 25,
+      "what": "Letters, reflections, self-awareness. See yourself. The intimate register."
+    },
+    {
+      "name": "Building in Public",
+      "slug": "building-in-public",
+      "weight": 15,
+      "what": "What I see in founders when they stop performing. LE anecdotes. Reality of building a small intentional thing."
+    },
+    {
+      "name": "Mentor's Lens",
+      "slug": "mentors-lens",
+      "weight": 15,
+      "what": "Specific moments where someone saw themselves clearly. One scene, not a generalisation."
+    },
+    {
+      "name": "Provocative Collabs",
+      "slug": "provocative-collabs",
+      "weight": 10,
+      "what": "Conversations with founders, thinkers, builders. Podcasts, joint pieces."
+    }
   ],
   "platforms": {
-    "linkedin":  { "audience": "Founders, CXOs (scrolling at 11pm)", "tone": "Provocative, data-backed, debate-triggering", "metric": "Comment velocity first 30-60 min", "works": ["Lived story + provocative claim + specific numbers + bifurcated validation", "Debate-triggering question at end"], "tanks": ["Abstract hooks with no personal story", "3+ posts on same external person", "Promotional posts", "Zero-comment posts — throttled immediately"] },
-    "instagram": { "audience": "Future founders, 18-35", "tone": "Visual, punchy, save-worthy", "metric": "Saves over views", "works": ["Off-theme human Reels", "Quote Reels from known figures", "Save-worthy carousels"], "tanks": ["100% education content with zero human moments", "To-the-X-year-old pattern overused", "Zero-save Reels"] },
-    "facebook":  { "audience": "Parents and educators, 35-54", "tone": "Story-led", "metric": "Shares", "works": ["Personal stories — non-negotiable"], "tanks": ["Abstract arguments without story anchor"] },
-    "youtube":   { "audience": "Mixed", "tone": "Reel-cut content", "metric": "Watch time", "works": ["Reel reposts with chapters"], "tanks": [] },
-    "letter":    { "audience": "Broad, intimate audience built over years", "tone": "Personal, reflective, recipe-inclusive", "metric": "Open rate (target 18%+)", "send_time": "Sunday 7pm IST", "subject_format": "Letter No NNN: <line>", "personalization_tag": "{{{contact.first_name|friend}}}" }
+    "linkedin": {
+      "audience": "Founders, CXOs (scrolling at 11pm)",
+      "tone": "Provocative, data-backed, debate-triggering",
+      "metric": "Comment velocity first 30-60 min",
+      "works": [
+        "Lived story + provocative claim + specific numbers + bifurcated validation",
+        "Debate-triggering question at end"
+      ],
+      "tanks": [
+        "Abstract hooks with no personal story",
+        "3+ posts on same external person",
+        "Promotional posts",
+        "Zero-comment posts, throttled immediately"
+      ]
+    },
+    "instagram": {
+      "audience": "Future founders, 18-35",
+      "tone": "Visual, punchy, save-worthy",
+      "metric": "Saves over views",
+      "works": [
+        "Off-theme human Reels",
+        "Quote Reels from known figures",
+        "Save-worthy carousels"
+      ],
+      "tanks": [
+        "100% education content with zero human moments",
+        "To-the-X-year-old pattern overused",
+        "Zero-save Reels"
+      ]
+    },
+    "facebook": {
+      "audience": "Parents and educators, 35-54",
+      "tone": "Story-led",
+      "metric": "Shares",
+      "works": [
+        "Personal stories: non-negotiable"
+      ],
+      "tanks": [
+        "Abstract arguments without story anchor"
+      ]
+    },
+    "youtube": {
+      "audience": "Mixed",
+      "tone": "Reel-cut content",
+      "metric": "Watch time",
+      "works": [
+        "Reel reposts with chapters"
+      ],
+      "tanks": []
+    },
+    "letter": {
+      "audience": "Broad, intimate audience built over years",
+      "tone": "Personal, reflective, recipe-inclusive",
+      "metric": "Open rate (target 18%+)",
+      "send_time": "Sunday 7pm IST",
+      "subject_format": "Letter No NNN: <line>",
+      "personalization_tag": "{{{contact.first_name|friend}}}"
+    }
   },
   "formats": {
     "carousel": {
@@ -318,7 +590,7 @@ templateEngineOverride: false
       "font_system": "A",
       "palette": "Brand mandatory",
       "sticker_placeholders": true,
-      "posting_guide": "POSTING-GUIDE.md alongside frames — tells Adi which sticker on each frame"
+      "posting_guide": "POSTING-GUIDE.md alongside frames, tells Adi which sticker on each frame"
     },
     "quote_card": {
       "platform": "Instagram Feed / LinkedIn",
@@ -340,7 +612,11 @@ templateEngineOverride: false
     "reel_script": {
       "platform": "Instagram Reels / YouTube",
       "vo_words": "~150 words for 60 seconds",
-      "deliverables": ["VO script (.docx, System A)", "Shot list with timing", "Shooting plan"],
+      "deliverables": [
+        "VO script (.docx, System A)",
+        "Shot list with timing",
+        "Shooting plan"
+      ],
       "cover_frame_duration_s": 0.3,
       "loudness_lufs": -17,
       "subtitle_font": "Lato Bold",
@@ -362,11 +638,11 @@ templateEngineOverride: false
     "stillness_series": {
       "series": "Stillness · NN",
       "size_px": "1080x1080",
-      "bg": "Photo-forward — still photograph as background",
+      "bg": "Photo-forward, still photograph as background",
       "title_font": "Lato Black",
       "title_color": "#F8F6F0",
       "cover_word": "ONE WORD (e.g. HOURS. / STAY.)",
-      "style": "Minimal, warm, intimate — quiet counterpoint to ACTUALLY"
+      "style": "Minimal, warm, intimate, quiet counterpoint to ACTUALLY"
     },
     "general_reel": {
       "size_px": "1080x1080",
@@ -430,12 +706,139 @@ templateEngineOverride: false
   "bios": {
     "linkedin_headline": "The real work is you. | Helping founders and future founders see themselves clearly. | Founder, Let's Enterprise | Author | TEDx Speaker",
     "instagram_bio": "The real work is you.\nHelping founders see what they can't see alone.\nAuthor: Restless to Remarkable | IIM-A | TEDx\nFounder @lets_enterprise",
-    "stage_intro_30s": "Aditya Jhunjhunwala has spent 20 years inside education and has worked with founders ranging from 19-year-olds to 100-crore CEOs. His method is deceptively simple: he helps people see themselves clearly — their real ambition, their real friction — and then watches as the strategy, the team, and the culture become obvious. He calls it 'the real work.' He's the founder of Let's Enterprise, India's first Working BBA, and the author of Restless to Remarkable.",
-    "one_paragraph": "Aditya Jhunjhunwala helps founders and future founders do the one thing nobody teaches: see themselves clearly. He believes that most people are stuck because they're performing someone else's version of success. When they stop and look inward, the answers were already there. He calls this 'the real work.' It's the method behind everything he does — from building India's first Working BBA (Let's Enterprise) to advising CEOs on strategy, culture, and leadership."
+    "stage_intro_30s": "Aditya Jhunjhunwala has spent 20 years inside education and has worked with founders ranging from 19-year-olds to 100-crore CEOs. His method is deceptively simple: he helps people see themselves clearly, their real ambition, their real friction, and then watches as the strategy, the team, and the culture become obvious. He calls it 'the real work.' He's the founder of Let's Enterprise, India's first Working BBA, and the author of Restless to Remarkable.",
+    "one_paragraph": "Aditya Jhunjhunwala helps founders and future founders do the one thing nobody teaches: see themselves clearly. He believes that most people are stuck because they're performing someone else's version of success. When they stop and look inward, the answers were already there. He calls this 'the real work.' It's the method behind everything he does, from building India's first Working BBA (Let's Enterprise) to advising CEOs on strategy, culture, and leadership."
   },
   "active_vocabulary": {
-    "seed_words": ["sticker", "compounds", "body of work", "the room", "necessary but not sufficient", "0.1% vs 99%"],
-    "audience_words_to_absorb": ["letterhead", "borrowed leverage", "signalling tax", "MVP/minimum viable proof", "half-life", "tattoo", "signal vs skill"]
+    "seed_words": [
+      "sticker",
+      "compounds",
+      "body of work",
+      "the room",
+      "necessary but not sufficient",
+      "0.1% vs 99%"
+    ],
+    "audience_words_to_absorb": [
+      "letterhead",
+      "borrowed leverage",
+      "signalling tax",
+      "MVP/minimum viable proof",
+      "half-life",
+      "tattoo",
+      "signal vs skill"
+    ]
+  },
+  "naming": {
+    "Aditya Jhunjhunwala": "Default everywhere: bylines, letters, web, speaking, press, advisory and client work",
+    "Playful CEO": "Select channels only, such as Instagram (@playful_ceo): handles, carousel and reel covers, thumbnails",
+    "Adi": "Inside the writing itself: Letters from Adi, first-person copy",
+    "rule": "Playful CEO names the idea behind the system; it is not a label for every asset."
+  },
+  "messaging_framework": {
+    "source": "2023 messaging strategy",
+    "intent": "Mentor the youth in thinking clearly for their career and life decisions, and support growing Indian businesses to maximise their impact.",
+    "audience_line": "Make moves to challenge your fears.",
+    "messages": {
+      "Think clearly": [
+        "Write and think",
+        "Know yourself",
+        "Make decisions beyond your fear"
+      ],
+      "Body of work": [
+        "Bring your ideas to action",
+        "Perfection is an obstacle (#karo)",
+        "Intrinsic motivation beats extrinsic"
+      ],
+      "Play and work": [
+        "Relaxation is a life skill",
+        "There are no lazy people",
+        "Leaders and next gen can work and play together"
+      ]
+    }
+  },
+  "authority_and_play": {
+    "devices": {
+      "signature_bar": "The monogram's rounded underline under ONE key word per headline. Heritage Gold #D4A843 on cream (graphic, not text), Bright Gold #FED95D on navy.",
+      "margin_note": "Caveat handwritten aside that talks back to the headline. Teal #0F9B8E on cream, Teal Light #5EEAD4 on navy, 24px+, tilted 2-4 degrees.",
+      "teal": "The play colour, in small strokes: notes, strike-throughs, highlights."
+    },
+    "limit": "One play moment per layout: one bar, at most one margin note. Play is optional.",
+    "test": "If a layout feels like a bank, add the note. If it feels like a meme, take it out.",
+    "dial": [
+      {
+        "format": "Formal: advisory, client work, speaking, press, bios",
+        "authority": 90,
+        "play": 10,
+        "practice": "Navy, cream, serif and Heritage Gold only. No margin note, no teal, no Playful CEO label. The bar once at most."
+      },
+      {
+        "format": "Letters",
+        "authority": 80,
+        "play": 20,
+        "practice": "Serif and cream; the bar in the title, a handwritten sign-off."
+      },
+      {
+        "format": "Web",
+        "authority": 70,
+        "play": 30,
+        "practice": "The bar on headlines, a margin note per page at most."
+      },
+      {
+        "format": "Carousels, quote cards",
+        "authority": 60,
+        "play": 40,
+        "practice": "Punchy hooks, the bar on the payoff slide, one note per carousel."
+      },
+      {
+        "format": "Stories",
+        "authority": 50,
+        "play": 50,
+        "practice": "Questions, margin notes, stickers."
+      },
+      {
+        "format": "Reels and thumbnails",
+        "authority": 40,
+        "play": 60,
+        "practice": "ACTUALLY. energy, big type, wit first."
+      }
+    ]
+  },
+  "logo": {
+    "mark": "Serif capital A in Bright Gold #FED95D with a short rounded underline bar, on a Navy Dark #1A1A2E tile.",
+    "master_file": "https://www.adityajhunjhunwala.com/favicon.svg",
+    "uses": [
+      "favicon",
+      "avatar",
+      "app icon",
+      "small sign-off mark"
+    ],
+    "rules": [
+      "Always gold on its navy tile; never recolour",
+      "Never on cream without its tile",
+      "16px clear space minimum",
+      "Check the underline bar below 32px"
+    ],
+    "wordmark": "Plain type: Aditya Jhunjhunwala in DM Serif Display, @playful_ceo in Inter as caption. No icon set."
+  },
+  "spacing": {
+    "status": "proposed",
+    "scale_px": {
+      "space-1": 4,
+      "space-2": 8,
+      "space-3": 16,
+      "space-4": 24,
+      "space-5": 40,
+      "space-6": 64
+    },
+    "social_canvas_margin_px": 64
+  },
+  "radius": {
+    "status": "proposed",
+    "none": "0 (full-bleed canvases)",
+    "sm": "8px (inputs)",
+    "md": "12px (buttons)",
+    "lg": "16px (cards, matches monogram tile)",
+    "pill": "999px (tags, signature bar)"
   }
 }
 </script>
@@ -446,14 +849,14 @@ templateEngineOverride: false
     <div class="brandline">Aditya Jhunjhunwala · @playful_ceo</div>
     <h1>Brand System</h1>
     <span class="frozen">Frozen · <b>1 June 2026</b></span>
-    <span class="frozen" style="background:var(--teal)">Updated · <b>13 June 2026</b></span>
+    <span class="frozen" style="background:var(--navy2)">Updated · <b>25 November 2026</b> · v2.1</span>
     <span class="badge-agent">Agent-readable · #adi-brand-data</span>
-    <p class="lead">The canonical brand reference. Everything Adi makes lives inside this file. Colors, voice, rules, formats, templates, hooks, bios — all in one place. Agents: read the JSON in <code style="background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px;font-size:13px">#adi-brand-data</code> for structured data. Humans: read the sections below.</p>
+    <p class="lead">The canonical brand reference. Everything Adi makes lives inside this file. Colors, voice, play, rules, formats, templates, the mark, hooks and bios, all in one place. Agents: read the JSON in <code style="background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px;font-size:13px">#adi-brand-data</code> for structured data. Humans: read the sections below.</p>
   </header>
 
   <!-- ── AGENT USAGE NOTE ── -->
   <div class="agent-note">
-    <b>For agents:</b> Extract <code>&lt;script id="adi-brand-data"&gt;</code> to get all brand values as JSON — palette, voice rules, hard rules, content pillars, platform data, format specs, thumbnail templates, hooks, and bios. No need to parse HTML. The MD index at <code>01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md</code> reads from this file as its source of truth.
+    <b>For agents:</b> Extract <code>&lt;script id="adi-brand-data"&gt;</code> to get all brand values as JSON: palette, voice rules, naming, authority and play, logo, spacing, hard rules, content pillars, platform data, format specs, thumbnail templates, hooks, and bios. No need to parse HTML. The MD index at <code>01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md</code> reads from this file as its source of truth.
   </div>
 
   <!-- ══════════════════════════════════ -->
@@ -475,7 +878,7 @@ templateEngineOverride: false
     </div>
     <div class="pos-card">
       <div class="lbl">The method</div>
-      <p>Works <strong>inside-out</strong>. Help someone see themselves clearly — their real ambition, their real friction — and strategy, team, and culture become obvious.</p>
+      <p>Works <strong>inside-out</strong>. Help someone see themselves clearly (their real ambition, their real friction) and strategy, team, and culture become obvious.</p>
     </div>
     <div class="pos-card">
       <div class="lbl">Primary audience</div>
@@ -485,6 +888,17 @@ templateEngineOverride: false
       <div class="lbl">Connection to LE</div>
       <p>LE's line: "Work is the curriculum." Adi's: "The real work is you." At LE, work is how you learn. With Adi, YOU are the work.</p>
     </div>
+  </div>
+
+  <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;margin:26px 0 4px">Authority plus play</h3>
+  <p class="sech">The brand is a mix of authority and playfulness. Authority is the navy, the gold and the serif: a CEO who has done the work. Play is the handwriting, the teal and the wit: someone who will not take the work, or himself, too seriously. Every layout carries both. See <a href="#authority-play" style="color:var(--navy)">Authority and Play</a>.</p>
+
+  <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;margin:26px 0 4px">Which name when</h3>
+  <p class="sech">"Playful CEO" names the idea behind this system. It is not a label to put on every asset.</p>
+  <div class="names">
+    <div class="name-card"><div class="nm">Aditya Jhunjhunwala</div><div class="when">The default everywhere: bylines, letters, web, speaking, press, advisory and client work.</div></div>
+    <div class="name-card"><div class="nm">Playful CEO</div><div class="when">Select channels only, such as Instagram (@playful_ceo): handles, carousel and reel covers, thumbnails.</div></div>
+    <div class="name-card"><div class="nm">Adi</div><div class="when">Inside the writing itself: "Letters from Adi", first-person copy.</div></div>
   </div>
 
   <h2 class="serif" id="voice">Voice</h2>
@@ -506,6 +920,19 @@ templateEngineOverride: false
     <div class="vcard bad"><div class="vtitle">Not an academic</div><div class="vdesc">Footnotes and hedges. No.</div></div>
   </div>
 
+  <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;margin:26px 0 4px">Say it like this</h3>
+  <p class="sech">The right column is short, concrete, a little cheeky, and points back at the reader. Illustrations of the voice, not approved copy.</p>
+  <div class="ctable-wrap">
+    <table class="ctable say">
+      <tr><th>Idea</th><th>LinkedIn guru (no)</th><th>Aditya (yes)</th></tr>
+      <tr><td>Starting before you are ready</td><td>"Clarity is the cornerstone of every successful journey. Here are 5 frameworks to find yours."</td><td>"You don't start with clarity. You start."</td></tr>
+      <tr><td>Rest</td><td>"High performers understand the strategic value of recovery."</td><td>"Relaxation is a life skill. Nobody taught us. So we scroll."</td></tr>
+      <tr><td>Degrees and jobs</td><td>"In today's dynamic landscape, experiential learning is a key differentiator."</td><td>"Nobody ever hired a marksheet."</td></tr>
+      <tr><td>Perfectionism</td><td>"Embrace an iterative mindset to unlock your potential."</td><td>"Perfect is a very polite way of saying scared."</td></tr>
+      <tr><td>Motivation</td><td>"Thrilled to share that purpose drives performance!"</td><td>"There are no lazy people. Only people doing work that isn't theirs."</td></tr>
+    </table>
+  </div>
+
   <!-- ══════════════════════════════════ -->
   <!-- SECTION 2: HARD RULES             -->
   <!-- ══════════════════════════════════ -->
@@ -513,10 +940,12 @@ templateEngineOverride: false
   <p class="sech">Non-negotiable. Applies to every agent, every draft, every platform.</p>
 
   <ul class="rules-list">
-    <li><span class="rule-tag">Typography</span><b>No em dashes (—) or en dashes (–) ever.</b> In any content for posting. Replace with commas, periods, or restructure. All platforms, all formats — including internal docs.</li>
-    <li><span class="rule-tag">Let's Enterprise</span><b>The 95/5 rule.</b> 95% thought leadership. 5% LE mentions — only obliquely (a student, an anecdote). No admissions CTAs. Never "apply now."</li>
+    <li><span class="rule-tag">Typography</span><b>No em dashes or en dashes ever.</b> In any content for posting. Replace with commas, periods, colons, or restructure. All platforms, all formats, including internal docs and code (grep built files for both characters before every deploy).</li>
+    <li><span class="rule-tag">Let's Enterprise</span><b>The 95/5 rule.</b> 95% thought leadership. 5% LE mentions, only obliquely (a student, an anecdote). No admissions CTAs. Never "apply now."</li>
     <li><span class="rule-tag">Drafting</span><b>Ask 2-3 sharp questions before writing anything.</b> One must request a specific story or incident. No anchor = no draft.</li>
-    <li><span class="rule-tag">Feed discipline</span><b>No promotional posts on personal feed.</b> LE event invites, admissions pushes — never on personal LinkedIn or Instagram.</li>
+    <li><span class="rule-tag">Feed discipline</span><b>No promotional posts on personal feed.</b> LE event invites, admissions pushes: never on personal LinkedIn or Instagram.</li>
+    <li><span class="rule-tag">Case</span><b>Sentence case everywhere.</b> All caps only for short labels and punch words.</li>
+    <li><span class="rule-tag">Play</span><b>One play moment per layout.</b> One signature bar, at most one margin note. See Authority and Play.</li>
     <li><span class="rule-tag">Series</span><b>No series fatigue.</b> Never run 3+ posts on the same external person. Decay confirmed by analytics by post 3.</li>
   </ul>
 
@@ -579,7 +1008,7 @@ templateEngineOverride: false
       <div>
         <div class="pname">Provocative Collabs</div>
         <div class="pslug">provocative-collabs</div>
-        <div class="pdesc">Conversations with founders, thinkers, builders. Podcasts, joint pieces, shared frames. Lower frequency by design — higher coordination cost.</div>
+        <div class="pdesc">Conversations with founders, thinkers, builders. Podcasts, joint pieces, shared frames. Lower frequency by design: higher coordination cost.</div>
       </div>
     </div>
   </div>
@@ -587,13 +1016,25 @@ templateEngineOverride: false
   <!-- ══════════════════════════════════ -->
   <!-- SECTION 4: PLATFORM MAP           -->
   <!-- ══════════════════════════════════ -->
+
+  <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;margin:26px 0 4px">Messaging framework</h3>
+  <p class="sech">Three messages from the 2023 messaging strategy, kept as angles and hooks under the pillars above. Intent: mentor the youth in thinking clearly for their career and life decisions, and support growing Indian businesses to maximise their impact. Audience line: "Make moves to challenge your fears."</p>
+  <div class="ctable-wrap">
+    <table class="ctable">
+      <tr><th>Message</th><th>Sub-messages</th></tr>
+      <tr><td><b>Think clearly</b></td><td>Write and think · Know yourself · Make decisions beyond your fear</td></tr>
+      <tr><td><b>Body of work</b></td><td>Bring your ideas to action · Perfection is an obstacle (#karo) · Intrinsic motivation beats extrinsic</td></tr>
+      <tr><td><b>Play and work</b></td><td>Relaxation is a life skill · There are no lazy people · Leaders and next gen can work and play together</td></tr>
+    </table>
+  </div>
+
   <h2 class="serif" id="platforms">Platform Map</h2>
   <p class="sech">Adapt voice and format by surface. Same positioning, different register.</p>
 
   <div class="platforms">
     <div class="platcard">
       <div class="platname">LinkedIn</div>
-      <div class="plataud">Founders, CXOs — scrolling at 11pm</div>
+      <div class="plataud">Founders, CXOs, scrolling at 11pm</div>
       <div class="platdesc">Provocative, data-backed, debate-triggering. Comment velocity in first 30-60 min is the kill/amplify signal.</div>
       <div class="plat-works"><b>Works:</b> Lived story + provocative claim + specific numbers + bifurcated validation (two tribes both feel right). Debate-triggering closer.</div>
       <div class="plat-tanks"><b>Tanks:</b> Abstract hooks, no personal story, series on one external person, promo posts, zero-comment posts (throttled immediately).</div>
@@ -608,12 +1049,12 @@ templateEngineOverride: false
     <div class="platcard">
       <div class="platname">Facebook</div>
       <div class="plataud">Parents and educators, 35-54</div>
-      <div class="platdesc">Story-led. Stories are non-negotiable here — abstract arguments don't travel.</div>
+      <div class="platdesc">Story-led. Stories are non-negotiable here. Abstract arguments don't travel.</div>
       <div class="plat-works"><b>Works:</b> Personal story anchors. Parent-mode emotional resonance. Specific scenes from LE / mentoring.</div>
       <div class="plat-tanks"><b>Tanks:</b> Pure argumentation without a story. Political content.</div>
     </div>
     <div class="platcard">
-      <div class="platname">Letter — Eat. Play. Love.</div>
+      <div class="platname">Letter: Eat. Play. Love.</div>
       <div class="plataud">Broad, intimate audience built over years</div>
       <div class="platdesc">Personal, reflective, recipe-inclusive. Sunday 7pm IST send slot (18% open rate vs 7.4% at 8am). Subject format: <strong>Letter No NNN: &lt;line&gt;</strong>.</div>
       <div class="plat-works"><b>Works:</b> One central letter narrative. Recipe anchor. Personalization tag: <code style="font-size:11px">{{{contact.first_name|friend}}}</code></div>
@@ -624,6 +1065,47 @@ templateEngineOverride: false
   <!-- ══════════════════════════════════ -->
   <!-- SECTION 5: SOCIAL MEDIA TEMPLATES -->
   <!-- ══════════════════════════════════ -->
+
+  <!-- ══════════════════════════════════ -->
+  <!-- AUTHORITY AND PLAY (v2.1)          -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="authority-play">Authority and Play</h2>
+  <p class="sech">Authority is the default layer. Play is added on top with three devices, and only these.</p>
+
+  <div class="play-grid">
+    <div class="play-card">
+      <div class="demo"><span style="font-family:'DM Serif Display',serif;font-size:30px;line-height:1.1;text-align:center">Plans don't <span class="sbar">compound.</span></span></div>
+      <div class="body"><div class="t">1 · The signature bar</div><div class="d">The monogram's short rounded underline, under ONE key word in a headline. Heritage Gold on cream (a graphic, not text), Bright Gold on navy.</div></div>
+    </div>
+    <div class="play-card">
+      <div class="demo" style="flex-direction:column;gap:2px"><span style="font-family:'DM Serif Display',serif;font-size:26px">Find your passion.</span><span class="mnote">actually, no.</span></div>
+      <div class="body"><div class="t">2 · The margin note</div><div class="d">A handwritten Caveat aside that talks back to the serious headline: a correction, a crossed-out word, an "actually, no." Teal on cream, Teal Light on navy, tilted 2 to 4 degrees, never below 24px.</div></div>
+    </div>
+    <div class="play-card">
+      <div class="demo"><span style="font-family:'DM Serif Display',serif;font-size:26px">The <span style="text-decoration:line-through;text-decoration-color:var(--teal);text-decoration-thickness:3px">perfect</span> first draft.</span></div>
+      <div class="body"><div class="t">3 · Teal</div><div class="d">The play colour. It marks the playful layer in small strokes: margin notes, strike-throughs, small highlights. Never a large fill, always quieter than gold.</div></div>
+    </div>
+  </div>
+
+  <ul class="rules-list" style="margin-top:14px">
+    <li><span class="rule-tag">The limit</span><b>One play moment per layout:</b> one bar, and at most one margin note. Play is always optional: where the setting needs 90% authority, drop the note and the teal and let the type carry it.</li>
+    <li><span class="rule-tag">The test</span><b>If a layout feels like a bank, add the note. If it feels like a meme, take it out.</b></li>
+  </ul>
+
+  <h3 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;margin:26px 0 4px">The dial</h3>
+  <p class="sech">How far to push, by format. Starting points: tune them.</p>
+  <div class="ctable-wrap">
+    <table class="ctable dial">
+      <tr><th>Format</th><th>Authority</th><th>Play</th><th></th><th>In practice</th></tr>
+      <tr><td>Formal: advisory and client work, speaking, press, bios</td><td>90</td><td>10</td><td><div class="meter"><span style="flex:90"></span><span style="flex:10"></span></div></td><td>Navy, cream, serif and Heritage Gold only. No margin note, no teal, no "Playful CEO" label. The signature bar once, at most.</td></tr>
+      <tr><td>Letters</td><td>80</td><td>20</td><td><div class="meter"><span style="flex:80"></span><span style="flex:20"></span></div></td><td>Serif and cream; the bar in the title, a handwritten sign-off.</td></tr>
+      <tr><td>Web</td><td>70</td><td>30</td><td><div class="meter"><span style="flex:70"></span><span style="flex:30"></span></div></td><td>The bar on headlines, a margin note per page at most.</td></tr>
+      <tr><td>Carousels, quote cards</td><td>60</td><td>40</td><td><div class="meter"><span style="flex:60"></span><span style="flex:40"></span></div></td><td>Punchy hooks, the bar on the payoff slide, one note per carousel.</td></tr>
+      <tr><td>Stories</td><td>50</td><td>50</td><td><div class="meter"><span style="flex:50"></span><span style="flex:50"></span></div></td><td>Questions, margin notes, stickers.</td></tr>
+      <tr><td>Reels and thumbnails</td><td>40</td><td>60</td><td><div class="meter"><span style="flex:40"></span><span style="flex:60"></span></div></td><td>"ACTUALLY." energy, big type, wit first.</td></tr>
+    </table>
+  </div>
+
   <h2 class="serif" id="social-templates">Social Media Templates</h2>
   <p class="sech">Specs for every format in production. Font system, dimensions, structure.</p>
 
@@ -644,7 +1126,7 @@ templateEngineOverride: false
           <li>5-8 slides. 20-30 words per slide.</li>
           <li>Slide 1: scroll-stopper hook. Final: punchline or reframe.</li>
           <li>Navy background · Gold accent · Cream text.</li>
-          <li>End with <strong>save CTA</strong> — not follow.</li>
+          <li>End with <strong>save CTA</strong>, not follow.</li>
           <li>Lato Black for punches, Lato Regular for body.</li>
         </ul>
         <span class="fmttag">instagram</span><span class="fmttag">feed</span><span class="fmttag">system-b</span>
@@ -655,7 +1137,7 @@ templateEngineOverride: false
       <div class="fmtpreview" style="background:var(--navy)">
         <div style="text-align:center;padding:8px">
           <div style="font-family:'Lato',sans-serif;font-weight:900;font-size:22px;color:var(--goldb);line-height:1.1;letter-spacing:-.01em">QUOTE LINE</div>
-          <div style="font-family:'Lora',serif;font-style:italic;font-size:11px;color:var(--cream);margin-top:8px">— Aditya Jhunjhunwala</div>
+          <div style="font-family:'Lora',serif;font-style:italic;font-size:11px;color:var(--cream);margin-top:8px">Aditya Jhunjhunwala</div>
         </div>
         <div style="position:absolute;bottom:8px;right:10px;font-size:9px;color:var(--goldl);font-weight:600;letter-spacing:.05em">1080 × 1080</div>
       </div>
@@ -748,7 +1230,7 @@ templateEngineOverride: false
       <div class="thumbbody">
         <div class="thumbname">Stillness · NN Series</div>
         <div class="thumbspec">
-          Photo-forward — still photograph as background (personal, raw).<br>
+          Photo-forward: still photograph as background (personal, raw).<br>
           One-word title card over photo. Lato Black. Cream or white.<br>
           Quiet. Minimal. Intimate. No bright gold here.
         </div>
@@ -821,25 +1303,25 @@ templateEngineOverride: false
       <div class="chip" style="background:#FED95D;color:#1A1A2E">Brightened gold.</div>
       <div class="meta">
         <div class="nm">Bright Gold <span style="font-weight:500;color:var(--teal);font-size:11px">(digital accent)</span></div>
-        <div class="role">Screens and social only. Reel subtitles. 12.4:1 on navy — cleaner pop on phones.</div>
+        <div class="role">Screens and social only. Reel subtitles. 12.4:1 on navy, cleaner pop on phones.</div>
         <div class="codes"><span class="code">#FED95D</span><span class="code">12.4:1 AAA on navy</span></div>
         <div class="ton">Text on this: <b>Navy Dark</b>. Small areas only.</div></div>
     </div>
   </div>
 
-  <h2 class="serif" id="color-teal">Secondary Accent</h2>
-  <p class="sech">Teal is the cool counterweight to gold. Supporting role only, never louder than gold.</p>
+  <h2 class="serif" id="color-teal">Play Accent</h2>
+  <p class="sech">Teal is the play colour: the cool counterweight to gold. It marks the playful layer in small strokes, never louder than gold.</p>
   <div class="row">
     <div class="sw">
-      <div class="chip" style="background:#0F9B8E;color:#1A1A2E">The counterweight.</div>
-      <div class="meta"><div class="nm">Teal</div><div class="role">Secondary highlights, tags, category accent.</div>
-        <div class="codes"><span class="code">#0F9B8E</span><span class="code">4.95:1 AA on navy</span></div>
-        <div class="ton">Text on this: <b>Navy Dark</b></div></div>
+      <div class="chip" style="background:#0F9B8E;color:#1A1A2E">The play colour.</div>
+      <div class="meta"><div class="nm">Teal</div><div class="role">Margin notes, strike-throughs, small highlights. Not a large fill and not a tag fill.</div>
+        <div class="codes"><span class="code">#0F9B8E</span><span class="code">4.95:1 AA with navy</span><span class="code">3.2:1 on cream</span></div>
+        <div class="ton">Text on this: <b>Navy Dark</b>. As text on cream: handwritten notes at 24px and up only.</div></div>
     </div>
     <div class="sw">
       <div class="chip" style="background:#5EEAD4;color:#16213E">Fresh teal.</div>
-      <div class="meta"><div class="nm">Teal Light</div><div class="role">Tints, soft fills, freshness on dark sections.</div>
-        <div class="codes"><span class="code">#5EEAD4</span><span class="code">RGB 94·234·212</span></div>
+      <div class="meta"><div class="nm">Teal Light</div><div class="role">The play colour on navy (margin notes, highlights). Soft tag fills with navy text.</div>
+        <div class="codes"><span class="code">#5EEAD4</span><span class="code">11.5:1 with navy</span></div>
         <div class="ton">Text on this: <b>Navy Dark</b></div></div>
     </div>
     <div class="sw" style="background:transparent;border:1px dashed var(--line);box-shadow:none;">
@@ -850,7 +1332,7 @@ templateEngineOverride: false
           <span style="background:#F8F6F0;color:#1A1A2E;flex:60">Cream 60</span>
           <span style="background:#1A1A2E;color:#fff;flex:25">Navy 25</span>
           <span style="background:#D4A843;color:#1A1A2E;flex:10">Gold 10</span>
-          <span style="background:#0F9B8E;color:#fff;flex:5">Tl 5</span>
+          <span style="background:#0F9B8E;color:#1A1A2E;flex:5">T 5</span>
         </div>
       </div>
     </div>
@@ -862,8 +1344,8 @@ templateEngineOverride: false
     <div class="pair"><div class="demo" style="background:#1A1A2E;color:#D4A843">Gold on Navy</div><div class="cap">Signature combo. Headlines, hero.</div></div>
     <div class="pair"><div class="demo" style="background:#F8F6F0;color:#1A1A2E">Navy on Cream</div><div class="cap">Default reading surface.</div></div>
     <div class="pair"><div class="demo" style="background:#D4A843;color:#1A1A2E">Navy on Gold</div><div class="cap">Buttons, badges, CTAs.</div></div>
-    <div class="pair"><div class="demo" style="background:#0F9B8E;color:#F8F6F0">Cream on Teal</div><div class="cap">Secondary tags, accents.</div></div>
-    <div class="pair"><div class="demo" style="background:#16213E;color:#5EEAD4">Teal-light on Navy</div><div class="cap">Fresh accent on dark.</div></div>
+    <div class="pair"><div class="demo" style="background:#5EEAD4;color:#1A1A2E">Navy on Teal Light</div><div class="cap">Tags, soft fills.</div></div>
+    <div class="pair"><div class="demo" style="background:#16213E;color:#5EEAD4;font-family:'Caveat',cursive;font-size:24px">Teal Light on Navy</div><div class="cap">Margin notes and play on dark.</div></div>
     <div class="pair"><div class="demo" style="background:#1A1A2E;color:#FED95D">Bright Gold on Navy</div><div class="cap">Social, reels, screens.</div></div>
   </div>
 
@@ -875,10 +1357,12 @@ templateEngineOverride: false
       <tr><td>Navy on Cream</td><td>15.8:1</td><td class="pass">AAA</td><td>Body text, default</td></tr>
       <tr><td>Gold / Navy on Gold</td><td>7.7:1</td><td class="pass">AAA</td><td>Headlines, CTAs, badges</td></tr>
       <tr><td>Bright Gold on Navy</td><td>12.4:1</td><td class="pass">AAA</td><td>Reel subtitles, social highlights</td></tr>
-      <tr><td>Navy on Teal</td><td>4.95:1</td><td class="pass">AA</td><td>Text on teal fills</td></tr>
-      <tr><td>Navy on Gold-light / Teal-light</td><td>12.0:1</td><td class="pass">AAA</td><td>Soft tinted panels</td></tr>
-      <tr><td>Gold text on Cream</td><td>2.05:1</td><td class="fail">FAIL</td><td>Never — gold as fill, not text</td></tr>
-      <tr><td>White text on Gold</td><td>2.21:1</td><td class="fail">FAIL</td><td>Never — always navy on gold</td></tr>
+      <tr><td>Navy on Teal</td><td>4.95:1</td><td class="pass">AA</td><td>Body text only; teal is not a tag fill</td></tr>
+      <tr><td>Navy on Gold-light / Teal-light</td><td>12.0:1 / 11.5:1</td><td class="pass">AAA</td><td>Soft tinted panels, tags</td></tr>
+      <tr><td>Teal Light on Navy</td><td>11.5:1</td><td class="pass">AAA</td><td>Margin notes and highlights on dark</td></tr>
+      <tr><td>Teal text on Cream</td><td>3.2:1</td><td class="fail">LARGE ONLY</td><td>Handwritten margin notes at 24px and up</td></tr>
+      <tr><td>Gold text on Cream</td><td>2.05:1</td><td class="fail">FAIL</td><td>Never: gold as fill, not text</td></tr>
+      <tr><td>White text on Gold</td><td>2.21:1</td><td class="fail">FAIL</td><td>Never: always navy on gold</td></tr>
     </table>
   </div>
 
@@ -889,19 +1373,20 @@ templateEngineOverride: false
       <ul>
         <li>Start from cream, set type in navy, accent with gold.</li>
         <li>Use Heritage Gold for print and letters, Bright Gold for social and screens.</li>
-        <li>Let gold be the loudest color — use sparingly so it stays special.</li>
-        <li>Put navy text on gold fills, cream text on navy and teal.</li>
-        <li>Keep teal in a supporting role, cooler and quieter than gold.</li>
+        <li>Let gold be the loudest color. Use it sparingly so it stays special.</li>
+        <li>Put navy text on gold and teal-light fills, cream text on navy.</li>
+        <li>Keep teal for the play layer: small strokes, cooler and quieter than gold.</li>
       </ul>
     </div>
     <div class="ucard dont">
       <h3>Don't</h3>
       <ul>
         <li>Introduce coral, red, orange, or any hue not on this page. (Confirmed ruled OUT.)</li>
-        <li>Set gold text on cream — 2.05:1, it fails accessibility.</li>
-        <li>Use white text on gold — 2.21:1, it also fails.</li>
+        <li>Set gold text on cream: 2.05:1, it fails accessibility.</li>
+        <li>Use white text on gold: 2.21:1, it also fails.</li>
         <li>Let teal compete with gold or carry the headline.</li>
-        <li>Use Bright Gold on large fields — small accent areas only.</li>
+        <li>Use Bright Gold on large fields. Small accent areas only.</li>
+        <li>Set teal text on cream below 24px (3.2:1), or use teal as a large fill or tag fill.</li>
       </ul>
     </div>
   </div>
@@ -917,7 +1402,7 @@ templateEngineOverride: false
       <div style="font-family:'DM Serif Display',serif;font-size:32px;line-height:1.1;color:#1A1A2E;margin:8px 0 2px">The real work is you.</div>
       <div style="font-family:'Inter';font-size:14px;color:#1A1A2E;line-height:1.6;margin-bottom:6px">Body and interface set in Inter. Clean, quiet, highly legible.</div>
       <div style="font-family:'Caveat',cursive;font-size:24px;color:#0F9B8E">start with yourself</div>
-      <div class="small" style="margin-top:8px"><b style="color:#1A1A2E">DM Serif Display</b> headlines · <b style="color:#1A1A2E">Inter</b> body · <b style="color:#1A1A2E">Caveat</b> rare accent</div>
+      <div class="small" style="margin-top:8px"><b style="color:#1A1A2E">DM Serif Display</b> headlines · <b style="color:#1A1A2E">Inter</b> body · <b style="color:#1A1A2E">Caveat</b> margin note</div>
     </div>
     <div class="fcard">
       <div class="lbl">System B · Carousels + quote cards (1080×1080)</div>
@@ -937,16 +1422,18 @@ templateEngineOverride: false
     <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'DM Serif Display',serif;font-size:21px;color:#1A1A2E;flex:1">Heading 2</span><span class="code">DM Serif · 24-28px</span></div>
     <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'Inter';font-weight:600;font-size:18px;color:#1A1A2E;flex:1">Heading 3 / label</span><span class="code">Inter 600 · 18-20px</span></div>
     <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'Inter';font-weight:400;font-size:16px;color:#1A1A2E;flex:1">Body copy. Line-height 1.6-1.7.</span><span class="code">Inter 400 · 16px</span></div>
-    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px"><span style="font-family:'Inter';font-weight:500;font-size:13px;color:#6f6a5c;flex:1">Caption / meta</span><span class="code">Inter 500 · 12-13px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'Inter';font-weight:500;font-size:13px;color:#6f6a5c;flex:1">Caption / meta</span><span class="code">Inter 500 · 12-13px</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line)"><span style="font-family:'Inter';font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#1A1A2E;flex:1">Label</span><span class="code">Inter 600 · 12px caps · 0.08em</span></div>
+    <div style="display:flex;align-items:baseline;gap:14px;padding:11px 16px"><span style="font-family:'Caveat',cursive;font-weight:700;font-size:28px;color:#0F9B8E;flex:1">actually, no.</span><span class="code">Caveat · 24px and up · play colour</span></div>
   </div>
 
   <div class="usage" style="margin-top:18px">
     <div class="ucard"><h3>Type do</h3>
       <ul>
         <li>Two families per layout maximum. Serif for feeling, sans for clarity.</li>
-        <li>Sentence case for almost everything — in line with the voice.</li>
+        <li>Sentence case everywhere, in line with the voice.</li>
         <li>Body at 16px web with 1.6-1.7 line-height. Never below 14px.</li>
-        <li>Reserve Caveat and Lora italic for rare, deliberate accents.</li>
+        <li>Caveat is the margin note: one per layout, 24px and up. Lora italic for rare accents.</li>
       </ul>
     </div>
     <div class="ucard dont"><h3>Type don't</h3>
@@ -958,6 +1445,62 @@ templateEngineOverride: false
       </ul>
     </div>
   </div>
+
+
+  <!-- ══════════════════════════════════ -->
+  <!-- LOGO AND MARK (v2.1)               -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="logo">Logo and Mark</h2>
+  <p class="sech">The "A" monogram: a serif capital A in Bright Gold with a short rounded underline bar, on a Navy Dark field. The bar is the same signature bar the headlines use.</p>
+  <div class="marks">
+    <figure><img src="/favicon.svg" width="128" height="128" alt="A monogram, gold on navy">128px</figure>
+    <figure><img src="/favicon.svg" width="64" height="64" alt="">64px</figure>
+    <figure><img src="/favicon.svg" width="32" height="32" alt="">32px</figure>
+    <figure style="margin-left:auto;text-align:left">
+      <div style="font-family:'DM Serif Display',serif;font-size:28px;color:var(--navy)">Aditya Jhunjhunwala</div>
+      <div style="font-family:'Inter';font-size:13px;color:var(--muted);margin-top:2px">@playful_ceo</div>
+      <div style="margin-top:6px">The wordmark is plain type.</div>
+    </figure>
+  </div>
+  <div class="usage">
+    <div class="ucard"><h3>Mark do</h3>
+      <ul>
+        <li>Use it as the favicon, avatar, app icon and small sign-off mark.</li>
+        <li>Always gold on its navy tile. Master vector: <a href="/favicon.svg" style="color:var(--navy)">/favicon.svg</a>.</li>
+        <li>Keep at least 16px of clear space around the tile.</li>
+        <li>Beside the mark, set the name in DM Serif Display, the handle in Inter.</li>
+      </ul>
+    </div>
+    <div class="ucard dont"><h3>Mark don't</h3>
+      <ul>
+        <li>Recolour it, or set it on cream without its navy tile.</li>
+        <li>Use it below 32px without checking the underline bar survives.</li>
+        <li>Add an icon set. Prefer words.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- SPACING AND SHAPE (v2.1)           -->
+  <!-- ══════════════════════════════════ -->
+  <h2 class="serif" id="spacing">Spacing and Shape <span class="assumed">Proposed</span></h2>
+  <p class="sech">The guide set no scale before v2.1. These are working values, to be confirmed. Radii follow the rounded monogram tile.</p>
+  <div class="scale">
+    <div class="step"><div class="blk" style="width:4px;height:4px"></div>space-1 · 4</div>
+    <div class="step"><div class="blk" style="width:8px;height:8px"></div>space-2 · 8</div>
+    <div class="step"><div class="blk" style="width:16px;height:16px"></div>space-3 · 16</div>
+    <div class="step"><div class="blk" style="width:24px;height:24px"></div>space-4 · 24</div>
+    <div class="step"><div class="blk" style="width:40px;height:40px"></div>space-5 · 40</div>
+    <div class="step"><div class="blk" style="width:64px;height:64px"></div>space-6 · 64</div>
+  </div>
+  <div class="scale">
+    <div class="step"><div class="rad" style="border-radius:0"></div>none · full-bleed canvases</div>
+    <div class="step"><div class="rad" style="border-radius:8px"></div>sm 8 · inputs</div>
+    <div class="step"><div class="rad" style="border-radius:12px"></div>md 12 · buttons</div>
+    <div class="step"><div class="rad" style="border-radius:16px"></div>lg 16 · cards</div>
+    <div class="step"><div class="rad" style="border-radius:999px"></div>pill · tags, the bar</div>
+  </div>
+  <p class="sech" style="margin-top:10px">Social canvases keep a 64px margin.</p>
 
   <!-- ══════════════════════════════════ -->
   <!-- SECTION 9: HOOKS                  -->
@@ -1012,10 +1555,11 @@ Founder @lets_enterprise</div>
 
   <footer>
     <b>Canonical source of truth for all brand work.</b> If it is not in this file, it is not a brand decision.<br>
-    <b>Agent data block:</b> <code>&lt;script id="adi-brand-data"&gt;</code> — parse for structured JSON of all brand values.<br>
+    <b>Agent data block:</b> <code>&lt;script id="adi-brand-data"&gt;</code>: parse for structured JSON of all brand values.<br>
     <b>MD index:</b> <a href="../01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md">01-Inbox/brand-audit-temp/ADI-BRAND-GUIDE.md</a> references this file as canonical.<br>
     <b>Voice and rules source:</b> 11-Schema/voice-and-rules.md (this file supersedes it for visual + agent use).<br>
-    <b>Frozen:</b> 1 June 2026 · <b>Updated:</b> 13 June 2026 · <b>Version:</b> 2.0<br>
+    <b>Frozen:</b> 1 June 2026 · <b>Updated:</b> 25 November 2026 · <b>Version:</b> 2.1<br>
+    <b>v2.1:</b> adds which name when, authority and play (the signature bar, the margin note, the dial), say it like this, the messaging framework, the mark, and a proposed spacing scale. Teal is recast as the play colour; cream on teal (3.2:1) is retired.<br>
     <b>One sentence to remember:</b> the real work isn't out there, it's in here. Start with yourself.
   </footer>
 
