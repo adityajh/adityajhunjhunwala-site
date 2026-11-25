@@ -9,6 +9,10 @@ permalink: /books/
 
 # Books
 
+<div class="book-row">
+<img class="book-row__cover" src="/images/books/restless-to-remarkable.jpg" alt="Cover of Restless to Remarkable by Aditya Jhunjhunwala" width="289" height="436">
+<div>
+
 ## Restless to Remarkable
 ### A companion for parents and teenagers
 
@@ -18,7 +22,14 @@ This book is about building yourself through real work, not credentials. It is f
 
 [Buy on Amazon India](https://www.amazon.in/Restless-Remarkable-companion-parents-teenagers/dp/B0GN3F53Q9/) or at leading bookstores.
 
+</div>
+</div>
+
 ---
+
+<div class="book-row">
+<img class="book-row__cover" src="/images/books/winning-habits.jpg" alt="Cover of Winning Habits by Narendra Goidani and Aditya Jhunjhunwala" width="288" height="395">
+<div>
 
 ## Winning Habits
 ### Co-author, Narendra Goidani with Aditya Jhunjhunwala
@@ -26,5 +37,8 @@ This book is about building yourself through real work, not credentials. It is f
 A practical guide to the habits that build lasting success. Co-authored with Narendra Goidani.
 
 [Buy on Amazon India](https://www.amazon.in/Winning-Habits-Narendra-Goidani-ebook/dp/B086QLYJPK/)
+
+</div>
+</div>
 
 </div>
