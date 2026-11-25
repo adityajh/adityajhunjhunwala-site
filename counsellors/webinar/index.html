@@ -418,8 +418,6 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
 .book span{display:block;font-size:16px;line-height:1.55}
 .book b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.15;margin-bottom:4px}
 .book em{display:block;font-style:normal;font-weight:600;margin-bottom:10px}
-.book u{display:block;width:max-content;margin-top:12px;font-weight:600;text-underline-offset:3px}
-.book:hover u{text-decoration-thickness:2px}
 @media (max-width:960px){.books-grid{grid-template-columns:1fr;gap:32px}}
 @media (max-width:640px){.book img{width:110px}.book b{font-size:22px}}
 </style>
@@ -548,14 +546,14 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
     <div class="books">
       <p class="label">Books</p>
       <div class="books-grid">
-        <a class="book" href="https://www.amazon.in/Restless-Remarkable-companion-parents-teenagers/dp/B0GN3F53Q9/" target="_blank" rel="noopener">
+        <div class="book">
           <img src="restless-to-remarkable.jpg" alt="Cover of Restless to Remarkable by Aditya Jhunjhunwala" width="289" height="436" loading="lazy">
-          <span><b>Restless to Remarkable</b><em>A companion for parents of teenagers</em>For the young person who knows they are capable of more but hasn't found the door yet, and the parent trying to help without getting in the way.<u>See it on Amazon</u></span>
-        </a>
-        <a class="book" href="https://www.amazon.in/Winning-Habits-Narendra-Goidani-ebook/dp/B086QLYJPK/" target="_blank" rel="noopener">
+          <span><b>Restless to Remarkable</b><em>A companion for parents of teenagers</em>For the young person who knows they are capable of more but hasn't found the door yet, and the parent trying to help without getting in the way.</span>
+        </div>
+        <div class="book">
           <img src="winning-habits.jpg" alt="Cover of Winning Habits by Narendra Goidani and Aditya Jhunjhunwala" width="288" height="395" loading="lazy">
-          <span><b>Winning Habits</b><em>What makes winners... winners. With Narendra Goidani</em>A practical guide to the habits that build lasting success.<u>See it on Amazon</u></span>
-        </a>
+          <span><b>Winning Habits</b><em>What makes winners... winners. With Narendra Goidani</em>A practical guide to the habits that build lasting success.</span>
+        </div>
       </div>
     </div>
   </div>
