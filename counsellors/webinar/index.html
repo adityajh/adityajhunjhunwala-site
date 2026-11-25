@@ -180,21 +180,21 @@ details.more[open] summary{margin-bottom:12px}
 .days30{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
 .days30 i{aspect-ratio:1;border:1.5px solid var(--navy);border-radius:2px;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11px;font-weight:600;color:var(--ink2)}
 .days30 i.p{background:var(--goldb);color:var(--navy)}
-/* the opportunity slot */
+/* the opportunity slot: subtle LE branding (LE deep blue + teal) */
 .slot.opp{border-top:1.5px solid var(--navy)}
-.opp-card{border-radius:6px;padding:36px}
-.opp-card .label{margin-bottom:10px}
-.opp-card h3{color:var(--cream);font-size:clamp(24px,2.4vw,30px);margin-bottom:14px}
-.opp-card .tool>div>p{color:var(--cream)}
-.opp-card .viz,.opp-card .viz p,.opp-card .viz figcaption{color:var(--navy)}
-.opp-card .knowing{font-size:16px;border:1.5px solid var(--goldb);border-radius:4px;padding:12px 14px;margin:0}
-.opp-card .knowing b{color:var(--goldb)}
-.bar .w{background:var(--goldb)} .bar .a{background:var(--cream);border-left:1.5px solid var(--navy);border-right:1.5px solid var(--navy)} .bar .k{background:var(--teal)}
-.yrs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
-.yrs div{border-top:1.5px solid var(--navy);padding-top:10px;font-size:15px;line-height:1.4}
-.yrs b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.1;margin-bottom:4px}
-.opp-card figure{margin:0}
-@media (max-width:640px){.opp-card{padding:24px 20px}.opp-card .keys{grid-template-columns:repeat(3,auto)}.yrs{grid-template-columns:1fr;gap:0}.yrs div{padding:10px 0}}
+.opp-card{--le:#160E44;--let:#25BCBD;background:var(--le);color:var(--cream);border-radius:6px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:5px solid var(--let)}
+.opp-card .txt{padding:32px 32px 28px;display:flex;flex-direction:column;gap:14px}
+.opp-card .lelogo{height:28px;width:auto;align-self:flex-start;opacity:.95}
+.opp-card .label{color:var(--let);margin:8px 0 0}
+.opp-card h3{color:var(--cream);font-size:clamp(24px,2.4vw,30px);line-height:1.15;margin:0}
+.opp-card p{margin:0;font-size:16px}
+.opp-card .facts{list-style:none;margin:auto 0 0;padding:16px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border-top:1px solid rgba(248,246,240,.2)}
+.opp-card .facts b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.05;color:var(--let)}
+.opp-card .facts span{font-size:14px;line-height:1.35;display:block;margin-top:4px}
+.opp-card figure{margin:0;min-height:100%}
+.opp-card figure img{display:block;width:100%;height:100%;object-fit:cover;min-height:280px}
+@media (max-width:960px){.opp-card{grid-template-columns:1fr}.opp-card figure{order:-1}.opp-card figure img{aspect-ratio:16/10;min-height:0}}
+@media (max-width:640px){.opp-card .txt{padding:24px 20px}.opp-card .facts b{font-size:24px}}
 /* audience */
 .who{padding:88px 0;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .who-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
@@ -678,31 +678,19 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
 
     <div class="slot opp">
       <div class="t">10:55<span>For some of your students</span></div>
-      <div class="opp-card on-navy">
-        <div class="tool">
-          <div>
-            <p class="label">The opportunity</p>
-            <h3>For your students drawn to business and entrepreneurship</h3>
-            <p>The three tools are for every student you advise. This part is for some of them: the ones who already sell something, run the stall at the school fest, or keep asking how a business actually works.</p>
-            <p>For them, there is now a degree built around doing exactly that. Let's Enterprise is India's first Working BBA, which I co-founded in Pune: three years of learning through real work inside real companies.</p>
-            <p class="knowing"><b>You leave knowing:</b> which of your students it fits, what the three years look like, and how a student applies.</p>
-          </div>
-          <figure class="viz" aria-label="The Working BBA: 60 percent real work, 30 percent academics, 10 percent coaching, across three years of projects and paid apprenticeships">
-            <p class="vt">Three years, mostly real work</p>
-            <div class="bar" role="img" aria-hidden="true"><i class="w" style="width:60%"></i><i class="a" style="width:30%"></i><i class="k" style="width:10%"></i></div>
-            <div class="keys">
-              <div><s style="background:var(--goldb)"></s><span><b>60%</b>real work</span></div>
-              <div><s style="background:var(--cream)"></s><span><b>30%</b>academics</span></div>
-              <div><s style="background:var(--teal)"></s><span><b>10%</b>coaching</span></div>
-            </div>
-            <div class="yrs">
-              <div><b>Year 1</b>12 projects for real clients: sales, marketing, finance, design.</div>
-              <div><b>Year 2</b>Three paid apprenticeships with founders, two months each.</div>
-              <div><b>Year 3</b>A nine-month paid apprenticeship, or a project of their own.</div>
-            </div>
-            <figcaption>By graduation: about a year and a half of work experience, four CEO letters of recommendation, 50+ industry connections and a recognised BBA degree. The first cohort graduated in August 2026.</figcaption>
-          </figure>
+      <div class="opp-card">
+        <div class="txt">
+          <img class="lelogo" src="le-logo-white.png" alt="Let's Enterprise" width="122" height="28">
+          <p class="label">The opportunity</p>
+          <h3>For your students drawn to business and entrepreneurship</h3>
+          <p>India's first Working BBA, which I co-founded in Pune: three years of learning through real work inside real companies.</p>
+          <ul class="facts">
+            <li><b>60%</b><span>of the degree is real work</span></li>
+            <li><b>3</b><span>paid apprenticeships with founders</span></li>
+            <li><b>2026</b><span>first cohort graduated</span></li>
+          </ul>
         </div>
+        <figure><img src="le-studio.jpg" alt="Let's Enterprise students in a circle session in the studio, Pune" width="1024" height="768" loading="lazy"></figure>
       </div>
     </div>
 
