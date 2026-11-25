@@ -29,7 +29,6 @@ I speak on entrepreneurial mindset, education reform, self-awareness, and buildi
 ## TEDx Talks
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin:2rem 0;">
-
   <a href="https://www.youtube.com/watch?v=DaTYeoeQNYU" target="_blank" rel="noopener"
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -42,7 +41,6 @@ I speak on entrepreneurial mindset, education reform, self-awareness, and buildi
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
-
   <a href="https://www.youtube.com/watch?v=8iqUPtWs-8Q" target="_blank" rel="noopener"
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -55,7 +53,6 @@ I speak on entrepreneurial mindset, education reform, self-awareness, and buildi
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
-
 </div>
 
 ---
@@ -99,7 +96,6 @@ Topics include entrepreneurial mindset, building a body of work, education refor
 ## Talks and ideas
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin:2rem 0;">
-
   <a href="https://www.youtube.com/watch?v=I8UjG1s8LZY" target="_blank" rel="noopener"
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -110,7 +106,6 @@ Topics include entrepreneurial mindset, building a body of work, education refor
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
-
   <a href="https://www.youtube.com/watch?v=j6ji_5hyC90" target="_blank" rel="noopener"
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -121,7 +116,6 @@ Topics include entrepreneurial mindset, building a body of work, education refor
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
-
   <a href="https://www.youtube.com/watch?v=1IAwJaASw9g" target="_blank" rel="noopener"
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -132,7 +126,6 @@ Topics include entrepreneurial mindset, building a body of work, education refor
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
-
   <a href="https://www.youtube.com/watch?v=zSZb01wpMzQ" target="_blank" rel="noopener"
      style="display:block; text-decoration:none; border-radius:4px; overflow:hidden; background:var(--cream-dark); border:1px solid var(--border); transition:border-color 0.15s;"
      onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -143,7 +136,6 @@ Topics include entrepreneurial mindset, building a body of work, education refor
       <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">Watch on YouTube &rarr;</div>
     </div>
   </a>
-
 </div>
 
 
