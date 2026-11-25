@@ -1,5 +1,42 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "_site",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    {
+      "source": "/join/2026-12-12",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    },
+    {
+      "source": "/join/2026-12-26",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    },
+    {
+      "source": "/join/2027-01-09",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    },
+    {
+      "source": "/join/2027-01-23",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    },
+    {
+      "source": "/join/2027-02-13",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    },
+    {
+      "source": "/join/2027-02-27",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    },
+    {
+      "source": "/join/:id",
+      "destination": "https://www.adityajhunjhunwala.com/counsellors/webinar/#join-soon",
+      "permanent": false
+    }
+  ]
 }
