@@ -204,7 +204,7 @@ details.more[open] summary{margin-bottom:12px}
 .host{padding:100px 0}
 .host-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
 .host figure{margin:0;position:relative}
-.host figure img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;object-position:28% 50%;width:100%}
+.host figure img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;width:100%;background:#1A1A2E}
 .host figure figcaption{font-size:14px;color:var(--ink2);margin-top:10px}
 .host h2{margin-bottom:20px}
 .host blockquote{margin:0 0 28px;font-family:var(--serif);font-size:clamp(24px,2.4vw,30px);line-height:1.25;padding-left:18px;border-left:4px solid var(--gold)}
@@ -213,6 +213,11 @@ details.more[open] summary{margin-bottom:12px}
 .creds li{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.45}
 .creds li b{display:block}
 .worked{margin-top:26px}
+.host .grad{margin:80px 0 0}
+.host .grad img{width:100%;border-radius:6px;aspect-ratio:2/1;object-fit:cover;object-position:50% 45%}
+@media (max-width:640px){.host .grad img{aspect-ratio:4/3}}
+.grad figcaption{font-size:16px;margin-top:12px;max-width:52em}
+.grad figcaption b{font-weight:600}
 .worked p{font-size:16px;margin:0 0 8px}
 .worked ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 28px}
 .worked li{font-family:var(--serif);font-size:24px;line-height:1.2}
@@ -524,8 +529,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <section class="host">
   <div class="wrap host-grid">
     <figure>
-      <img src="stage-venn.jpg" alt="Aditya on stage at AICCC 2026, beside a slide showing mentors, projects and community overlapping" loading="lazy">
-      <figcaption>On stage at AICCC 2026. Mentors, projects, community: the three things that build direction.</figcaption>
+      <img src="speaking-stage.jpg" alt="Aditya Jhunjhunwala speaking on stage" loading="lazy">
     </figure>
     <div>
       <p class="label">Your host</p>
@@ -545,6 +549,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </ul>
       <div class="worked"><p>Leadership work with teams at</p><ul><li>Red Hat</li><li>Secure Meters</li><li>Stahl</li><li>The Kalyani School</li></ul></div>
     </div>
+  </div>
+  <div class="wrap">
+    <figure class="grad">
+      <img src="graduation-2026.jpg" alt="The first Working BBA cohort throwing their caps on stage at graduation, August 2026" loading="lazy">
+      <figcaption><b>Graduation day, August 2026.</b> The first cohort of India's first Working BBA, which I founded: three years of learning through real work inside real companies.</figcaption>
+    </figure>
   </div>
 </section>
 
