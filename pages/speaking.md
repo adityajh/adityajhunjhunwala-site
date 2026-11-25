@@ -236,10 +236,17 @@ A few of the rooms the work has reached, schools and colleges across India, foun
 
 ## Workshops and keynotes
 
-<div style="background:var(--cream-dark); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:4px; padding:1.25rem 1.4rem; margin:1.5rem 0 2rem;">
+<div style="background:var(--cream-dark); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:4px; padding:1.25rem 1.4rem; margin:1.5rem 0 1rem;">
   <div style="font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.3rem;">Keynote &middot; AICCC 2026 &middot; 8 August 2026</div>
   <div style="font-family:var(--font-serif); font-size:1.2rem; color:var(--navy);">Beyond Credentials</div>
   <p style="font-size:0.9rem; color:var(--text-muted); margin:0.5rem 0 0; line-height:1.6;">Keynote to around 200 career counsellors at the All India Career Counsellors Conference (APCCI), Navi Mumbai. On why the degree ladder is losing its rungs, what real experience does that a credential cannot, and the counsellor's part in handing young people the ball.</p>
+</div>
+
+<div style="background:var(--cream-dark); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:4px; padding:1.25rem 1.4rem; margin:0 0 2rem;">
+  <div style="font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.3rem;">Live session &middot; PYMA &middot; July 2026</div>
+  <div style="font-family:var(--font-serif); font-size:1.2rem; color:var(--navy);">Stop picking a career. Start seeing yourself.</div>
+  <p style="font-size:0.9rem; color:var(--text-muted); margin:0.5rem 0 0.6rem; line-height:1.6;">A 90-minute live session for young people at the PYMA meetup. Everyone in the room finds their career archetype on their own phone, then builds a 90-day plan for what to try next.</p>
+  <a href="/pyma/" style="font-size:0.85rem; font-weight:600; color:var(--teal);">Try the Career Archetype tool &rarr;</a>
 </div>
 
 I have spoken at and run workshops for schools and colleges across India, the Bohra community leadership forum (300+ leaders in Mumbai), MCCIA Pune, YI (Young Indians), IIM-A new entrant programs, Symbiosis, NGOs, and corporate leadership teams. I have also received an Education Innovation award in Bangalore.
