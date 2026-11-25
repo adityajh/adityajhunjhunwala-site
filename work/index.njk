@@ -48,11 +48,11 @@ description: "The full body of work: letters, essays, art, code, speaking, books
       <div class="work-room__label">Technology</div>
       <div class="work-room__desc">Apps, workflows, and systems I have built, for Let's Enterprise, clients, and the work itself.</div>
     </a>
-    <div class="work-room" style="cursor:default;">
+    {% if art.length %}<a href="/art/" class="work-room">{% else %}<div class="work-room" style="cursor:default;">{% endif %}
       <div class="work-room__count">200+</div>
       <div class="work-room__label">Artworks</div>
-      <div class="work-room__desc">Caricatures, paintings, alla prima oil work. Gallery coming soon.</div>
-    </div>
+      <div class="work-room__desc">Caricatures, paintings, alla prima oil work.{% if art.length %} {{ art.length }} in the gallery so far.{% else %} Gallery coming soon.{% endif %}</div>
+    {% if art.length %}</a>{% else %}</div>{% endif %}
     <a href="https://www.instagram.com/playful_ceo/" target="_blank" rel="noopener" class="work-room">
       <div class="work-room__count">2,110+</div>
       <div class="work-room__label">IG Posts</div>
