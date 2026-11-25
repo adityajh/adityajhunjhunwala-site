@@ -409,11 +409,19 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
 @media (max-width:960px){.le-grid{grid-template-columns:1fr;gap:32px}.takeaways{grid-template-columns:1fr}.takeaways div+div{padding-left:0;border-left:0;border-top:1px solid rgba(248,246,240,.18)}}
 @media (max-width:640px){.le-model{grid-template-columns:1fr 1fr;padding:16px;gap:16px}.eea b{display:block;min-width:0}}
 
-/* book covers */
-.mini-covers{display:flex;gap:8px;margin-top:10px;align-items:flex-end}
-.mini-covers img{height:64px;width:auto;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.35)}
-.creds .covers{display:flex;gap:10px;margin-top:10px;align-items:flex-end}
-.creds .covers img{height:96px;width:auto;border-radius:2px;box-shadow:2px 3px 10px rgba(26,26,46,.2)}
+
+/* books */
+.books{margin-top:72px;padding-top:40px;border-top:1.5px solid var(--navy)}
+.books-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.book{display:flex;gap:24px;align-items:flex-start;text-decoration:none;color:var(--navy)}
+.book img{width:150px;height:auto;flex:0 0 auto;border-radius:2px;box-shadow:3px 5px 16px rgba(26,26,46,.22)}
+.book span{display:block;font-size:16px;line-height:1.55}
+.book b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.15;margin-bottom:4px}
+.book em{display:block;font-style:normal;font-weight:600;margin-bottom:10px}
+.book u{display:block;width:max-content;margin-top:12px;font-weight:600;text-underline-offset:3px}
+.book:hover u{text-decoration-thickness:2px}
+@media (max-width:960px){.books-grid{grid-template-columns:1fr;gap:32px}}
+@media (max-width:640px){.book img{width:110px}.book b{font-size:22px}}
 </style>
 
   <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -498,8 +506,8 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
       </div>
       <ul class="rail">
         <li><b>IIM Ahmedabad</b>PGDBM, 2002</li>
-        <li class="books-li"><b>2 books</b><i>Restless to Remarkable</i> and <i>Winning Habits</i><span class="mini-covers"><img src="restless-to-remarkable.jpg" alt="Cover of Restless to Remarkable" width="289" height="436"><img src="winning-habits.jpg" alt="Cover of Winning Habits" width="288" height="395"></span></li>
-        <li><b>2 TEDx talks</b>Pune and Goa</li>
+        <li><b>2 books</b><i>Restless to Remarkable</i> and <i>Winning Habits</i></li>
+        <li><b>2 TEDx talks</b>Pune: &ldquo;A college of lifelong learning&rdquo;<br>Goa: &ldquo;Why everyone should create a body of work&rdquo;</li>
         <li><b>1,000+</b>young people mentored over 12 years</li>
       </ul>
     </div>
@@ -528,12 +536,27 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
         <li><b>MIT Pune</b>B.E. Mechanical Engineering, 1998</li>
         <li><b>Keynote, AICCC 2026</b>To about 200 career counsellors</li>
         <li><b>Two TEDx talks</b>Pune: a college of lifelong learning. Goa: why everyone should build a body of work.</li>
-        <li class="author-li"><b>Author</b><i>Restless to Remarkable</i>; co-author, <i>Winning Habits</i><span class="covers"><img src="restless-to-remarkable.jpg" alt="Cover of Restless to Remarkable" width="289" height="436" loading="lazy"><img src="winning-habits.jpg" alt="Cover of Winning Habits" width="288" height="395" loading="lazy"></span></li>
+        <li><b>Author</b><i>Restless to Remarkable</i>; co-author, <i>Winning Habits</i></li>
         <li><b>Host, Spirit of Enterprise</b>Conversations with founders, including Namita Thapar</li>
         <li><b>1,000+ young people</b>mentored one to one</li>
         <li><b>150+ weekly letters</b>to founders and parents</li>
       </ul>
       <div class="worked"><p>Leadership work with teams at</p><ul><li>Red Hat</li><li>Secure Meters</li><li>Stahl</li><li>The Kalyani School</li></ul></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="books">
+      <p class="label">Books</p>
+      <div class="books-grid">
+        <a class="book" href="https://www.amazon.in/Restless-Remarkable-companion-parents-teenagers/dp/B0GN3F53Q9/" target="_blank" rel="noopener">
+          <img src="restless-to-remarkable.jpg" alt="Cover of Restless to Remarkable by Aditya Jhunjhunwala" width="289" height="436" loading="lazy">
+          <span><b>Restless to Remarkable</b><em>A companion for parents of teenagers</em>For the young person who knows they are capable of more but hasn't found the door yet, and the parent trying to help without getting in the way.<u>See it on Amazon</u></span>
+        </a>
+        <a class="book" href="https://www.amazon.in/Winning-Habits-Narendra-Goidani-ebook/dp/B086QLYJPK/" target="_blank" rel="noopener">
+          <img src="winning-habits.jpg" alt="Cover of Winning Habits by Narendra Goidani and Aditya Jhunjhunwala" width="288" height="395" loading="lazy">
+          <span><b>Winning Habits</b><em>What makes winners... winners. With Narendra Goidani</em>A practical guide to the habits that build lasting success.<u>See it on Amazon</u></span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
