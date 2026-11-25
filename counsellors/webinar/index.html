@@ -33,11 +33,11 @@
 </script>
 <style>
 :root{
-  --navy:#1A1A2E; --navy2:#16213E; --cream:#F8F6F0; --gold:#D4A843; --goldb:#FED95D; --goldl:#F0D78C;
-  --teal:#0F9B8E; --teall:#5EEAD4; --grey:#1A1A2E; --grey2:#F8F6F0;
-  --ink2:#1A1A2E; --line:#F0D78C; --paper:#F8F6F0;
-  --serif:"DM Serif Display",Georgia,serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
-  --wrap:1180px;
+--navy:#1A1A2E; --navy2:#16213E; --cream:#F8F6F0; --gold:#D4A843; --goldb:#FED95D; --goldl:#F0D78C;
+--teal:#0F9B8E; --teall:#5EEAD4; --grey:#1A1A2E; --grey2:#F8F6F0;
+--ink2:#1A1A2E; --line:#F0D78C; --paper:#F8F6F0;
+--serif:"DM Serif Display",Georgia,serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+--wrap:1180px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -53,7 +53,6 @@ p{margin:0 0 1em}
 .lede{font-size:19px;line-height:1.6;color:var(--ink2);max-width:36em}
 .label{font-weight:600;font-size:18px;letter-spacing:0;margin:0 0 14px;color:var(--navy)}
 .on-navy .label{color:var(--teall)}
-
 /* header */
 .top{position:sticky;top:0;z-index:20;background:rgba(248,246,240,.94);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
@@ -61,11 +60,10 @@ p{margin:0 0 1em}
 .top-r{display:flex;align-items:center;gap:18px;font-size:16px;font-weight:600}
 .top-r .when{color:var(--ink2)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 var(--sans);text-decoration:none;cursor:pointer;
-  background:var(--goldb);color:var(--navy);border:2px solid var(--navy);border-radius:4px;padding:14px 22px;transition:transform .12s ease,box-shadow .12s ease}
+background:var(--goldb);color:var(--navy);border:2px solid var(--navy);border-radius:4px;padding:14px 22px;transition:transform .12s ease,box-shadow .12s ease}
 .btn:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--navy)}
 .btn.sm{padding:10px 16px;font-size:15px}
 .btn.ghost{background:transparent}
-
 /* hero */
 .hero{padding:64px 0 72px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:64px;align-items:start}
@@ -84,7 +82,6 @@ p{margin:0 0 1em}
 .host-line img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--navy)}
 .host-line p{margin:0;font-size:16px;line-height:1.5;color:var(--ink2)}
 .host-line b{color:var(--navy)}
-
 /* form panel */
 .panel{background:var(--navy);color:var(--cream);border-radius:6px;padding:30px 30px 26px;position:relative;box-shadow:10px 10px 0 var(--goldb)}
 .panel h2{font-size:32px;color:var(--cream);margin-bottom:6px}
@@ -115,12 +112,10 @@ details.more[open] summary{margin-bottom:12px}
 .done .acts a:hover{border-color:var(--teall)}
 .done .acts a.primary{background:var(--goldb);color:var(--navy);border-color:var(--goldb)}
 .ico{width:18px;height:18px;flex:0 0 auto}
-
 /* proof strip */
 .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
 .proof ul{list-style:none;margin:0 auto;padding:18px 28px;max-width:var(--wrap);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;font-size:16px;font-weight:600;color:var(--ink2)}
 .proof li b{font-family:var(--serif);font-weight:400;font-size:20px;color:var(--navy);margin-right:6px}
-
 /* room photo */
 .room{position:relative;margin:0;background:var(--navy)}
 .room img{width:100%;height:clamp(300px,46vw,560px);object-fit:cover;object-position:50% 38%}
@@ -128,7 +123,6 @@ details.more[open] summary{margin-bottom:12px}
 .room figcaption .wrap{color:var(--grey2);font-size:17px;max-width:var(--wrap)}
 .room figcaption b{color:var(--cream)}
 .room figcaption b{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.4vw,30px);display:block;line-height:1.2;margin-bottom:4px;max-width:28em}
-
 /* shift */
 .on-navy{background:var(--navy);color:var(--cream)}
 .shift{padding:64px 0 96px}
@@ -145,7 +139,6 @@ details.more[open] summary{margin-bottom:12px}
 .evidence .src{font-size:14px;color:var(--grey2)}
 .floor{margin:72px 0 0;padding-top:40px;border-top:1px solid rgba(248,246,240,.18);font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);line-height:1.15;max-width:20em}
 .floor small{display:block;font-family:var(--sans);font-size:16px;color:var(--grey2);margin-top:14px}
-
 /* run of show */
 .run{padding:100px 0 80px}
 .run-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
@@ -187,7 +180,6 @@ details.more[open] summary{margin-bottom:12px}
 .days30{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
 .days30 i{aspect-ratio:1;border:1.5px solid var(--navy);border-radius:2px;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11px;font-weight:600;color:var(--ink2)}
 .days30 i.p{background:var(--goldb);color:var(--navy)}
-
 /* audience */
 .who{padding:88px 0;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .who-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
@@ -199,7 +191,6 @@ details.more[open] summary{margin-bottom:12px}
 .roles p{margin:0;font-size:16px;color:var(--ink2)}
 .notfor{margin-top:22px;font-size:16px;color:var(--ink2)}
 .notfor b{color:var(--navy)}
-
 /* host */
 .host{padding:100px 0}
 .host-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
@@ -226,7 +217,6 @@ details.more[open] summary{margin-bottom:12px}
 .host-chip img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--goldb);flex:0 0 auto}
 .host-chip p{margin:0;font-size:16px;line-height:1.45;color:var(--cream)}
 .host-chip b{color:var(--cream)}
-
 /* toolkit */
 .kit{padding:96px 0}
 .kit-head{max-width:40em;margin-bottom:44px}
@@ -241,7 +231,6 @@ details.more[open] summary{margin-bottom:12px}
 .kit-foot{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(248,246,240,.18)}
 .kit-foot div{font-size:16px;color:var(--grey2)}
 .kit-foot b{display:block;color:var(--cream);font-size:17px;margin-bottom:4px}
-
 /* faq */
 .faq{padding:96px 0}
 .faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
@@ -252,65 +241,157 @@ details.more[open] summary{margin-bottom:12px}
 .faq summary::after{content:"+";font-family:var(--serif);font-size:26px;line-height:.9}
 .faq details[open] summary::after{content:"\2212"}
 .faq details p{margin:12px 0 0;color:var(--ink2);max-width:38em}
-
 /* final */
 .final{padding:88px 0;text-align:left}
 .final-grid{display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
 .final h2{color:var(--cream);max-width:none;font-size:clamp(32px,3.4vw,40px)}
 .final p{color:var(--grey2);margin:12px 0 0;font-size:17px}
-
 .sources{padding:56px 0 40px;font-size:14px;color:var(--ink2)}
 .sources ol{padding-left:18px;margin:10px 0 0;columns:2;column-gap:48px}
 .sources li{margin-bottom:8px;break-inside:avoid;line-height:1.5}
 footer{border-top:1px solid var(--line);padding:24px 0 96px;font-size:14px;color:var(--ink2)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-
 /* mobile bar */
-.mbar{display:none}
 @media (max-width:960px){
-  .hero-grid,.run-head,.tool,.who-grid,.host-grid,.faq-grid{grid-template-columns:1fr;gap:36px}
-  .evidence{grid-template-columns:1fr;gap:30px}
-  .stages{grid-template-columns:1fr 1fr}
-  .stage+.stage{border-left:0;padding-left:0}
-  .stage:nth-child(even){padding-left:18px;border-left:1px solid rgba(248,246,240,.18)}
-  .kit-foot{grid-template-columns:1fr}
-  .host figure img{aspect-ratio:4/3}
-  .sources ol{columns:1}
+.hero-grid,.run-head,.tool,.who-grid,.host-grid,.faq-grid{grid-template-columns:1fr;gap:36px}
+.evidence{grid-template-columns:1fr;gap:30px}
+.stages{grid-template-columns:1fr 1fr}
+.stage+.stage{border-left:0;padding-left:0}
+.stage:nth-child(even){padding-left:18px;border-left:1px solid rgba(248,246,240,.18)}
+.kit-foot{grid-template-columns:1fr}
+.host figure img{aspect-ratio:4/3}
+.sources ol{columns:1}
 }
 @media (max-width:640px){
-  body{font-size:16px}
-  .wrap{padding:0 20px}
-  .top-r .when{display:none}
-  .proof ul{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
-  .proof li.lead{grid-column:1/-1}
-  .hero .host-line{display:none}
-  .hero{padding:40px 0 56px}
-  .qa{grid-template-columns:1fr}
-  .qa div+div{border-left:0;border-top:1px solid rgba(248,246,240,.18)}
-  .slot{grid-template-columns:minmax(0,1fr);gap:12px}
-  .viz{padding:18px 14px 16px}
-  .map .room4{padding:10px 8px}
-  .map .room4 b{font-size:19px}
-  .roles{grid-template-columns:1fr}
-  .roles div:nth-child(odd){border-right:0}
-  .roles div:nth-child(even){padding-left:0}
-  .creds{grid-template-columns:1fr}
-  .two{grid-template-columns:1fr}
-  .keys{grid-template-columns:1fr}
-  .panel{padding:24px 20px 22px;box-shadow:6px 6px 0 var(--goldb)}
+body{font-size:16px}
+.wrap{padding:0 20px}
+.top-r .when{display:none}
+.proof ul{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+.proof li.lead{grid-column:1/-1}
+.hero .host-line{display:none}
+.hero{padding:40px 0 56px}
+.qa{grid-template-columns:1fr}
+.qa div+div{border-left:0;border-top:1px solid rgba(248,246,240,.18)}
+.slot{grid-template-columns:minmax(0,1fr);gap:12px}
+.viz{padding:18px 14px 16px}
+.map .room4{padding:10px 8px}
+.map .room4 b{font-size:19px}
+.roles{grid-template-columns:1fr}
+.roles div:nth-child(odd){border-right:0}
+.roles div:nth-child(even){padding-left:0}
+.creds{grid-template-columns:1fr}
+.two{grid-template-columns:1fr}
+.keys{grid-template-columns:1fr}
+.panel{padding:24px 20px 22px;box-shadow:6px 6px 0 var(--goldb)}
+}
+
+.btn:hover{transform:none;box-shadow:none;filter:brightness(.96)}
+.panel .btn:hover{box-shadow:none}
+.evidence .src a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.pledge{font-size:16px;color:var(--navy);max-width:44em;margin:0 0 6px}
+.hl-b{color:inherit}
+.sources li:target{background:var(--goldl)}
+
+.top{background:var(--navy);border-bottom:1px solid rgba(248,246,240,.18)}
+.top .brand,.top-r .when{color:var(--cream)}
+.btn{border-color:var(--goldb)}
+.run .btn,.faq .btn{border-color:var(--navy)}
+.hero{padding:72px 0 80px}
+.hero .for{color:var(--goldb);font-size:17px}
+.hero h1{color:var(--cream);font-size:clamp(48px,5.6vw,68px)}
+.hero .old-q{color:var(--cream);opacity:.75}
+.hero .new-q{border-left-color:var(--teall);color:var(--cream)}
+.hero .lede,.hero .facts dd{color:var(--cream)}
+.hero .facts dt{color:var(--goldb)}
+.hero .days{color:var(--goldb)}
+.host-b{display:flex;gap:14px;align-items:center;padding-top:26px;border-top:1px solid rgba(248,246,240,.2)}
+.host-b img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--goldb)}
+.host-b p{margin:0;font-size:16px;color:var(--cream)}
+.host-b b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.1}
+.rail{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;max-width:34em;border-top:1px solid rgba(248,246,240,.2)}
+.rail li{padding:16px 16px 16px 0;border-bottom:1px solid rgba(248,246,240,.2);font-size:16px;line-height:1.4;color:var(--cream)}
+.rail li:nth-child(even){padding-left:18px;border-left:1px solid rgba(248,246,240,.2)}
+.rail b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.1;color:var(--goldb);margin-bottom:2px}
+.panel{background:var(--cream);color:var(--navy);box-shadow:none;border:3px solid var(--goldb);border-radius:4px}
+.panel h2{color:var(--navy)}
+.panel .sub,.panel .fine,.check,.field label{color:var(--navy)}
+.field input,.field select{border:1.5px solid var(--navy);background:var(--cream)}
+.field input:focus,.field select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,155,142,.25)}
+details.more{border-top-color:var(--goldl)}
+details.more summary{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+.check input{accent-color:var(--navy)}
+.panel .btn{border-color:var(--navy)}
+.host-chip{border-top-color:var(--goldl)}
+.host-chip img{border-color:var(--navy)}
+.host-chip p,.host-chip b{color:var(--navy)}
+.room figcaption{padding-bottom:40px}
+.host{padding:96px 0}
+.host .label{color:var(--navy)}
+@media (max-width:640px){.rail{grid-template-columns:1fr}.rail li:nth-child(even){padding-left:0;border-left:0}.hero .host-b{display:flex}.panel{box-shadow:none}}
+
+.host{padding:96px 0 88px}
+.grad-band{padding:0 0 96px}
+.grad-band .grad{margin:0}
+.final-host{display:flex;gap:12px;align-items:center;margin-top:22px}
+.final-host img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--goldb);flex:0 0 auto}
+.final-host p{margin:0;font-size:16px;color:var(--cream)}
+.final-host b{color:var(--goldb);font-weight:600}
+@media (max-width:640px){
+.hero{padding:40px 0 48px}
+.rail{grid-template-columns:1fr 1fr}
+.rail li:nth-child(even){padding-left:14px;border-left:1px solid rgba(248,246,240,.2)}
+.rail li{padding:12px 10px 12px 0;font-size:16px}
+.rail b{font-size:22px}
+.grad-band{padding-bottom:64px}
+}
+.le-logo{display:block;width:178px;height:auto;max-width:100%;margin-top:10px}
+.final-host .le-logo{width:160px}
+
+/* refinement 2 */
+.hero-grid{grid-template-rows:auto 1fr}
+.hero-grid>div:first-child{grid-column:1;grid-row:1}
+.hero-grid>.panel{grid-column:2;grid-row:1 / span 2}
+.hero-grid>.hero-creds{grid-column:1;grid-row:2}
+.host-b img,.final-host img{width:auto;height:auto;border:0;border-radius:0}
+.host-b .portrait{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--goldb);flex:0 0 auto}
+.final-host .portrait{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--goldb);flex:0 0 auto}
+.host-b .le-logo{width:174px;margin-top:10px}
+.final-host .le-logo{width:150px;margin-top:10px}
+.host-grid{align-items:start}
+.grad-band .grad img{width:100%;border-radius:6px;aspect-ratio:2/1;object-fit:cover;object-position:50% 45%}
+.grad-band figcaption{font-size:16px;margin-top:12px;max-width:52em}
+.mid-cta{display:flex;justify-content:space-between;align-items:center;gap:20px 32px;flex-wrap:wrap;margin-top:28px;padding:24px 28px;background:var(--navy);color:var(--cream);border-radius:4px}
+.mid-cta p{margin:0;font-size:18px;max-width:40em}
+.mid-cta b{font-family:var(--serif);font-weight:400;font-size:24px;display:block;line-height:1.2;margin-bottom:2px}
+.mid-cta .btn{border-color:var(--goldb)}
+@media (max-width:960px){
+.hero-grid{grid-template-rows:none}
+.hero-grid>div:first-child,.hero-grid>.panel,.hero-grid>.hero-creds{grid-column:1;grid-row:auto}
+}
+@media (max-width:640px){.mid-cta{padding:20px}.grad-band .grad img{aspect-ratio:4/3}}
+
+.mbar{display:none}
+@media (max-width:640px){
   .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--navy);color:var(--cream);transform:translateY(110%);transition:transform .25s ease}
   .mbar.show{transform:none}
   .mbar span{font-size:14px;font-weight:600;line-height:1.3}
   .mbar .btn{border-color:var(--goldb)}
 }
+
+/* success panel on the cream form card */
+.done p{color:var(--navy)}
+.done .acts a{color:var(--navy);border-color:var(--navy)}
+.done .acts a:hover{border-color:var(--teal)}
+.done .acts a.primary{background:var(--goldb);color:var(--navy);border-color:var(--navy)}
+.done .dl{color:var(--navy)!important;text-decoration:underline;text-underline-offset:3px}
 </style>
+
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/">Aditya Jhunjhunwala</a>
@@ -322,29 +403,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </header>
 
 <main>
-<section class="hero">
+<section class="hero on-navy">
   <div class="wrap hero-grid">
     <div>
       <p class="for">A free working session for counsellors and educators</p>
-      <p class="old-q" aria-label="Not: which college?"><s>&ldquo;Which college?&rdquo;</s></p>
+      <p class="old-q" aria-label="Not: which college?"><s>“Which college?”</s></p>
       <h1>Change the question.</h1>
-      <p class="new-q">&ldquo;How will you spend the next 17,520 waking hours?&rdquo;</p>
-      <p class="lede">In 90 minutes I will run three tools live on real (anonymised) student cases. You leave with better questions for the next family that walks in asking which college, and the full nine-tool toolkit to keep.</p>
+      <p class="new-q">“How will you spend the next 17,520 waking hours?”</p>
+      <p class="lede">In 90 minutes I will run three tools live on real (anonymised) student cases. You leave with better questions for the next family that walks in asking which college.</p>
       <dl class="facts">
         <dt>When</dt><dd>Saturday 12 December 2026, 10:00 to 11:30 am IST <span class="days" id="days"></span></dd>
         <dt>Where</dt><dd>Online. The joining link comes by email.</dd>
         <dt>Cost</dt><dd>Free, including the toolkit and the recording. A one-page tool to use right away when you register.</dd>
       </dl>
-      <div class="host-line">
-        <img src="../adi.jpg" alt="Aditya Jhunjhunwala" width="64" height="64">
-        <p><b>Hosted by Aditya Jhunjhunwala, IIM Ahmedabad.</b> Twelve years working with young people and their families. Two TEDx talks, and the keynote at the All India Career Counsellors Conference 2026.</p>
-      </div>
     </div>
 
     <div class="panel" id="register">
       <form id="wform" novalidate>
         <h2>Save your seat</h2>
-        <p class="sub">Takes 30 seconds. You get the one-page <b style="color:var(--cream)">Eight questions to ask before &ldquo;which college?&rdquo;</b> straight away, to use with a family tomorrow. Can't make it live? You still get the recording.</p>
+        <p class="sub">Takes 30 seconds. You get the one-page <b class="hl-b">Eight questions to ask before “which college?”</b> straight away, the moment you register.</p>
         <p class="err" id="werr" role="alert">Please add your name, a valid email, your role and your city.</p>
         <div class="field"><label for="wname">Your name</label><input id="wname" name="name" autocomplete="name" required></div>
         <div class="field"><label for="wemail">Email</label><input id="wemail" name="email" type="email" autocomplete="email" inputmode="email" required></div>
@@ -366,7 +443,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div class="field"><label for="wphone">WhatsApp number, for the reminder</label><input id="wphone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
         </details>
         <div class="hp" aria-hidden="true"><label for="wwebsite">Leave this empty</label><input id="wwebsite" name="website" tabindex="-1" autocomplete="off"></div>
-        <label class="check"><input type="checkbox" id="wsession"> <span>I'd also like a free session for my students or parents (in person in Pune or Mumbai, online elsewhere)</span></label>
+        <label class="check"><input type="checkbox" id="wsession"> <span>I'd also like a session for my students or parents</span></label>
         <button class="btn" type="submit">Save my seat</button>
         <div class="host-chip"><img src="../adi.jpg" alt="" width="44" height="44"><p>With <b>Aditya Jhunjhunwala</b>, IIM Ahmedabad alumnus, two-time TEDx speaker and AICCC 2026 keynote speaker.</p></div>
         <p class="fine">Your details go to me and to my team at Let's Enterprise, who help run these sessions. We use them only to send the joining link, the recording and the toolkit, and to reply if you ask for a session. Never shared beyond that.</p>
@@ -375,7 +452,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="done" id="wok" aria-live="polite">
         <h2>You're registered.</h2>
         <p>A confirmation is on its way to your inbox. The joining link follows before the session.</p>
-        <p style="margin:0"><a href="eight-questions-before-which-college.pdf" download style="color:var(--goldb);font-weight:700">Download your sheet: Eight questions to ask before &ldquo;which college?&rdquo; (PDF)</a></p>
+        <p style="margin:0"><a class="dl" href="eight-questions-before-which-college.pdf" download style="font-weight:700">Download your sheet: Eight questions to ask before &ldquo;which college?&rdquo; (PDF)</a></p>
         <div class="acts">
           <a class="primary" id="gcal" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Add to Google Calendar</a>
           <a id="ics" download="change-the-question-12-dec.ics"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg>Add to Apple or Outlook calendar</a>
@@ -383,23 +460,53 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </div>
       </div>
     </div>
+
+    <div class="hero-creds">
+      <div class="host-b">
+        <img class="portrait" src="../adi.jpg" alt="Aditya Jhunjhunwala" width="72" height="72">
+        <p><b>Aditya Jhunjhunwala</b>Your host. Co-Founder, Let's Enterprise, India's 1st Working BBA<img class="le-logo" src="le-logo-white.png" alt="Let's Enterprise" width="174" height="40"></p>
+      </div>
+      <ul class="rail">
+        <li><b>IIM Ahmedabad</b>PGDBM, 2002</li>
+        <li><b>2 books</b><i>Restless to Remarkable</i> and <i>Winning Habits</i></li>
+        <li><b>2 TEDx talks</b>Pune and Goa</li>
+        <li><b>1,000+</b>young people mentored over 12 years</li>
+      </ul>
+    </div>
   </div>
 </section>
-
-<div class="proof">
-  <ul>
-    <li class="lead"><b>IIM Ahmedabad</b>alumnus</li>
-    <li><b>12</b>years with young people</li>
-    <li><b>1,000+</b>mentored</li>
-    <li><b>2</b>TEDx talks</li>
-    <li><b>200</b>counsellors, AICCC keynote</li>
-  </ul>
-</div>
 
 <figure class="room">
   <img src="../room.jpg" alt="Aditya taking a selfie with about 200 career counsellors at the AICCC 2026 conference hall in Navi Mumbai" loading="lazy">
   <figcaption><div class="wrap"><b>About 200 career counsellors, All India Career Counsellors Conference, August 2026.</b>Navi Mumbai. Three of the tools in this session were first shown in that keynote. On 12 December you get to use them, not just hear about them.</div></figcaption>
 </figure>
+
+<section class="host">
+  <div class="wrap host-grid">
+    <figure>
+      <img src="speaking-stage.jpg" alt="Aditya Jhunjhunwala speaking at the first Working BBA graduation, August 2026" loading="lazy">
+      <figcaption>Speaking at the first cohort's graduation, August 2026.</figcaption>
+    </figure>
+    <div>
+      <p class="label">Your host</p>
+      <h2>Aditya Jhunjhunwala</h2>
+      <blockquote>“The job of a good counsellor is not to give answers. It is to ask the right questions.”<cite>Aditya Jhunjhunwala, @playful_ceo</cite></blockquote>
+      <p>I studied mechanical engineering at MIT Pune and management at IIM Ahmedabad, and spent the years after in business. For the last twelve I have worked with young people and their families on one question: what actually helps someone find direction, and get chosen. It started with five years running a self-discovery programme for 17 to 21 year olds, and then the Enterprise India Fellowship, which became Let's Enterprise, India's first Working BBA. Its first cohort graduated in August 2026.</p>
+      <p>The tools in this session are the ones that kept working across those years. Now I wish to share these tools with you, so that together we can multiply the impact.</p>
+      <ul class="creds">
+        <li><b>IIM Ahmedabad</b>PGDBM, 2002</li>
+        <li><b>MIT Pune</b>B.E. Mechanical Engineering, 1998</li>
+        <li><b>Keynote, AICCC 2026</b>To about 200 career counsellors</li>
+        <li><b>Two TEDx talks</b>Pune: a college of lifelong learning. Goa: why everyone should build a body of work.</li>
+        <li><b>Author</b><i>Restless to Remarkable</i>; co-author, <i>Winning Habits</i></li>
+        <li><b>Host, Spirit of Enterprise</b>Conversations with founders, including Namita Thapar</li>
+        <li><b>1,000+ young people</b>mentored one to one</li>
+        <li><b>150+ weekly letters</b>to founders and parents</li>
+      </ul>
+      <div class="worked"><p>Leadership work with teams at</p><ul><li>Red Hat</li><li>Secure Meters</li><li>Stahl</li><li>The Kalyani School</li></ul></div>
+    </div>
+  </div>
+</section>
 
 <section class="shift on-navy">
   <div class="wrap">
@@ -413,20 +520,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div>
         <div class="n">49.66%</div>
         <p>of IIT Kharagpur B.Tech graduates were placed in 2024-25, down from 79.31% two years earlier. Higher studies rose from 6.9% to 41.6%. Even the top rung no longer guarantees the next step.</p>
-        <p class="src">NIRF 2026 data, via Careers360</p>
+        <p class="src"><a href="#src-1">Source 1</a>: NIRF 2026 data, via Careers360</p>
       </div>
       <div>
         <div class="n">Under 4%</div>
         <p>of jobs that dropped the degree requirement actually hired someone without one. The certificate still opens the door. It no longer gets anyone through it.</p>
-        <p class="src">Burning Glass Institute and OneTen, February 2026</p>
+        <p class="src"><a href="#src-2">Source 2</a>: Burning Glass Institute and OneTen, February 2026</p>
       </div>
       <div>
         <div class="n">1,180</div>
         <p>career counsellors are registered on the National Career Service portal, for a country of crores of students. India has never properly counted its counsellors, which means each one is carrying far more families than any ratio would allow.</p>
-        <p class="src">Lok Sabha reply, January 2026</p>
+        <p class="src"><a href="#src-3">Source 3</a>: Lok Sabha reply, January 2026</p>
       </div>
     </div>
-    <p class="floor">&ldquo;Degree is no longer the aspiration. Degree is now the floor.&rdquo;<small>Aditya Jhunjhunwala, AICCC 2026 keynote</small></p>
+    <p class="floor">“Degree is no longer the aspiration. Degree is now the floor.”<small>Aditya Jhunjhunwala, AICCC 2026 keynote</small></p>
   </div>
 </section>
 
@@ -444,7 +551,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="tool">
         <div>
           <h3>The 1,095-day swap</h3>
-          <p class="ask">&ldquo;How will you spend the next 17,520 waking hours?&rdquo;</p>
+          <p class="ask">“How will you spend the next 17,520 waking hours?”</p>
           <p>When a parent asks which college, swap the question for how the next three years will be spent. Class takes about a tenth of them. The rest decides who the student becomes.</p>
           <p class="monday"><b>On Monday:</b> sit with a family and fill in the hours budget together. It moves the conversation from brands to how the time is used.</p>
         </div>
@@ -466,7 +573,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="tool">
         <div>
           <h3>The thaali map</h3>
-          <p class="ask">&ldquo;Who lets you in, and is there a seat when you get good?&rdquo;</p>
+          <p class="ask">“Who lets you in, and is there a seat when you get good?”</p>
           <p>Two questions sort any career into one of four rooms. Each room asks a student to get good at something different, which is exactly what a shortlist of colleges never tells them.</p>
           <p class="monday"><b>On Monday:</b> place a student's top three career ideas on the map. If all three sit in the Risk room, that is the conversation to have first.</p>
         </div>
@@ -481,7 +588,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
             <div class="room4"><b>Double gate</b><em>Academic, government teacher</em>Surviving a second selection</div>
             <div class="room4 hl"><b>Risk</b><em>Actor, creator, founder</em>Managing exposure: many cheap shots</div>
           </div>
-          <figcaption>&ldquo;Is there a seat?&rdquo; in its honest form: of 100 people who qualified for this, how many are living off it five years later?</figcaption>
+          <figcaption>“Is there a seat?” in its honest form: of 100 people who qualified for this, how many are living off it five years later?</figcaption>
         </figure>
       </div>
     </div>
@@ -491,13 +598,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="tool">
         <div>
           <h3>The 30-day proof sprint</h3>
-          <p class="ask">&ldquo;What can you show me, finished, in 30 days?&rdquo;</p>
-          <p>&ldquo;I want to make vlogs&rdquo; becomes a number, a format and a date. Finished work tells a student, and later an admissions panel or an employer, more than any interest test.</p>
+          <p class="ask">“What can you show me, finished, in 30 days?”</p>
+          <p>“I want to make vlogs” becomes a number, a format and a date. Finished work tells a student, and later an admissions panel or an employer, more than any interest test.</p>
           <p class="monday"><b>On Monday:</b> set one student a 30-day sprint and book the review now. You will learn more from day 30 than from the whole first meeting.</p>
         </div>
         <figure class="viz" aria-label="A 30-day grid with ten finished pieces of work">
-          <p class="vt">&ldquo;One vlog every three days&rdquo;</p>
-          <div class="days30" aria-hidden="true" id="d30"></div>
+          <p class="vt">“One vlog every three days”</p>
+          <div class="days30" aria-hidden="true"><i>1</i><i>2</i><i class="p">3</i><i>4</i><i>5</i><i class="p">6</i><i>7</i><i>8</i><i class="p">9</i><i>10</i><i>11</i><i class="p">12</i><i>13</i><i>14</i><i class="p">15</i><i>16</i><i>17</i><i class="p">18</i><i>19</i><i>20</i><i class="p">21</i><i>22</i><i>23</i><i class="p">24</i><i>25</i><i>26</i><i class="p">27</i><i>28</i><i>29</i><i class="p">30</i></div>
           <figcaption>Ten finished pieces by day 30. Not ten ideas, not ten drafts. Most failures turn out to be parts for the next attempt.</figcaption>
         </figure>
       </div>
@@ -505,6 +612,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     <div class="slot minor"><div class="t">11:10</div><div><h3>Your cases and questions</h3><p>Bring a student you are stuck on. We will work two or three of them live, anonymised.</p></div></div>
     <div class="slot minor"><div class="t">11:25</div><div><h3>The toolkit, and how to use it</h3><p>What is in it, where to start, and how to hand the templates to families with your own name on them.</p></div></div>
+    <div class="mid-cta"><p><b>Use all three tools with your next family.</b> Free, 90 minutes, recording and toolkit included.</p><a class="btn" href="#register">Save my seat</a></div>
   </div>
 </section>
 
@@ -512,7 +620,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap who-grid">
     <div>
       <p class="label">Who it is for</p>
-      <h2>Anyone a young person asks, &ldquo;What should I do next?&rdquo;</h2>
+      <h2>Anyone a young person asks, “What should I do next?”</h2>
     </div>
     <div>
       <div class="roles">
@@ -526,40 +634,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
-<section class="host">
-  <div class="wrap host-grid">
-    <figure>
-      <img src="speaking-stage.jpg" alt="Aditya Jhunjhunwala speaking at the first Working BBA graduation, August 2026" loading="lazy">
-      <figcaption>Speaking at the first cohort's graduation, August 2026.</figcaption>
-    </figure>
-    <div>
-      <p class="label">Your host</p>
-      <h2>Aditya Jhunjhunwala</h2>
-      <blockquote>&ldquo;The job of a good counsellor is not to give answers. It is to ask the right questions.&rdquo;<cite>From the AICCC 2026 keynote</cite></blockquote>
-      <p>I studied mechanical engineering at MIT Pune and management at IIM Ahmedabad, and spent the years after in business. For the last twelve I have worked with young people and their families on one question: what actually helps someone find direction, and get chosen. It started with five unpaid years running a weekly programme for 17 to 21 year olds, and became Let's Enterprise, India's first Working BBA, which I founded. Its first cohort graduated in August 2026.</p>
-      <p>The tools in this session are the ones that kept working across those years. Every number in them is sourced, so you can use them with families with confidence.</p>
-      <ul class="creds">
-        <li><b>IIM Ahmedabad</b>PGDBM, 2002</li>
-        <li><b>MIT Pune</b>B.E. Mechanical Engineering, 1998</li>
-        <li><b>Keynote, AICCC 2026</b>To about 200 career counsellors</li>
-        <li><b>Two TEDx talks</b>Pune: a college of lifelong learning. Goa: why everyone should build a body of work.</li>
-        <li><b>Author</b><i>Restless to Remarkable</i>; co-author, <i>Winning Habits</i></li>
-        <li><b>Host, Spirit of Enterprise</b>Conversations with founders, including Namita Thapar</li>
-        <li><b>1,000+ young people</b>mentored one to one</li>
-        <li><b>150+ weekly letters</b>to founders and parents</li>
-      </ul>
-      <div class="worked"><p>Leadership work with teams at</p><ul><li>Red Hat</li><li>Secure Meters</li><li>Stahl</li><li>The Kalyani School</li></ul></div>
-    </div>
-  </div>
-  <div class="wrap">
-    <figure class="grad">
-      <img src="graduation-2026.jpg" alt="The first Working BBA cohort throwing their caps on stage at graduation, August 2026" loading="lazy">
-      <figcaption><b>Graduation day, August 2026.</b> The first cohort of India's first Working BBA, which I founded: three years of learning through real work inside real companies.</figcaption>
-    </figure>
-  </div>
-</section>
 
-<section class="kit on-navy">
+  <section class="kit on-navy">
   <div class="wrap">
     <div class="kit-head">
       <p class="label">What you take home</p>
@@ -578,6 +654,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div><b>A printable template for each</b>With a line for your own name, so you can hand it to families.</div>
       <div><b>Four bonus cards and the sources</b>Including a family conversation card, and every number referenced.</div>
     </div>
+  </div>
+</section>
+
+<section class="grad-band">
+  <div class="wrap">
+    <figure class="grad">
+      <img src="graduation-2026.jpg" alt="The first Working BBA cohort throwing their caps on stage at graduation, August 2026" loading="lazy">
+      <figcaption><b>Graduation day, August 2026.</b> The first cohort of India's first Working BBA, which I co-founded: three years of learning through real work inside real companies.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -600,6 +685,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div>
       <h2>Saturday 12 December, 10:00 am IST.</h2>
       <p>Ninety minutes, three tools, and the full toolkit after. Free.</p>
+      <div class="final-host"><img class="portrait" src="../adi.jpg" alt="" width="48" height="48"><p>With <b>Aditya Jhunjhunwala</b>, Co-Founder of Let's Enterprise, India's 1st Working BBA. IIM Ahmedabad alumnus and AICCC 2026 keynote speaker.<img class="le-logo" src="le-logo-white.png" alt="Let's Enterprise" width="174" height="40"></p></div>
     </div>
     <a class="btn" href="#register">Save my seat</a>
   </div>
@@ -607,14 +693,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section class="sources">
   <div class="wrap">
-    <p class="label">Sources</p>
+    <p class="label">Sources</p><p class="pledge">Every number on this page, and in the toolkit, is referenced here so you can check it before you use it with a family.</p>
     <ol>
-      <li>IIT Kharagpur B.Tech placement and higher studies, 2022-23 to 2024-25: NIRF 2026 submissions, reported by Careers360.</li>
-      <li>Hiring without a degree after requirements were dropped: Burning Glass Institute and OneTen, February 2026.</li>
-      <li>Career counsellors registered on the National Career Service portal: Lok Sabha unstarred question reply, January 2026.</li>
-      <li>Credit hours: one credit equals 15 contact hours (UGC and AICTE norms); a three-year degree is about 1,800 contact hours.</li>
-      <li>Practice hours: Ericsson, Krampe and Tesch-R&ouml;mer (1993), The role of deliberate practice in the acquisition of expert performance, Psychological Review.</li>
-      <li>The thaali map: Aditya Jhunjhunwala, career model v2 (2026), drawing on Rosen (1981), The economics of superstars.</li>
+      <li id="src-1">IIT Kharagpur B.Tech placement and higher studies, 2022-23 to 2024-25: NIRF 2026 submissions, reported by Careers360.</li>
+      <li id="src-2">Hiring without a degree after requirements were dropped: Burning Glass Institute and OneTen, February 2026.</li>
+      <li id="src-3">Career counsellors registered on the National Career Service portal: Lok Sabha unstarred question reply, January 2026.</li>
+      <li id="src-4">Credit hours: one credit equals 15 contact hours (UGC and AICTE norms); a three-year degree is about 1,800 contact hours.</li>
+      <li id="src-5">Practice hours: Ericsson, Krampe and Tesch-Römer (1993), The role of deliberate practice in the acquisition of expert performance, Psychological Review.</li>
+      <li id="src-6">The thaali map: Aditya Jhunjhunwala, career model v2 (2026), drawing on Rosen (1981), The economics of superstars.</li>
     </ol>
   </div>
 </section>
@@ -622,7 +708,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 Aditya Jhunjhunwala</span>
+    <span>© 2026 Aditya Jhunjhunwala</span>
     <span><a href="/counsellors/">The full toolkit</a> &nbsp; <a href="/">adityajhunjhunwala.com</a></span>
   </div>
 </footer>
@@ -633,8 +719,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 (function(){
   var T0=Date.now();
   // 30-day grid
-  var g=document.getElementById('d30');
-  for(var i=1;i<=30;i++){var e=document.createElement('i');e.textContent=i;if(i%3===0)e.className='p';g.appendChild(e);}
 
   // days to go
   var start=new Date('2026-12-12T10:00:00+05:30'), now=new Date(), d=Math.ceil((start-now)/864e5);
