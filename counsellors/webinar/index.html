@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.adityajhunjhunwala.com/counsellors/webinar/">
 <meta property="og:title" content="Change the question: a free working session for counsellors and educators">
-<meta property="og:description" content="Sat 12 Dec 2026, 10:00 to 11:30 am IST, online. Three tools run live on real student cases, and the full toolkit after.">
+<meta property="og:description" content="Sat 12 Dec 2026, 10:00 to 11:30 am IST, online. Three tools run live on real student cases, with printable templates to use them.">
 <meta property="og:image" content="https://www.adityajhunjhunwala.com/counsellors/webinar/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Event",
  "name":"Change the question: three tools you can use the next day",
- "description":"A free 90-minute working session for career counsellors and educators. Three tools run live on real student cases; every registrant gets the nine-tool Counsellor and Educator Toolkit.",
+ "description":"A free 90-minute working session for career counsellors and educators. Three tools run live on real student cases; registrants get the recording and printable templates for the three tools.",
  "startDate":"2026-12-12T10:00:00+05:30","endDate":"2026-12-12T11:30:00+05:30",
  "eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled",
  "location":{"@type":"VirtualLocation","url":"https://www.adityajhunjhunwala.com/counsellors/webinar/"},
@@ -384,6 +384,30 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
 .done .acts a:hover{border-color:var(--teal)}
 .done .acts a.primary{background:var(--goldb);color:var(--navy);border-color:var(--navy)}
 .done .dl{color:var(--navy)!important;text-decoration:underline;text-underline-offset:3px}
+
+/* take-home + LE home */
+.takeaways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1.5px solid var(--cream)}
+.takeaways div{padding:22px 22px 8px 0}
+.takeaways div+div{padding-left:22px;border-left:1px solid rgba(248,246,240,.18)}
+.takeaways b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.15;color:var(--goldb);margin-bottom:8px}
+.takeaways span{display:block;font-size:16px;color:var(--cream)}
+.le-home{padding:96px 0 72px}
+.le-home h2{margin-bottom:36px}
+.le-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.le-photo{margin:0}
+.le-photo img{width:100%;border-radius:6px;aspect-ratio:4/3;object-fit:cover}
+.le-photo figcaption{font-size:14px;margin-top:10px}
+.le-model{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px 0 24px;padding:22px;border:1.5px solid var(--navy);border-radius:6px}
+.pyr svg{width:100%;max-width:150px;height:auto;display:block;margin-bottom:10px}
+.pyr p{margin:0;font-size:16px;line-height:1.45}
+.pyr b{display:block;font-weight:600}
+.eea{list-style:none;margin:0 0 20px;padding:0;border-top:1.5px solid var(--navy)}
+.eea li{padding:12px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.45}
+.eea b{display:inline-block;min-width:118px;font-family:var(--serif);font-weight:400;font-size:22px}
+.eea li.aw{background:var(--goldl);padding-left:12px;padding-right:12px}
+.nopitch{font-size:16px;font-weight:600;margin:0}
+@media (max-width:960px){.le-grid{grid-template-columns:1fr;gap:32px}.takeaways{grid-template-columns:1fr}.takeaways div+div{padding-left:0;border-left:0;border-top:1px solid rgba(248,246,240,.18)}}
+@media (max-width:640px){.le-model{grid-template-columns:1fr 1fr;padding:16px;gap:16px}.eea b{display:block;min-width:0}}
 </style>
 
   <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -414,7 +438,7 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
       <dl class="facts">
         <dt>When</dt><dd>Saturday 12 December 2026, 10:00 to 11:30 am IST <span class="days" id="days"></span></dd>
         <dt>Where</dt><dd>Online. The joining link comes by email.</dd>
-        <dt>Cost</dt><dd>Free, including the toolkit and the recording. A one-page tool to use right away when you register.</dd>
+        <dt>Cost</dt><dd>Free, including the recording and printable templates for the three tools. A one-page tool to use right away when you register.</dd>
       </dl>
     </div>
 
@@ -446,7 +470,7 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
         <label class="check"><input type="checkbox" id="wsession"> <span>I'd also like a session for my students or parents</span></label>
         <button class="btn" type="submit">Save my seat</button>
         <div class="host-chip"><img src="../adi.jpg" alt="" width="44" height="44"><p>With <b>Aditya Jhunjhunwala</b>, IIM Ahmedabad alumnus, two-time TEDx speaker and AICCC 2026 keynote speaker.</p></div>
-        <p class="fine">Your details go to me and to my team at Let's Enterprise, who help run these sessions. We use them only to send the joining link, the recording and the toolkit, and to reply if you ask for a session. Never shared beyond that.</p>
+        <p class="fine">Your details go to me and to my team at Let's Enterprise, who help run these sessions. We use them only to send the joining link, the recording and the templates, and to reply if you ask for a session. Never shared beyond that.</p>
       </form>
 
       <div class="done" id="wok" aria-live="polite">
@@ -611,8 +635,8 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
     </div>
 
     <div class="slot minor"><div class="t">11:10</div><div><h3>Your cases and questions</h3><p>Bring a student you are stuck on. We will work two or three of them live, anonymised.</p></div></div>
-    <div class="slot minor"><div class="t">11:25</div><div><h3>The toolkit, and how to use it</h3><p>What is in it, where to start, and how to hand the templates to families with your own name on them.</p></div></div>
-    <div class="mid-cta"><p><b>Use all three tools with your next family.</b> Free, 90 minutes, recording and toolkit included.</p><a class="btn" href="#register">Save my seat</a></div>
+    <div class="slot minor"><div class="t">11:25</div><div><h3>Taking the tools back to your desk</h3><p>How to hand the three templates to families with your own name on them, and which tool to start with on Monday.</p></div></div>
+    <div class="mid-cta"><p><b>Use all three tools with your next family.</b> Free, 90 minutes, recording and templates included.</p><a class="btn" href="#register">Save my seat</a></div>
   </div>
 </section>
 
@@ -639,20 +663,50 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
   <div class="wrap">
     <div class="kit-head">
       <p class="label">What you take home</p>
-      <h2 style="color:var(--cream)">Nine tools, in the order of a real conversation.</h2>
-      <p class="lede" style="color:var(--grey2);margin-top:18px">Everyone who registers gets a private link to the Counsellor and Educator Toolkit. The three live tools are ready on the day; the other six follow, one pair a week.</p>
+      <h2 style="color:var(--cream)">Three tools you can use the next day.</h2>
+      <p class="lede" style="color:var(--grey2);margin-top:18px">Everyone who registers gets these, whether or not they make it live.</p>
     </div>
-    <div class="stages">
-      <div class="stage"><h3>Open</h3><ol><li>The 1,095-day swap <span class="live">Live</span><span>Hours budget</span></li><li>Get the vanilla right<span>Skills under the skills</span></li></ol></div>
-      <div class="stage"><h3>Understand</h3><ol><li>Seventeen years of data<span>Fit questions sheet</span></li><li>Five colours of work<span>The mix of a good day</span></li></ol></div>
-      <div class="stage"><h3>Map</h3><ol><li>The thaali map <span class="live">Live</span><span>Four-room map</span></li><li>Three pathways<span>Mastery, recognition, judgment</span></li></ol></div>
-      <div class="stage"><h3>Decide</h3><ol><li>The decision funnel<span>What to say yes to now</span></li><li>Six questions before a big decision<span>Haircut or tattoo?</span></li></ol></div>
-      <div class="stage"><h3>Act</h3><ol><li>The 30-day proof sprint <span class="live">Live</span><span>30-day tracker</span></li></ol></div>
+    <div class="takeaways">
+      <div><b>The hours budget</b><span>For the 1,095-day swap. Fill it in with a family in fifteen minutes.</span></div>
+      <div><b>The four-room map</b><span>For the thaali map. Place a student's top three ideas and see which room they sit in.</span></div>
+      <div><b>The 30-day tracker</b><span>For the proof sprint. One page, thirty boxes, a review date.</span></div>
     </div>
     <div class="kit-foot">
-      <div><b>A short video for each</b>Three to five minutes, showing how to run it.</div>
-      <div><b>A printable template for each</b>With a line for your own name, so you can hand it to families.</div>
-      <div><b>Four bonus cards and the sources</b>Including a family conversation card, and every number referenced.</div>
+      <div><b>The recording</b>The full session, to watch again or share with a colleague.</div>
+      <div><b>Your name on every template</b>Printable, with a line for your name, so you can hand them to families.</div>
+      <div><b>Eight questions before &ldquo;which college?&rdquo;</b>A one-page sheet, the moment you register.</div>
+    </div>
+  </div>
+</section>
+
+<section class="le-home">
+  <div class="wrap">
+    <p class="label">Where these tools were built</p>
+    <h2>Twelve years of testing, in a real room.</h2>
+    <div class="le-grid">
+      <figure class="le-photo">
+        <img src="le-space.jpg" alt="Students working in the glass project rooms at the Let's Enterprise space in Pune" loading="lazy">
+        <figcaption>The Let's Enterprise space in Pune.</figcaption>
+      </figure>
+      <div>
+        <p>Most of these tools were built and tested at Let's Enterprise in Pune, home of India's first Working BBA, where students spend most of their time on real work inside real companies. The model is painted on the walls of the space:</p>
+        <figure class="le-model" aria-label="Two triangles. Regular programmes: mostly lectures and exams, with a small tip of experiential learning. Enterprise programmes: the triangle inverted, mostly experiential learning, with a small point of lectures and exams.">
+          <div class="pyr">
+            <svg viewBox="0 0 160 130" aria-hidden="true"><polygon points="80,8 152,122 8,122" fill="#1A1A2E"/><polygon points="80,8 101.5,42 58.5,42" fill="#FED95D"/></svg>
+            <p><b>Regular programmes</b>Mostly lectures and exams. A small tip of real experience.</p>
+          </div>
+          <div class="pyr">
+            <svg viewBox="0 0 160 130" aria-hidden="true"><polygon points="8,8 152,8 80,122" fill="#FED95D"/><polygon points="58.5,88 101.5,88 80,122" fill="#1A1A2E"/></svg>
+            <p><b>The Working BBA</b>Mostly real experience. A small point of lectures and exams.</p>
+          </div>
+        </figure>
+        <ul class="eea">
+          <li><b>Education</b>Business concepts and tools.</li>
+          <li><b>Experience</b>Hands-on projects and apprenticeship.</li>
+          <li class="aw"><b>Awareness</b>Personality, self-understanding and decision making. This is the layer these tools come from.</li>
+        </ul>
+        <p class="nopitch">No pitch on 12 December. It is here so you know where the tools have been tested.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -670,9 +724,9 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
   <div class="wrap faq-grid">
     <div><p class="label">Questions</p><h2>Before you register</h2></div>
     <div>
-      <details><summary>Is it really free?</summary><p>Yes. The session, the recording and the toolkit are free. There is no paid tier and nothing to buy later.</p></details>
+      <details><summary>Is it really free?</summary><p>Yes. The session, the recording and the templates are free. There is no paid tier and nothing to buy later.</p></details>
       <details><summary>Is this a pitch for something?</summary><p>No. It is a working session on tools you can use with any student. Nothing in it points to a programme or a college.</p></details>
-      <details><summary>I can't attend live. Should I still register?</summary><p>Yes. Everyone who registers gets the recording and the full toolkit, whether or not they attend.</p></details>
+      <details><summary>I can't attend live. Should I still register?</summary><p>Yes. Everyone who registers gets the recording and the three templates, whether or not they attend.</p></details>
       <details><summary>Which platform will it be on?</summary><p>An online meeting link, sent to your email before the session, with a reminder the day before. Nothing to install beforehand.</p></details>
       <details><summary>Can I bring a student case?</summary><p>Please do. Reply to your confirmation email with a short, anonymised description and we may work it live in the last twenty minutes.</p></details>
       <details><summary>What is the free session for students or parents?</summary><p>If you tick the box, I will get in touch about a session for your students or parents: in person in Pune or Mumbai, online anywhere else. Same spirit as this one, no pitch.</p></details>
@@ -684,7 +738,7 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
   <div class="wrap final-grid">
     <div>
       <h2>Saturday 12 December, 10:00 am IST.</h2>
-      <p>Ninety minutes, three tools, and the full toolkit after. Free.</p>
+      <p>Ninety minutes, three tools, and the templates to use them. Free.</p>
       <div class="final-host"><img class="portrait" src="../adi.jpg" alt="" width="48" height="48"><p>With <b>Aditya Jhunjhunwala</b>, Co-Founder of Let's Enterprise, India's 1st Working BBA. IIM Ahmedabad alumnus and AICCC 2026 keynote speaker.<img class="le-logo" src="le-logo-white.png" alt="Let's Enterprise" width="174" height="40"></p></div>
     </div>
     <a class="btn" href="#register">Save my seat</a>
@@ -693,7 +747,7 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
 
 <section class="sources">
   <div class="wrap">
-    <p class="label">Sources</p><p class="pledge">Every number on this page, and in the toolkit, is referenced here so you can check it before you use it with a family.</p>
+    <p class="label">Sources</p><p class="pledge">Every number on this page, and in the templates, is referenced here so you can check it before you use it with a family.</p>
     <ol>
       <li id="src-1">IIT Kharagpur B.Tech placement and higher studies, 2022-23 to 2024-25: NIRF 2026 submissions, reported by Careers360.</li>
       <li id="src-2">Hiring without a degree after requirements were dropped: Burning Glass Institute and OneTen, February 2026.</li>
@@ -709,7 +763,7 @@ details.more summary{color:var(--navy);text-decoration:underline;text-underline-
 <footer>
   <div class="wrap">
     <span>© 2026 Aditya Jhunjhunwala</span>
-    <span><a href="/counsellors/">The full toolkit</a> &nbsp; <a href="/">adityajhunjhunwala.com</a></span>
+    <span><a href="/counsellors/">More counsellor tools</a> &nbsp; <a href="/">adityajhunjhunwala.com</a></span>
   </div>
 </footer>
 

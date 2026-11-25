@@ -13,7 +13,7 @@ const AUDIENCES = {
   "counsellor-webinar-2026-12-12": "6c7c5d80-3b4e-4cb4-951e-618af23d4987", // Webinar: Change the question (12 Dec 2026), /counsellors/webinar
 };
 
-// Webinar registrations: Resend audience (for the reminder and toolkit mails), the outreach CRM
+// Webinar registrations: Resend audience (for the reminder and follow-up mails), the outreach CRM
 // (contact + org, tag, a call reminder when they ask for a session), and a notification to Adi that
 // says whether the CRM write worked. Registrants get a short confirmation.
 const WEBINARS = {
@@ -194,7 +194,7 @@ export default async function handler(req, res) {
         await sendEmail(key, {
           from: FROM, to: [email], reply_to: NOTIFY_TO,
           subject: "You are registered: Change the question, Sat 12 Dec",
-          html: `<p>Hi ${esc(first)},</p><p>You are registered for <b>${esc(w.title)}</b>.</p><p><b>When:</b> ${esc(w.when)}.</p><p><b>Something to use tomorrow:</b> <a href="https://www.adityajhunjhunwala.com/counsellors/webinar/eight-questions-before-which-college.pdf">Eight questions to ask before &ldquo;which college?&rdquo;</a> (one-page PDF). Print it, ask the student and the parent separately, and start with the rows where their answers differ.</p><p>I will email you the joining link before the session, and a reminder the day before. After the session you get the full Counsellor and Educator Toolkit: nine tools, each with a short video and a printable template. If you cannot make it live, you still get the recording and the toolkit.</p><p>If you have a student case you would like us to think about together, just reply to this email.</p><p>Aditya</p><p style="color:#8C8577;font-size:13px">You are getting this because you registered at adityajhunjhunwala.com/counsellors/webinar. Reply "unsubscribe" and we will remove you.</p>`,
+          html: `<p>Hi ${esc(first)},</p><p>You are registered for <b>${esc(w.title)}</b>.</p><p><b>When:</b> ${esc(w.when)}.</p><p><b>Something to use tomorrow:</b> <a href="https://www.adityajhunjhunwala.com/counsellors/webinar/eight-questions-before-which-college.pdf">Eight questions to ask before &ldquo;which college?&rdquo;</a> (one-page PDF). Print it, ask the student and the parent separately, and start with the rows where their answers differ.</p><p>I will email you the joining link before the session, and a reminder the day before. After the session you get the recording and printable templates for the three tools we run live. If you cannot make it live, you still get both.</p><p>If you have a student case you would like us to think about together, just reply to this email.</p><p>Aditya</p><p style="color:#8C8577;font-size:13px">You are getting this because you registered at adityajhunjhunwala.com/counsellors/webinar. Reply "unsubscribe" and we will remove you.</p>`,
         });
       }
   } catch (e) {
